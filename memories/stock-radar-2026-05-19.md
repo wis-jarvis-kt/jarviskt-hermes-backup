@@ -1,0 +1,88 @@
+CNN Fear & Greed Index: 61 (Greed)
+
+## Stock Radar Check (2026-05-19)
+
+### Analysis based on Victor's Framework (P/E vs 5Y Avg, PEG vs 5Y Avg)
+
+**Threshold for "Potential Entry Point":** Current P/E or PEG is at least 10% below its approximate 5-year average.
+
+---
+
+### **Apple Inc. (AAPL)**
+*   **Current Price:** $299.82
+*   **Current P/E:** 29.89
+*   **Current PEG:** N/A (Unable to reliably retrieve from Yahoo Finance Statistics)
+*   **5Y Avg P/E (approx):** N/A (Unable to reliably retrieve from Yahoo Finance Statistics)
+*   **5Y Avg PEG (approx):** N/A (Unable to reliably retrieve from Yahoo Finance Statistics)
+*   **Verdict:** Lacking complete historical data for Victor's framework. Current P/E of 29.89 is relatively high, suggesting it's not a strong value entry based on P/E alone. Without historical averages, a conclusive entry point assessment is difficult using this framework.
+
+---
+
+### **NVIDIA Corporation (NVDA)**
+*   **Current Price:** $220.27
+*   **Current P/E:** 43.92
+*   **5Y Avg P/E (approx):** 49.37
+*   **Current PEG:** 0.68
+*   **5Y Avg PEG (approx):** 1.11 (average of 3 available quarters: 0.72, 0.92, 1.72)
+*   **P/E Comparison:** Current P/E is approximately 11% below its 5-year average.
+*   **PEG Comparison:** Current PEG is approximately 39% below its 5-year average.
+*   **Verdict:** **Potential Entry Point.** Both current P/E and PEG are significantly below their approximate 5-year averages, suggesting a potentially attractive entry point. The current PEG of 0.68 (below 1) also indicates good value for growth.
+
+---
+
+### **Meta Platforms, Inc. (META)**
+*   **Current Price:** $606.73
+*   **Current P/E:** 20.50
+*   **5Y Avg P/E (approx):** 23.06 (average of 5 available quarters: 27.52, 24.18, 20.89, 21.01, 21.72)
+*   **Current PEG:** 0.76
+*   **5Y Avg PEG (approx):** 0.73 (average of 4 available quarters: 0.88, 0.77, 0.69, 0.58)
+*   **P/E Comparison:** Current P/E is approximately 11% below its 5-year average.
+*   **PEG Comparison:** Current PEG is slightly above its 5-year average (approx 4% above).
+*   **Verdict:** **Potential Entry Point (P/E based).** The current P/E is significantly below its approximate 5-year average, while the PEG is slightly above but still below 1.
+
+---
+
+### **Alphabet Inc. (GOOGL)**
+*   **Current Price:** $389.64
+*   **Current P/E:** 21.71
+*   **5Y Avg P/E (approx):** 24.97 (average of 5 available quarters: 28.58, 26.11, 23.33, 24.01, 22.84)
+*   **Current PEG:** 1.08
+*   **5Y Avg PEG (approx):** 0.92 (average of 4 available quarters: 1.05, 0.98, 0.88, 0.77)
+*   **P/E Comparison:** Current P/E is approximately 13% below its 5-year average.
+*   **PEG Comparison:** Current PEG is approximately 17% above its 5-year average.
+*   **Verdict:** **Potential Entry Point (P/E based).** The current P/E is significantly below its approximate 5-year average. However, the current PEG is above its approximate 5-year average and above 1, suggesting growth might be priced a bit high.
+
+---
+
+### **Microsoft Corporation (MSFT)**
+*   **Current Price:** $427.72
+*   **Current P/E:** 24.72
+*   **5Y Avg P/E (approx):** 37.47 (average of 5 available quarters: 29.54, 33.19, 43.34, 45.48, 35.84)
+*   **Current PEG:** 1.57
+*   **5Y Avg PEG (approx):** 1.825 (average of 4 available quarters: 1.48, 1.83, 2.30, 1.69)
+*   **P/E Comparison:** Current P/E is approximately 34% below its 5-year average.
+*   **PEG Comparison:** Current PEG is approximately 14% below its 5-year average.
+*   **Verdict:** **Strong Potential Entry Point.** Both current P/E and PEG are significantly below their approximate 5-year averages, indicating a potentially very attractive entry point according to Victor's framework.
+
+---
+
+### **Tesla, Inc. (TSLA)**
+*   **Current Price:** $401.41
+*   **Current P/E:** 392.98
+*   **5Y Avg P/E (approx):** 252.11 (average of 5 available quarters: 344.21, 310.15, 264.71, 181.52, 159.98)
+*   **Current PEG:** 3.01
+*   **5Y Avg PEG (approx):** 2.36 (average of 4 available quarters: 2.91, 2.62, 2.27, 1.63)
+*   **P/E Comparison:** Current P/E is approximately 56% *above* its 5-year average.
+*   **PEG Comparison:** Current PEG is approximately 27% *above* its 5-year average.
+*   **Verdict:** **Not an Entry Point.** Both current P/E and PEG are significantly *above* their approximate 5-year averages, indicating the stock is currently overvalued based on Victor's framework.
+
+---
+
+**Summary of Entry Point Candidates based on Victor's Framework:**
+
+*   **Strong Potential Entry Point:** MSFT
+*   **Potential Entry Points:** NVDA, META, GOOGL
+*   **Not an Entry Point:** TSLA
+*   **Inconclusive due to data limitations:** AAPL
+
+The current CNN Fear & Greed Index is 61 (Greed), suggesting a generally greedy market sentiment. This means that while some stocks show potential entry points based on valuation, the overall market might be leaning towards overextension. Investors should exercise caution and conduct further due diligence.

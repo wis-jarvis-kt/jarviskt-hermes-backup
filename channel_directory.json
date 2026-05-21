@@ -1,0 +1,48 @@
+{
+  "updated_at": "2026-05-22T02:58:50.779023",
+  "platforms": {
+    "telegram": [],
+    "discord": [],
+    "whatsapp": [
+      {
+        "id": "56702359580792@lid",
+        "name": "Goo Kah Thart",
+        "type": "dm",
+        "thread_id": null
+      },
+      {
+        "id": "120363423080731840@g.us",
+        "name": "120363423080731840",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "120363145668140275@g.us",
+        "name": "120363145668140275",
+        "type": "group",
+        "thread_id": null
+      }
+    ],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "msgraph_webhook": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": [],
+    "yuanbao": [],
+    "google_chat": [],
+    "irc": [],
+    "line": [],
+    "simplex": [],
+    "teams": []
+  }
+}
