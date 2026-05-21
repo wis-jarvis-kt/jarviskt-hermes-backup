@@ -1,4 +1,7 @@
 .env
 auth.json
 google_*.json
-whatsapp/session/*
+whatsapp/
+*.lock
+hermes-agent/
+.DS_Store
