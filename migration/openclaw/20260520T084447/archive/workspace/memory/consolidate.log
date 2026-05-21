@@ -1,0 +1,476 @@
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 38, in <module>
+    def parse_date_from_filename(filename: str) -> datetime | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 38, in <module>
+    def parse_date_from_filename(filename: str) -> datetime | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 38, in <module>
+    def parse_date_from_filename(filename: str) -> datetime | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 38, in <module>
+    def parse_date_from_filename(filename: str) -> datetime | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 38, in <module>
+    def parse_date_from_filename(filename: str) -> datetime | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 38, in <module>
+    def parse_date_from_filename(filename: str) -> datetime | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-03-30.md: 17 bullet entries
+   → 2026-03-31.md: 8 bullet entries
+✅ Added 25 entries to recent-memory.md
+📁 Added 2 project-related entries to project-memory.md
+🗑️  Pruned 10 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  25
+  Entries pruned (recent): 10
+  Promoted to long-term:   0
+  Project lines logged:    2
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-03-31.md: 46 bullet entries
+   → 2026-04-01.md: 11 bullet entries
+✅ Added 57 entries to recent-memory.md
+📁 Added 7 project-related entries to project-memory.md
+🗑️  Pruned 34 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  57
+  Entries pruned (recent): 34
+  Promoted to long-term:   0
+  Project lines logged:    7
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-01.md: 24 bullet entries
+   → 2026-04-02.md: 5 bullet entries
+✅ Added 29 entries to recent-memory.md
+📁 Added 3 project-related entries to project-memory.md
+🗑️  Pruned 50 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  29
+  Entries pruned (recent): 50
+  Promoted to long-term:   0
+  Project lines logged:    3
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-02.md: 74 bullet entries
+   → 2026-04-03.md: 6 bullet entries
+✅ Added 80 entries to recent-memory.md
+📁 Added 8 project-related entries to project-memory.md
+🗑️  Pruned 114 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  80
+  Entries pruned (recent): 114
+  Promoted to long-term:   0
+  Project lines logged:    8
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-03.md: 6 bullet entries
+   → 2026-04-04.md: 6 bullet entries
+✅ Added 12 entries to recent-memory.md
+📁 Added 4 project-related entries to project-memory.md
+🗑️  Pruned 29 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  12
+  Entries pruned (recent): 29
+  Promoted to long-term:   0
+  Project lines logged:    4
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-04.md: 6 bullet entries
+   → 2026-04-05.md: 0 bullet entries
+✅ Added 6 entries to recent-memory.md
+📁 Added 1 project-related entries to project-memory.md
+🗑️  Pruned 80 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  6
+  Entries pruned (recent): 80
+  Promoted to long-term:   0
+  Project lines logged:    1
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-05.md: 0 bullet entries
+   → 2026-04-06.md: 5 bullet entries
+✅ Added 5 entries to recent-memory.md
+📁 Added 1 project-related entries to project-memory.md
+🗑️  Pruned 24 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  5
+  Entries pruned (recent): 24
+  Promoted to long-term:   0
+  Project lines logged:    1
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-06.md: 1 bullet entries
+   → 2026-04-07.md: 5 bullet entries
+✅ Added 6 entries to recent-memory.md
+🗑️  Pruned 6 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  6
+  Entries pruned (recent): 6
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-07.md: 4 bullet entries
+   → 2026-04-08.md: 5 bullet entries
+✅ Added 9 entries to recent-memory.md
+🗑️  Pruned 10 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  9
+  Entries pruned (recent): 10
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-08.md: 5 bullet entries
+   → 2026-04-09.md: 5 bullet entries
+✅ Added 10 entries to recent-memory.md
+🗑️  Pruned 12 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  10
+  Entries pruned (recent): 12
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-09.md: 20 bullet entries
+   → 2026-04-10.md: 5 bullet entries
+✅ Added 25 entries to recent-memory.md
+🗑️  Pruned 18 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  25
+  Entries pruned (recent): 18
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 1 daily file(s) in the last 48hrs
+   → 2026-04-10.md: 5 bullet entries
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 337, in <module>
+    main()
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 289, in main
+    added = add_to_recent_memory(all_new_entries, "daily files", dry_run)
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 222, in add_to_recent_memory
+    RECENT_MEMORY.write_text(content + block, encoding="utf-8")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1275, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 28] No space left on device: '/Users/ktoclaw/.openclaw/workspace/memory/recent-memory.md'
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-11.md: 12 bullet entries
+   → 2026-04-12.md: 5 bullet entries
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 337, in <module>
+    main()
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 289, in main
+    added = add_to_recent_memory(all_new_entries, "daily files", dry_run)
+  File "/Users/ktoclaw/.openclaw/workspace/scripts/consolidate_memory.py", line 222, in add_to_recent_memory
+    RECENT_MEMORY.write_text(content + block, encoding="utf-8")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1275, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 28] No space left on device: '/Users/ktoclaw/.openclaw/workspace/memory/recent-memory.md'
+📅 Found 1 daily file(s) in the last 48hrs
+   → 2026-04-12.md: 7 bullet entries
+✅ Added 7 entries to recent-memory.md
+✅ recent-memory.md is up to date (no stale entries)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        1
+  Entries added (recent):  7
+  Entries pruned (recent): 0
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 1 daily file(s) in the last 48hrs
+   → 2026-04-14.md: 6 bullet entries
+✅ Added 6 entries to recent-memory.md
+🗑️  Pruned 17 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        1
+  Entries added (recent):  6
+  Entries pruned (recent): 17
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-14.md: 6 bullet entries
+   → 2026-04-15.md: 13 bullet entries
+✅ Added 19 entries to recent-memory.md
+📁 Added 2 project-related entries to project-memory.md
+🗑️  Pruned 7 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  19
+  Entries pruned (recent): 7
+  Promoted to long-term:   0
+  Project lines logged:    2
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-15.md: 18 bullet entries
+   → 2026-04-16.md: 15 bullet entries
+✅ Added 33 entries to recent-memory.md
+📁 Added 6 project-related entries to project-memory.md
+🗑️  Pruned 12 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  33
+  Entries pruned (recent): 12
+  Promoted to long-term:   0
+  Project lines logged:    6
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-16.md: 21 bullet entries
+   → 2026-04-17.md: 6 bullet entries
+✅ Added 27 entries to recent-memory.md
+📁 Added 1 project-related entries to project-memory.md
+🗑️  Pruned 38 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  27
+  Entries pruned (recent): 38
+  Promoted to long-term:   0
+  Project lines logged:    1
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-17.md: 10 bullet entries
+   → 2026-04-18.md: 5 bullet entries
+✅ Added 15 entries to recent-memory.md
+📁 Added 2 project-related entries to project-memory.md
+🗑️  Pruned 66 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  15
+  Entries pruned (recent): 66
+  Promoted to long-term:   0
+  Project lines logged:    2
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-18.md: 5 bullet entries
+   → 2026-04-19.md: 6 bullet entries
+✅ Added 11 entries to recent-memory.md
+🗑️  Pruned 54 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  11
+  Entries pruned (recent): 54
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-19.md: 6 bullet entries
+   → 2026-04-20.md: 6 bullet entries
+✅ Added 12 entries to recent-memory.md
+🗑️  Pruned 30 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  12
+  Entries pruned (recent): 30
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-20.md: 6 bullet entries
+   → 2026-04-21.md: 6 bullet entries
+✅ Added 12 entries to recent-memory.md
+🗑️  Pruned 22 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  12
+  Entries pruned (recent): 22
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-21.md: 6 bullet entries
+   → 2026-04-22.md: 5 bullet entries
+✅ Added 11 entries to recent-memory.md
+🗑️  Pruned 24 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  11
+  Entries pruned (recent): 24
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-22.md: 8 bullet entries
+   → 2026-04-23.md: 5 bullet entries
+✅ Added 13 entries to recent-memory.md
+🗑️  Pruned 24 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  13
+  Entries pruned (recent): 24
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-23.md: 6 bullet entries
+   → 2026-04-24.md: 5 bullet entries
+✅ Added 11 entries to recent-memory.md
+🗑️  Pruned 22 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  11
+  Entries pruned (recent): 22
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-24.md: 6 bullet entries
+   → 2026-04-25.md: 5 bullet entries
+✅ Added 11 entries to recent-memory.md
+📁 Added 1 project-related entries to project-memory.md
+🗑️  Pruned 26 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  11
+  Entries pruned (recent): 26
+  Promoted to long-term:   0
+  Project lines logged:    1
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-25.md: 5 bullet entries
+   → 2026-04-26.md: 5 bullet entries
+✅ Added 10 entries to recent-memory.md
+🗑️  Pruned 22 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  10
+  Entries pruned (recent): 22
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-26.md: 10 bullet entries
+   → 2026-04-27.md: 5 bullet entries
+✅ Added 15 entries to recent-memory.md
+📁 Added 2 project-related entries to project-memory.md
+🗑️  Pruned 22 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  15
+  Entries pruned (recent): 22
+  Promoted to long-term:   0
+  Project lines logged:    2
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-27.md: 5 bullet entries
+   → 2026-04-28.md: 2 bullet entries
+✅ Added 7 entries to recent-memory.md
+🗑️  Pruned 20 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  7
+  Entries pruned (recent): 20
+  Promoted to long-term:   0
+  Project lines logged:    0
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-28.md: 2 bullet entries
+   → 2026-04-29.md: 6 bullet entries
+✅ Added 8 entries to recent-memory.md
+📁 Added 1 project-related entries to project-memory.md
+🗑️  Pruned 15 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  8
+  Entries pruned (recent): 15
+  Promoted to long-term:   0
+  Project lines logged:    1
+───────────────────────────────────────────────
+📅 Found 2 daily file(s) in the last 48hrs
+   → 2026-04-29.md: 12 bullet entries
+   → 2026-04-30.md: 0 bullet entries
+✅ Added 12 entries to recent-memory.md
+📁 Added 1 project-related entries to project-memory.md
+🗑️  Pruned 7 stale entries from recent-memory.md (>48hrs)
+ℹ️  No [PROMOTE] items found in recent-memory.md
+
+─── Summary ───────────────────────────────────
+  Daily files read:        2
+  Entries added (recent):  12
+  Entries pruned (recent): 7
+  Promoted to long-term:   0
+  Project lines logged:    1
+───────────────────────────────────────────────

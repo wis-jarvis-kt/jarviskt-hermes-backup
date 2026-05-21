@@ -1,0 +1,4 @@
+.env
+auth.json
+google_*.json
+whatsapp/session/*

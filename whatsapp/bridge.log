@@ -1,0 +1,713 @@
+🌉 WhatsApp bridge listening on port 3000 (mode: bot)
+📁 Session stored in: /Users/ktoclaw/.hermes/whatsapp/session
+🔒 Allowed users: 0175972035
+
+✅ WhatsApp connected!
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+🌉 WhatsApp bridge listening on port 3000 (mode: bot)
+📁 Session stored in: /Users/ktoclaw/.hermes/whatsapp/session
+🔒 Allowed users: 0175972035
+
+✅ WhatsApp connected!
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60175972035@s.whatsapp.net","senderId":"60175972035@s.whatsapp.net"}
+Closing session: SessionEntry {
+  _chains: {
+    'BTd1TTZPqWRugtOS/qLhnthBJRrYRoTE4ClphWqEwGF4': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQQUHMx9/qBRvQElBZ59e5Sn3a+IV5THq9XX8Xm9ySJF': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 04 14 1c cc 7d fe a0 51 bd 01 25 05 9e 7d 7b 94 a7 dd af 88 57 94 c7 ab d5 d7 f1 79 bd c9 22 45>,
+      privKey: <Buffer 88 54 e6 f1 37 41 3b a3 4c b2 21 8a df e9 ab 6d 67 e8 c4 76 6a 94 83 cf b8 f0 98 02 0f 50 4b 7b>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 37 75 4d 36 4f a9 64 6e 82 d3 92 fe a2 e1 9e d8 41 25 1a d8 46 84 c4 e0 29 69 85 6a 84 c0 61 78>,
+    previousCounter: 0,
+    rootKey: <Buffer 85 3e ca dc e0 c3 eb ff 10 ab 4d cb 00 62 e2 6f 44 46 50 a9 c4 d8 8e e8 88 02 fc 08 02 ef 01 b8>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 ea e5 27 6a 76 15 3e 7e 68 1a 9e 21 31 88 4e 92 82 8c 7d eb 51 ea 92 ca 8a 31 36 4d 96 d3 b2 3a>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1779286746149,
+    created: 1779286746149,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BSR9a2qRNz59GN6zoGu6gY6EPtMbSe6hqyVAWaF0ESYf: { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+    'BU/Qf9vRc3uZE0hUOd9h/C3mTpnK7HUBf8MoxrxOUbA5': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 4f d0 7f db d1 73 7b 99 13 48 54 39 df 61 fc 2d e6 4e 99 ca ec 75 01 7f c3 28 c6 bc 4e 51 b0 39>,
+      privKey: <Buffer d0 f8 03 ce 8e 17 5d ec 88 6c 10 30 cf 27 8b 5e dc b3 0d 18 d0 48 26 86 48 e9 93 07 3a 23 5d 7e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 24 7d 6b 6a 91 37 3e 7d 18 de b3 a0 6b ba 81 8e 84 3e d3 1b 49 ee a1 ab 25 40 59 a1 74 11 26 1f>,
+    previousCounter: 0,
+    rootKey: <Buffer dc 4b 37 76 ea 67 ef 9b d9 09 20 2a af c1 db 3e 7f 54 76 4a da b8 6e 02 00 11 25 8c 37 16 81 99>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 09 b0 a2 76 40 ad 86 1d 67 fd ca 3a 07 13 7f 84 f1 60 06 d5 a8 06 7c 84 53 93 dc 68 78 8d df 19>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1779286745244,
+    created: 1779286745244,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  }
+}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+🌉 WhatsApp bridge listening on port 3000 (mode: bot)
+📁 Session stored in: /Users/ktoclaw/.hermes/whatsapp/session
+🔒 Allowed users: 0175972035
+
+✅ WhatsApp connected!
+{"level":40,"time":1779287315197,"pid":81070,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+Closing session: SessionEntry {
+  _chains: {
+    'Bf6+QbHyI1SYfQ761yLA8DKytdApA2O2pNcnCQBZFocA': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BXd9pb4J6Wzwn+bLnT6/d5wbnGloJ3KC/uYaD/ub8AYD': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 77 7d a5 be 09 e9 6c f0 9f e6 cb 9d 3e bf 77 9c 1b 9c 69 68 27 72 82 fe e6 1a 0f fb 9b f0 06 03>,
+      privKey: <Buffer 30 88 08 68 6e 4d cf 3d 49 9a 50 21 0f 39 89 00 89 2c 45 96 7d 77 21 47 af f0 71 d5 0e 02 20 50>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 fe be 41 b1 f2 23 54 98 7d 0e fa d7 22 c0 f0 32 b2 b5 d0 29 03 63 b6 a4 d7 27 09 00 59 16 87 00>,
+    previousCounter: 0,
+    rootKey: <Buffer f3 ea 5f e7 7e f2 c2 00 9b 74 ef 40 4a 2c f3 d8 d8 f5 97 7b 92 47 b1 ce 06 97 41 b9 08 36 8d d2>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 04 c5 17 1c 5f 92 76 cd af 44 13 17 17 de 1e 27 a8 84 07 5a ad 1b 4e 26 1e 4e 35 e1 c7 cc f8 21>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779287506949,
+    created: 1779286988415,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BS6ofPAj18ytVGUrDgqimYZmITFWMQ1Qg6dCYwblxexm: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 2e a8 7c f0 23 d7 cc ad 54 65 2b 0e 0a a2 99 86 66 21 31 56 31 0d 50 83 a7 42 63 06 e5 c5 ec 66>,
+      privKey: <Buffer 80 93 1a 4d 25 c0 69 df 01 b4 c5 40 48 6c 8c eb d0 42 57 ae 72 7e fd 46 a5 f9 11 15 ec 2c 9c 4b>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer 63 59 3d e9 1c 99 61 a6 2d b3 1c 8e 47 7a 40 2e a5 36 8e a8 a1 7b a7 3a a9 b5 04 c9 f2 5b 90 00>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 3d 95 b0 7f cf 0a 3f 13 08 c5 d2 14 46 16 d3 05 50 cb 3b ad f5 fb a4 d3 dd 11 3d 0f f4 64 f4 7f>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779286988426,
+    created: 1779286988426,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 3d 95 b0 7f cf 0a 3f 13 08 c5 d2 14 46 16 d3 05 50 cb 3b ad f5 fb a4 d3 dd 11 3d 0f f4 64 f4 7f>,
+    preKeyId: 12799347
+  }
+}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"56702359580792@lid","senderId":"56702359580792@lid"}
+🌉 WhatsApp bridge listening on port 3000 (mode: bot)
+📁 Session stored in: /Users/ktoclaw/.hermes/whatsapp/session
+🔒 Allowed users: 0175972035
+
+✅ WhatsApp connected!
+{"level":40,"time":1779287688783,"pid":83273,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":50,"time":1779287711347,"pid":83273,"hostname":"Mac-mini-2.local","reasonNode":{"tag":"conflict","attrs":{"type":"replaced"}},"fullErrorNode":{"tag":"stream:error","attrs":{},"content":[{"tag":"conflict","attrs":{"type":"replaced"}}]},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 440). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":50,"time":1779287719730,"pid":83273,"hostname":"Mac-mini-2.local","reasonNode":{"tag":"conflict","attrs":{"type":"replaced"}},"fullErrorNode":{"tag":"stream:error","attrs":{},"content":[{"tag":"conflict","attrs":{"type":"replaced"}}]},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 440). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":50,"time":1779287727997,"pid":83273,"hostname":"Mac-mini-2.local","reasonNode":{"tag":"conflict","attrs":{"type":"replaced"}},"fullErrorNode":{"tag":"stream:error","attrs":{},"content":[{"tag":"conflict","attrs":{"type":"replaced"}}]},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 440). Reconnecting in 3s...
+🌉 WhatsApp bridge listening on port 3000 (mode: bot)
+📁 Session stored in: /Users/ktoclaw/.hermes/whatsapp/session
+🔒 Allowed users: 60125226892
+
+✅ WhatsApp connected!
+{"level":40,"time":1779287768248,"pid":83753,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+🌉 WhatsApp bridge listening on port 3000 (mode: bot)
+📁 Session stored in: /Users/ktoclaw/.hermes/whatsapp/session
+🔒 Allowed users: 60125226892
+
+✅ WhatsApp connected!
+{"level":40,"time":1779288066640,"pid":86411,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+🌉 WhatsApp bridge listening on port 3000 (mode: bot)
+📁 Session stored in: /Users/ktoclaw/.hermes/whatsapp/session
+🔒 Allowed users: 60125226892
+
+✅ WhatsApp connected!
+{"level":40,"time":1779288199248,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+Closing session: SessionEntry {
+  _chains: {
+    'BRFXDpNr6waO4bKgWbwwaMkeYkZtfRhTSgpJa/4Ya58S': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BbTG8DE6Q6RKax93W7o+Cb45ZxGSEY7k3WihNg4Pu8Zh': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BcpWULOTwo3s+amnJOCVSWEg4RR4qnx8cSCQ7qc/5mBw': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZkk19QnaM5ozL/Xl/bHL4U1JBdAZC6WQ1Ug9/CfrbkN': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BR9FY97gScBSEeu2VivY+LW/tzeRKlap5djfysDiO4Jv': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BWk4zd7khon+9yQ+Hp2SQ5BCS52/7f5BtLd92X2oDu58': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUnuY+8synMYOfET2Nvc7UFYLULIfT+LTdTk7irePC4P': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQGHGcHud4PsYSZdDqFY3AA+lORzdpAvjppxHzK2Po83': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bc66U/a6H0UYkAwl4G5BDGV0E8y4P6gka2lnkl3UwQcR': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 ce ba 53 f6 ba 1f 45 18 90 0c 25 e0 6e 41 0c 65 74 13 cc b8 3f a8 24 6b 69 67 92 5d d4 c1 07 11>,
+      privKey: <Buffer c0 61 8a 69 31 d1 44 cc 54 52 75 6a fc 98 a4 8f 97 93 1c 90 9a 04 59 f1 ec 04 92 5a 53 bf 40 7a>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 01 87 19 c1 ee 77 83 ec 61 26 5d 0e a1 58 dc 00 3e 94 e4 73 76 90 2f 8e 9a 71 1f 32 b6 3e 8f 37>,
+    previousCounter: 0,
+    rootKey: <Buffer 4b 63 c4 cb 85 ca ca 2e 87 9b 9f de ab 9c b1 88 38 ee 41 90 30 a2 32 29 4e cc 99 25 6d e0 b2 21>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 2f b1 f6 95 7c 68 fb bf 3f 9b 8a 94 4d 1c b8 8b 33 c4 f3 c3 72 7c a3 05 1a b9 62 9c 63 6d 7d 26>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779288137313,
+    created: 1779287513118,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BWWgkFt5hbHfUk2Z36wCJIAmQlex5nqh3Mrg1kaHhHkz: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 65 a0 90 5b 79 85 b1 df 52 4d 99 df ac 02 24 80 26 42 57 b1 e6 7a a1 dc ca e0 d6 46 87 84 79 33>,
+      privKey: <Buffer d8 24 5f f5 03 31 16 76 4f df 05 07 5c 07 d1 a1 b2 53 94 ac 84 a3 45 1f f6 2a 9e 76 84 2a 14 44>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer 02 fa 88 40 b0 52 c8 52 81 b2 cd 5a 33 f3 9b e3 78 b2 b0 6a 97 91 2f f5 3a f6 94 2a 1f 5c ad 5c>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 0a 0d e4 ee 7e 90 01 99 ec 7a 82 74 39 40 94 14 cf bc 7b e7 b3 c2 f5 75 a9 ce 81 85 b9 94 f8 0c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779287513127,
+    created: 1779287513127,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 0a 0d e4 ee 7e 90 01 99 ec 7a 82 74 39 40 94 14 cf bc 7b e7 b3 c2 f5 75 a9 ce 81 85 b9 94 f8 0c>,
+    preKeyId: 12799156
+  }
+}
+{"level":40,"time":1779288571903,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0BE964E0684784BC133","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779288609982,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB04DEEC17DCCD0F06C1B","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779288610125,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB07ABF3FEC5BF5EF01C9","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779288659440,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB018430D8F2418B71D8E","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779288673494,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0AC96915310D9138147","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779288687536,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0C32164FF0B1FA61B94","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779288695438,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0F477C340E433717A70","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779288742365,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB05003C2CA4063B9C578","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779292561661,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+Closing session: SessionEntry {
+  _chains: {
+    'BQp+fjjzE47DLpVN49WglwOk5nR8TF0w16lydvosU+4H': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BVcGvgz1CsqohLGU708pw1AyvcMdGAjTEDapOMIj6skK: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BZBtfQvksp9TjeeEaToKaNM7ilhWej9lvl6MRLeuDk5T: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BcsXR+x/vMgEben2GRBqmDFvoWhXIbYlWPLDz+YF/JlX': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bc5qe+13YbZR1jOhy8hj5frIw8gsO6AvzfKOWcED44F6': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BexyBTO7ZvA7LONqbqpbTi88IHEdO4NmUbgxqv2MjDUV: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BVoTOhRIXo4qqRnfF2qqL2dar7ve9oExLv3LAwho57gL: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bb1RBRoYCffuUOAviXZVUWHk5d7DhxnW/B/Uj31jp9c9': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BSmXxDmduR8rkOIRpSUgZbutP0H3NhvLe7uPglUPswEe: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bdl+S8vAu8HQUD5ED4gP7BVBlVIWFR/sgCI2EuJcVKRl': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BUmT2g46jFmyyI3ENpdUuzh57KhFg6eCDuIXi4waRcRL: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 49 93 da 0e 3a 8c 59 b2 c8 8d c4 36 97 54 bb 38 79 ec a8 45 83 a7 82 0e e2 17 8b 8c 1a 45 c4 4b>,
+      privKey: <Buffer 30 76 8a 33 01 83 cd b5 81 1c 7d fd 91 35 c9 b6 f2 61 ce 56 c5 b9 3e 26 a1 6d 68 d9 e0 48 d8 41>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 d9 7e 4b cb c0 bb c1 d0 50 3e 44 0f 88 0f ec 15 41 95 52 16 15 1f ec 80 22 36 12 e2 5c 54 a4 65>,
+    previousCounter: 15,
+    rootKey: <Buffer f2 d8 3a 98 8e a3 d1 67 90 fb 0f 39 53 39 df bf 04 9f 36 10 9c e9 37 10 94 2c cf fe 1b 1a 7c 40>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 0f a3 27 c7 63 02 fb 47 0b 28 69 69 35 60 d4 ee 1c 45 7b 08 94 9a 9a 53 c9 d9 40 fd dc 1e f0 48>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779292459238,
+    created: 1779288223373,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BQjmPsc+BNBkBQcGmMvhRzwnJLO/1eYPMGBM5D4QoMA3': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 08 e6 3e c7 3e 04 d0 64 05 07 06 98 cb e1 47 3c 27 24 b3 bf d5 e6 0f 30 60 4c e4 3e 10 a0 c0 37>,
+      privKey: <Buffer 28 a0 9b a6 fd 87 0d 7c a6 1f 3c 48 0d e8 c7 55 6d a8 a3 3e 58 2e 3e ef f9 62 73 19 0f 06 67 48>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer 90 5f 34 51 cb 46 36 87 27 48 8e 4c d2 16 02 ad ef 15 80 6a 91 22 b2 0c 50 d7 61 35 b2 7c a9 92>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 43 0f 85 e7 8e 54 d8 01 93 f5 70 83 ab ec a9 f4 96 63 b5 35 ee 63 f9 b3 c7 ba fb c6 3a 90 80 3b>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779288223383,
+    created: 1779288223383,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 43 0f 85 e7 8e 54 d8 01 93 f5 70 83 ab ec a9 f4 96 63 b5 35 ee 63 f9 b3 c7 ba fb c6 3a 90 80 3b>,
+    preKeyId: 12799149
+  }
+}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779301593383,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779304139464,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779308564199,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":50,"time":1779312795984,"pid":87216,"hostname":"Mac-mini-2.local","fullErrorNode":{"tag":"stream:error","attrs":{"code":"503"}},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 503). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779312821136,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":40,"time":1779316416325,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB06A1BD3E564BC661B5A","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316615089,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB049227851FF813ADB8D","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316626249,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB03BA112BB0F8DE8CB21","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316632589,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0C881EFA7791CB41C72","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316637116,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0818A21C047E08A6E6C","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316643753,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB02BD26AD87EA46F3BEF","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316651003,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB08D81BEBE4E4945A3E6","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316659476,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB06414F0D03EF06D7158","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316662535,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0D652746082F7E800A9","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316671586,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0D109202DD776005AFB","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316677022,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB01388C7B27AB4CA3FE7","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316682749,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB00EC28505442B4C4EE1","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316687281,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0CF8EC6A9BB5D618A3F","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316695119,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB049D828F8F7B0D4DEC7","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316698433,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0F294A11515C66AEAF9","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316702054,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0F118767F13F6C2D0B7","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316706897,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB07B9F8FFF324AD09CC4","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316720475,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0897521B6DCF3DD29F5","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316734870,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB00AFF26A114DB778131","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316740607,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0E9D245623B2C905639","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779316752371,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB09FCB0FA3C1C939F144","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779317377746,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB00E03199554662D2756","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779324984492,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0C8A56CF53F70A9C9D9","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779324986016,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0096EDD323D4C9D1321","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779324996586,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0708EE9B13DB83250E7","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779325005038,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0F6AD598344A005D060","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779325006862,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB082FB4D731E0E876CFF","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779325013810,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB079141823BBD7B33C07","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779325015334,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0B2DDF3DB86F228D908","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779325020772,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0480D03C4C8E75F330A","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327768933,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB071BC6C348C01E1C2E4","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327781916,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0E82573301DDBF279CA","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327786749,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB05B82046E3E674CBA66","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327836078,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0FC9803419BF34D374D","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327856000,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0FB2186CA840F91A6EF","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327868376,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB03E4BA141DA3736C041","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327869893,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0E6CA6C947D1200C742","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327905287,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB04E8C66F3AD0D1E4691","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327958377,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0F49D067E909CBDACDF","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327967150,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB04217DD0AD63A4F4766","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327973490,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0F47C1D4DF8FDA0ACAD","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779327979834,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0186124F24290FA4441","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779328016036,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB092CD7E1D1C091001D5","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779328022675,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB085DE2511B251542E6F","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779328029923,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0B6CC314E0F2D0FFC60","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779328036860,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB01C463691C5D7CC7406","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779328673145,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB096D5090D315DD21074","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779328680441,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB00AA04C0CBBEDFFD4B5","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779332028902,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"62657.2121-681","msg":"timed out waiting for message"}
+Closing session: SessionEntry {
+  _chains: {
+    Ba1iZHqFDYTt1Df4NwZPmGLO6lxcCoRPxYmx6fCcwmFr: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQ1zT0oVxBymUO+2vmNMzc86Cew4tL3+hrabmdZ1H/k3': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BcAD5WGWDbFBriR26/xoYAIld6heuvCp5WRgQUjDrNdn': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bb9ueP+lqpRoIaK78pfItFt7WFZ0iyRpc4ryR4MycZwA': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bf3EE+UeDR5BOLgpptwYoIEPUwOCvs4vou4KMI4/+fBN': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BS1xqTqSvlozaIb4QpPDsO9ympQkL6G3+7xPIyo5fPJg': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BSO5yKRRztnkR6/tUYvO5TqeMfYwxYE7yd/VAoOkq+9Z': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Be8lrVaN6O+bKEIr4TtFPNAAEzCB6GRGenZ1uOkeGZht': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BYFYxfH/ankUaBOFKPaaRno0E8ST/kigwe3VcX+7pLBL': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BW1gKmwQfJO0j3hpHZnegwMsMM3JXQNxBwnxkl979Tgg: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BToi9iTTkTupOha5+ZKvBX0+mj6QJ0I1OWB/XDjN/rUy': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BaPouBYHZhhOPZoVa5Ay1t2t3hzRpLT1PHINF132CYoY: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUb8kGTSvY/QQ+2aKhahxapok6tnAtqDbgdPo8OsC/o+': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bdblg7UtCkPMTfdCGaYsOW7tH1r5pHfR9NuqM/RQlmcK': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BT9+8euWA5RMxtfYVfpiyeGydQ3/oRT00uNzZeVuVwI7': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BSwwQpi4dpbwTovsk+tbI/zjtI+jFcDpged/NmL7Nv1Q': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BRWCyxQRv6SFtMde7QqyqRPED6W72L0XaX1lQwLCeP81: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BR+Flr4SRfan6lgWN0YIbnGLcwaokKNnody6vCDAeMca': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bef7yNRbqNmzRpZCZ/uWJ86D9y1xp3qi72OE6qYh/AZx': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BZRkM+OfcpxDa+VLlfGrYtFjCdQOQAbEyMBTGYsAlrxx': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BTJaLTlmwC7+Lk2gaK1fBTLUCgy7zb8eBcNLSyjE/884': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BekuKHxTyXEbANkwPgj8o8LAcNKKJaHPeU2so1OG6Owz: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BXIBvZ2zdx447OTKLxLN/+j9QOD5/Sx74H6PcPSVhUce': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    Bfd6zOZm7A8FSYMGrzkIwOWrSRYya0r23hqV8PKy7LtD: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BYOpp2PuazmYiX52VQodpMsR0bQF38qIca6ixwLBzp8d: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BTayN3IhMjrPlM6Q13T0Y8mjEv7l4TwM+y4+dYw76TBG': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BTeTqI1MmBJ6UvBOGuzVtIrj5RnXDYMcGXUKZayvK8gy: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BfEImFenzQAhkhvs4lgFoB1CVbBZqKOF9VKHJerVNV5P: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQCU1JPpzNnfyr3ZjowFL+0lH2js9WP4pY+LlDbj5G5t': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BUHxg02vOUBqd/2pnixBtMfs3koZzC/sX42+0UM7rNYz': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BSa/JWt/M04/lvDP9xznejs+dixsGFpIy1sf0A8gNMgW': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bc/glm9knLUpNpI5isMEXrvaqLajLtqySJtJMcZqaQ1i': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BfcVG0lPZO5yCobBNZrcqHphN/r/GBxyQnzucP7F/K9S': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BRYZUEWw+YS1EXHXv+TEGfisGNU7yKKl4rskHWJgBPdy': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'Bc/mGDDgyBMgSmICVaNPoUycmQ6BFbz3/Zu+kkpyCKUG': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 cf e6 18 30 e0 c8 13 20 4a 62 02 55 a3 4f a1 4c 9c 99 0e 81 15 bc f7 fd 9b be 92 4a 72 08 a5 06>,
+      privKey: <Buffer 68 86 c3 68 49 26 4f fb a2 51 f0 47 45 f4 48 a2 b8 77 aa ec 03 91 2b f5 65 7a 96 1c 07 50 b3 53>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 16 19 50 45 b0 f9 84 b5 11 71 d7 bf e4 c4 19 f8 ac 18 d5 3b c8 a2 a5 e2 bb 24 1d 62 60 04 f7 72>,
+    previousCounter: 14,
+    rootKey: <Buffer 76 c6 66 fb a5 a2 c3 1f 78 14 24 1d e3 3c 9d 8b 6a 2d 35 5b 9b 20 2e d2 5d e8 d7 b6 74 bb 87 52>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 ef 60 cd 8e 4a 23 81 ea e2 f7 f4 ac a4 02 24 c9 96 e7 1f 01 27 ae 46 2c d8 6b d9 5f a4 20 e6 1d>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779328078263,
+    created: 1779294224472,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'Bd7SLZrc9OtBbkDSfyP1fVO8AG1QQAat/5GedccUhCFR': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 de d2 2d 9a dc f4 eb 41 6e 40 d2 7f 23 f5 7d 53 bc 00 6d 50 40 06 ad ff 91 9e 75 c7 14 84 21 51>,
+      privKey: <Buffer 28 96 8f 0b 38 b8 62 c9 6a fa 70 69 41 ac ea 8a bb cb 78 eb 3f ca 18 3f bb 3e 01 03 b0 2e 39 49>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer fd 0a 72 fe 61 09 e4 9b b5 23 2c bb d3 b1 22 1f 17 73 28 71 c1 17 64 fd c5 0f 0e e4 b8 eb 06 ad>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 8f 37 8f e0 e4 13 2e 5f 83 3e de 54 be 77 4b f0 c0 cd 05 ad 72 a5 0f a0 98 e3 f6 49 e2 58 2e 57>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779294224479,
+    created: 1779294224479,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 8f 37 8f e0 e4 13 2e 5f 83 3e de 54 be 77 4b f0 c0 cd 05 ad 72 a5 0f a0 98 e3 f6 49 e2 58 2e 57>,
+    preKeyId: 12799393
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BYZDipW5+XRZruGkdfRnPU7kGpzy0xYpjXlAz6GEycMT': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 86 43 8a 95 b9 f9 74 59 ae e1 a4 75 f4 67 3d 4e e4 1a 9c f2 d3 16 29 8d 79 40 cf a1 84 c9 c3 13>,
+      privKey: <Buffer 70 db 59 8d a8 1d c8 2b d1 51 8f 96 9f c1 c3 dd 0f 82 79 4a 8b 48 df 7b 03 57 eb 5e f7 0c 62 75>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer 5c 7d 73 0f bf 57 0c 0d 93 0e 9c 7f 06 40 64 b8 7f cd c4 96 b4 d0 a0 1e 8e f1 aa 53 46 70 a9 b9>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 cd 11 0e 18 44 f1 f5 2c 5a 7b a5 1a 07 19 c7 f6 c6 74 3e 50 f0 a1 c6 22 8f 5c 0a 0d 89 8f 1f 04>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779332235098,
+    created: 1779332235098,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 cd 11 0e 18 44 f1 f5 2c 5a 7b a5 1a 07 19 c7 f6 c6 74 3e 50 f0 a1 c6 22 8f 5c 0a 0d 89 8f 1f 04>,
+    preKeyId: 12799334
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BWkAooRf0MMO5zZ0JaLs0KVBKgVxRjYqrNH6YkuaC79r: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 178,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 69 00 a2 84 5f d0 c3 0e e7 36 74 25 a2 ec d0 a5 41 2a 05 71 46 36 2a ac d1 fa 62 4b 9a 0b bf 6b>,
+      privKey: <Buffer 08 bb 1c 0d f4 84 0e b1 7e 81 d1 c9 79 b0 9e fb f9 fc 4f b9 1c 81 f6 58 c6 b3 81 13 f0 f2 14 69>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 06 f5 af 15 72 54 62 6d 2b ef 31 2c 42 7d 46 c1 7d 77 26 4e a6 51 d7 84 66 c6 a9 b1 25 86 8a 2c>,
+    previousCounter: 0,
+    rootKey: <Buffer 1a 63 e2 1e 40 80 e3 31 5d 38 eb f5 93 7e f1 6b 6e b6 63 3d 66 c3 e5 69 73 48 21 9f 2f bf 8f 43>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 bb 63 cf be 74 2f 09 92 49 9d 23 46 7b c3 6a e6 ba d0 70 5d 4c 07 53 35 59 de 74 dc b9 5e a9 53>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779348543792,
+    created: 1779348543792,
+    remoteIdentityKey: <Buffer 05 a6 8a 0e 7b c5 39 31 1a 58 87 23 6d 80 a9 5a 71 5f 70 3f 82 f9 dd 6c b6 80 c5 5a 02 e3 d5 a6 40>
+  },
+  pendingPreKey: {
+    signedKeyId: 1,
+    baseKey: <Buffer 05 bb 63 cf be 74 2f 09 92 49 9d 23 46 7b c3 6a e6 ba d0 70 5d 4c 07 53 35 59 de 74 dc b9 5e a9 53>,
+    preKeyId: 183
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BQCr4ZGV/ym4Uc9GCi0ShrCfvjCQylaOg15yK19WefM8': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 1335228831,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 00 ab e1 91 95 ff 29 b8 51 cf 46 0a 2d 12 86 b0 9f be 30 90 ca 56 8e 83 5e 72 2b 5f 56 79 f3 3c>,
+      privKey: <Buffer 78 78 71 42 d1 65 05 6c 79 a5 40 37 46 ec ed 6c f1 fd 1a 37 31 2d 40 ac 39 2c 2d 9c 77 cd c3 6d>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 d3 4a 43 0e 31 6a d6 18 db 45 8c d8 64 5b b6 d5 b6 6c 67 7a 9c 99 3b e4 6c 33 00 0f 30 f1 ed 17>,
+    previousCounter: 0,
+    rootKey: <Buffer 07 b6 2b 4b 08 80 e3 47 c9 30 e8 ed e5 64 0c df 70 58 53 0a f2 ed 27 64 fb ad cd 81 18 17 ce 1f>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 e4 c9 07 99 df d9 fd e8 00 08 4b a2 f0 26 c7 6c 7c f2 49 9b 6b 67 69 29 37 c0 3a 8f db 78 5c 6b>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779348543796,
+    created: 1779348543796,
+    remoteIdentityKey: <Buffer 05 64 51 bc 57 1a a7 97 c1 d6 7b 7f 35 a2 90 22 fd 2c a6 ef b4 c0 82 aa 91 50 26 4e d1 72 30 69 71>
+  },
+  pendingPreKey: {
+    signedKeyId: 12163635,
+    baseKey: <Buffer 05 e4 c9 07 99 df d9 fd e8 00 08 4b a2 f0 26 c7 6c 7c f2 49 9b 6b 67 69 29 37 c0 3a 8f db 78 5c 6b>,
+    preKeyId: 1385
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BdIbMXicvt31Xl/oXcUMzI+ezAMAFQkHLYNJLY8cL+cM': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 d2 1b 31 78 9c be dd f5 5e 5f e8 5d c5 0c cc 8f 9e cc 03 00 15 09 07 2d 83 49 2d 8f 1c 2f e7 0c>,
+      privKey: <Buffer e8 3e 1f 15 12 79 5a 70 d2 88 ac c3 e4 8b b8 0e 14 b8 9c 0c 27 8f 43 e2 a8 ea c4 7d 0d dc 33 61>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 c2 be c7 d6 de a7 f0 eb 30 44 5f c3 78 1b 56 b3 1c 2f cf 81 0d 57 99 f7 25 ba db 9e 4e 33 48 4f>,
+    previousCounter: 0,
+    rootKey: <Buffer 55 f4 c4 c5 29 df e5 61 21 b8 5f 71 a7 42 7c 32 7e d1 d2 5e 5a f6 83 79 5f f8 01 9e e1 f9 c6 b5>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 be f0 e1 8b 92 0f 2c ec 65 7b b0 08 3b 89 82 5a a9 eb 47 e5 7b 57 fe 03 7b cb 36 22 b4 87 58 6e>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779332235088,
+    created: 1779332235088,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  },
+  pendingPreKey: {
+    signedKeyId: 11851721,
+    baseKey: <Buffer 05 be f0 e1 8b 92 0f 2c ec 65 7b b0 08 3b 89 82 5a a9 eb 47 e5 7b 57 fe 03 7b cb 36 22 b4 87 58 6e>,
+    preKeyId: 12313
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BUBowGntUODtBBET8Z+4+gol5JNOQVSIp+lIIw9j1ssI': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 40 68 c0 69 ed 50 e0 ed 04 11 13 f1 9f b8 fa 0a 25 e4 93 4e 41 54 88 a7 e9 48 23 0f 63 d6 cb 08>,
+      privKey: <Buffer 98 bd 75 1d 59 b1 3d c4 a2 f5 cd 99 10 28 39 1d b9 da 63 54 fd bb 01 20 88 8c a3 7e 80 10 03 7c>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer a5 a4 04 e4 2b c4 dd 7b 15 9e 8c 65 0e b0 b8 15 13 02 d7 f5 86 52 5c 27 c9 33 c5 61 5f 8d db 46>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 f2 49 3e 89 26 5c 32 ec 9f f4 1d 7e 16 b8 85 a3 c3 5b 91 8a 10 23 09 55 ff a1 12 80 ee 52 88 64>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779348543110,
+    created: 1779348543110,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 f2 49 3e 89 26 5c 32 ec 9f f4 1d 7e 16 b8 85 a3 c3 5b 91 8a 10 23 09 55 ff a1 12 80 ee 52 88 64>,
+    preKeyId: 12799085
+  }
+}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"67427329167522@lid","senderId":"67427329167522@lid"}
+Closing session: SessionEntry {
+  _chains: {
+    'BVKztR/icZyARJcRErUEcpw/tXk0qvoBFDiOVzMjielA': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 52 b3 b5 1f e2 71 9c 80 44 97 11 12 b5 04 72 9c 3f b5 79 34 aa fa 01 14 38 8e 57 33 23 89 e9 40>,
+      privKey: <Buffer a8 c4 00 3f c4 5f c6 8f 5f 3e a9 eb 2a 02 f4 00 c7 10 76 37 e2 5b 61 8c 1c 6a 71 35 23 de a3 4e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 c2 be c7 d6 de a7 f0 eb 30 44 5f c3 78 1b 56 b3 1c 2f cf 81 0d 57 99 f7 25 ba db 9e 4e 33 48 4f>,
+    previousCounter: 0,
+    rootKey: <Buffer f0 55 a5 02 14 df a9 69 cf 34 8e 94 39 eb b6 c6 ea 35 77 69 ac 4a 4a 15 b4 27 d2 5b 53 d7 d9 92>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 ce 41 e9 f0 94 47 dc c4 f6 cc 7d 30 6d 4d 7d cb e0 c4 f7 29 bc e3 29 7c 28 d4 60 e2 50 23 71 3c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779349938873,
+    created: 1779349938873,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  },
+  pendingPreKey: {
+    signedKeyId: 11851721,
+    baseKey: <Buffer 05 ce 41 e9 f0 94 47 dc c4 f6 cc 7d 30 6d 4d 7d cb e0 c4 f7 29 bc e3 29 7c 28 d4 60 e2 50 23 71 3c>,
+    preKeyId: 12801
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BWeyYvTuteZH+5kelZLjTmrsBlaXeuPuT6r9nta5pExA': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 67 b2 62 f4 ee b5 e6 47 fb 99 1e 95 92 e3 4e 6a ec 06 56 97 7a e3 ee 4f aa fd 9e d6 b9 a4 4c 40>,
+      privKey: <Buffer 70 c1 9b 02 9a 54 37 b9 61 4f 33 b0 bf b1 9b 01 bc 96 a8 e8 b9 53 0d 15 35 99 3f 67 e8 22 7c 72>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer 90 24 99 af 8b 8d a0 d4 17 2a 12 87 55 67 4b 4f cc 21 ac 96 ec 29 32 25 be c0 eb 11 98 b8 17 3d>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 e9 97 e3 98 b1 20 f4 7d 3f 07 b0 51 71 88 a0 cd 16 bb c8 c0 d9 39 cf 9f 15 07 44 56 e1 51 88 07>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779349938881,
+    created: 1779349938881,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 e9 97 e3 98 b1 20 f4 7d 3f 07 b0 51 71 88 a0 cd 16 bb c8 c0 d9 39 cf 9f 15 07 44 56 e1 51 88 07>,
+    preKeyId: 12799266
+  }
+}
+{"level":40,"time":1779368351445,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB03A93ADABD953412284","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779369068789,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB02880B83F5F5D2C75A3","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779369077876,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0BF2B140126B1A7CEEC","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779369084600,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0D82BEC96373C9D8543","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779370950625,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB008034502BB6F8B5458","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779370966210,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB088AC691F7E16923326","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779370997622,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB01921E6802BA4763B03","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779370999774,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0E215EF68593D8A0553","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779371010427,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0F1E517EF3908601928","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779371012366,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB065C200DE10A76F294C","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779371035903,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB031F008C2BF41B9BDCD","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779371050218,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0B9A4D6577CF1D139B0","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779371074499,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB02CEC4FA7D1D919DBDB","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+Closing session: SessionEntry {
+  _chains: {
+    'BYdvTXFSyQUoh2MbX7XUrY/XTH+/RD8rjzJGBZsBimMg': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    Bagf3ygO3JldAiriY4GPtHhz6jp4wVqAUuBylCkOM04L: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BTi9XGYfCrP1Kd692W/2Fyq6rFIqkQr32TY4AMRv+blv': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BQ4EEam4vLOLd8BfrVZGW161gs+MeawptYFq8HsIj18r': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 0e 04 11 a9 b8 bc b3 8b 77 c0 5f ad 56 46 5b 5e b5 82 cf 8c 79 ac 29 b5 81 6a f0 7b 08 8f 5f 2b>,
+      privKey: <Buffer e8 4e 84 8a 25 1f 70 4a d7 91 c2 7b 52 fb f9 93 6c c8 52 51 9e ce b9 24 39 a5 ab d9 59 7b a2 77>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 38 bd 5c 66 1f 0a b3 f5 29 de bd d9 6f f6 17 2a ba ac 52 2a 91 0a f7 d9 36 38 00 c4 6f f9 b9 6f>,
+    previousCounter: 0,
+    rootKey: <Buffer 90 d2 6f 3c e7 f4 30 cc 83 2d fe a2 5e 56 8c c0 3f 35 66 ae f5 9b cd d5 36 17 17 86 05 ca 24 f1>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 87 5a 32 d0 bc 5c 15 fe 1c e6 17 46 e7 38 c3 78 d8 a7 9f 30 58 e1 e5 2a 29 e6 44 5d 27 31 3d 71>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779369080913,
+    created: 1779357602099,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BfT/bjgj0D3rfX5ReuEVP/y4oREdXa12sZuhVrWjmudx': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 f4 ff 6e 38 23 d0 3d eb 7d 7e 51 7a e1 15 3f fc b8 a1 11 1d 5d ad 76 b1 9b a1 56 b5 a3 9a e7 71>,
+      privKey: <Buffer 80 ff 40 f2 24 fe a8 a8 3e 57 97 14 e9 9a e8 78 87 5b 26 a3 07 12 7b 69 d4 ef 5e d3 f1 1b b0 5f>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer fd 6a 2c fa bb 54 26 d7 fa dc a5 f3 66 f0 87 63 7f 44 01 f3 a7 40 12 ac ff c2 c8 f6 30 78 29 65>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 bb 20 05 e5 91 31 a3 1a 34 a4 48 b7 a9 61 a8 4a 89 4d 0e 44 e8 27 ca 78 37 78 87 b9 38 c2 7e 2c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779357602105,
+    created: 1779357602105,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 bb 20 05 e5 91 31 a3 1a 34 a4 48 b7 a9 61 a8 4a 89 4d 0e 44 e8 27 ca 78 37 78 87 b9 38 c2 7e 2c>,
+    preKeyId: 12799391
+  }
+}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779378267838,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779379976298,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
