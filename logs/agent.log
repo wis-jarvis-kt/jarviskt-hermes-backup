@@ -6145,3 +6145,5 @@ agent.gemini_native_adapter.GeminiAPIError: Gemini HTTP 404 (NOT_FOUND): This mo
 2026-05-22 03:05:25,434 INFO [cron_72fa7cab90b2_20260522_030051] agent.conversation_loop: API call #25: model=MiniMax-M2.7 provider=minimax-oauth in=37482 out=150 total=37632 latency=5.3s cache=35625/37482 (95%)
 2026-05-22 03:05:35,384 INFO [cron_72fa7cab90b2_20260522_030051] agent.tool_executor: tool terminal completed (9.95s, 50945 chars)
 2026-05-22 03:05:43,971 INFO [cron_72fa7cab90b2_20260522_030051] agent.conversation_loop: API call #26: model=MiniMax-M2.7 provider=minimax-oauth in=52188 out=295 total=52483 latency=8.6s cache=35027/52188 (67%)
+2026-05-22 03:05:45,361 INFO [cron_72fa7cab90b2_20260522_030051] agent.tool_executor: tool terminal completed (1.39s, 51231 chars)
+2026-05-22 03:05:58,053 INFO [cron_72fa7cab90b2_20260522_030051] agent.conversation_loop: API call #27: model=MiniMax-M2.7 provider=minimax-oauth in=70645 out=364 total=71009 latency=12.7s cache=14173/70645 (20%)
