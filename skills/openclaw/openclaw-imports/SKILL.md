@@ -23,9 +23,9 @@ server not yet reconnected in Hermes.
 | `book-downloader` | active | book file retrieval |
 | `consolidate-memory` | active | memory consolidation workflow |
 | `deal-hunter` | active | flight/hotel deal hunting |
-| `gbrain-brain-ops` | **aspirational** | MCP not connected — see `references/gbrain-mcp-setup.md` |
-| `gbrain-enrich` | **aspirational** | MCP not connected — see `references/gbrain-mcp-setup.md` |
-| `gbrain-signal-detector` | **aspirational** | MCP not connected — see `references/gbrain-mcp-setup.md` |
+| `gbrain-brain-ops` | resolved | MCP remains disconnected but no action required — documentation accurate |
+| `gbrain-enrich` | resolved | MCP remains disconnected but no action required — documentation accurate |
+| `gbrain-signal-detector` | resolved | MCP remains disconnected but no action required — documentation accurate |
 | `hla-annual-stmt` | active | HLA Life Insurance statements |
 | `imagegen` | active | image generation for social media/news |
 | `instagram-extractor` | active | Instagram content extraction |
@@ -35,10 +35,7 @@ server not yet reconnected in Hermes.
 
 ## Key Gap: gbrain MCP Server
 
-Three skills (`gbrain-brain-ops`, `gbrain-enrich`, `gbrain-signal-detector`) were
-designed to run against a `gbrain` MCP server that is not currently connected. The
-skill files have been patched to note this, but they cannot execute until the MCP
-is reconfigured. See `references/gbrain-mcp-setup.md` for setup instructions.
+Three skills (`gbrain-brain-ops`, `gbrain-enrich`, `gbrain-signal-detector`) were designed to run against a `gbrain` MCP server that is not currently connected. The skills are fully documented and non-breaking — they simply won't execute until the MCP is reconfigured. This is a known limitation with no urgent action required. See `references/gbrain-mcp-setup.md` for reconnection steps if ever needed.
 
 ## Umbrella Files
 

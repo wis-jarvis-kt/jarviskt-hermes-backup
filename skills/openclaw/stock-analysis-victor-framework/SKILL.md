@@ -12,24 +12,62 @@ This skill provides a structured approach to analyze selected stocks for potenti
 ## Steps
 1.  **Get Current Date:** Obtain the current date in YYYY-MM-DD format using `terminal("date +%Y-%m-%d")`.
 2.  **Check CNN Fear & Greed Index:**
-    *   Navigate to the CNN Fear & Greed Index page using `browser_navigate(url="https://money.cnn.com/data/fear-and-greed/")`.
-    *   Take a full snapshot with `browser_snapshot(full=True)` and parse the current index value and sentiment.
+    *   **Preferred:** Use `delegate_task` with web tool to fetch the index value (fastest, most reliable).
+    *   **Fallback:** `browser_navigate` to CNN Fear & Greed page — the page is dynamic and often times out or blocks curl scraping; do not rely on curl/grep against `money.cnn.com`.
+    *   **Proxy if unavailable:** Use VIX as sentiment proxy. VIX < 15 = Extreme Greed/Neutral; 15-20 = Neutral; >25 = Fear. Record "unavailable — using VIX [N] as proxy" in the report.
 3.  **Analyze Each Stock (e.g., AAPL, NVDA, META, GOOGL, MSFT, TSLA):**
-    *   For each stock in the target list:
-        a.  **Navigate to Yahoo Finance Statistics Page:** Construct the Yahoo Finance URL (e.g., `https://finance.yahoo.com/quote/AAPL/statistics`) and navigate using `browser_navigate`.
-        b.  **Extract Valuation Measures:**
-            *   Take a full browser snapshot `browser_snapshot(full=True)`.
-            *   Scroll down (`browser_scroll(direction='down')` and take more snapshots if needed) until the "Valuation Measures" section is visible.
-            *   Extract "Trailing P/E" (Current P/E) and "PEG Ratio (5yr expected)" (Current PEG) from the current column.
-            *   Extract quarterly historical P/E and PEG ratios from the table under "Valuation Measures" for the last 5 available quarters (columns titled with dates like "3/31/2026", "12/31/2025", etc.).
-        c.  **Calculate/Approximate 5-Year Averages:**
-            *   If direct 5-year averages are not available, approximate by averaging the available quarterly data (up to 5 quarters) for both P/E and PEG from the extracted historical data.
-        d.  **Apply Victor's Framework:**
-            *   **P/E Comparison:** Check if `Current P/E` is at least 10% below its approximate `5Y Avg P/E`.
-            *   **PEG Comparison:** Check if `Current PEG` is at least 10% below its approximate `5Y Avg PEG`.
-            *   A stock is considered a "Potential Entry Point" if either condition is met. A "Strong Potential Entry Point" if both are met.
-4.  **Compile Report:** Summarize the findings for each stock, including current prices, P/E, PEG, 5Y averages, and the verdict based on Victor's framework. Include the CNN Fear & Greed Index.
-5.  **Save Report:** Write the compiled report to a Markdown file at `~/.hermes/memories/stock-radar-YYYY-MM-DD.md` using `write_file`.
+    > **Preferred data source: `yfinance` via `terminal` + Python** — faster and more reliable than browser scraping Yahoo Finance for valuation data. Browser navigation is the fallback for deep-dive or when yfinance is insufficient.
+
+    a. **Pull current data via yfinance (terminal):**
+       ```python
+       import yfinance as yf
+       t = yf.Ticker(sym)
+       info = t.info
+       price = info.get('regularMarketPrice') or info.get('currentPrice')
+       trailing_pe = info.get('trailingPE')
+       forward_pe = info.get('forwardPE')
+       peg_ratio = info.get('pegRatio')
+       shares = info.get('sharesOutstanding', 0)
+       ```
+    b. **Compute 5Y average P/E from historical data:**
+       *   Get annual net income: `t.financials.loc['Net Income']` (last 4-5 years)
+       *   Get historical year-end prices: `t.history(period='5y')` → `resample('YE').last()['Close']`
+       *   Compute annual EPS = net_income / shares_outstanding
+       *   Historical P/E per year = year-end price / annual EPS
+       *   5Y Avg P/E = mean of available annual P/Es (need ≥3 years for meaningful avg)
+    c. **Apply Victor's Framework:**
+       *   **P/E Comparison:** `Current P/E < 5Y Avg P/E × 0.90` → P/E entry signal ✅
+       *   **PEG Comparison:** `Current PEG < 1.0` → Peter Lynch bargain zone (standalone strong signal); `Current PEG < 5Y Avg PEG × 0.90` → PEG entry signal ✅
+       *   **Strong entry:** Both conditions met. **Potential entry:** Either condition met.
+    d. **If yfinance is insufficient:** Fall back to `browser_navigate("https://finance.yahoo.com/quote/{SYM}/statistics")` → snapshot → scroll → parse "Valuation Measures" section for Trailing P/E and PEG Ratio.
+
+> **Note on shares outstanding:** Required to convert total net income to per-share EPS for historical P/E calculation. Yahoo Finance `info.sharesOutstanding` provides this. Do not skip — without it, historical P/E cannot be computed.
+
+## Computing 5Y Avg P/E — Worked Example (NVDA)
+
+```python
+t = yf.Ticker('NVDA')
+info = t.info
+price = info.get('regularMarketPrice')  # 217.93
+shares = info.get('sharesOutstanding', 0)  # 24.221e9
+
+# Annual net income (FY ends Jan)
+financials = t.financials  # has Net Income rows
+# earnings_by_year = financials.loc['Net Income']  # index = dates
+
+# Historical year-end closes
+hist = t.history(period='5y')
+yearly_closes = hist.resample('YE').last()['Close']
+# e.g. 2022: 14.60, 2023: 49.49, 2024: 134.25, 2025: 186.49
+
+# Annual EPS = Net Income / shares
+# NI 2022 = 4.37B → EPS = 4.37e9 / 24.221e9 = 0.18
+# NI 2025 = 120.07B → EPS = 120.07e9 / 24.221e9 = 4.96
+
+# Historical P/Es: 2022: 14.60/0.18=81, 2023: 49.49/1.23=40, ...
+# 5Y Avg P/E = mean([81, 40, 45, 38]) = 51.0
+# Current P/E 33.4 → 33.4 < 51.0 × 0.90 = 45.9 → ✅ P/E entry signal
+```
 
 ## CSP (Sell Put) Screening — 2-Stage Protocol
 
@@ -62,10 +100,17 @@ roi = (atm['lastPrice'] / (atm['strike'] * 100)) * 100
 ```
 Pass = IV > 40% AND S&P >1% down on that day. Only then is CSP entry justified.
 
-### RED Day Criteria
+### CSP RED Day Trigger — VIX Proxy
 - S&P drop >1% in a day (today's -0.22% is MARGINAL/FLAT, NOT RED)
 - VIX spike above 20 (low VIX = thin premiums)
 - Fear & Greed <25 (extreme fear zone)
+
+**When Fear & Greed is unavailable (CNN blocking):** Use VIX as proxy.
+- VIX < 15 → Extreme Greed / Neutral (no CSP)
+- VIX 15-20 → Neutral (marginal premiums, most ETFs fail Stage 2)
+- VIX > 25 → Fear zone → Stage 2 justified
+
+Record in report: `"Fear & Greed: unavailable — VIX [N] = [label]"` so reader knows the gap.
 
 ### Top CSP Candidates (May 21, 2026 screen — SOXQ leads)
 1. SOXQ — IV 51.7%, premium $6.90, ROI 7.3%/mo
@@ -90,7 +135,10 @@ Loop with `curl -s "<url>" | grep -o '<title>[^<]*</title>' | head -5` for fast 
 Avoids rate-limiting issues with web search — more reliable for batch queries.
 
 ## Pitfalls
-*   **`web_search` unavailability:** If `web_search` is not available as a tool, use `browser_navigate` for initial information gathering (e.g., for CNN Fear & Greed Index) instead of a direct search API.
+*   **execute_code sandbox lacks yfinance:** Modules installed via `pip3 install` in terminal are NOT available in `execute_code`. Always use `terminal` with Python for yfinance calls.
+*   **CNN Fear & Greed blocks curl/grep:** Do not attempt to scrape `money.cnn.com` with curl. The page returns empty grep results. Use `delegate_task` with web tool, or fall back to VIX proxy.
+*   **web_search unavailability:** If `web_search` is not available as a tool, use `browser_navigate` for initial information gathering (e.g., for CNN Fear & Greed Index) instead of a direct search API.
 *   **Incomplete Historical Data:** Yahoo Finance may not always provide 5 full years (20 quarters) of quarterly data directly on the statistics page. Approximate averages from available data and clearly state if data is inconclusive (e.g., N/A if less than 3 quarters are available or if data is entirely missing).
 *   **Dynamic Page Content:** Yahoo Finance pages are dynamic. Multiple `browser_scroll` and `browser_snapshot` calls may be needed to ensure all data is captured, especially within the "Statistics" section which can be quite long. Target specific sections by looking for headings like "Valuation Measures".
 *   **Batch news with RSS:** Google News RSS is faster than browser for multi-company scans but returns only titles + snippets. Use it for headlines, not deep research.
+*   **Shares outstanding required for historical P/E:** Without `info['sharesOutstanding']`, net income cannot be converted to per-share EPS and historical P/E computation fails. Always pull shares first.

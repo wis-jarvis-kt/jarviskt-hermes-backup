@@ -20,15 +20,15 @@
       "schedule_display": "0 2 * * *",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:00.115730+08:00",
-      "next_run_at": "2026-05-23T02:00:00+08:00",
-      "last_run_at": "2026-05-22T02:02:43.449721+08:00",
+      "next_run_at": "2026-05-24T02:00:00+08:00",
+      "last_run_at": "2026-05-23T02:03:49.207118+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -41,7 +41,7 @@
     {
       "id": "72fa7cab90b2",
       "name": "hermes-backup-daily",
-      "prompt": "Run /Users/ktoclaw/.openclaw/workspace/scripts/wis_backup.py daily. Backup ~/.hermes/ to GitHub. Report result.",
+      "prompt": "Run /Users/ktoclaw/.hermes/workspace/scripts/wis_backup.py daily. Backup ~/.hermes/ to GitHub. Report result.",
       "skills": [],
       "skill": null,
       "model": null,
@@ -58,15 +58,15 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:09.310321+08:00",
-      "next_run_at": "2026-05-23T03:00:00+08:00",
-      "last_run_at": "2026-05-21T03:01:31.787246+08:00",
+      "next_run_at": "2026-05-24T03:00:00+08:00",
+      "last_run_at": "2026-05-22T03:06:27.949827+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -96,15 +96,15 @@
       "schedule_display": "0 22 * * *",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:39.768780+08:00",
-      "next_run_at": "2026-05-22T22:00:00+08:00",
-      "last_run_at": "2026-05-21T22:02:25.238280+08:00",
+      "next_run_at": "2026-05-23T22:00:00+08:00",
+      "last_run_at": "2026-05-22T22:02:45.903294+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -134,15 +134,15 @@
       "schedule_display": "0 19 * * *",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:59.384016+08:00",
-      "next_run_at": "2026-05-22T19:00:00+08:00",
-      "last_run_at": "2026-05-21T19:02:39.250380+08:00",
+      "next_run_at": "2026-05-23T19:00:00+08:00",
+      "last_run_at": "2026-05-22T19:02:17.701542+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -172,15 +172,15 @@
       "schedule_display": "30 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:21.652816+08:00",
-      "next_run_at": "2026-05-22T03:30:00+08:00",
-      "last_run_at": "2026-05-21T03:32:29.059309+08:00",
+      "next_run_at": "2026-05-23T03:30:00+08:00",
+      "last_run_at": "2026-05-22T03:32:49.342736+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -210,15 +210,15 @@
       "schedule_display": "0 6 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:32.910302+08:00",
-      "next_run_at": "2026-05-22T06:00:00+08:00",
-      "last_run_at": "2026-05-21T06:01:18.792733+08:00",
+      "next_run_at": "2026-05-23T06:00:00+08:00",
+      "last_run_at": "2026-05-22T06:04:04.876955+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -248,15 +248,15 @@
       "schedule_display": "0 18 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:39.961046+08:00",
-      "next_run_at": "2026-05-22T18:00:00+08:00",
-      "last_run_at": "2026-05-21T18:05:38.368001+08:00",
+      "next_run_at": "2026-05-25T18:00:00+08:00",
+      "last_run_at": "2026-05-22T18:06:17.103317+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -286,15 +286,15 @@
       "schedule_display": "45 21 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:51.540889+08:00",
-      "next_run_at": "2026-05-22T21:45:00+08:00",
-      "last_run_at": "2026-05-21T21:50:55.743827+08:00",
+      "next_run_at": "2026-05-25T21:45:00+08:00",
+      "last_run_at": "2026-05-22T21:52:57.536675+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -324,15 +324,15 @@
       "schedule_display": "every 60m",
       "repeat": {
         "times": null,
-        "completed": 20
+        "completed": 44
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-21T06:15:46.885828+08:00",
-      "next_run_at": "2026-05-22T03:21:46.078650+08:00",
-      "last_run_at": "2026-05-22T02:21:46.078650+08:00",
+      "next_run_at": "2026-05-23T03:29:52.520888+08:00",
+      "last_run_at": "2026-05-23T02:29:52.520888+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -461,92 +461,6 @@
       "paused_reason": null,
       "created_at": "2026-05-21T09:40:07.629795+08:00",
       "next_run_at": "2026-05-25T14:50:00+08:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "whatsapp",
-      "origin": {
-        "platform": "whatsapp",
-        "chat_id": "56702359580792@lid",
-        "chat_name": "Goo Kah Thart",
-        "thread_id": null
-      },
-      "enabled_toolsets": null,
-      "workdir": null,
-      "profile": null
-    },
-    {
-      "id": "d8ac854beb0e",
-      "name": "Ellie Kang interview reminder",
-      "prompt": "Send a WhatsApp reminder to Master KT (home channel): \"\u23f0 Reminder: Interview with Ellie Kang (346) - DRA2605-3 starts in 10 minutes (10:30 AM)\"",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
-      "base_url": null,
-      "script": null,
-      "no_agent": false,
-      "context_from": null,
-      "schedule": {
-        "kind": "once",
-        "run_at": "2026-05-22T10:20:00+08:00",
-        "display": "once at 2026-05-22 10:20"
-      },
-      "schedule_display": "once at 2026-05-22 10:20",
-      "repeat": {
-        "times": 1,
-        "completed": 0
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-05-21T09:41:52.867324+08:00",
-      "next_run_at": "2026-05-22T10:20:00+08:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "whatsapp",
-      "origin": {
-        "platform": "whatsapp",
-        "chat_id": "56702359580792@lid",
-        "chat_name": "Goo Kah Thart",
-        "thread_id": null
-      },
-      "enabled_toolsets": null,
-      "workdir": null,
-      "profile": null
-    },
-    {
-      "id": "9b00b339d265",
-      "name": "Annie Poh interview reminder",
-      "prompt": "Send a WhatsApp reminder to Master KT (home channel): \"\u23f0 Reminder: Interview with Annie Poh (DRA2605-3) starts in 10 minutes (8:00 PM). Zoom: join.zoom.us/j/348\"",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
-      "base_url": null,
-      "script": null,
-      "no_agent": false,
-      "context_from": null,
-      "schedule": {
-        "kind": "once",
-        "run_at": "2026-05-22T19:50:00+08:00",
-        "display": "once at 2026-05-22 19:50"
-      },
-      "schedule_display": "once at 2026-05-22 19:50",
-      "repeat": {
-        "times": 1,
-        "completed": 0
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-05-21T09:41:54.022203+08:00",
-      "next_run_at": "2026-05-22T19:50:00+08:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -754,16 +668,16 @@
       "schedule_display": "45 21 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-21T21:54:02.337143+08:00",
-      "next_run_at": "2026-05-22T21:45:00+08:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-05-25T21:45:00+08:00",
+      "last_run_at": "2026-05-22T21:48:13.820256+08:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "whatsapp",
@@ -776,7 +690,136 @@
       "enabled_toolsets": null,
       "workdir": null,
       "profile": null
+    },
+    {
+      "id": "3d12178fb0df",
+      "name": "Alex payment follow-up reminder",
+      "prompt": "Send a WhatsApp reminder to Master KT: \"Follow up payment from Alex \u2014 Chris student. Check in now.\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-27T11:00:00+08:00",
+        "display": "once at 2026-05-27 11:00"
+      },
+      "schedule_display": "once at 2026-05-27 11:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T15:50:29.836917+08:00",
+      "next_run_at": "2026-05-27T11:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "whatsapp",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "56702359580792@lid",
+        "chat_name": "Goo Kah Thart",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "3e24a5b023db",
+      "name": "Dr Eason closing reminder",
+      "prompt": "Send a WhatsApp reminder to Master KT: \"Closing for Dr Eason in 10 minutes (2:00 PM).\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-22T13:50:00+08:00",
+        "display": "once at 2026-05-22 13:50"
+      },
+      "schedule_display": "once at 2026-05-22 13:50",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T15:51:15.838007+08:00",
+      "next_run_at": null,
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "whatsapp",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "56702359580792@lid",
+        "chat_name": "Goo Kah Thart",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "b954261e6b43",
+      "name": "Meet with Jeslyn reminder",
+      "prompt": "Send a WhatsApp reminder to Master KT: \"Meet with Jeslyn in 10 minutes (3:00 PM).\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-05-23T14:50:00+08:00",
+        "display": "once at 2026-05-23 14:50"
+      },
+      "schedule_display": "once at 2026-05-23 14:50",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-22T17:05:27.850390+08:00",
+      "next_run_at": "2026-05-23T14:50:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "whatsapp",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "56702359580792@lid",
+        "chat_name": "Goo Kah Thart",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
     }
   ],
-  "updated_at": "2026-05-22T03:00:51.075932+08:00"
+  "updated_at": "2026-05-23T03:00:56.633508+08:00"
 }

@@ -23,4 +23,28 @@ These issues make it unreliable to use the `browser` toolset for broad, unstruct
   curl -s "https://news.google.com/rss/search?q={COMPANY}+stock&hl=en-US&gl=US&ceid=US:en"
   ```
   Use `grep -o '<title>[^<]*</title>' | head -N` to extract headlines fast. This is much faster than browser navigation and avoids anti-bot blocking. Limitation: only titles + snippets, not full articles.
+- **Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED):** For structured company/sector research (top 5 companies by market cap, recent news, valuations), spawn delegate_task subagents with the `web` toolset. Each subagent independently searches and returns structured JSON. This approach is reliable, parallelizable, and bypasses anti-bot blocking because each subagent runs in its own context with fresh tool state.
+
+  Example workflow for "Victor Company Study" (5 sectors × 5 companies):
+  1. Run up to 3 subagents in parallel (the default `max_concurrent_children` limit).
+  2. Prompt each subagent to return raw JSON only — no preamble, no markdown.
+  3. Merge results, then run a second wave for remaining sectors if needed.
+  4. Compile findings into `~/.hermes/memories/victor-study-YYYY-MM-DD.md`.
+
+  ```python
+  # Wave 1: 3 sectors
+  delegate_task(tasks=[
+    {"goal": "Return JSON array of top 5 AI/ML companies...", "toolsets": ["web"]},
+    {"goal": "Return JSON array of top 5 Semiconductors...", "toolsets": ["web"]},
+    {"goal": "Return JSON array of top 5 Cloud companies...", "toolsets": ["web"]},
+  ])
+  # Wave 2: remaining 2 sectors
+  delegate_task(tasks=[
+    {"goal": "Return JSON array of top 5 E-commerce...", "toolsets": ["web"]},
+    {"goal": "Return JSON array of top 5 Cybersecurity...", "toolsets": ["web"]},
+  ])
+  ```
+
+  This subagent approach was validated on 2026-05-22 for Victor Company Study — all 5 sectors returned good data with no anti-bot failures.
+
 - **Inform the user:** If a cron job fails due to these limitations, clearly communicate the reason for the failure and the observed anti-bot measures.

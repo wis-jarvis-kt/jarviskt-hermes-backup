@@ -30,7 +30,7 @@
       4557
     ],
     "autonomous-ai-agents/hermes-agent/SKILL.md": [
-      1779339436672022905,
+      1779436606002542093,
       47936
     ],
     "autonomous-ai-agents/kanban-codex-lane/SKILL.md": [
@@ -282,12 +282,12 @@
       4387
     ],
     "openclaw-imports/remind/SKILL.md": [
-      1777586294211202364,
-      1982
+      1779416780971828603,
+      2571
     ],
     "openclaw-imports/research-scout/SKILL.md": [
-      1774312662422173597,
-      2868
+      1779401093738152456,
+      3503
     ],
     "openclaw-imports/stock-ai-agent/SKILL.md": [
       1779372638119074909,
@@ -330,8 +330,8 @@
       3311
     ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
-      1779372796199764483,
-      6097
+      1779458111448843306,
+      8271
     ],
     "productivity/airtable/SKILL.md": [
       1779156650649372102,
@@ -398,8 +398,8 @@
       103375
     ],
     "research/web-research-limitations/SKILL.md": [
-      1779358080697003677,
-      2263
+      1779444464063330824,
+      3797
     ],
     "smart-home/openhue/SKILL.md": [
       1779156650669181257,
@@ -1702,7 +1702,7 @@
       "skill_name": "remind",
       "category": "openclaw-imports",
       "frontmatter_name": "remind",
-      "description": "",
+      "description": "Send timed WhatsApp reminders to Master KT with zero AI, ...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -1715,7 +1715,7 @@
       "skill_name": "research-scout",
       "category": "openclaw-imports",
       "frontmatter_name": "research-scout",
-      "description": "",
+      "description": "Nightly web scout for AI, Claude Code, OpenClaw, and work...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],

@@ -12,4 +12,4 @@
 §
 Context: _(Still learning. Will update as we go.)_
 §
-Communication style on WhatsApp: prefer outcome-only responses — no working steps, no process shown. Just the final result. Example: "Done. Eos meeting moved to 3:30pm." — not the delete/create sequence.
+Communication style on WhatsApp: outcome-only responses — no working steps, no process shown, no tool output. Just the result. If uncertain, state plainly and ask.
