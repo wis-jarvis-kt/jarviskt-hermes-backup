@@ -1,4 +1,17 @@
 {
+  "consolidate-memory": {
+    "archived_at": null,
+    "created_at": "2026-05-21T19:33:22.389458+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-05-21T19:33:22.390049+00:00",
+    "last_viewed_at": "2026-05-21T19:33:22.389476+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
   "instagram-extractor": {
     "archived_at": null,
     "created_at": "2026-05-21T01:48:20.310899+00:00",
@@ -17,13 +30,13 @@
     "created_at": "2026-05-20T18:06:41.246197+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-05-20T18:06:59.063356+00:00",
-    "last_used_at": null,
-    "last_viewed_at": null,
+    "last_used_at": "2026-05-21T22:04:59.231630+00:00",
+    "last_viewed_at": "2026-05-21T22:04:59.231050+00:00",
     "patch_count": 1,
     "pinned": false,
     "state": "active",
-    "use_count": 0,
-    "view_count": 0
+    "use_count": 1,
+    "view_count": 1
   },
   "openclaw-imports:remind": {
     "archived_at": null,
@@ -42,40 +55,53 @@
     "archived_at": null,
     "created_at": "2026-05-21T01:54:53.811644+00:00",
     "created_by": null,
-    "last_patched_at": "2026-05-21T07:32:12.049048+00:00",
-    "last_used_at": "2026-05-21T07:50:53.139255+00:00",
-    "last_viewed_at": "2026-05-21T07:50:53.138380+00:00",
-    "patch_count": 2,
+    "last_patched_at": "2026-05-22T02:26:20.975997+00:00",
+    "last_used_at": "2026-05-22T12:21:01.886430+00:00",
+    "last_viewed_at": "2026-05-22T12:21:01.885416+00:00",
+    "patch_count": 3,
     "pinned": false,
     "state": "active",
-    "use_count": 10,
-    "view_count": 10
+    "use_count": 14,
+    "view_count": 14
+  },
+  "research-scout": {
+    "archived_at": null,
+    "created_at": "2026-05-21T22:00:45.016919+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-05-21T22:04:53.743546+00:00",
+    "last_used_at": "2026-05-22T14:01:38.310091+00:00",
+    "last_viewed_at": "2026-05-22T14:01:38.309349+00:00",
+    "patch_count": 1,
+    "pinned": false,
+    "state": "active",
+    "use_count": 4,
+    "view_count": 4
   },
   "stock-ai-agent": {
     "archived_at": null,
     "created_at": "2026-05-21T13:42:00.345853+00:00",
     "created_by": null,
     "last_patched_at": "2026-05-21T14:10:38.123767+00:00",
-    "last_used_at": "2026-05-21T14:12:13.786732+00:00",
-    "last_viewed_at": "2026-05-21T14:12:13.786192+00:00",
+    "last_used_at": "2026-05-22T10:06:55.088894+00:00",
+    "last_viewed_at": "2026-05-22T10:06:55.088122+00:00",
     "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 5,
+    "view_count": 5
   },
   "stock-analysis-victor-framework": {
     "archived_at": null,
     "created_at": "2026-05-19T13:49:11.701638+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-21T14:13:16.203804+00:00",
-    "last_used_at": "2026-05-21T14:11:50.079305+00:00",
-    "last_viewed_at": "2026-05-21T14:11:50.078788+00:00",
-    "patch_count": 4,
+    "last_patched_at": "2026-05-22T13:55:11.452179+00:00",
+    "last_used_at": "2026-05-22T13:54:57.949491+00:00",
+    "last_viewed_at": "2026-05-22T13:54:57.948928+00:00",
+    "patch_count": 8,
     "pinned": false,
     "state": "active",
-    "use_count": 8,
-    "view_count": 8
+    "use_count": 15,
+    "view_count": 15
   },
   "tmate-remote-support": {
     "archived_at": null,
@@ -94,13 +120,13 @@
     "archived_at": null,
     "created_at": "2026-05-19T10:02:28.904709+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-21T10:08:00.701961+00:00",
-    "last_used_at": "2026-05-21T10:07:46.068847+00:00",
-    "last_viewed_at": "2026-05-21T10:07:46.068099+00:00",
-    "patch_count": 1,
+    "last_patched_at": "2026-05-22T10:07:44.067528+00:00",
+    "last_used_at": "2026-05-22T10:06:36.678009+00:00",
+    "last_viewed_at": "2026-05-22T10:06:36.677102+00:00",
+    "patch_count": 2,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   }
 }

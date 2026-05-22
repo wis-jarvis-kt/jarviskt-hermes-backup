@@ -388,7 +388,8 @@ discord:
   server_actions: ''
   allow_any_attachment: false
   max_attachment_bytes: 33554432
-whatsapp: {}
+whatsapp:
+  require_mention: true
 telegram:
   reactions: false
   channel_prompts: {}

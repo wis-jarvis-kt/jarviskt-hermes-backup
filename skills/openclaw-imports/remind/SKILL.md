@@ -1,3 +1,10 @@
+---
+name: remind
+description: Send timed WhatsApp reminders to Master KT with zero AI, zero pyautogui.
+tags: [whatsapp, reminders, waha, openclaw]
+version: 1.1.0
+---
+
 # Remind — WhatsApp Reminder Skill
 
 Send timed WhatsApp reminders to Master KT with zero AI, zero pyautogui.
@@ -23,7 +30,7 @@ tail ~/.openclaw/waha_reminder.log
 
 ## Add a New Reminder
 
-Tell Wis to add a reminder. Wis edits `reminders_db.json` with:
+Edit `reminders_db.json` with:
 - `message` — what to send
 - `to` — phone number (default: +60125226892)
 - `schedule.kind` — `daily`, `weekdays`, or `once`
@@ -51,12 +58,23 @@ Example entry:
 | WAHA (`localhost:3000`) | WhatsApp HTTP API delivery |
 | macOS cron | Triggers every minute |
 
-## WAHA API Details
+## WAHA API — Live Endpoint
 
-- **URL:** `http://localhost:3000/api/sendText`
-- **Auth:** `X-Api-Key: 63b5195f18e94c0e86976b2dfb9f6d7c`
-- **Payload:** `{"session": "default", "chatId": "<phone>@c.us", "text": "<message>"}`
+**URL:** `http://localhost:3000/send`  ← not `/api/sendText`
+
+- **Auth:** none required (local-only instance)
+- **Payload:** `{"chatId": "<phone>@c.us", "message": "<text>"}`
 - **Phone format:** E.164 stripped of `+` + `@c.us`
+- **Method:** POST with `Content-Type: application/json`
+- **Note:** The documented `/api/sendText` path does NOT work — always use `/send`
+
+### Verified working curl
+
+```bash
+curl -s -X POST "http://localhost:3000/send" \
+  -H "Content-Type: application/json" \
+  -d '{"chatId": "60125226892@c.us", "message": "your message here"}'
+```
 
 ## Current Active Reminders
 
@@ -70,3 +88,4 @@ Example entry:
 - ElevenLabs TTS is **not** used for reminders — plain text only
 - Voice messages require a separate pipeline (see SOUL.md / TOOLS.md TTS section)
 - WAHA session name is `default`, linked to Wisgoo (+60175972035)
+- The `send_reminder.py` script uses a different URL — if direct sending, use `/send` not what the script has configured

@@ -35,7 +35,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Write significant events, thoughts, decisions, opinions, lessons learned
 - This is your curated memory — the distilled essence, not raw logs
 - Over time, review your daily files and update MEMORY.md with what's worth keeping
-- **⚠️ SIZE WARNING:** Keep MEMORY.md under ~20KB by archiving older entries to `memory/events-archive.md`. Archive immediately if bootstrap truncation warning appears in system prompt. Current size: ~22KB (bootstrapMaxChars set to 50K — no truncation issue as of 2026-04-17).
+**⚠️ SIZE WARNING:** Keep MEMORY.md under ~20KB by archiving older entries to `memory/events-archive.md`. Archive immediately if bootstrap truncation warning appears in system prompt. Current size: ~22KB (bootstrapMaxChars set to 50K — no truncation issue as of 2026-04-17).
 
 ### 📝 Write It Down - No "Mental Notes"!
 

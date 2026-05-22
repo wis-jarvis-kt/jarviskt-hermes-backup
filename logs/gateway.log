@@ -1326,3 +1326,354 @@
 2026-05-22 02:53:38,209 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(352, 8, 5) threads=11 uptime=101440s
 2026-05-22 02:58:38,318 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(414, 8, 5) threads=11 uptime=101740s
 2026-05-22 03:03:38,352 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(26, 10, 7) threads=14 uptime=102040s
+2026-05-22 03:08:38,510 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(88, 3, 13) threads=11 uptime=102341s
+2026-05-22 03:13:38,576 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(203, 3, 13) threads=11 uptime=102641s
+2026-05-22 03:18:38,709 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(268, 3, 13) threads=11 uptime=102941s
+2026-05-22 03:23:38,855 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(9, 4, 13) threads=11 uptime=103241s
+2026-05-22 03:28:38,999 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(273, 4, 13) threads=11 uptime=103541s
+2026-05-22 03:33:39,117 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(336, 8, 16) threads=13 uptime=103841s
+2026-05-22 03:38:39,253 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(142, 11, 16) threads=11 uptime=104141s
+2026-05-22 03:43:39,386 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(205, 11, 16) threads=11 uptime=104441s
+2026-05-22 03:48:39,510 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(494, 11, 16) threads=11 uptime=104742s
+2026-05-22 03:53:39,667 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(534, 11, 16) threads=11 uptime=105042s
+2026-05-22 03:58:39,766 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(114, 0, 17) threads=11 uptime=105342s
+2026-05-22 04:02:45,663 INFO gateway.run: Session expiry: 3 sessions to finalize (whatsapp:3)
+2026-05-22 04:02:45,670 INFO gateway.run: Session expiry done: 3 finalized
+2026-05-22 04:03:39,979 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(264, 0, 17) threads=11 uptime=105642s
+2026-05-22 04:08:40,120 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(529, 0, 17) threads=11 uptime=105942s
+2026-05-22 04:13:40,259 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(596, 0, 17) threads=11 uptime=106242s
+2026-05-22 04:18:40,434 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(110, 1, 17) threads=11 uptime=106542s
+2026-05-22 04:23:40,562 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(435, 1, 17) threads=11 uptime=106842s
+2026-05-22 04:28:40,722 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(499, 1, 17) threads=11 uptime=107143s
+2026-05-22 04:33:40,873 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(564, 1, 17) threads=11 uptime=107443s
+2026-05-22 04:38:41,023 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(105, 2, 17) threads=11 uptime=107743s
+2026-05-22 04:43:41,157 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(370, 2, 17) threads=11 uptime=108043s
+2026-05-22 04:48:41,258 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(434, 2, 17) threads=11 uptime=108343s
+2026-05-22 04:53:41,416 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(498, 2, 17) threads=11 uptime=108643s
+2026-05-22 04:58:41,545 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(101, 3, 17) threads=11 uptime=108943s
+2026-05-22 05:03:41,704 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(366, 3, 17) threads=11 uptime=109244s
+2026-05-22 05:08:41,845 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(429, 3, 17) threads=11 uptime=109544s
+2026-05-22 05:13:42,003 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(494, 3, 17) threads=11 uptime=109844s
+2026-05-22 05:18:42,169 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(80, 4, 17) threads=11 uptime=110144s
+2026-05-22 05:23:42,289 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(404, 4, 17) threads=11 uptime=110444s
+2026-05-22 05:28:42,438 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(468, 4, 17) threads=11 uptime=110744s
+2026-05-22 05:33:42,500 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(532, 4, 17) threads=11 uptime=111044s
+2026-05-22 05:38:42,652 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(74, 5, 17) threads=11 uptime=111344s
+2026-05-22 05:43:42,793 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(339, 5, 17) threads=11 uptime=111645s
+2026-05-22 05:48:42,960 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(404, 5, 17) threads=11 uptime=111945s
+2026-05-22 05:53:43,113 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(468, 5, 17) threads=11 uptime=112245s
+2026-05-22 05:58:43,238 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(72, 6, 17) threads=11 uptime=112545s
+2026-05-22 06:03:43,391 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(57, 6, 5) threads=14 uptime=112845s
+2026-05-22 06:08:43,544 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(201, 0, 7) threads=11 uptime=113145s
+2026-05-22 06:13:43,642 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(263, 0, 7) threads=11 uptime=113445s
+2026-05-22 06:18:43,720 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(326, 0, 7) threads=11 uptime=113746s
+2026-05-22 06:23:43,820 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(32, 1, 7) threads=11 uptime=114046s
+2026-05-22 06:28:43,967 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(225, 1, 7) threads=11 uptime=114346s
+2026-05-22 06:33:44,131 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(288, 1, 7) threads=11 uptime=114646s
+2026-05-22 06:38:44,273 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(355, 1, 7) threads=11 uptime=114946s
+2026-05-22 06:43:44,414 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(617, 1, 7) threads=11 uptime=115246s
+2026-05-22 06:48:44,498 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(222, 2, 7) threads=11 uptime=115546s
+2026-05-22 06:53:44,571 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(286, 2, 7) threads=11 uptime=115846s
+2026-05-22 06:58:44,693 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(350, 2, 7) threads=11 uptime=116146s
+2026-05-22 07:03:44,845 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(615, 2, 7) threads=11 uptime=116447s
+2026-05-22 07:08:44,984 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(219, 3, 7) threads=11 uptime=116747s
+2026-05-22 07:13:45,134 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(283, 3, 7) threads=11 uptime=117047s
+2026-05-22 07:18:45,285 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(346, 3, 7) threads=11 uptime=117347s
+2026-05-22 07:23:45,422 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(29, 4, 7) threads=11 uptime=117647s
+2026-05-22 07:28:45,532 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(214, 4, 7) threads=11 uptime=117947s
+2026-05-22 07:33:45,665 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(278, 4, 7) threads=11 uptime=118247s
+2026-05-22 07:38:45,770 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(342, 4, 7) threads=11 uptime=118547s
+2026-05-22 07:43:45,928 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(607, 4, 7) threads=11 uptime=118848s
+2026-05-22 07:46:18,499 INFO gateway.run: Image cache cleanup: removed 1 stale file(s)
+2026-05-22 07:48:46,086 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(212, 5, 7) threads=11 uptime=119148s
+2026-05-22 07:53:46,220 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(275, 5, 7) threads=11 uptime=119448s
+2026-05-22 07:58:46,309 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(340, 5, 7) threads=11 uptime=119748s
+2026-05-22 08:03:46,459 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(604, 5, 7) threads=11 uptime=120048s
+2026-05-22 08:08:46,623 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(209, 6, 7) threads=11 uptime=120348s
+2026-05-22 08:13:46,724 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(273, 6, 7) threads=11 uptime=120648s
+2026-05-22 08:18:46,882 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(336, 6, 7) threads=11 uptime=120949s
+2026-05-22 08:23:46,961 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(25, 7, 7) threads=11 uptime=121249s
+2026-05-22 08:28:47,120 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(204, 7, 7) threads=11 uptime=121549s
+2026-05-22 08:33:47,234 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(269, 7, 7) threads=11 uptime=121849s
+2026-05-22 08:38:47,353 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(332, 7, 7) threads=11 uptime=122149s
+2026-05-22 08:43:47,378 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(598, 7, 7) threads=11 uptime=122449s
+2026-05-22 08:48:47,524 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(202, 8, 7) threads=11 uptime=122749s
+2026-05-22 08:53:47,648 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(267, 8, 7) threads=11 uptime=123049s
+2026-05-22 08:58:47,774 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(330, 8, 7) threads=11 uptime=123349s
+2026-05-22 09:03:47,882 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(595, 8, 7) threads=11 uptime=123649s
+2026-05-22 09:08:48,123 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(198, 9, 7) threads=11 uptime=123950s
+2026-05-22 09:13:48,264 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(262, 9, 7) threads=11 uptime=124250s
+2026-05-22 09:18:48,425 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(327, 9, 7) threads=11 uptime=124550s
+2026-05-22 09:23:48,478 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(23, 10, 7) threads=11 uptime=124850s
+2026-05-22 09:28:48,564 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(196, 10, 7) threads=11 uptime=125150s
+2026-05-22 09:33:48,664 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(260, 10, 7) threads=11 uptime=125450s
+2026-05-22 09:38:48,781 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(525, 10, 7) threads=11 uptime=125750s
+2026-05-22 09:43:48,889 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(589, 10, 7) threads=11 uptime=126050s
+2026-05-22 09:45:00,340 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='SEMC0526-02\tFriday, 22 May 2026\t8:30 PM\tTang Shen Yao set in calendar'
+2026-05-22 09:45:36,848 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=36.5s api_calls=4 response=69 chars
+2026-05-22 09:45:36,863 INFO gateway.platforms.base: [Whatsapp] Sending response (69 chars) to 56702359580792@lid
+2026-05-22 09:47:42,749 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='wis, you need to recalibrate how you are conversing. I don need to see all these'
+2026-05-22 09:47:49,945 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=7.2s api_calls=1 response=77 chars
+2026-05-22 09:47:49,952 INFO gateway.platforms.base: [Whatsapp] Sending response (77 chars) to 56702359580792@lid
+2026-05-22 09:48:49,029 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(33, 3, 15) threads=11 uptime=126350s
+2026-05-22 09:49:01,991 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='set this in your core setting, memory, and all architecture set up all across an'
+2026-05-22 09:50:07,482 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=65.5s api_calls=11 response=209 chars
+2026-05-22 09:50:07,487 INFO gateway.platforms.base: [Whatsapp] Sending response (209 chars) to 56702359580792@lid
+2026-05-22 09:53:49,122 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(18, 3, 17) threads=11 uptime=126651s
+2026-05-22 09:58:49,266 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(277, 3, 17) threads=11 uptime=126951s
+2026-05-22 10:03:49,395 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(341, 3, 17) threads=11 uptime=127251s
+2026-05-22 10:08:49,530 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(405, 3, 17) threads=11 uptime=127551s
+2026-05-22 10:13:49,675 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(13, 4, 17) threads=11 uptime=127851s
+2026-05-22 10:18:49,819 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(278, 4, 17) threads=11 uptime=128151s
+2026-05-22 10:23:49,947 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(311, 4, 3) threads=14 uptime=128451s
+2026-05-22 10:25:34,961 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='what is this message for?'
+2026-05-22 10:25:42,474 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=7.5s api_calls=1 response=91 chars
+2026-05-22 10:25:42,483 INFO gateway.platforms.base: [Whatsapp] Sending response (91 chars) to 56702359580792@lid
+2026-05-22 10:26:03,095 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='do not do this anymore. all this too much info'
+2026-05-22 10:26:17,952 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=14.9s api_calls=1 response=105 chars
+2026-05-22 10:26:17,959 INFO gateway.platforms.base: [Whatsapp] Sending response (105 chars) to 56702359580792@lid
+2026-05-22 10:28:50,044 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(101, 9, 9) threads=11 uptime=128751s
+2026-05-22 10:33:50,122 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(155, 9, 9) threads=11 uptime=129052s
+2026-05-22 10:38:50,261 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(421, 9, 9) threads=11 uptime=129352s
+2026-05-22 10:43:50,418 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(484, 9, 9) threads=11 uptime=129652s
+2026-05-22 10:48:50,569 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(139, 10, 9) threads=11 uptime=129952s
+2026-05-22 10:53:50,712 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(203, 10, 9) threads=11 uptime=130252s
+2026-05-22 10:58:50,844 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(468, 10, 9) threads=11 uptime=130552s
+2026-05-22 11:03:50,972 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(532, 10, 9) threads=11 uptime=130852s
+2026-05-22 11:08:51,109 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(136, 11, 9) threads=11 uptime=131153s
+2026-05-22 11:13:51,249 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(200, 11, 9) threads=11 uptime=131453s
+2026-05-22 11:18:51,401 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(465, 11, 9) threads=11 uptime=131753s
+2026-05-22 11:23:51,550 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(529, 11, 9) threads=11 uptime=132053s
+2026-05-22 11:28:33,515 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:60125226892 (idle=3736s)
+2026-05-22 11:28:33,517 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-22 11:28:51,826 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(130, 0, 10) threads=11 uptime=132353s
+2026-05-22 11:33:51,982 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(194, 0, 10) threads=11 uptime=132653s
+2026-05-22 11:38:52,123 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(458, 0, 10) threads=11 uptime=132953s
+2026-05-22 11:43:52,256 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(525, 0, 10) threads=11 uptime=133254s
+2026-05-22 11:48:52,332 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(127, 1, 10) threads=11 uptime=133554s
+2026-05-22 11:53:52,457 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(191, 1, 10) threads=11 uptime=133854s
+2026-05-22 11:58:52,606 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(457, 1, 10) threads=11 uptime=134154s
+2026-05-22 12:03:52,727 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(520, 1, 10) threads=11 uptime=134454s
+2026-05-22 12:08:52,856 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(123, 2, 10) threads=11 uptime=134754s
+2026-05-22 12:13:52,848 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(187, 2, 10) threads=11 uptime=135054s
+2026-05-22 12:18:52,945 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(452, 2, 10) threads=11 uptime=135354s
+2026-05-22 12:23:53,097 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(516, 2, 10) threads=11 uptime=135654s
+2026-05-22 12:28:53,269 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(124, 3, 10) threads=11 uptime=135955s
+2026-05-22 12:33:53,304 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(187, 3, 10) threads=11 uptime=136255s
+2026-05-22 12:38:53,434 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(451, 3, 10) threads=11 uptime=136555s
+2026-05-22 12:43:35,300 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Hi @~Goo Kah Thart  02.00PM 02.30PM closing for dr eason'
+2026-05-22 12:43:53,034 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=17.7s api_calls=1 response=9 chars
+2026-05-22 12:43:53,044 INFO gateway.platforms.base: [Whatsapp] Sending response (9 chars) to 56702359580792@lid
+2026-05-22 12:43:53,559 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 9, 16) threads=11 uptime=136855s
+2026-05-22 12:48:53,708 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(167, 9, 16) threads=11 uptime=137155s
+2026-05-22 12:53:53,836 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(231, 9, 16) threads=11 uptime=137455s
+2026-05-22 12:58:53,995 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(496, 9, 16) threads=11 uptime=137755s
+2026-05-22 13:03:54,139 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(560, 9, 16) threads=11 uptime=138055s
+2026-05-22 13:08:54,274 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(171, 10, 16) threads=11 uptime=138356s
+2026-05-22 13:13:54,466 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(234, 10, 16) threads=11 uptime=138656s
+2026-05-22 13:18:54,621 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(500, 10, 16) threads=11 uptime=138956s
+2026-05-22 13:23:54,752 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(563, 10, 16) threads=11 uptime=139256s
+2026-05-22 13:28:54,979 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(203, 11, 16) threads=11 uptime=139556s
+2026-05-22 13:33:55,133 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(267, 11, 16) threads=11 uptime=139856s
+2026-05-22 13:38:55,274 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(532, 11, 16) threads=11 uptime=140156s
+2026-05-22 13:43:55,433 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(596, 11, 16) threads=11 uptime=140457s
+2026-05-22 13:48:48,610 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:60125226892 (idle=3896s)
+2026-05-22 13:48:48,612 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-22 13:48:55,581 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(137, 0, 17) threads=11 uptime=140757s
+2026-05-22 13:53:55,620 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(201, 0, 17) threads=11 uptime=141057s
+2026-05-22 13:58:55,760 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(466, 0, 17) threads=11 uptime=141357s
+2026-05-22 14:03:55,879 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(530, 0, 17) threads=11 uptime=141657s
+2026-05-22 14:08:56,022 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(134, 1, 17) threads=11 uptime=141957s
+2026-05-22 14:13:56,158 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(199, 1, 17) threads=11 uptime=142257s
+2026-05-22 14:18:56,123 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(463, 1, 17) threads=11 uptime=142557s
+2026-05-22 14:23:56,260 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(526, 1, 17) threads=11 uptime=142857s
+2026-05-22 14:28:56,399 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(130, 2, 17) threads=11 uptime=143158s
+2026-05-22 14:33:56,519 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(194, 2, 17) threads=11 uptime=143458s
+2026-05-22 14:38:56,642 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(458, 2, 17) threads=11 uptime=143758s
+2026-05-22 14:43:56,778 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(523, 2, 17) threads=11 uptime=144058s
+2026-05-22 14:48:56,988 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(126, 3, 17) threads=11 uptime=144358s
+2026-05-22 14:53:57,090 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(190, 3, 17) threads=11 uptime=144658s
+2026-05-22 14:58:57,240 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(456, 3, 17) threads=11 uptime=144958s
+2026-05-22 15:03:57,393 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(519, 3, 17) threads=11 uptime=145259s
+2026-05-22 15:08:57,511 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(120, 4, 17) threads=11 uptime=145559s
+2026-05-22 15:13:57,664 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(184, 4, 17) threads=11 uptime=145859s
+2026-05-22 15:18:57,834 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(450, 4, 17) threads=11 uptime=146159s
+2026-05-22 15:23:57,957 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(513, 4, 17) threads=11 uptime=146459s
+2026-05-22 15:24:31,192 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=120363145668140275@g.us msg='Herng 17 can work Liao'
+2026-05-22 15:24:53,038 INFO gateway.run: response ready: platform=whatsapp chat=120363145668140275@g.us time=21.8s api_calls=1 response=61 chars
+2026-05-22 15:24:53,049 INFO gateway.platforms.base: [Whatsapp] Sending response (61 chars) to 120363145668140275@g.us
+2026-05-22 15:28:58,001 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(217, 2, 3) threads=12 uptime=146759s
+2026-05-22 15:33:58,191 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(283, 2, 3) threads=12 uptime=147059s
+2026-05-22 15:38:58,347 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(550, 2, 3) threads=12 uptime=147359s
+2026-05-22 15:43:58,501 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(209, 3, 3) threads=11 uptime=147660s
+2026-05-22 15:48:58,536 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(271, 3, 3) threads=11 uptime=147960s
+2026-05-22 15:50:12,229 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Reminder next Wednesday 11am follow up payment from Alex - Chris student'
+2026-05-22 15:50:33,970 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=21.7s api_calls=2 response=5 chars
+2026-05-22 15:50:33,980 INFO gateway.platforms.base: [Whatsapp] Sending response (5 chars) to 56702359580792@lid
+2026-05-22 15:51:00,359 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Put in calendar'
+2026-05-22 15:51:19,186 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=18.8s api_calls=3 response=5 chars
+2026-05-22 15:51:19,195 INFO gateway.platforms.base: [Whatsapp] Sending response (5 chars) to 56702359580792@lid
+2026-05-22 15:52:24,659 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Why are you showing me these working steps again?  Can you go and search deep in'
+2026-05-22 15:53:58,682 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(367, 0, 9) threads=12 uptime=148260s
+2026-05-22 15:54:21,363 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=116.7s api_calls=13 response=780 chars
+2026-05-22 15:54:21,369 INFO gateway.platforms.base: [Whatsapp] Sending response (780 chars) to 56702359580792@lid
+2026-05-22 15:58:58,817 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(84, 7, 11) threads=11 uptime=148560s
+2026-05-22 16:03:58,981 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(201, 7, 11) threads=11 uptime=148860s
+2026-05-22 16:08:59,131 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(265, 7, 11) threads=11 uptime=149160s
+2026-05-22 16:13:59,147 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(329, 7, 11) threads=11 uptime=149460s
+2026-05-22 16:18:59,293 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(7, 8, 11) threads=11 uptime=149760s
+2026-05-22 16:23:59,426 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(182, 8, 11) threads=11 uptime=150060s
+2026-05-22 16:28:59,570 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(307, 8, 11) threads=11 uptime=150361s
+2026-05-22 16:33:59,670 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(571, 8, 11) threads=11 uptime=150661s
+2026-05-22 16:38:59,802 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(6, 9, 11) threads=11 uptime=150961s
+2026-05-22 16:43:59,948 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(179, 9, 11) threads=11 uptime=151261s
+2026-05-22 16:44:07,181 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:group:120363145668140275@g.us:60125226892 (idle=3854s)
+2026-05-22 16:44:07,182 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-22 16:49:00,197 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(212, 9, 11) threads=11 uptime=151561s
+2026-05-22 16:54:00,359 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(477, 9, 11) threads=11 uptime=151861s
+2026-05-22 16:59:00,504 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(541, 9, 11) threads=11 uptime=152161s
+2026-05-22 16:59:08,983 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:60125226892 (idle=3888s)
+2026-05-22 16:59:08,984 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-22 17:03:13,352 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Yes sounds good. See you tomorrow at 3.30 pm. Zoom ?'
+2026-05-22 17:03:50,295 INFO gateway.run: Queued follow-up for session agent:main:whatsapp:dm:60125226892: final stream delivery not confirmed; sending first response before continuing.
+2026-05-22 17:03:55,051 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=41.7s api_calls=1 response=10 chars
+2026-05-22 17:03:55,059 INFO gateway.platforms.base: [Whatsapp] Sending response (10 chars) to 56702359580792@lid
+2026-05-22 17:04:00,643 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 1, 20) threads=11 uptime=152461s
+2026-05-22 17:04:54,197 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Set a zoom to meet with Jeslyn 3pm'
+2026-05-22 17:05:36,186 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=42.0s api_calls=3 response=5 chars
+2026-05-22 17:05:36,210 INFO gateway.platforms.base: [Whatsapp] Sending response (5 chars) to 56702359580792@lid
+2026-05-22 17:09:00,799 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(178, 1, 23) threads=12 uptime=152762s
+2026-05-22 17:14:00,951 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(238, 1, 23) threads=12 uptime=153062s
+2026-05-22 17:19:01,081 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(302, 1, 23) threads=12 uptime=153362s
+2026-05-22 17:24:01,317 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(202, 2, 23) threads=11 uptime=153662s
+2026-05-22 17:24:55,445 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Yes can u config this'
+2026-05-22 17:25:07,933 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=12.5s api_calls=1 response=62 chars
+2026-05-22 17:25:07,940 INFO gateway.platforms.base: [Whatsapp] Sending response (62 chars) to 56702359580792@lid
+2026-05-22 17:28:57,259 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Zoom'
+2026-05-22 17:29:01,470 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(239, 11, 1) threads=12 uptime=153962s
+2026-05-22 17:29:13,437 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=16.2s api_calls=1 response=214 chars
+2026-05-22 17:29:13,444 INFO gateway.platforms.base: [Whatsapp] Sending response (214 chars) to 56702359580792@lid
+2026-05-22 17:29:38,389 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='Never mind'
+2026-05-22 17:29:43,912 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=5.5s api_calls=1 response=7 chars
+2026-05-22 17:29:43,920 INFO gateway.platforms.base: [Whatsapp] Sending response (7 chars) to 56702359580792@lid
+2026-05-22 17:34:01,629 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(151, 3, 3) threads=11 uptime=154262s
+2026-05-22 17:39:01,734 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(215, 3, 3) threads=11 uptime=154562s
+2026-05-22 17:44:01,881 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(481, 3, 3) threads=11 uptime=154863s
+2026-05-22 17:49:02,024 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(543, 3, 3) threads=11 uptime=155163s
+2026-05-22 17:54:02,139 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(157, 4, 3) threads=11 uptime=155463s
+2026-05-22 17:59:02,280 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(221, 4, 3) threads=11 uptime=155763s
+2026-05-22 18:04:02,432 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(340, 7, 12) threads=16 uptime=156063s
+2026-05-22 18:09:02,581 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(44, 5, 15) threads=11 uptime=156363s
+2026-05-22 18:14:02,696 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(147, 5, 15) threads=11 uptime=156663s
+2026-05-22 18:19:02,851 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(211, 5, 15) threads=11 uptime=156964s
+2026-05-22 18:24:02,966 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(476, 5, 15) threads=11 uptime=157264s
+2026-05-22 18:29:03,099 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(143, 6, 15) threads=11 uptime=157564s
+2026-05-22 18:34:03,209 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(207, 6, 15) threads=11 uptime=157864s
+2026-05-22 18:34:21,187 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:60125226892 (idle=3877s)
+2026-05-22 18:34:21,190 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-22 18:39:03,457 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(240, 6, 15) threads=11 uptime=158164s
+2026-05-22 18:44:03,616 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(504, 6, 15) threads=11 uptime=158464s
+2026-05-22 18:49:03,778 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(568, 6, 15) threads=11 uptime=158764s
+2026-05-22 18:54:03,904 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(145, 7, 15) threads=11 uptime=159064s
+2026-05-22 18:59:04,004 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(210, 7, 15) threads=11 uptime=159365s
+2026-05-22 19:04:04,057 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(84, 2, 17) threads=11 uptime=159665s
+2026-05-22 19:09:04,260 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(194, 2, 17) threads=11 uptime=159965s
+2026-05-22 19:14:04,403 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(259, 2, 17) threads=11 uptime=160265s
+2026-05-22 19:19:04,543 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(322, 2, 17) threads=11 uptime=160565s
+2026-05-22 19:24:04,692 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(587, 2, 17) threads=11 uptime=160865s
+2026-05-22 19:29:04,844 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(256, 3, 17) threads=11 uptime=161165s
+2026-05-22 19:34:04,993 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(321, 3, 17) threads=11 uptime=161465s
+2026-05-22 19:39:05,147 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(384, 3, 17) threads=11 uptime=161766s
+2026-05-22 19:44:05,305 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(82, 4, 17) threads=11 uptime=162066s
+2026-05-22 19:49:05,461 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(174, 4, 17) threads=11 uptime=162366s
+2026-05-22 19:54:05,637 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(91, 8, 2) threads=11 uptime=162666s
+2026-05-22 19:59:05,809 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(152, 8, 2) threads=11 uptime=162966s
+2026-05-22 20:04:05,962 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(417, 8, 2) threads=11 uptime=163266s
+2026-05-22 20:09:06,033 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(483, 8, 2) threads=11 uptime=163566s
+2026-05-22 20:14:06,164 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(88, 9, 2) threads=11 uptime=163866s
+2026-05-22 20:19:06,322 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(151, 9, 2) threads=11 uptime=164167s
+2026-05-22 20:24:06,451 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(130, 6, 4) threads=11 uptime=164467s
+2026-05-22 20:29:06,582 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(286, 6, 4) threads=11 uptime=164767s
+2026-05-22 20:34:06,713 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(315, 6, 4) threads=11 uptime=165067s
+2026-05-22 20:39:06,824 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(381, 6, 4) threads=11 uptime=165367s
+2026-05-22 20:44:06,873 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(26, 7, 4) threads=11 uptime=165667s
+2026-05-22 20:49:07,002 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(175, 7, 4) threads=11 uptime=165967s
+2026-05-22 20:49:30,719 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=56702359580792@lid msg='tomoro 4.15pm meet Chris for workshop review'
+2026-05-22 20:50:09,200 INFO gateway.run: response ready: platform=whatsapp chat=56702359580792@lid time=38.5s api_calls=1 response=167 chars
+2026-05-22 20:50:09,209 INFO gateway.platforms.base: [Whatsapp] Sending response (167 chars) to 56702359580792@lid
+2026-05-22 20:54:07,148 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(99, 3, 9) threads=13 uptime=166268s
+2026-05-22 20:59:07,261 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(160, 3, 9) threads=13 uptime=166568s
+2026-05-22 21:04:07,414 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(427, 3, 9) threads=13 uptime=166868s
+2026-05-22 21:09:07,563 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(421, 3, 9) threads=11 uptime=167168s
+2026-05-22 21:14:07,754 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(487, 3, 9) threads=11 uptime=167468s
+2026-05-22 21:19:07,899 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(18, 4, 9) threads=11 uptime=167768s
+2026-05-22 21:24:08,082 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(284, 4, 9) threads=11 uptime=168068s
+2026-05-22 21:29:08,214 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(407, 4, 9) threads=11 uptime=168368s
+2026-05-22 21:34:08,336 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(470, 4, 9) threads=11 uptime=168669s
+2026-05-22 21:39:08,454 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(14, 5, 9) threads=11 uptime=168969s
+2026-05-22 21:44:08,578 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(280, 5, 9) threads=11 uptime=169269s
+2026-05-22 21:49:08,688 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(592, 11, 3) threads=15 uptime=169569s
+2026-05-22 21:54:08,703 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(382, 8, 6) threads=13 uptime=169869s
+2026-05-22 21:54:43,920 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:60125226892 (idle=3875s)
+2026-05-22 21:54:43,926 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-22 21:59:08,810 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(32, 7, 7) threads=11 uptime=170169s
+2026-05-22 22:04:08,963 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(58, 4, 9) threads=11 uptime=170469s
+2026-05-22 22:09:09,105 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(178, 4, 9) threads=11 uptime=170769s
+2026-05-22 22:14:09,268 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(245, 4, 9) threads=11 uptime=171069s
+2026-05-22 22:19:09,420 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(310, 4, 9) threads=11 uptime=171370s
+2026-05-22 22:24:09,566 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(577, 4, 9) threads=11 uptime=171670s
+2026-05-22 22:29:09,756 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(240, 5, 9) threads=11 uptime=171970s
+2026-05-22 22:34:09,889 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(304, 5, 9) threads=11 uptime=172270s
+2026-05-22 22:39:10,039 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(368, 5, 9) threads=11 uptime=172570s
+2026-05-22 22:44:10,145 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(8, 6, 9) threads=11 uptime=172870s
+2026-05-22 22:49:10,261 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(177, 6, 9) threads=11 uptime=173170s
+2026-05-22 22:54:10,327 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(241, 6, 9) threads=11 uptime=173470s
+2026-05-22 22:59:10,447 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(305, 6, 9) threads=11 uptime=173771s
+2026-05-22 23:04:10,580 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(570, 6, 9) threads=11 uptime=174071s
+2026-05-22 23:09:10,740 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(173, 7, 9) threads=11 uptime=174371s
+2026-05-22 23:14:10,915 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(237, 7, 9) threads=11 uptime=174671s
+2026-05-22 23:19:11,083 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(301, 7, 9) threads=11 uptime=174971s
+2026-05-22 23:24:11,186 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(565, 7, 9) threads=11 uptime=175271s
+2026-05-22 23:29:11,314 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(228, 8, 9) threads=11 uptime=175571s
+2026-05-22 23:34:11,472 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(292, 8, 9) threads=11 uptime=175871s
+2026-05-22 23:39:11,593 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(557, 8, 9) threads=11 uptime=176172s
+2026-05-22 23:44:11,702 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(5, 9, 9) threads=11 uptime=176472s
+2026-05-22 23:49:11,813 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(144, 9, 9) threads=11 uptime=176772s
+2026-05-22 23:54:11,933 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(209, 9, 9) threads=11 uptime=177072s
+2026-05-22 23:59:12,057 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(474, 9, 9) threads=11 uptime=177372s
+2026-05-23 00:04:12,104 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(538, 9, 9) threads=11 uptime=177672s
+2026-05-23 00:09:12,229 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(142, 10, 9) threads=11 uptime=177972s
+2026-05-23 00:14:12,332 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(205, 10, 9) threads=11 uptime=178272s
+2026-05-23 00:19:12,552 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(473, 10, 9) threads=11 uptime=178572s
+2026-05-23 00:24:12,689 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(535, 10, 9) threads=11 uptime=178873s
+2026-05-23 00:29:12,768 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(199, 11, 9) threads=11 uptime=179173s
+2026-05-23 00:34:12,927 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(262, 11, 9) threads=11 uptime=179473s
+2026-05-23 00:39:13,074 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(526, 11, 9) threads=11 uptime=179773s
+2026-05-23 00:44:13,228 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(2, 0, 10) threads=11 uptime=180073s
+2026-05-23 00:49:13,345 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(135, 0, 10) threads=11 uptime=180373s
+2026-05-23 00:54:13,503 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(199, 0, 10) threads=11 uptime=180673s
+2026-05-23 00:59:13,648 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(465, 0, 10) threads=11 uptime=180973s
+2026-05-23 01:04:13,768 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(529, 0, 10) threads=11 uptime=181274s
+2026-05-23 01:09:13,855 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(131, 1, 10) threads=11 uptime=181574s
+2026-05-23 01:14:13,886 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(195, 1, 10) threads=11 uptime=181874s
+2026-05-23 01:19:14,037 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(460, 1, 10) threads=11 uptime=182174s
+2026-05-23 01:24:14,123 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(523, 1, 10) threads=11 uptime=182474s
+2026-05-23 01:29:14,279 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(187, 2, 10) threads=11 uptime=182774s
+2026-05-23 01:34:14,438 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(251, 2, 10) threads=11 uptime=183074s
+2026-05-23 01:39:14,580 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(516, 2, 10) threads=11 uptime=183374s
+2026-05-23 01:44:14,735 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(581, 2, 10) threads=11 uptime=183675s
+2026-05-23 01:49:14,874 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(110, 3, 10) threads=11 uptime=183975s
+2026-05-23 01:54:15,009 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(175, 3, 10) threads=11 uptime=184275s
+2026-05-23 01:59:15,155 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(436, 3, 10) threads=11 uptime=184575s
+2026-05-23 02:04:15,284 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(313, 1, 17) threads=13 uptime=184875s
+2026-05-23 02:09:15,404 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(106, 3, 17) threads=11 uptime=185175s
+2026-05-23 02:14:15,417 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(170, 3, 17) threads=11 uptime=185475s
+2026-05-23 02:19:15,545 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(430, 3, 17) threads=11 uptime=185775s
+2026-05-23 02:24:15,646 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(493, 3, 17) threads=11 uptime=186075s
+2026-05-23 02:29:15,783 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(101, 4, 17) threads=11 uptime=186376s
+2026-05-23 02:34:15,861 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(225, 4, 17) threads=11 uptime=186676s
+2026-05-23 02:39:16,008 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(491, 4, 17) threads=11 uptime=186976s
+2026-05-23 02:44:16,121 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(554, 4, 17) threads=11 uptime=187276s
+2026-05-23 02:49:16,272 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(99, 5, 17) threads=11 uptime=187576s
+2026-05-23 02:54:16,535 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(162, 5, 17) threads=11 uptime=187876s
+2026-05-23 02:59:16,641 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(429, 5, 17) threads=11 uptime=188176s
