@@ -23,7 +23,14 @@ These issues make it unreliable to use the `browser` toolset for broad, unstruct
   curl -s "https://news.google.com/rss/search?q={COMPANY}+stock&hl=en-US&gl=US&ceid=US:en"
   ```
   Use `grep -o '<title>[^<]*</title>' | head -N` to extract headlines fast. This is much faster than browser navigation and avoids anti-bot blocking. Limitation: only titles + snippets, not full articles.
-- **Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED):** For structured company/sector research (top 5 companies by market cap, recent news, valuations), spawn delegate_task subagents with the `web` toolset. Each subagent independently searches and returns structured JSON. This approach is reliable, parallelizable, and bypasses anti-bot blocking because each subagent runs in its own context with fresh tool state.
+- **Google News via browser_navigate — WORKS WELL in cron jobs:**  \
+Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. The search results page is lightweight and rarely blocked. Click through to individual articles for detail. Tested successfully on 2026-05-23 for AI research scout. Caveats: some paywalled sites (NYT) show only a block page; some sites (Forbes) return 404 on article URLs even when linked from Google News — for those, rely on secondary sources.
+
+**Article URL gotcha:** Google News links to articles via the Google News redirect (e.g., `https://news.google.com/articles/...`). When clicking through from the Google News listing page, use the actual article link in the snapshot (ref=ex), not any Google redirect URL. Direct source links from the listing are more stable than the `?url=...` redirect pattern.
+
+**Bing.com** — displays a Cloudflare human verification challenge (checkbox "Verify you are human") before returning search results. Avoid in cron jobs.
+
+**Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED):** For structured company/sector research (top 5 companies by market cap, recent news, valuations), spawn delegate_task subagents with the `web` toolset. Each subagent independently searches and returns structured JSON. This approach is reliable, parallelizable, and bypasses anti-bot blocking because each subagent runs in its own context with fresh tool state.
 
   Example workflow for "Victor Company Study" (5 sectors × 5 companies):
   1. Run up to 3 subagents in parallel (the default `max_concurrent_children` limit).

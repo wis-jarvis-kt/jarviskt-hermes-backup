@@ -1033,3 +1033,70 @@ Closing session: SessionEntry {
 ⚠️  Connection closed (reason: 503). Reconnecting in 3s...
 ✅ WhatsApp connected!
 {"level":40,"time":1779474510098,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779481583517,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779487857565,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"203521437778053@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"203521437778053@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"203521437778053@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"203521437778053@lid"}
+Closing session: SessionEntry {
+  _chains: {
+    'BfLOrG3gtL9GEijt4u8cY+MPZ04TuUClCdQXM7xn15VN': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BceAQf52xQYysiPq9btnMrox0LKG+QTD9UgSz4vlnYdl': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 c7 80 41 fe 76 c5 06 32 b2 23 ea f5 bb 67 32 ba 31 d0 b2 86 f9 04 c3 f5 48 12 cf 8b e5 9d 87 65>,
+      privKey: <Buffer 80 ec ef cb 7e e8 84 ed 90 5d bb 9c d2 48 88 8b 8f 9c 5b d6 35 ae c8 8d e0 75 01 13 27 85 e4 5f>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 f2 ce ac 6d e0 b4 bf 46 12 28 ed e2 ef 1c 63 e3 0f 67 4e 13 b9 40 a5 09 d4 17 33 bc 67 d7 95 4d>,
+    previousCounter: 0,
+    rootKey: <Buffer 93 44 21 fb 70 8e 9a 9a 7f 11 a7 ce ac ee 7d ac aa a4 06 58 b4 e7 26 56 c8 ac 16 c2 ca 25 57 33>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 ff bf 60 7b 9e 21 b2 05 57 e3 59 47 38 31 4b 51 b3 27 72 74 78 56 e5 ef 3a 30 6e 8a a3 79 de 65>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779501119077,
+    created: 1779457502542,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    BYvdENQINFH6zECPTVXNLiYop5xT1bUFfsX6lndCFtZb: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 8b dd 10 d4 08 34 51 fa cc 40 8f 4d 55 cd 2e 26 28 a7 9c 53 d5 b5 05 7e c5 fa 96 77 42 16 d6 5b>,
+      privKey: <Buffer f8 32 ad 04 ed f7 8f 6c 5c 24 2f 44 84 02 4f cd 12 3d e9 4f 22 4f cd 4e 1e 18 28 d5 2d 9b 95 77>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer c8 5d bf 61 f0 16 cb 10 7e 06 55 75 36 65 55 19 0f af 76 d4 e8 84 32 16 7c 3d 7b b6 6b b7 72 4a>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 12 68 f3 a1 04 94 b0 4e f2 cf 75 2d 3b 03 0c 0f b7 30 4f c1 3b 4f 3c 75 50 9b db 62 c8 79 36 0c>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779457502547,
+    created: 1779457502547,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 12 68 f3 a1 04 94 b0 4e f2 cf 75 2d 3b 03 0c 0f b7 30 4f c1 3b 4f 3c 75 50 9b db 62 c8 79 36 0c>,
+    preKeyId: 12799420
+  }
+}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"157801410248925@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"157801410248925@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"157801410248925@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"157801410248925@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"157801410248925@lid"}
