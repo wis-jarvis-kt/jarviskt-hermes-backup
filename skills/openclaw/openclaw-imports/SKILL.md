@@ -23,9 +23,9 @@ server not yet reconnected in Hermes.
 | `book-downloader` | active | book file retrieval |
 | `consolidate-memory` | active | memory consolidation workflow |
 | `deal-hunter` | active | flight/hotel deal hunting |
-| `gbrain-brain-ops` | resolved | MCP remains disconnected but no action required — documentation accurate |
-| `gbrain-enrich` | resolved | MCP remains disconnected but no action required — documentation accurate |
-| `gbrain-signal-detector` | resolved | MCP remains disconnected but no action required — documentation accurate |
+| `gbrain-brain-ops` | resolved | Convention references fixed 2026-05-25; conventions created under `conventions/` |
+| `gbrain-enrich` | resolved | Convention references fixed 2026-05-25; conventions created under `conventions/` |
+| `gbrain-signal-detector` | resolved | MCP remains disconnected; no convention references to fix |
 | `hla-annual-stmt` | active | HLA Life Insurance statements |
 | `imagegen` | active | image generation for social media/news |
 | `instagram-extractor` | active | Instagram content extraction |
@@ -40,3 +40,13 @@ Three skills (`gbrain-brain-ops`, `gbrain-enrich`, `gbrain-signal-detector`) wer
 ## Umbrella Files
 
 - `references/gbrain-mcp-setup.md` — MCP server setup reference, missing convention files, reconnection steps
+
+## Conventions (2026-05-25)
+
+Convention files created to resolve broken references in gbrain skills:
+
+- `openclaw/gbrain-brain-ops/conventions/brain-first.md` — 5-step brain-first lookup protocol
+- `openclaw/gbrain-brain-ops/conventions/quality.md` — citation and back-link formatting rules
+- `openclaw/gbrain-enrich/conventions/brain-filing-rules.md` — notability gates and entity filing rules
+
+Recreated as functional stubs since original `~/.openclaw/workspace/skills/conventions/` content was not preserved during migration.

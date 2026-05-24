@@ -35,13 +35,13 @@ This skill guarantees:
 - Tiered enrichment: Tier 1 (full), Tier 2 (medium), Tier 3 (minimal) based on notability
 - No stubs: every new page has meaningful content from web search or existing brain context
 
-> **Filing rule:** Read `skills/_brain-filing-rules.md` before creating any new page.
+> **Filing rule:** Read `openclaw/gbrain-enrich/conventions/brain-filing-rules.md` before creating any new page.
 
 ## Iron Law: Back-Linking (MANDATORY)
 
 Every mention of a person or company with a brain page MUST create a back-link
 FROM that entity's page TO the page mentioning them. An unlinked mention is a
-broken brain. See `skills/_brain-filing-rules.md` for format.
+broken brain. See `openclaw/gbrain-enrich/conventions/brain-filing-rules.md` for format.
 
 ## Philosophy
 
@@ -171,7 +171,7 @@ the raw data shows exactly what the API returned.
 
 #### CREATE path
 
-1. Check notability gate (see `skills/_brain-filing-rules.md`)
+1. Check notability gate (see `openclaw/gbrain-enrich/conventions/brain-filing-rules.md`)
 2. Check filing rules -- where does this entity go?
 3. Create page with the appropriate template (below)
 4. Fill compiled truth with citations

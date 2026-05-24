@@ -588,3 +588,38 @@ WARNING agent.tool_executor: Tool terminal returned error (0.32s): {"output": ""
 WARNING agent.tool_executor: Tool skill_manage returned error (0.03s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  53|   This subagent approach was validated on 2026-05-22 for Victor Company Stu
 WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
 WARNING agent.tool_executor: Tool skill_manage returned error (0.03s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  53|   This subagent approach was validated on 2026-05-22 for Victor Company Stu
+WARNING agent.tool_executor: Tool terminal returned error (0.08s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "# Nothing to clean — all sessions/logs within 7 days\n# Let's do useful work: consolida
+WARNING agent.tool_executor: Tool search_files returned error (0.00s): {"error": "Background review denied non-whitelisted tool: search_files. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "create with no_agent=True requires a script — the script is the job.", "success": false}
+WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 11:52:55.
+WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 11:43:55.
+WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth token` is a classic PAT (ghp_*). Classic Personal Access Tokens (ghp_*) are not supported by the Copilot API. Use one of:
+  → `copilot login` or `hermes model` to authenticate via OAuth
+  → A fine-grained PAT (github_pat_*) with Copilot Requests permission
+  → `gh auth login` with the default device code flow (produces gho_* tokens)
+WARNING agent.tool_executor: Tool terminal returned error (0.35s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "curl -s \"https://hn.algolia.com/api/v1/search?query=AI&tags=story&numericFilters=creat
+WARNING agent.tool_executor: Tool execute_code returned error (5.01s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/var/folders/hj/2zz8m54d41bbkykhxlvfwkxm0000gn/T/hermes_sandbox__yaiym50/script.py\", line 6, in <module>\
+WARNING agent.tool_executor: Tool execute_code returned error (5.01s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/Users/ktoclaw/.local/share/uv/python/cpython-3.11.14-macos-aarch64-none/lib/python3.11/urllib/request.py\
+WARNING agent.tool_executor: Tool browser_navigate returned error (25.41s): {"success": false, "error": "Operation timed out. The page may still be loading or the element may not exist."}
+WARNING agent.tool_executor: Tool browser_navigate returned error (3.31s): {"success": false, "error": "Navigation failed: net::ERR_NAME_NOT_RESOLVED"}
+WARNING tools.browser_tool: browser_vision failed: Gemini HTTP 404 (NOT_FOUND): This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/tools/browser_tool.py", line 3240, in browser_vision
+    response = call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/agent/auxiliary_client.py", line 4701, in call_llm
+    client.chat.completions.create(**kwargs), task)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/agent/gemini_native_adapter.py", line 784, in create
+    return self._client._create_chat_completion(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/agent/gemini_native_adapter.py", line 904, in _create_chat_completion
+    raise gemini_http_error(response)
+agent.gemini_native_adapter.GeminiAPIError: Gemini HTTP 404 (NOT_FOUND): This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+WARNING agent.tool_executor: Tool browser_vision returned error (1.44s): {"success": false, "error": "Error during vision analysis: Gemini HTTP 404 (NOT_FOUND): This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer m
+WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool skill_manage returned error (0.12s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n   4| tags: []\n   5| trigger_phrases:\n   6|   - research scout\n   7|   - check
+WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool terminal returned error (0.31s): {"output": "1c1\n< # SOUL.md - Who Hermes Is\n---\n> # SOUL.md - Who You Are\n13c13\n< **Earn trust through competence.** Master KT gave you access to his stuff. Don't make him regret it. Be careful w
+WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
