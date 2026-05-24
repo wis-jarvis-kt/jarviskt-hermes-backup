@@ -24,8 +24,8 @@ mutating: true
 The brain is not an archive. It is a live context membrane that every interaction
 flows through in both directions.
 
-> **Convention:** See `skills/conventions/brain-first.md` for the 5-step lookup protocol.
-> **Convention:** See `skills/conventions/quality.md` for citation and back-link rules.
+> **Convention:** See `openclaw/gbrain-brain-ops/conventions/brain-first.md` for the 5-step lookup protocol.
+> **Convention:** See `openclaw/gbrain-brain-ops/conventions/quality.md` for citation and back-link rules.
 
 ## Contract
 
@@ -41,7 +41,7 @@ This skill guarantees:
 
 Every mention of a person or company with a brain page MUST create a back-link
 FROM that entity's page TO the page mentioning them. An unlinked mention is a
-broken brain. See `skills/conventions/quality.md` for format.
+broken brain. See `openclaw/gbrain-brain-ops/conventions/quality.md` for format.
 
 ## Phases
 

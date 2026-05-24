@@ -286,8 +286,8 @@
       2571
     ],
     "openclaw-imports/research-scout/SKILL.md": [
-      1779545120145191586,
-      3906
+      1779631722995690668,
+      7379
     ],
     "openclaw-imports/stock-ai-agent/SKILL.md": [
       1779372638119074909,
@@ -298,12 +298,12 @@
       5453
     ],
     "openclaw/gbrain-brain-ops/SKILL.md": [
-      1779182960910598030,
-      5345
+      1779645740634954005,
+      5402
     ],
     "openclaw/gbrain-enrich/SKILL.md": [
-      1779182960912671639,
-      11631
+      1779645757034704920,
+      11712
     ],
     "openclaw/gbrain-signal-detector/SKILL.md": [
       1779182960914616997,
@@ -318,12 +318,12 @@
       5709
     ],
     "openclaw/openclaw-imports/SKILL.md": [
-      1779473003054835340,
-      2108
+      1779645898784388155,
+      2639
     ],
     "openclaw/remind/SKILL.md": [
-      1779182960924640705,
-      1982
+      1779559274935986738,
+      2605
     ],
     "openclaw/stock-ai-agent/SKILL.md": [
       1779182960926874441,
@@ -1832,7 +1832,7 @@
       "skill_name": "remind",
       "category": "openclaw",
       "frontmatter_name": "remind",
-      "description": "",
+      "description": "Send timed WhatsApp reminders to Master KT with zero AI, ...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
