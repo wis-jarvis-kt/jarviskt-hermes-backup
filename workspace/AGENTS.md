@@ -35,7 +35,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Write significant events, thoughts, decisions, opinions, lessons learned
 - This is your curated memory — the distilled essence, not raw logs
 - Over time, review your daily files and update MEMORY.md with what's worth keeping
-**⚠️ SIZE WARNING:** Keep MEMORY.md under ~20KB by archiving older entries to `memory/events-archive.md`. Archive immediately if bootstrap truncation warning appears in system prompt. Current size: ~22KB (bootstrapMaxChars set to 50K — no truncation issue as of 2026-04-17).
+**⚠️ SIZE WARNING:** Keep MEMORY.md under ~20KB by archiving older entries to `memory/events-archive.md`. Archive immediately if bootstrap truncation warning appears in system prompt. Current size: ~9KB (bootstrapMaxChars set to 50K — no truncation issue as of 2026-04-17).
 
 ### 📝 Write It Down - No "Mental Notes"!
 
@@ -136,7 +136,7 @@ Use this especially for:
 - Conversation Codex / prompt-brain design
 - any task where long context causes drift, cost, or clutter
 
-**MEMORY.md size rule:** Keep MEMORY.md under ~20KB. If it exceeds 25KB, archive older entries to `memory/events-archive.md` before the next nightly run. If bootstrap truncation warning appears in system prompt, archive immediately and alert Master KT. Current size: ~22KB (below threshold). Note: `bootstrapMaxChars` already set to 50,000 in openclaw config — no truncation issue.
+**MEMORY.md size rule:** Keep MEMORY.md under ~20KB. If it exceeds 25KB, archive older entries to `memory/events-archive.md` before the next nightly run. If bootstrap truncation warning appears in system prompt, archive immediately and alert Master KT. Current size: ~9KB (below threshold). Note: `bootstrapMaxChars` already set to 50,000 in openclaw config — no truncation issue.
 
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 

@@ -63,7 +63,7 @@ If no improvements needed: send brief "nothing needed" report to Master KT.
 - **Permanent fix:** Publish the "Jarvis Access" OAuth app in Google Cloud Console (OAuth consent screen → Publish App). Refresh tokens will then last months/years instead of 7 days.
 - See OpenClaw docs or Google Cloud OAuth documentation for the publishing steps.
 
-### 7. Stock Radar + ETF Analysis Cron (9:45pm Weekdays)
+### 7. Stock Radar
 - Cron 7143f102 runs at 9:45pm MYT every weekday (Mon-Fri)
 - Runs TWO tasks back-to-back:
   **Task 1 - Stock Radar Check:** AAPL, NVDA, META, GOOGL, MSFT, TSLA
