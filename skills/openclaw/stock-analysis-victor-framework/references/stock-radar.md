@@ -49,12 +49,52 @@ Primary watchlist (from cron job `hermes-stock-radar-945pm`):
 | P/S ⭐ | Tech, unprofitable companies | Victor's favourite |
 | PEG | Profitable growth companies | <1 = bargain (Peter Lynch) |
 
+## ETF Watchlist (CSP Candidates)
+
+Primary ETFs tracked for CSP (Cash Secured Put) analysis:
+`SPYM`, `SCHG`, `DYNF`, `CGGR`, `SPHQ`, `XLG`, `AIQ`, `SOXQ`, `PSI`
+
+Secondary/niche ETFs (may fail Stage 1 volume screen):
+`FNDX`, `FDVV`, `TDIV`, `IETC`, `USMC`, `SNPE`, `TMFC`, `FLQL`, `WTV`
+
+## Data Fetching Patterns
+
+### Yahoo Finance REST API (preferred for prices/VIX/S&P)
+Requires `User-Agent` header to avoid 429 rate limiting:
+```python
+import urllib.request, json
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
+req = urllib.request.Request(url, headers=headers)
+with urllib.request.urlopen(req, timeout=15) as r:
+    data = json.loads(r.read())
+```
+URLs:
+- S&P 500: `https://query2.finance.yahoo.com/v8/finance/chart/%5EGSPC?interval=1d&range=1d`
+- VIX: `https://query2.finance.yahoo.com/v8/finance/chart/%5EVIX?interval=1d&range=1d`
+- ETF price: `https://query2.finance.yahoo.com/v8/finance/chart/{SYMBOL}?interval=1d&range=1d`
+
+Extract price: `data['chart']['result'][0]['meta']['regularMarketPrice']`
+Extract previous close: `data['chart']['result'][0]['meta']['chartPreviousClose']`
+
+### Fear & Greed Index
+- API (no header needed): `https://api.alternative.me/fng/`
+- Extract: `data['data'][0]['value']` (int string) and `data['data'][0]['value_classification']`
+
+### yfinance (for option chains and fundamentals — terminal only)
+```python
+import yfinance as yf
+t = yf.Ticker(sym)
+info = t.info  # price, P/E, PEG, volume
+options = list(t.options)  # available expiration dates
+opt = t.option_chain(options[0])
+puts = opt.puts  # strike, lastPrice, impliedVolatility
+```
+Note: `execute_code` sandbox does NOT have yfinance — use `terminal` with Python for yfinance calls.
+
 ## Cron Job
 
-- **Job ID:** `505bb59fcf82`
-- **Schedule:** `45 21 * * 1-5` (9:45 PM weekdays)
-- **Last run:** 2026-05-22 21:00 ✅
-- **Output file:** `memories/stock-radar-YYYY-MM-DD.md`
+- **Schedule:** `30m before market close` (e.g. `0 15 * * 1-5`) or morning run `0 9 * * 1-5`
+- Output: deliver report to configured home channel
 
 ## Key Lessons Learned (2026-05-22)
 

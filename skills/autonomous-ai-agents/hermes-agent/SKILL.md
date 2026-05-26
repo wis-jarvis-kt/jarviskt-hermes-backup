@@ -872,6 +872,26 @@ hermes config set auxiliary.vision.provider <your_provider>
 hermes config set auxiliary.vision.model <model_name>
 ```
 
+**⚠️ Vision model deprecation pitfall (gemini-2.0-flash):** Google periodically deprecates old Gemini models (e.g. `gemini-2.0-flash` was removed for new users — HTTP 404). If `vision_analyze` fails with `Gemini HTTP 404 (NOT_FOUND): This model models/gemini-2.0-flash is no longer available to new users`, the fix is to update `auxiliary.vision.model` to a current model:
+
+```yaml
+auxiliary:
+  vision:
+    provider: gemini
+    model: gemini-3-flash-preview   # working replacement (May 2026)
+```
+
+Alternatives available in the model catalog (as of May 2026):
+- `google/gemini-3-pro-preview`
+- `google/gemini-3.1-pro-preview`
+- `google/gemini-3.1-flash-lite-preview`
+- `openai/gpt-4o-mini` (via `openai` provider)
+- `anthropic/claude-haiku-4.5` (via `anthropic` provider — budget vision option)
+
+Related active GitHub issues: #32296 (4xx retry bug), #32160 (vision fallback feature), #32360 (gemini-3.5-flash update).
+
+Full diagnosis recipe and model catalog reference: `references/auxiliary-vision-model-deprecation.md`
+
 ---
 
 ## Where to Find Things

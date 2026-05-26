@@ -75,8 +75,11 @@ When Master KT asks for "etf put analysis", "sell put candidates", "check IV", o
 
 ### Stage 1 — Volume Screen
 ```python
+# Use terminal + Python (execute_code sandbox lacks yfinance)
+# Yahoo Finance requires User-Agent header to avoid 429:
+# headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 import yfinance as yf
-etfs = ['AIQ','SOXQ','SCHG','DYNF','CGGR','SPHQ','XLG','SPYM','FNDX','FDVV','TDIV','PSI','IETC','USMC','SNPE','TMFC','FLQL','WTV']
+etfs = ['SPYM','SCHG','DYNF','CGGR','SPHQ','XLG','AIQ','SOXQ','PSI']
 for sym in etfs:
     t = yf.Ticker(sym)
     info = t.info

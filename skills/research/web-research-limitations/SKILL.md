@@ -28,6 +28,14 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 
 **Article URL gotcha:** Google News links to articles via the Google News redirect (e.g., `https://news.google.com/articles/...`). When clicking through from the Google News listing page, use the actual article link in the snapshot (ref=ex), not any Google redirect URL. Direct source links from the listing are more stable than the `?url=...` redirect pattern.
 
+**RSS feed endpoint — FAILS in cron jobs:** The Google News RSS endpoint (`https://news.google.com/rss/search?q=...`) returns only the RSS channel metadata (title, generator, copyright header) with zero `<item>` elements in a cron job context. This appears to be server-side filtering based on user-agent or lack of session cookies. Do not rely on RSS parsing as a lightweight news fetch in cron jobs — use browser_navigate to the Google News search page instead.
+
+**Verified working news sources in cron job browser context:**
+- `www.artificialintelligence-news.com` — loads reliably, no anti-bot blocking observed. Good for AI/tech news. Accepts cookie consent dialog (handle with browser_click on "Accept" button before reading content).
+- Google News search results pages (e.g., `https://news.google.com/search?q=AI+breakthrough&hl=en-US&gl=US&ceid=US:en`) — lightweight, rarely blocked.
+
+**Browser navigation to article URLs — verify final URL:** Direct navigation to article URLs (bypassing the Google News listing) can redirect to a different article than requested (e.g., navigating to a Vera chip article landed on an unrelated "AI infusion" article). Always call `browser_snapshot` after navigation and check the page title/url to confirm you landed on the intended article. If redirected, use the listing-page link (ref=ex) from the Google News results instead.
+
 **Bing.com** — displays a Cloudflare human verification challenge (checkbox "Verify you are human") before returning search results. Avoid in cron jobs.
 
 **Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED):** For structured company/sector research (top 5 companies by market cap, recent news, valuations), spawn delegate_task subagents with the `web` toolset. Each subagent independently searches and returns structured JSON. This approach is reliable, parallelizable, and bypasses anti-bot blocking because each subagent runs in its own context with fresh tool state.

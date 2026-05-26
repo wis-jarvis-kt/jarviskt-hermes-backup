@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T02:55:04.994199",
+  "updated_at": "2026-05-27T02:55:22.193822",
   "platforms": {
     "telegram": [],
     "discord": [],
@@ -19,6 +19,18 @@
       {
         "id": "120363145668140275@g.us",
         "name": "120363145668140275",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "120363408633392803@g.us",
+        "name": "120363408633392803",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "120363425074503361@g.us",
+        "name": "120363425074503361",
         "type": "group",
         "thread_id": null
       }
