@@ -61,7 +61,7 @@ Two things trigger a self-improvement cycle:
 1. **Nightly cron** — 2AM MYT every night (proactive review)
 2. **Getting stuck** — if same approach fails 2–3 times, STOP and self-improve instead of retrying:
    - Diagnose what's missing (skill? knowledge? tool?)
-   - Check clawhub, web search for better approach
+   - Check skills in `~/.hermes/skills/`, web search for better approach
    - Document the gap in daily memory under `## 🔧 Stuck & Learned`
    - Update AGENTS.md / TOOLS.md / relevant skill with the lesson
    - Tell Master KT honestly: what failed, what I tried, what I think I need

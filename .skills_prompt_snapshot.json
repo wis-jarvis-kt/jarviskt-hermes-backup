@@ -30,8 +30,8 @@
       4557
     ],
     "autonomous-ai-agents/hermes-agent/SKILL.md": [
-      1779436606002542093,
-      47936
+      1779789337809374222,
+      48966
     ],
     "autonomous-ai-agents/kanban-codex-lane/SKILL.md": [
       1779237869103054757,
@@ -241,97 +241,13 @@
       1779156650649187391,
       2919
     ],
-    "openclaw-imports/annual-statement-retrieval/SKILL.md": [
-      1774188934050255867,
-      5615
-    ],
-    "openclaw-imports/book-downloader/SKILL.md": [
-      1774001222944773451,
-      4178
-    ],
-    "openclaw-imports/consolidate-memory/SKILL.md": [
-      1774312643855402938,
-      3052
-    ],
-    "openclaw-imports/deal-hunter/SKILL.md": [
-      1773826190198893035,
-      5453
-    ],
-    "openclaw-imports/gbrain-brain-ops/SKILL.md": [
-      1779300251142392375,
-      5588
-    ],
-    "openclaw-imports/gbrain-enrich/SKILL.md": [
-      1779300271528845265,
-      11964
-    ],
-    "openclaw-imports/gbrain-signal-detector/SKILL.md": [
-      1776725803466541341,
-      4115
-    ],
-    "openclaw-imports/hla-annual-stmt/SKILL.md": [
-      1777430003889082009,
-      5417
-    ],
-    "openclaw-imports/imagegen/SKILL.md": [
-      1773881294290095213,
-      5709
-    ],
-    "openclaw-imports/instagram-extractor/SKILL.md": [
-      1779335641676022249,
-      4387
-    ],
-    "openclaw-imports/remind/SKILL.md": [
-      1779416780971828603,
-      2571
-    ],
-    "openclaw-imports/research-scout/SKILL.md": [
-      1779631722995690668,
-      7379
-    ],
-    "openclaw-imports/stock-ai-agent/SKILL.md": [
-      1779372638119074909,
-      3670
-    ],
-    "openclaw/deal-hunter/SKILL.md": [
-      1779182960908199917,
-      5453
-    ],
-    "openclaw/gbrain-brain-ops/SKILL.md": [
-      1779645740634954005,
-      5402
-    ],
-    "openclaw/gbrain-enrich/SKILL.md": [
-      1779645757034704920,
-      11712
-    ],
-    "openclaw/gbrain-signal-detector/SKILL.md": [
-      1779182960914616997,
-      4115
-    ],
-    "openclaw/hla-annual-stmt/SKILL.md": [
-      1779182960917504033,
-      5417
-    ],
-    "openclaw/imagegen/SKILL.md": [
-      1779182960921664918,
-      5709
-    ],
     "openclaw/openclaw-imports/SKILL.md": [
-      1779645898784388155,
-      2639
-    ],
-    "openclaw/remind/SKILL.md": [
-      1779559274935986738,
-      2605
-    ],
-    "openclaw/stock-ai-agent/SKILL.md": [
-      1779182960926874441,
-      3311
+      1779791916078505018,
+      3805
     ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
-      1779458111448843306,
-      8271
+      1779803488421348501,
+      8425
     ],
     "productivity/airtable/SKILL.md": [
       1779156650649372102,
@@ -397,9 +313,13 @@
       1779156650660651553,
       103375
     ],
+    "research/research-scout/SKILL.md": [
+      1779804307459202743,
+      2540
+    ],
     "research/web-research-limitations/SKILL.md": [
-      1779545145106451268,
-      4814
+      1779804284372449361,
+      6198
     ],
     "smart-home/openhue/SKILL.md": [
       1779156650669181257,
@@ -540,10 +460,6 @@
     "note-taking/DESCRIPTION.md": [
       1779156650649098056,
       146
-    ],
-    "openclaw-imports/DESCRIPTION.md": [
-      1779237887667658813,
-      44
     ],
     "productivity/DESCRIPTION.md": [
       1779156650649269434,
@@ -1569,283 +1485,10 @@
       }
     },
     {
-      "skill_name": "annual-statement-retrieval",
-      "category": "openclaw-imports",
-      "frontmatter_name": "annual-statement-retrieval",
-      "description": "",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "book-downloader",
-      "category": "openclaw-imports",
-      "frontmatter_name": "book-downloader",
-      "description": "",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "consolidate-memory",
-      "category": "openclaw-imports",
-      "frontmatter_name": "consolidate-memory",
-      "description": "",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "deal-hunter",
-      "category": "openclaw-imports",
-      "frontmatter_name": "deal-hunter",
-      "description": "Hunt for the best flight and hotel deals across multiple ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "gbrain-brain-ops",
-      "category": "openclaw-imports",
-      "frontmatter_name": "brain-ops",
-      "description": "Brain knowledge base operations. The core read/write cycl...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "gbrain-enrich",
-      "category": "openclaw-imports",
-      "frontmatter_name": "enrich",
-      "description": "Enrich brain pages with tiered enrichment protocol. Creat...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "gbrain-signal-detector",
-      "category": "openclaw-imports",
-      "frontmatter_name": "signal-detector",
-      "description": "Always-on ambient signal capture. Fires on every inbound ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "hla-annual-stmt",
-      "category": "openclaw-imports",
-      "frontmatter_name": "hla-annual-stmt",
-      "description": "Download HLA Life Insurance Premium Statements (annual st...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "imagegen",
-      "category": "openclaw-imports",
-      "frontmatter_name": "imagegen",
-      "description": "Generate images for social media, news graphics, infograp...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "instagram-extractor",
-      "category": "openclaw-imports",
-      "frontmatter_name": "instagram-extractor",
-      "description": "Extract image URLs and video from Instagram posts (single...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "remind",
-      "category": "openclaw-imports",
-      "frontmatter_name": "remind",
-      "description": "Send timed WhatsApp reminders to Master KT with zero AI, ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "research-scout",
-      "category": "openclaw-imports",
-      "frontmatter_name": "research-scout",
-      "description": "Nightly web scout for AI, Claude Code, OpenClaw, and work...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "stock-ai-agent",
-      "category": "openclaw-imports",
-      "frontmatter_name": "stock-ai-agent",
-      "description": "Stock AI Agent — fundamentals-based US stock investing an...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "deal-hunter",
-      "category": "openclaw",
-      "frontmatter_name": "deal-hunter",
-      "description": "Hunt for the best flight and hotel deals across multiple ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "gbrain-brain-ops",
-      "category": "openclaw",
-      "frontmatter_name": "brain-ops",
-      "description": "Brain knowledge base operations. The core read/write cycl...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "gbrain-enrich",
-      "category": "openclaw",
-      "frontmatter_name": "enrich",
-      "description": "Enrich brain pages with tiered enrichment protocol. Creat...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "gbrain-signal-detector",
-      "category": "openclaw",
-      "frontmatter_name": "signal-detector",
-      "description": "Always-on ambient signal capture. Fires on every inbound ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "hla-annual-stmt",
-      "category": "openclaw",
-      "frontmatter_name": "hla-annual-stmt",
-      "description": "Download HLA Life Insurance Premium Statements (annual st...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "imagegen",
-      "category": "openclaw",
-      "frontmatter_name": "imagegen",
-      "description": "Generate images for social media, news graphics, infograp...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
       "skill_name": "openclaw-imports",
       "category": "openclaw",
       "frontmatter_name": "openclaw-imports",
       "description": "Skills migrated from OpenClaw on 2026-05-20. Several refe...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "remind",
-      "category": "openclaw",
-      "frontmatter_name": "remind",
-      "description": "Send timed WhatsApp reminders to Master KT with zero AI, ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "stock-ai-agent",
-      "category": "openclaw",
-      "frontmatter_name": "stock-ai-agent",
-      "description": "Stock AI Agent — fundamentals-based US stock investing an...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
@@ -2131,6 +1774,19 @@
           "terminal",
           "files"
         ],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "research-scout",
+      "category": "research",
+      "frontmatter_name": "research-scout",
+      "description": "Recurring evening AI/tech research scout: find 3 notable ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
         "fallback_for_tools": [],
         "requires_tools": []
       }
