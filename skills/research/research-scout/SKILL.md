@@ -12,9 +12,11 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 
 1. **Navigate** to `https://www.artificialintelligence-news.com/` — loads reliably in cron jobs (no anti-bot blocking observed).
 2. **Accept cookie consent** if dialog appears: `browser_click(ref=e3)` on "Accept".
-3. **Scan headlines** for 3 notable AI/tech developments. Click through with `browser_click` on article links from the listing page.
-4. **Read each article** via `browser_snapshot(full=true)` — capture title, source date, key points, and "why it matters" takeaway.
-5. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
+3. **Scan headlines** for 3 notable AI/tech developments. Click article links with `browser_click` on the heading link (not the image or sub-link).
+4. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use Google News search as fallback.
+5. **Read each article** via `browser_snapshot(full=true)` — capture title, source date, key points, and "why it matters" takeaway.
+6. **If an article link misbehaves** (wrong page, redirect, anti-bot), use Google News search for that topic instead: `https://news.google.com/search?q=TOPIC&hl=en-US&gl=US&ceid=US:en`
+7. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
 
 ```markdown
 # AI/Tech Research Scout — YYYY-MM-DD
@@ -37,7 +39,7 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 **Why it matters:** ...
 ```
 
-6. **Verify the file** was written by reading back the first few lines.
+8. **Verify the file** by reading back the first few lines (check line count and last entry's "Why it matters" is present).
 
 ## Verified Working Sources (cron job context)
 
@@ -49,8 +51,9 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 ## Anti-Bot Patterns to Avoid
 
 - **Google News RSS** (`news.google.com/rss/search?q=...`) — returns zero `<item>` elements in cron job context. Use browser navigation instead.
-- **Google News direct article URLs** from listing — can redirect unexpectedly. Always verify page title after navigation.
+- **Google News direct article URLs** from AI News listing — can redirect unexpectedly to a different article on the same domain. Always verify page title after navigation; if wrong, fall back to Google News search.
 - **Bing.com** — triggers Cloudflare human verification in cron jobs.
+- **Clicking image links or sub-links** — click the article heading link, not attached images or category tags, to avoid anti-bot traps on secondary elements.
 
 ## Save Format
 

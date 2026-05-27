@@ -1,0 +1,44 @@
+# Memory — Hermes Operations
+
+## User (Master KT)
+- **Timezone:** GMT+8
+- **Name:** Wis (formerly Jarvis)
+- **Speaks:** English only
+- **Platforms:** CLI (primary), WhatsApp, likely Telegram
+- **Communication style:** outcome-only — no working steps, no tool output shown, no process, no explanations. Just the result. If uncertain, state plainly and ask. Applies to ALL platforms including WhatsApp group/private, SMS, Telegram, etc.
+- **Group chats:** stay silent unless @mentioned
+
+## Environment
+- **Hermes home:** `~/.hermes/` — config.yaml, SOUL.md, sessions/, memories/, skills/, cron/
+- **Agent codebase:** `~/.hermes/hermes-agent/` (git checkout, not workspace)
+- **Skills:** `~/.hermes/skills/` (user-installed), `~/.hermes/hermes-agent/skills/` (built-in)
+- **Memory:** `~/.hermes/memories/MEMORY.md` + daily logs `research-*, stock-radar-*, victor-study-*, war-news-*`
+- **Logs:** `~/.hermes/logs/` — agent.log, gateway.log, errors.log
+- **Sessions DB:** `~/.hermes/state.db` (SQLite FTS5)
+
+## Known Conventions
+- Session files use naming: `session_YYYYMMDD_HHMMSS_*.json` or `session_cron_HASH_YYYYMMDD_HHMMSS.json`
+- Cron output: `~/.hermes/cron/output/<job_id>/<timestamp>.md`
+- Skill format: `SKILL.md` with YAML frontmatter
+- When fixing stuck behavior: document gap in `~/.hermes/memories/YYYY-MM-DD.md` under `## 🔧 Stuck & Learned`
+
+## Active Cron Workflows
+- **research-scout:** Nightly AI/tech/news scout → `research-YYYY-MM-DD.md`
+- **stock-radar:** Daily stock analysis via Victor framework → `stock-radar-YYYY-MM-DD.md`
+- **victor-study:** Weekly deep-dive sector studies → `victor-study-YYYY-MM-DD.md`
+- **war-news:** Daily war/conflict news summary → `war-news-YYYY-MM-DD.md`
+
+## Victor Framework (Stock Investing)
+- **Entry signal:** Current P/E < 90% of 5Y Avg P/E — OR — Current PEG < 90% of 5Y Avg PEG
+- **Strong entry:** Both conditions met
+- **PEG < 1 standalone:** Peter Lynch bargain zone (strong standalone signal)
+- **Fear & Greed:** VIX 15–20 = Neutral (no CSP triggers)
+- **CSP RED day:** VIX > 30 OR S&P drops > 1% in a day
+- Key tickers tracked: NVDA, MSFT, GOOGL, META, AMZN, AAPL, TSLA, SHOP, BABA
+
+## Known Fixes Applied
+- SOUL.md path reference fixed: `memory/` → `~/.hermes/memories/` (2026-05-26)
+
+Group chat behavior: responds when name "Wis" is mentioned — no @tag or special trigger needed. Has 2 WhatsApp groups: (1) 120363423080731840 - stock group, (2) 120363145668140275 - unknown. Both set to free_response after user selects them on 2026-05-26.
+§
+User actively follows AI agent / voice AI content on Instagram (OpenClaw, Grok, prompt engineering, viral growth). Shares reels regularly. Likely exploring building or using AI agents themselves.

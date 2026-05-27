@@ -1512,3 +1512,134 @@ Closing session: SessionEntry {
 {"level":40,"time":1779819729538,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
 ⚠️  Connection closed (reason: 428). Reconnecting in 3s...
 ✅ WhatsApp connected!
+{"level":40,"time":1779822115774,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":50,"time":1779830584114,"pid":87216,"hostname":"Mac-mini-2.local","fullErrorNode":{"tag":"stream:error","attrs":{"code":"503"}},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 503). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779830608792,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779845057593,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":40,"time":1779847989276,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0A73B4296BD53F36D01","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779850625312,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+Closing session: SessionEntry {
+  _chains: {
+    'BViZFfqZ/wYlorsKMs+DTAvgZtFQWvFAfq5/zs+stslO': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BdWKiYzo+mFT88bz/m9Xu85bmCTt7qMnkWjDbFR0mQNO': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    BXAjwwFv1SE6W2U46hnsUkpZB2fKvXMLuVTSeZmeHZJi: { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BekoeetJVnUz/MSmPYaZBIg3CatR+J5YUplxqiI9Ma53': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 e9 28 79 eb 49 56 75 33 fc c4 a6 3d 86 99 04 88 37 09 ab 51 f8 9e 58 52 99 71 aa 22 3d 31 ae 77>,
+      privKey: <Buffer c0 d7 d5 e9 01 91 3c 31 86 72 bf 60 f4 62 fa 5e d9 6b 16 49 c4 7f a1 4a f3 d8 bc da b5 4c 1e 62>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 70 23 c3 01 6f d5 21 3a 5b 65 38 ea 19 ec 52 4a 59 07 67 ca bd 73 0b b9 54 d2 79 99 9e 1d 92 62>,
+    previousCounter: 3,
+    rootKey: <Buffer 53 d4 e9 ba 8f 00 7c b9 6d 1b 32 dc 80 5a 81 10 d3 6a 21 7f 5e 69 13 dc 4c 6e f1 94 8a 45 02 92>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 5b 2a 69 5a 7a a3 08 ec 6a ab ce 31 e4 cb 61 a4 1f 82 b4 37 cf 46 2f a1 1a fb 4a 3f b7 0f cf 05>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779847979519,
+    created: 1779803101933,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BXq+rSi2w9VgBfDVGpW6MxjOI4Q4NQxcmRg01y9xwzJ3': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 7a be ad 28 b6 c3 d5 60 05 f0 d5 1a 95 ba 33 18 ce 23 84 38 35 0c 5c 99 18 34 d7 2f 71 c3 32 77>,
+      privKey: <Buffer 10 89 cd 43 86 19 4d 43 e2 71 90 9a 3e e4 a3 7e d3 9d b1 8b fc 92 f6 10 9c 4a 44 52 61 04 e5 4c>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 1b 20 7a e9 f0 d8 15 81 58 cf ee 36 81 b1 e0 19 48 17 f1 e0 c8 9d 51 45 98 3f b6 28 bc c0 29 45>,
+    previousCounter: 0,
+    rootKey: <Buffer 28 c8 8e ba 30 44 fa f0 5f f5 8c c7 37 c1 91 53 62 7a c6 e5 9c c1 10 41 a8 ce a7 a4 af d4 57 fa>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 a2 5c fb 89 64 8c b7 78 97 c2 60 b2 64 4e d9 18 87 36 7e 85 c8 c2 72 8e 6b 12 7f 64 0c d5 49 37>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779803101938,
+    created: 1779803101938,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757560,
+    baseKey: <Buffer 05 a2 5c fb 89 64 8c b7 78 97 c2 60 b2 64 4e d9 18 87 36 7e 85 c8 c2 72 8e 6b 12 7f 64 0c d5 49 37>,
+    preKeyId: 12799452
+  }
+}
+{"level":40,"time":1779881250826,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0B7B838D560052B9339","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+{"level":40,"time":1779882263327,"pid":87216,"hostname":"Mac-mini-2.local","msgId":"3EB0C699C2CC90EF556FC5","trace":"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'link-preview-js' imported from /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/node_modules/@whiskeysockets/baileys/lib/Utils/link-preview.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:859:18)\n    at defaultResolve (node:internal/modules/esm/resolve:991:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)\n    at #resolve (node:internal/modules/esm/loader:695:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)","msg":"url generation failed"}
+Closing session: SessionEntry {
+  _chains: {
+    'BXfnXvCADvXK82Y0t+rf2FTinqq+NOH/2QFZMtk4XOBo': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BcA+eHzcwyLI2Tpin0QGFpx6anEflNMWmI/+KbsVFSxn': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BSFHRIDmg5SHxq33lYx5uryKDrP+AWyPyLp0xYVTxdRT': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BT7L+r1S6zYhq0sgNz2yTVGk3Ln3BBz+bWyDwpxgl2sx': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BRYK9GiG07zMx/Jm7qCZqtylDr/+Zos3sGSUxwUxvbIf': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BbtE3dWAJ/LGInljW+pL+8+qqhkxH3cPW/AHuipRj24Z': { chainKey: [Object], chainType: 2, messageKeys: {} },
+    'BSUGiJIzVBnd43h/wAGtfhxjn8Ppa8Y78/b4PrpIk2UU': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 25 06 88 92 33 54 19 dd e3 78 7f c0 01 ad 7e 1c 63 9f c3 e9 6b c6 3b f3 f6 f8 3e ba 48 93 65 14>,
+      privKey: <Buffer f0 4e 88 31 a3 6b 89 3a ee ce e5 09 d3 e4 fc b9 2b da 3a 49 05 5a 2d 18 09 45 de d4 95 1f 82 44>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 bb 44 dd d5 80 27 f2 c6 22 79 63 5b ea 4b fb cf aa aa 19 31 1f 77 0f 5b f0 07 ba 2a 51 8f 6e 19>,
+    previousCounter: 0,
+    rootKey: <Buffer 2c b9 94 67 83 9f 98 3d fc 6d a7 ba e0 f9 f2 f3 c5 52 cd ae a7 17 1f bd 34 18 8c 7e 7f 94 4c 2b>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 83 9c 9d 47 7e 8a a1 f0 81 18 d0 5a b2 cd 31 ba 7a 90 93 1b 32 ed aa 94 d8 46 db 9b 10 37 4b 24>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779882254162,
+    created: 1779876001572,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BQIuc2s+CfhIzotCYqblODzaUsxxnw7GJ00LEP4AQlUc': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 02 2e 73 6b 3e 09 f8 48 ce 8b 42 62 a6 e5 38 3c da 52 cc 71 9f 0e c6 27 4d 0b 10 fe 00 42 55 1c>,
+      privKey: <Buffer 78 c7 fa 84 c0 6a 4f 0b 45 16 2a b0 b1 2b 3d 75 17 96 00 44 36 1f d1 7f 2c 04 9e 2b 3e c0 98 74>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 05 aa bf 87 4d 6b 14 85 de 22 ae 5e a2 00 1c e4 91 2d c6 54 48 a6 9c e3 60 5f 42 9a de e8 a4 6b>,
+    previousCounter: 0,
+    rootKey: <Buffer 24 ab 4a 7b b8 eb 3b 0d a9 28 b4 af 58 54 cb c0 4e f7 16 dd ba 38 97 0f 6a aa b0 b5 c6 0b 41 58>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 4a 49 a7 89 b4 dc 14 6e d4 1e 01 4d 99 cd ef e0 22 68 c6 92 95 fa ee 33 d3 a1 b0 cc 50 c4 73 3e>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1779876001577,
+    created: 1779876001577,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757561,
+    baseKey: <Buffer 05 4a 49 a7 89 b4 dc 14 6e d4 1e 01 4d 99 cd ef e0 22 68 c6 92 95 fa ee 33 d3 a1 b0 cc 50 c4 73 3e>,
+    preKeyId: 12799416
+  }
+}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779902195299,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1779908604143,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}

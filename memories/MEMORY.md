@@ -34,13 +34,11 @@
 - **PEG < 1 standalone:** Peter Lynch bargain zone (strong standalone signal)
 - **Fear & Greed:** VIX 15–20 = Neutral (no CSP triggers)
 - **CSP RED day:** VIX > 30 OR S&P drops > 1% in a day
-- Key tickers tracked: NVDA, MSFT, GOOGL, META, AMZN, AAPL, TSLA, SHOP, BABA
+- Key tickers tracked: NVDA, MSFT, GOOGL, META, AMZN, AAPL, TSLA, SHOP, BABA, PDD, SOXQ, AIQ
 
 ## Known Fixes Applied
 - SOUL.md path reference fixed: `memory/` → `~/.hermes/memories/` (2026-05-26)
-§
-Meeting Thu May 28, 2026 10:00 GMT+8 with Mei Sin
-§
-Meeting Wed May 27, 2026 08:00 GMT+8 with Chee Khoon (Zoom)
-§
+
 Group chat behavior: responds when name "Wis" is mentioned — no @tag or special trigger needed. Has 2 WhatsApp groups: (1) 120363423080731840 - stock group, (2) 120363145668140275 - unknown. Both set to free_response after user selects them on 2026-05-26.
+§
+User actively follows AI agent / voice AI content on Instagram (OpenClaw, Grok, prompt engineering, viral growth). Shares reels regularly. Likely exploring building or using AI agents themselves.
