@@ -64,6 +64,19 @@
     "use_count": 1,
     "view_count": 1
   },
+  "openclaw/stock-analysis-victor-framework": {
+    "archived_at": null,
+    "created_at": "2026-05-27T13:46:01.673867+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-05-27T13:46:01.674446+00:00",
+    "last_viewed_at": "2026-05-27T13:46:01.673883+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
   "remind": {
     "archived_at": null,
     "created_at": "2026-05-21T01:54:53.811644+00:00",
@@ -81,14 +94,14 @@
     "archived_at": null,
     "created_at": "2026-05-21T22:00:45.016919+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-24T14:08:42.998446+00:00",
-    "last_used_at": "2026-05-25T22:00:50.725735+00:00",
-    "last_viewed_at": "2026-05-25T22:00:50.724494+00:00",
-    "patch_count": 11,
+    "last_patched_at": "2026-05-27T14:04:13.018638+00:00",
+    "last_used_at": "2026-05-27T14:03:44.442347+00:00",
+    "last_viewed_at": "2026-05-27T14:03:44.441797+00:00",
+    "patch_count": 13,
     "pinned": false,
     "state": "active",
-    "use_count": 14,
-    "view_count": 14
+    "use_count": 18,
+    "view_count": 18
   },
   "stock-ai-agent": {
     "archived_at": null,
@@ -107,14 +120,14 @@
     "archived_at": null,
     "created_at": "2026-05-19T13:49:11.701638+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-26T13:51:28.425022+00:00",
-    "last_used_at": "2026-05-26T13:50:30.582075+00:00",
-    "last_viewed_at": "2026-05-26T13:50:30.581444+00:00",
-    "patch_count": 10,
+    "last_patched_at": "2026-05-27T13:49:03.290844+00:00",
+    "last_used_at": "2026-05-27T13:51:20.686857+00:00",
+    "last_viewed_at": "2026-05-27T13:51:20.686220+00:00",
+    "patch_count": 11,
     "pinned": false,
     "state": "active",
-    "use_count": 22,
-    "view_count": 22
+    "use_count": 26,
+    "view_count": 26
   },
   "tmate-remote-support": {
     "archived_at": null,
@@ -133,13 +146,13 @@
     "archived_at": null,
     "created_at": "2026-05-19T10:02:28.904709+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-26T14:04:44.376997+00:00",
-    "last_used_at": "2026-05-26T14:03:43.693562+00:00",
-    "last_viewed_at": "2026-05-26T14:03:43.692914+00:00",
-    "patch_count": 6,
+    "last_patched_at": "2026-05-27T11:04:05.076134+00:00",
+    "last_used_at": "2026-05-27T11:03:26.282757+00:00",
+    "last_viewed_at": "2026-05-27T11:03:26.281977+00:00",
+    "patch_count": 9,
     "pinned": false,
     "state": "active",
-    "use_count": 9,
-    "view_count": 9
+    "use_count": 10,
+    "view_count": 10
   }
 }

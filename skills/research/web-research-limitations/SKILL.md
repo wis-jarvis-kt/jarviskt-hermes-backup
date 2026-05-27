@@ -30,13 +30,49 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 
 **RSS feed endpoint — FAILS in cron jobs:** The Google News RSS endpoint (`https://news.google.com/rss/search?q=...`) returns only the RSS channel metadata (title, generator, copyright header) with zero `<item>` elements in a cron job context. This appears to be server-side filtering based on user-agent or lack of session cookies. Do not rely on RSS parsing as a lightweight news fetch in cron jobs — use browser_navigate to the Google News search page instead.
 
-**Verified working news sources in cron job browser context:**
+### Support Files
+- `references/conflict-news-rss.md` — BBC + CNBC RSS feed URLs, grep filter patterns for conflict topics (Ukraine, Middle East, South China Sea), and usage examples. Maintained with verified working sources from 2026-05-27.
+
+### Verified working news sources in cron job browser context:
 - `www.artificialintelligence-news.com` — loads reliably, no anti-bot blocking observed. Good for AI/tech news. Accepts cookie consent dialog (handle with browser_click on "Accept" button before reading content).
 - Google News search results pages (e.g., `https://news.google.com/search?q=AI+breakthrough&hl=en-US&gl=US&ceid=US:en`) — lightweight, rarely blocked.
 
-**Browser navigation to article URLs — verify final URL:** Direct navigation to article URLs (bypassing the Google News listing) can redirect to a different article than requested (e.g., navigating to a Vera chip article landed on an unrelated "AI infusion" article). Always call `browser_snapshot` after navigation and check the page title/url to confirm you landed on the intended article. If redirected, use the listing-page link (ref=ex) from the Google News results instead.
+**BBC World News RSS (verified working in cron jobs — preferred for general news radar):**
+```
+curl -s "https://feeds.bbci.co.uk/news/world/rss.xml" | grep -A 3 "<item>" | head -N   # top N headlines
+curl -s "https://feeds.bbci.co.uk/news/world/europe/rss.xml" | grep -A 3 "<item>" | head -N
+curl -s "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" | grep -A 3 "<item>" | head -N
+curl -s "https://feeds.bbci.co.uk/news/world/asia/rss.xml" | grep -A 3 "<item>" | head -N
+curl -s "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml" | grep -A 3 "<item>" | head -N
+```
+- Sections: europe, us_and_canada, middle_east, asia, africa, latin_america. Combine with `grep -iE "keyword1|keyword2"` to filter by topic across feeds.
+- **Caveat:** BBC RSS gives only titles + short descriptions (no body). Fully sufficient for a news radar/summary task.
+- BBC RSS successfully fetched Ukraine, Middle East, Asia, and US/Canada headlines on 2026-05-27. Tested in cron job context with no anti-bot blocking.
 
-**Bing.com** — displays a Cloudflare human verification challenge (checkbox "Verify you are human") before returning search results. Avoid in cron jobs.
+**CNBC RSS (verified working, good for business/finance-adjacent conflict news):**
+```
+curl -s "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114" | grep -A 3 "<item>" | head -N
+```
+- CNBC RSS includes wire stories on US/Iran strikes, Strait of Hormuz threats, and Taiwan chip sector news — useful for conflict intelligence that has market dimensions. Available at `/id/100003114/device/rss/rss.html` (US top news) or `/id/10000664/device/rss/rss.html` (full site).
+
+**Combining RSS sources for multi-topic conflict news:**
+For a "war news summary" covering Ukraine + Middle East + South China Sea/Taiwan:
+1. Run 2–3 `curl` calls in parallel across BBC section feeds + CNBC RSS.
+2. Pipe through `grep -iE` to extract relevant items.
+3. BBC Middle East RSS alone surfaced: Israel/Gaza strike, Lebanon strikes, US/Iran strikes, Iran internet restoration.
+4. BBC Europe RSS surfaced: Russia/GCHQ warnings, EU mediator search.
+5. For Taiwan/South China Sea specifically — BBC Asia RSS had **no** direct military escalation headlines today; chip-sector news (Nvidia $150B, SK Hynix/Micron $1T market cap) dominated instead.
+6. Aggregate and write directly to `~/.hermes/memories/war-news-YYYY-MM-DD.md`.
+
+**RSS feed endpoint — FAILS in cron jobs:** The Google News RSS endpoint (`https://news.google.com/rss/search?q=...`) returns only the RSS channel metadata (title, generator, copyright header) with zero `<item>` elements in a cron job context. This appears to be server-side filtering based on user-agent or lack of session cookies. Do not rely on RSS parsing as a lightweight news fetch in cron jobs — use browser_navigate to the Google News search page instead.
+
+**Wikipedia navigation — unreliable for live news (2026-05-27 observation):**
+- Wikipedia article pages (e.g. `en.wikipedia.org/wiki/Russo-Ukrainian_war`) are very long (15,000+ line snapshots) and often time out or produce truncated snapshots.
+- The article map/caption showed territorial control as of April 2026 — useful for context, not current events.
+- **Do not use Wikipedia as a live news feed** for war news; use it for background/background context only.
+- Wikipedia was tested on 2026-05-27 as an alternative to blocked search engines and returned only static background content.
+
+**Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED):** For structured company/sector research (top 5 companies by market cap, recent news, valuations), spawn delegate_task subagents with the `web` toolset. Each subagent independently searches and returns structured JSON. This approach is reliable, parallelizable, and bypasses anti-bot blocking because each subagent runs in its own context with fresh tool state.
 
 **Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED):** For structured company/sector research (top 5 companies by market cap, recent news, valuations), spawn delegate_task subagents with the `web` toolset. Each subagent independently searches and returns structured JSON. This approach is reliable, parallelizable, and bypasses anti-bot blocking because each subagent runs in its own context with fresh tool state.
 

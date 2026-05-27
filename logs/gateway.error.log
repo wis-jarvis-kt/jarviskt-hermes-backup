@@ -820,3 +820,38 @@ WARNING agent.tool_executor: Tool search_files returned error (0.00s): {"error":
 WARNING agent.tool_executor: Tool patch returned error (0.38s): {"success": false, "error": "old_string and new_string are identical"}
 WARNING agent.tool_executor: Tool terminal returned error (0.41s): {"output": "", "exit_code": 1, "error": null}
 WARNING agent.tool_executor: Tool terminal returned error (0.31s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+WARNING agent.tool_executor: Tool read_file returned error (0.61s): {"content": "", "total_lines": 0, "file_size": 0, "truncated": false, "is_binary": false, "is_image": false, "error": "File not found: /Users/ktoclaw/.hermes/memories/research-2026-05-20.md", "similar
+WARNING agent.tool_executor: Tool read_file returned error (0.60s): {"content": "", "total_lines": 0, "file_size": 0, "truncated": false, "is_binary": false, "is_image": false, "error": "File not found: /Users/ktoclaw/.hermes/memories/victor-study-2026-05-20.md", "sim
+WARNING agent.tool_executor: Tool terminal returned error (0.44s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import sys,json; data=json.load(sys.stdin); [print(c['name'], '|', ', '.join(c.get('emails',[]))) for c in
+WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 09:01:28.
+WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:52:28.
+WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth token` is a classic PAT (ghp_*). Classic Personal Access Tokens (ghp_*) are not supported by the Copilot API. Use one of:
+  → `copilot login` or `hermes model` to authenticate via OAuth
+  → A fine-grained PAT (github_pat_*) with Copilot Requests permission
+  → `gh auth login` with the default device code flow (produces gho_* tokens)
+WARNING agent.tool_executor: Tool delegate_task returned error (0.00s): {"error": "Too many tasks: 6 provided, but max_concurrent_children is 3. Either reduce the task count, split into multiple delegate_task calls, or increase delegation.max_concurrent_children in config
+WARNING agent.tool_executor: Tool browser_navigate returned error (27.25s): {"success": false, "error": "Operation timed out. The page may still be loading or the element may not exist."}
+WARNING agent.tool_executor: Tool execute_code returned error (3.43s): {"status": "error", "output": "\n--- stderr ---\n  File \"/var/folders/hj/2zz8m54d41bbkykhxlvfwkxm0000gn/T/hermes_sandbox__vfss_5_/script.py\", line 14\n    sp5_data json = json.loads(r.read())\n     
+WARNING agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+WARNING agent.tool_executor: Tool terminal returned error (0.11s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "curl -s \"https://api.alternative.me/fng/\" --connect-timeout 10 2>/dev/null | python3 
+WARNING agent.tool_executor: Tool terminal returned error (16.45s): {"output": "AAPL: price=310.8911, P/E=37.63815, PEG=2.68, shares=14687356000\nNVDA: price=211.235, P/E=32.348392, PEG=0.66, shares=24221000000\nMETA: price=611.68, P/E=22.251, PEG=0.88, shares=2196045
+WARNING agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+WARNING agent.tool_executor: Tool write_file returned error (0.00s): {"error": "Refusing to write to sensitive system path: /var/folders/hj/2zz8m54d41bbkykhxlvfwkxm0000gn/T/etf_report.txt\nUse the terminal tool with sudo if you need to modify system files."}
+WARNING agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 22:03:18.
+WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:54:18.
+WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth token` is a classic PAT (ghp_*). Classic Personal Access Tokens (ghp_*) are not supported by the Copilot API. Use one of:
+  → `copilot login` or `hermes model` to authenticate via OAuth
+  → A fine-grained PAT (github_pat_*) with Copilot Requests permission
+  → `gh auth login` with the default device code flow (produces gho_* tokens)
+WARNING agent.tool_executor: Tool terminal returned error (0.07s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "cat ~/.hermes/cron/jobs.json 2>/dev/null | python3 -m json.tool 2>/dev/null | head -80"
+WARNING agent.tool_executor: Tool patch returned error (0.33s): {"success": false, "error": "Found 19 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "_warning": "/Users/ktoclaw/.hermes/cron/jobs.json was last read with o
+WARNING agent.tool_executor: Tool patch returned error (0.68s): {"success": false, "error": "Found 18 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "_warning": "/Users/ktoclaw/.hermes/cron/jobs.json was last read with o
+WARNING agent.tool_executor: Tool patch returned error (0.68s): {"success": false, "error": "Found 18 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "_warning": "/Users/ktoclaw/.hermes/cron/jobs.json was last read with o
+WARNING agent.chat_completion_helpers: Stream stale for 180s (threshold 180s) — no chunks received. model=MiniMax-M2.7 context=~3,966 tokens. Killing connection.
+WARNING agent.chat_completion_helpers: Stream stale for 180s (threshold 180s) — no chunks received. model=MiniMax-M2.7 context=~3,966 tokens. Killing connection.
+WARNING agent.chat_completion_helpers: Stream stale for 180s (threshold 180s) — no chunks received. model=MiniMax-M2.7 context=~3,966 tokens. Killing connection.
+WARNING agent.chat_completion_helpers: Stream stale for 180s (threshold 180s) — no chunks received. model=MiniMax-M2.7 context=~3,966 tokens. Killing connection.
+WARNING agent.chat_completion_helpers: Stream stale for 180s (threshold 180s) — no chunks received. model=MiniMax-M2.7 context=~3,966 tokens. Killing connection.
