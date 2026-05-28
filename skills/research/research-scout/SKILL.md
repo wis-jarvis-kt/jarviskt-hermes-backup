@@ -16,7 +16,8 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 4. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use Google News search as fallback.
 5. **Read each article** via `browser_snapshot(full=true)` — capture title, source date, key points, and "why it matters" takeaway.
 6. **If an article link misbehaves** (wrong page, redirect, anti-bot), use Google News search for that topic instead: `https://news.google.com/search?q=TOPIC&hl=en-US&gl=US&ceid=US:en`
-7. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
+7. **After `browser_back()` — always take a fresh snapshot before clicking.** Ref IDs from a pre-`back()` snapshot are stale and will produce `Unknown ref` errors or wrong elements. Call `browser_snapshot(full=false)` to get current IDs before every subsequent click on a previously-seen page.
+8. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
 
 ```markdown
 # AI/Tech Research Scout — YYYY-MM-DD

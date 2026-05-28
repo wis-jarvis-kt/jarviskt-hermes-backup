@@ -42,7 +42,7 @@ These skills were consolidated here — their content lives under this umbrella.
 | `book-downloader` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
 | `consolidate-memory` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
 | `instagram-extractor` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
-| `research-scout` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
+| `research-scout` | `research/research-scout` | Active skill — archived duplicate; canonical is `research/research-scout` |
 
 ## Key Gap: gbrain MCP Server
 
