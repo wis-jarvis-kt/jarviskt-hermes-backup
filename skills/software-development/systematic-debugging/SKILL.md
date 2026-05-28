@@ -365,4 +365,10 @@ From debugging sessions:
 - First-time fix rate: 95% vs 40%
 - New bugs introduced: Near zero vs common
 
+## Audit Reference
+
+For the audit pattern used during self-review maintenance (checking for stale skill entries, dead archive references, and outdated cron job configurations), see:
+
+- `references/soul-audit-patterns.md` — how to audit umbrella/archive skills, cross-check cron jobs, and fix stale entries
+
 **No shortcuts. No guessing. Systematic always wins.**
