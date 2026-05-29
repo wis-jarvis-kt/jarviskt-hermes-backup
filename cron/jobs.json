@@ -20,15 +20,15 @@
       "schedule_display": "0 2 * * *",
       "repeat": {
         "times": null,
-        "completed": 10
+        "completed": 11
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:00.115730+08:00",
-      "next_run_at": "2026-05-30T02:00:00+08:00",
-      "last_run_at": "2026-05-29T02:03:21.792896+08:00",
+      "next_run_at": "2026-05-31T02:00:00+08:00",
+      "last_run_at": "2026-05-30T02:04:36.070263+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -58,15 +58,15 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 9
+        "completed": 10
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:09.310321+08:00",
-      "next_run_at": "2026-05-30T03:00:00+08:00",
-      "last_run_at": "2026-05-28T03:16:39.160797+08:00",
+      "next_run_at": "2026-05-31T03:00:00+08:00",
+      "last_run_at": "2026-05-29T03:01:46.749615+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -96,15 +96,15 @@
       "schedule_display": "0 22 * * *",
       "repeat": {
         "times": null,
-        "completed": 10
+        "completed": 11
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:39.768780+08:00",
-      "next_run_at": "2026-05-29T22:00:00+08:00",
-      "last_run_at": "2026-05-28T22:03:16.901612+08:00",
+      "next_run_at": "2026-05-30T22:00:00+08:00",
+      "last_run_at": "2026-05-29T22:01:40.784903+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -134,15 +134,15 @@
       "schedule_display": "0 19 * * *",
       "repeat": {
         "times": null,
-        "completed": 10
+        "completed": 11
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:59.384016+08:00",
-      "next_run_at": "2026-05-29T19:00:00+08:00",
-      "last_run_at": "2026-05-28T19:02:27.431795+08:00",
+      "next_run_at": "2026-05-30T19:00:00+08:00",
+      "last_run_at": "2026-05-29T19:01:37.334561+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -172,15 +172,15 @@
       "schedule_display": "30 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 9
+        "completed": 10
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:21.652816+08:00",
-      "next_run_at": "2026-05-29T03:30:00+08:00",
-      "last_run_at": "2026-05-28T03:32:38.141868+08:00",
+      "next_run_at": "2026-05-30T03:30:00+08:00",
+      "last_run_at": "2026-05-29T03:32:16.603128+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -210,15 +210,15 @@
       "schedule_display": "0 6 * * *",
       "repeat": {
         "times": null,
-        "completed": 9
+        "completed": 10
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:32.910302+08:00",
-      "next_run_at": "2026-05-29T06:00:00+08:00",
-      "last_run_at": "2026-05-28T06:02:27.212004+08:00",
+      "next_run_at": "2026-05-30T06:00:00+08:00",
+      "last_run_at": "2026-05-29T06:03:06.315189+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -248,15 +248,15 @@
       "schedule_display": "0 18 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 8
+        "completed": 9
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:39.961046+08:00",
-      "next_run_at": "2026-05-29T18:00:00+08:00",
-      "last_run_at": "2026-05-28T18:14:00.895970+08:00",
+      "next_run_at": "2026-06-01T18:00:00+08:00",
+      "last_run_at": "2026-05-29T18:05:24.158462+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -286,15 +286,15 @@
       "schedule_display": "45 21 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 8
+        "completed": 9
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:51.540889+08:00",
-      "next_run_at": "2026-05-29T21:45:00+08:00",
-      "last_run_at": "2026-05-28T21:46:37.193610+08:00",
+      "next_run_at": "2026-06-01T21:45:00+08:00",
+      "last_run_at": "2026-05-29T21:48:01.590120+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -324,15 +324,15 @@
       "schedule_display": "every 60m",
       "repeat": {
         "times": null,
-        "completed": 187
+        "completed": 211
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-21T06:15:46.885828+08:00",
-      "next_run_at": "2026-05-29T03:17:23.813159+08:00",
-      "last_run_at": "2026-05-29T02:17:23.813159+08:00",
+      "next_run_at": "2026-05-30T03:23:38.432744+08:00",
+      "last_run_at": "2026-05-30T02:23:38.432744+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -582,15 +582,15 @@
       "schedule_display": "45 21 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 5
+        "completed": 6
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-21T21:54:02.337143+08:00",
-      "next_run_at": "2026-05-29T21:45:00+08:00",
-      "last_run_at": "2026-05-28T21:47:42.753329+08:00",
+      "next_run_at": "2026-06-01T21:45:00+08:00",
+      "last_run_at": "2026-05-29T21:46:59.048344+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -649,9 +649,9 @@
       "profile": null
     },
     {
-      "id": "2632f13dbbbf",
-      "name": "Meet with Rainb reminder",
-      "prompt": "Send a WhatsApp reminder: \"Meet with Rainb (Zoom) starts in 10 minutes (8:30am Friday).\"",
+      "id": "a328f39e4068",
+      "name": "Meet Ganen reminder",
+      "prompt": "Send a WhatsApp reminder: \"Meet Ganen at office\" starting in 10 minutes (11am). Keep it brief.",
       "skills": [],
       "skill": null,
       "model": null,
@@ -662,10 +662,10 @@
       "context_from": null,
       "schedule": {
         "kind": "once",
-        "run_at": "2026-05-29T08:20:00+08:00",
-        "display": "once at 2026-05-29 08:20"
+        "run_at": "2026-06-02T10:50:00+08:00",
+        "display": "once at 2026-06-02 10:50"
       },
-      "schedule_display": "once at 2026-05-29 08:20",
+      "schedule_display": "once at 2026-06-02 10:50",
       "repeat": {
         "times": 1,
         "completed": 0
@@ -674,8 +674,51 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-05-27T18:20:30.127299+08:00",
-      "next_run_at": "2026-05-29T08:20:00+08:00",
+      "created_at": "2026-05-29T12:39:30.107539+08:00",
+      "next_run_at": "2026-06-02T10:50:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "whatsapp",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "56702359580792@lid",
+        "chat_name": "Goo Kah Thart",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "77514ac9a792",
+      "name": "ALMM eFTA meeting reminder",
+      "prompt": "Send a WhatsApp reminder: \"ALMM + eFTA Combined Meeting at HLA IPOH Level 3 Training room\" starting in 10 minutes (2pm). TagLine: DECIDE- COMMIT- DELIVER. Keep it brief.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-06-04T13:50:00+08:00",
+        "display": "once at 2026-06-04 13:50"
+      },
+      "schedule_display": "once at 2026-06-04 13:50",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-29T20:42:36.440188+08:00",
+      "next_run_at": "2026-06-04T13:50:00+08:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -692,5 +735,5 @@
       "profile": null
     }
   ],
-  "updated_at": "2026-05-29T03:00:29.538349+08:00"
+  "updated_at": "2026-05-30T03:00:42.931198+08:00"
 }
