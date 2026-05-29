@@ -69,13 +69,13 @@
     "created_at": "2026-05-27T13:46:01.673867+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-05-27T13:46:01.674446+00:00",
-    "last_viewed_at": "2026-05-27T13:46:01.673883+00:00",
+    "last_used_at": "2026-05-29T13:46:07.757556+00:00",
+    "last_viewed_at": "2026-05-29T13:46:07.756823+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "remind": {
     "archived_at": null,
@@ -94,14 +94,14 @@
     "archived_at": null,
     "created_at": "2026-05-21T22:00:45.016919+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-28T14:04:11.038504+00:00",
-    "last_used_at": "2026-05-28T14:03:42.292237+00:00",
-    "last_viewed_at": "2026-05-28T14:03:42.291642+00:00",
-    "patch_count": 14,
+    "last_patched_at": "2026-05-29T14:02:19.615400+00:00",
+    "last_used_at": "2026-05-29T14:02:31.313107+00:00",
+    "last_viewed_at": "2026-05-29T14:02:31.312293+00:00",
+    "patch_count": 19,
     "pinned": false,
     "state": "active",
-    "use_count": 22,
-    "view_count": 22
+    "use_count": 30,
+    "view_count": 30
   },
   "stock-ai-agent": {
     "archived_at": null,
@@ -121,13 +121,13 @@
     "created_at": "2026-05-19T13:49:11.701638+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-05-27T13:49:03.290844+00:00",
-    "last_used_at": "2026-05-28T13:45:34.271547+00:00",
-    "last_viewed_at": "2026-05-28T13:45:34.270968+00:00",
+    "last_used_at": "2026-05-29T13:46:38.722538+00:00",
+    "last_viewed_at": "2026-05-29T13:46:38.721936+00:00",
     "patch_count": 11,
     "pinned": false,
     "state": "active",
-    "use_count": 30,
-    "view_count": 30
+    "use_count": 33,
+    "view_count": 33
   },
   "tmate-remote-support": {
     "archived_at": null,
@@ -142,17 +142,30 @@
     "use_count": 0,
     "view_count": 0
   },
+  "victor-study": {
+    "archived_at": null,
+    "created_at": "2026-05-29T10:07:57.982414+00:00",
+    "created_by": "agent",
+    "last_patched_at": null,
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
   "web-research-limitations": {
     "archived_at": null,
     "created_at": "2026-05-19T10:02:28.904709+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-05-27T11:04:05.076134+00:00",
-    "last_used_at": "2026-05-28T10:15:18.008833+00:00",
-    "last_viewed_at": "2026-05-28T10:15:18.008266+00:00",
-    "patch_count": 9,
+    "last_patched_at": "2026-05-29T14:02:28.563623+00:00",
+    "last_used_at": "2026-05-29T14:02:22.810026+00:00",
+    "last_viewed_at": "2026-05-29T14:02:22.809437+00:00",
+    "patch_count": 11,
     "pinned": false,
     "state": "active",
-    "use_count": 12,
-    "view_count": 12
+    "use_count": 14,
+    "view_count": 14
   }
 }

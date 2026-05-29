@@ -249,6 +249,10 @@
       1779889743287207244,
       9220
     ],
+    "openclaw/victor-study/SKILL.md": [
+      1780049277979301743,
+      3819
+    ],
     "productivity/airtable/SKILL.md": [
       1779156650649372102,
       11302
@@ -314,12 +318,12 @@
       103375
     ],
     "research/research-scout/SKILL.md": [
-      1779977051033011142,
-      3536
+      1780063339612588351,
+      5884
     ],
     "research/web-research-limitations/SKILL.md": [
-      1779879845073856187,
-      9574
+      1780063348560803572,
+      10337
     ],
     "smart-home/openhue/SKILL.md": [
       1779156650669181257,
@@ -1502,6 +1506,19 @@
       "category": "openclaw",
       "frontmatter_name": "stock-analysis-victor-framework",
       "description": "Analyze stocks using Victor's framework (PEG vs 5Y avg, P...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "victor-study",
+      "category": "openclaw",
+      "frontmatter_name": "victor-study",
+      "description": "Weekly sector deep-dive for Victor's 5 watchlist sectors:...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
