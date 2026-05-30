@@ -12,12 +12,10 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 
 1. **Navigate** to `https://www.artificialintelligence-news.com/` — loads reliably in cron jobs (no anti-bot blocking observed).
 2. **Accept cookie consent** if dialog appears: `browser_click(ref=e3)` on "Accept".
-3. **Scan headlines** for 3 notable AI/tech developments. Prioritise articles with today's date. Click article links with `browser_click` on the heading link (not the image or sub-link).
+3. **Scan headlines** for 3 notable AI/tech developments. Prioritise articles with today's date. **Click the article heading link** — heading-click anti-bot is intermittent (~67% success rate), so proceed to the next article if it fails; use direct URL as rescue only.
 4. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use Google News search as fallback.
-5. **Read each article** via `browser_snapshot(full=true)` — capture title, source date, key points, and "why it matters" takeaway.
-6. **If an article link misbehaves** (wrong page, redirect, anti-bot), use Google News search for that topic: `https://news.google.com/search?q=TOPIC&hl=en-US&gl=US&ceid=US:en`
-7. **After `browser_back()` — always take a fresh snapshot before clicking.** Ref IDs from a pre-`back()` snapshot are stale and will produce `Unknown ref` errors or wrong elements. Call `browser_snapshot(full=false)` to get current IDs before every subsequent click on a previously-seen page.
-8. **If fewer than 3 articles with today's date appear on the homepage**, scroll down the "LATEST" section. If still insufficient, use Google News (`https://news.google.com/search?q=AI+technology&hl=en-US&gl=US&ceid=US:en`) to find supplementary stories — click through to source articles rather than reading in Google's aggregator. Prioritise developments that are genuinely new (not dated several days prior) even if the primary source is not the AI News homepage.
+5. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
+6. **If fewer than 3 articles with today's date appear on the homepage**, scroll down the "LATEST" section. If still insufficient, use Google News search (`https://news.google.com/search?q=AI+technology&hl=en-US&gl=US&ceid=US:en`) to find supplementary stories — **click through to the original source publication's native domain** (TechCrunch, blog.google, Reuters, etc.), not the aggregator link. Prioritise developments that are genuinely new (not dated several days prior) even if the primary source is not the AI News homepage.
 9. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
 
 ```markdown
@@ -55,10 +53,10 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 - **Google News RSS** (`news.google.com/rss/search?q=...`) — returns zero `<item>` elements in cron job context. Use browser navigation instead.
 - **Google News direct article URLs from AI News listing** — can redirect unexpectedly to an empty page or a different article on the same domain. Always verify page title after navigation; if wrong, fall back to Google News search for the original source publication.
 - **Bing.com** — triggers Cloudflare human verification in cron jobs.
-- **Clicking image links or sub-links** — click the article heading link, not attached images or category tags, to avoid anti-bot traps on secondary elements.
-- **AI News article heading links** — when you land on an AI News article listing and click the heading link, it may resolve to an empty `(empty page)`. **Fallback: copy the article's canonical URL from the browser address bar after navigation (which resolves correctly), or find the article via Google News search and click through to the original source publication (TechCrunch, blog.google, Reuters, etc.) rather than the aggregator link.**
-- **Google News links pointing back to AI News** — these also frequently misbehave (land on empty page). When researching via Google News, click through to the original article source on its native domain, not the AI News mirror.
-- **`(empty page)` on snapshot after click** — if `browser_snapshot(full=true)` returns `(empty page)` with `element_count: 0`, the link triggered an anti-bot redirect. Do NOT retry the click. Instead: (a) note the story from Google News results, (b) navigate directly to the original source URL, (c) verify with snapshot. Never use browser back and re-click the same link — it will fail again.
+- **Major news sites via Google News click path** — NYT, CNBC, and others frequently block via DataDome or Cloudflare when the click path routes through Google News. Navigate directly to the article's native domain instead.
+- **AI News article heading link clicks** — intermittent anti-bot (~67% success). **Do NOT abandon heading clicks entirely** — proceed to next article if it fails; use direct URL as rescue.
+- **`(empty page)` on snapshot after click** — if `browser_snapshot(full=false)` returns `(empty page)` with `element_count: 0`, the link triggered an anti-bot redirect. **Do NOT immediately use direct URL** — proceed to the next article on the listing; use direct URL rescue only if you need to recover that specific article. On returning to the homepage, the heading links get fresh ref IDs — re-identify and click the next article's link.
+- **`(empty page)` on snapshot after click** — if `browser_snapshot(full=true)` returns `(empty page)` with `element_count: 0`, the link triggered an anti-bot redirect. Do NOT retry the click. Instead: (a) copy the address bar URL (may be partially resolved), (b) use Google News search to find the original source publication, (c) navigate directly to the original source domain. Never use browser back and re-click the same link — it will fail again.
 
 ## Rescue Pattern (Empty Page After Click)
 

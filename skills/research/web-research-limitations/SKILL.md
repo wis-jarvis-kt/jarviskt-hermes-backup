@@ -30,6 +30,8 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 
 **RSS feed endpoint — FAILS in cron jobs:** The Google News RSS endpoint (`https://news.google.com/rss/search?q=...`) returns only the RSS channel metadata (title, generator, copyright header) with zero `<item>` elements in a cron job context. This appears to be server-side filtering based on user-agent or lack of session cookies. Do not rely on RSS parsing as a lightweight news fetch in cron jobs — use browser_navigate to the Google News search page instead.
 
+- **BBC homepage + section pages via browser_navigate — WORKS in cron jobs:** Navigating to `https://www.bbc.com/news/world/europe`, `https://www.bbc.com/news/world/middle_east`, and `https://www.bbc.com/news/world/asia` produced clean snapshots with lead headlines. The homepage and section listing pages are lightweight and load reliably without anti-bot blocking. Article click-through from listings sometimes fails to load new content (the snapshot stays on the same page), but navigating directly to section URLs bypasses this. Sufficient for a news radar/summary task. Tested 2026-05-30. Limitation: no full article body via this approach — use for headlines and top-level developments only.
+
 ### Support Files
 - `references/conflict-news-rss.md` — BBC + CNBC RSS feed URLs, grep filter patterns for conflict topics (Ukraine, Middle East, South China Sea), and usage examples. Maintained with verified working sources from 2026-05-27.
 

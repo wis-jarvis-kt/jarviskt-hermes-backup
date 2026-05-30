@@ -906,3 +906,28 @@ WARNING agent.tool_executor: Tool terminal returned error (0.08s): {"output": ""
 WARNING agent.tool_executor: Tool browser_navigate returned error (1.04s): {"success": false, "error": "Navigation failed: net::ERR_TOO_MANY_REDIRECTS"}
 WARNING agent.tool_executor: Tool read_file returned error (0.61s): {"content": "", "total_lines": 0, "file_size": 0, "truncated": false, "is_binary": false, "is_image": false, "error": "File not found: /Users/ktoclaw/.hermes/skills/openclaw-imports/SKILL.md"}
 WARNING agent.tool_executor: Tool terminal returned error (0.08s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "cat /Users/ktoclaw/.hermes/cron/jobs.json | python3 -c \"import json,sys; d=json.load(s
+WARNING agent.tool_executor: Tool terminal returned error (0.36s): {"output": "total 8064\ndrwx------  11 ktoclaw  staff      352 May 21 07:05 .\ndrwx------  49 ktoclaw  staff     1568 May 30 03:30 ..\n-rw-------   1 ktoclaw  staff  2260119 May 30 03:30 agent.log\n-r
+WARNING agent.tool_executor: Tool terminal returned error (0.26s): {"output": "rm: /Users/ktoclaw/.hermes/memories/research-2026-05-22.md: No such file or directory\nrm: /Users/ktoclaw/.hermes/memories/war-news-2026-05-22.md: No such file or directory\n/Users/ktoclaw
+WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool skill_manage returned error (0.11s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  51| | Google News Search | `https://news.google.com/search?q=QUERY&hl=en-US&gl=
+WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 08:59:34.
+WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:50:34.
+WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth token` is a classic PAT (ghp_*). Classic Personal Access Tokens (ghp_*) are not supported by the Copilot API. Use one of:
+  → `copilot login` or `hermes model` to authenticate via OAuth
+  → A fine-grained PAT (github_pat_*) with Copilot Requests permission
+  → `gh auth login` with the default device code flow (produces gho_* tokens)
+WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 20:41:54.
+WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 20:32:54.
+WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth token` is a classic PAT (ghp_*). Classic Personal Access Tokens (ghp_*) are not supported by the Copilot API. Use one of:
+  → `copilot login` or `hermes model` to authenticate via OAuth
+  → A fine-grained PAT (github_pat_*) with Copilot Requests permission
+  → `gh auth login` with the default device code flow (produces gho_* tokens)
+WARNING agent.tool_executor: Tool terminal returned error (0.35s): {"output": "/bin/bash: eval: line 2: unexpected EOF while looking for matching ``'\n/bin/bash: eval: line 3: syntax error: unexpected end of file", "exit_code": 1, "error": null}
+WARNING agent.tool_executor: Tool terminal returned error (0.58s): {"output": "Cannot find configuration at /Users/ktoclaw/Library/Application Support/himalaya/config.toml.\nError: \n   0: cannot prompt boolean\n   1: The input device is not a TTY\n\nNote: Run with -
+WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool terminal returned error (0.27s): {"output": "", "exit_code": 1, "error": null}
+WARNING agent.tool_executor: Tool terminal returned error (0.07s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "cat /Users/ktoclaw/.hermes/cron/jobs.json 2>/dev/null | python3 -c \"import sys,json; j
+WARNING agent.tool_executor: Tool terminal returned error (0.99s): {"output": "/Users/ktoclaw/.hermes/cron/jobs.json\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import json; jobs=json.load(open('/Users/ktoclaw/.hermes/cron/jobs.
