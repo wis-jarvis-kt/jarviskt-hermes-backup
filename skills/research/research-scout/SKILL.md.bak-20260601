@@ -16,7 +16,7 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 4. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use Google News search as fallback.
 5. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
 6. **If fewer than 3 articles with today's date appear on the homepage**, scroll down the "LATEST" section. If still insufficient, use Google News search (`https://news.google.com/search?q=AI+technology&hl=en-US&gl=US&ceid=US:en`) to find supplementary stories — **click through to the original source publication's native domain** (TechCrunch, blog.google, Reuters, etc.), not the aggregator link. Prioritise developments that are genuinely new (not dated several days prior) even if the primary source is not the AI News homepage.
-7. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
+9. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
 
 ```markdown
 # AI/Tech Research Scout — YYYY-MM-DD
@@ -39,7 +39,7 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 **Why it matters:** ...
 ```
 
-8. **Verify the file** by reading back the first few lines (check line count and last entry's "Why it matters" is present).
+10. **Verify the file** by reading back the first few lines (check line count and last entry's "Why it matters" is present).
 
 ## Verified Working Sources (cron job context)
 

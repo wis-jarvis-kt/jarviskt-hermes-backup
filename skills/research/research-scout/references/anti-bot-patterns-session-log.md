@@ -29,17 +29,34 @@
 | Navigate directly to CNBC article URL | `https://www.cnbc.com/2026/05/29/...` | "Not Found" (404) | CNBC article URLs include date in path; slug must be exact |
 | Navigate to Invezz article | Invezz.com | Cloudflare block | Invezz uses Cloudflare; blocked in cron context |
 
+### New Observations — 2026-05-31
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|--------|-----------|
+| Click AI News heading link from LATEST section — NBA AI article | `ref=e132` on "NBA plans AI system..." in LATEST section | `(empty page)`, `element_count: 0` | LATEST section heading links appear to have higher anti-bot hit rate than featured section links |
+| Google News search for NBA AI → click Reuters result | Reuters link (`ref=e36`) in Google News results | DataDome device verification block | Reuters via Google News click is a CONFIRMED hard block (not occasional) |
+| Navigate directly to Yahoo Sports NBA article URL | `sports.yahoo.com/nba/...` from Google News address bar URL | 404 page not found | Yahoo Sports article URLs expire/are restructured — do not rely on copied GN address bar URL |
+| Navigate directly to FanSided NBA article URL | `fansided.com/2025/05/28/...` | 404 page not found | Same URL rot issue |
+| Navigate directly to KTLA NBA article | `ktla.com/news/nba-...` | Cloudflare block | Local news sites also use Cloudflare |
+| Navigate directly to LarryBrownSports | `larrybrownsports.com/nba-...` | Cloudflare block | Cloudflare is widespread across mid-tier sports media |
+| Click AI News heading link — Google Pay UCP article | `ref=e121` from featured section | **Page loaded correctly** | Featured section heading links still have ~67% success rate |
+| Click AI News heading link — OpenAI FGF article | `ref=e117` from featured section | `(empty page)`, `element_count: 0` | Same intermittent pattern confirmed |
+
 ### Key Learnings (Updated)
 
+- **LATEST section heading links may have a higher anti-bot hit rate** than the main featured article heading links. Prefer the top 2–3 featured articles (large cards at top of page) before scrolling to LATEST.
+- **Reuters via Google News is a hard block — do not retry.** DataDome on Reuters is a confirmed blocker in cron job context. When Reuters appears in Google News results, skip it and click through to a different outlet's link.
+- **After DataDome/Cloudflare block, do NOT iterate through other news aggregator sites** — Yahoo Sports, FanSided, KTLA, LarryBrownSports all either 404 or Cloudflare-block in rapid succession. Instead: (a) stay on Google News results, (b) find a different non-Reuters/non-NYT outlet's link, (c) click through to that outlet's direct native domain.
+- **Yahoo Sports and FanSided article URLs are not stable** — they return 404 when navigated to directly even hours after publication. Do not use copied Google News address bar URLs for these sites.
 - **The anti-bot trigger is the INDIRECT click path** (AI News homepage → heading link), not direct navigation to AI News article URLs. Both article pages loaded fine when navigated to directly.
-- **Heading-click anti-bot is INTERMITTENT.** Two heading clicks succeeded (Claude Opus 4.8, Google Pay UCP) while one failed (OpenAI FGF). The pattern is probabilistic (~67% success in this session), not systematic. Always have direct URL fallback ready.
-- **Viable workflow: click heading → if empty page, back to homepage and continue.** No need to immediately reach for direct URL on first failure — proceed to next article and use direct URL as the rescue only if needed.
+- **Heading-click anti-bot is INTERMITTENT on featured section links (~67% success).** LATEST section links appear worse. Always have direct URL fallback ready.
+- **Viable workflow: click heading → if empty page, back to homepage and continue.** No need to immediately reach for direct URL on first failure — proceed to next article and use direct URL as rescue only if needed.
 - **browser_snapshot(full=false) is sufficient for article reading** even on longer articles. The 132–142 element count captured full article text. Use full=true only when compact snapshot returns suspiciously little content.
-- **Google News → original publication (TechCrunch, blog.google, Reuters) works reliably.** The failure mode is clicking links that point back to aggregators.
-- **Always check the browser address bar URL** after any navigation — anti-bot redirects leave the URL in an unexpected state, but a correct article URL can be copied from the address bar.
+- **Google News → original publication (TechCrunch, blog.google) works reliably for non-blocked outlets.** The failure mode is clicking links that point to Reuters, NYT, or other DataDome-protected domains.
+- **Always check the browser address bar URL** after any navigation — anti-bot redirects leave the URL in an unexpected state, but a correct article URL can be copied from the address bar for non-aggregator sources.
 - **Timestamps on Google News are relative** ("21 hours ago", "Yesterday") — article may actually be from the prior calendar day. Cross-reference with AI News homepage dates.
 - **AI News homepage date reliably shows today's articles** in the top 2–3 headline slots. Older articles (May 28, May 27) are still runnable if genuinely notable.
-- **Major news sites (NYT, CNBC) block via DataDome/Cloudflare** when navigating through Google News click paths. Navigate directly to known article URLs or use the article's direct domain link.
+- **Major news sites (NYT, CNBC, Reuters) block via DataDome/Cloudflare** when navigating through Google News click paths. Navigate directly to known article URLs or use a non-blocked outlet's Google News link.
 
 ### URL Patterns (Updated)
 
