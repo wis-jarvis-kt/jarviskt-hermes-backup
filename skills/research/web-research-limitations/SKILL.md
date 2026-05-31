@@ -74,7 +74,44 @@ For a "war news summary" covering Ukraine + Middle East + South China Sea/Taiwan
 - **Do not use Wikipedia as a live news feed** for war news; use it for background/background context only.
 - Wikipedia was tested on 2026-05-27 as an alternative to blocked search engines and returned only static background content.
 
-**Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED):** For structured company/sector research (top 5 companies by market cap, recent news, valuations), spawn delegate_task subagents with the `web` toolset. Each subagent independently searches and returns structured JSON. This approach is reliable, parallelizable, and bypasses anti-bot blocking because each subagent runs in its own context with fresh tool state.
+---
+
+## Google News Browser Navigation — Conflict/War News (tested 2026-05-31)
+
+**Primary method for multi-topic conflict news:** Navigate to `https://news.google.com/search?q=TOPIC+May+2026&hl=en-US&gl=US&ceid=US:en`, read the snapshot for headlines, click through for detail.
+
+**Verified working topics (2026-05-31):**
+```
+Ukraine Russia war    → https://news.google.com/search?q=Ukraine+Russia+war+May+2026
+Israel Gaza war       → https://news.google.com/search?q=Israel+Gaza+war+May+2026
+South China Sea Taiwan→ https://news.google.com/search?q=South+China+Sea+Taiwan+May+2026
+```
+
+**What works:** Google News search result pages load cleanly with 0 anti-bot blocking. Headlines give source, recency (e.g. "11 hours ago", "Yesterday"), and publication — sufficient to identify the top 1-2 stories per topic. Snapshot is compact (~235 elements max) and fast.
+
+**Click-through failure patterns — do NOT rely on clicking Google News article links:**
+| Source | Pattern |
+|--------|---------|
+| Reuters | DataDome device check blocks browser nav to native URL |
+| BBC | 500 Internal Server Error on article URLs |
+| CNN | "Uh-oh! no page here" error on article URLs |
+| Al Jazeera | Heading click sometimes triggers anti-bot (ISW articles reliable) |
+| CNBC | Paywall/block page on article URLs |
+| ISW (Institute for the Study of War) | Heading clicks work ~67% of the time — proceed to next if it fails |
+
+**Rescue pattern when click-through fails:** Read the Google News snapshot (headline + source + recency) — that data is sufficient for a conflict news summary. Full article body is not required. Al Jazeera and ISW articles reliably load via heading click; use those for casualty figures and territorial data.
+
+**Best practice for war news summary:**
+1. Navigate Google News search page per topic → read snapshot for top story selection
+2. Note headline, source, and recency from the listing — don't rely on click-through for body text
+3. If article detail is needed (e.g. casualty figures, territorial gains), use Al Jazeera or ISW articles that reliably load via heading click
+4. Format summary directly from Google News snapshot data — no file writes until the final output
+
+**Session log (2026-05-31):** Successfully produced full war news summary covering Ukraine-Russia, Israel-Gaza, and South China Sea/Taiwan using this method. No RSS, no delegate_task subagents — just browser_navigate + snapshot reading.
+
+---
+
+## Use delegate_task subagents with `web` toolset for multi-sector research (RECOMMENDED)
 
 ### Batch by Sector, Not by Company — delegate_task Wave Pattern
 

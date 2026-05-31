@@ -16,7 +16,7 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 4. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use Google News search as fallback.
 5. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
 6. **If fewer than 3 articles with today's date appear on the homepage**, scroll down the "LATEST" section. If still insufficient, use Google News search (`https://news.google.com/search?q=AI+technology&hl=en-US&gl=US&ceid=US:en`) to find supplementary stories — **click through to the original source publication's native domain** (TechCrunch, blog.google, Reuters, etc.), not the aggregator link. Prioritise developments that are genuinely new (not dated several days prior) even if the primary source is not the AI News homepage.
-9. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
+7. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
 
 ```markdown
 # AI/Tech Research Scout — YYYY-MM-DD
@@ -39,7 +39,7 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 **Why it matters:** ...
 ```
 
-10. **Verify the file** by reading back the first few lines (check line count and last entry's "Why it matters" is present).
+8. **Verify the file** by reading back the first few lines (check line count and last entry's "Why it matters" is present).
 
 ## Verified Working Sources (cron job context)
 
@@ -53,8 +53,8 @@ Run a recurring evening scan of AI/tech developments and save a brief report to 
 - **Google News RSS** (`news.google.com/rss/search?q=...`) — returns zero `<item>` elements in cron job context. Use browser navigation instead.
 - **Google News direct article URLs from AI News listing** — can redirect unexpectedly to an empty page or a different article on the same domain. Always verify page title after navigation; if wrong, fall back to Google News search for the original source publication.
 - **Bing.com** — triggers Cloudflare human verification in cron jobs.
-- **Major news sites via Google News click path** — NYT, CNBC, and others frequently block via DataDome or Cloudflare when the click path routes through Google News. Navigate directly to the article's native domain instead.
-- **AI News article heading link clicks** — intermittent anti-bot (~67% success). **Do NOT abandon heading clicks entirely** — proceed to next article if it fails; use direct URL as rescue.
+- **Major news sites via Google News click path** — NYT, CNBC, Reuters, and others block via DataDome or Cloudflare when the click path routes through Google News. Reuters via Google News is a *confirmed hard block* — do not retry. Navigate directly to the article's native domain or find a different outlet's link in Google News results.
+- **AI News article heading link clicks — intermittent anti-bot (~67% success on featured section)** — links in the "LATEST" section appear to have a higher block rate. Prioritise the top 2–3 featured article headings (large cards) before scrolling to LATEST. **Do NOT abandon heading clicks entirely** — proceed to the next article if it fails; use direct URL as rescue only.
 - **`(empty page)` on snapshot after click** — if `browser_snapshot(full=false)` returns `(empty page)` with `element_count: 0`, the link triggered an anti-bot redirect. **Do NOT immediately use direct URL** — proceed to the next article on the listing; use direct URL rescue only if you need to recover that specific article. On returning to the homepage, the heading links get fresh ref IDs — re-identify and click the next article's link.
 - **`(empty page)` on snapshot after click** — if `browser_snapshot(full=true)` returns `(empty page)` with `element_count: 0`, the link triggered an anti-bot redirect. Do NOT retry the click. Instead: (a) copy the address bar URL (may be partially resolved), (b) use Google News search to find the original source publication, (c) navigate directly to the original source domain. Never use browser back and re-click the same link — it will fail again.
 
