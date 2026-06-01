@@ -34,6 +34,7 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 
 ### Support Files
 - `references/conflict-news-rss.md` — BBC + CNBC RSS feed URLs, grep filter patterns for conflict topics (Ukraine, Middle East, South China Sea), and usage examples. Maintained with verified working sources from 2026-05-27.
+- `references/pubmed-eutils-api.md` — PubMed EUtils API: curl-based search and abstract fetch, query syntax, verified queries for health research fact-checking. Use when verifying medical/scientific claims from social media.
 
 ### Verified working news sources in cron job browser context:
 - `www.artificialintelligence-news.com` — loads reliably, no anti-bot blocking observed. Good for AI/tech news. Accepts cookie consent dialog (handle with browser_click on "Accept" button before reading content).

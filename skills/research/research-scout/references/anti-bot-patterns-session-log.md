@@ -29,6 +29,43 @@
 | Navigate directly to CNBC article URL | `https://www.cnbc.com/2026/05/29/...` | "Not Found" (404) | CNBC article URLs include date in path; slug must be exact |
 | Navigate to Invezz article | Invezz.com | Cloudflare block | Invezz uses Cloudflare; blocked in cron context |
 
+### New Observations — 2026-06-01
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|--------|-----------|
+| Click AI News heading link — Google Pay UCP (`ref=e121`) | Featured section | Click "succeeded" — no error thrown — but `browser_snapshot` showed homepage with ref IDs unchanged. | Anti-bot intercepts silently; ref IDs refresh (new page context) but visible content stays homepage. |
+| Click AI News heading link — NBA AI article (`ref=e123`) | After scrolling to LATEST | Same: click registered, no error, snapshot showed homepage. | Same silent interception pattern. |
+| Click AI News heading link — OpenAI FGF article (`ref=e117`) | Featured section | `(empty page)`, `element_count: 0` | Classic anti-bot redirect. |
+| After failed heading click, navigate directly to article URL | Direct URL `.../scaling-safe-enterprise-ai-openai-governance-frameworks/` | Page loaded correctly, full article readable | Direct URL is reliable fallback regardless of failure mode. |
+| Google News search → TechCrunch result for Claude Opus 4.8 | `ref=e38` in Google News | **Page loaded correctly with full content** | Google News → TechCrunch works reliably; primary viable path. |
+| browser_snapshot(full=false) sufficient for all 3 articles | OpenAI FGF, Google Pay UCP, NBA AI | 124–142 element count captured full article text across all three | Compact snapshot remains sufficient; full=true not needed. |
+
+### New Silent Interception Failure Mode
+
+Two distinct anti-bot failure modes now observed on AI News heading links:
+
+1. **Silent interception** — click is consumed, ref IDs refresh (new page context), but content stays on homepage. `browser_snapshot` shows homepage, not the article. Distinct from empty-page redirect.
+2. **Empty-page redirect** — `element_count: 0`, "(empty page)". Classic anti-bot redirect.
+
+Both resolved by navigating directly to the AI News article URL: `https://www.artificialintelligence-news.com/news/{slug}/`
+
+### Updated Quick Diagnosis Flow
+
+```
+Article title confirmed on AI News homepage
+    ↓
+Attempt heading link click
+    ↓
+browser_snapshot(full=false):
+   a. Article title confirmed → proceed to read
+   b. Homepage content (refs match homepage) → silent interception → step 5
+   c. element_count: 0 / (empty page) → anti-bot redirect → step 5
+    ↓
+Step 5: Search Google News for title OR navigate directly to AI News article URL
+    ↓
+browser_snapshot(full=false) → verify title → read
+```
+
 ### New Observations — 2026-05-31
 
 | Action | URL/Element | Result | Diagnosis |

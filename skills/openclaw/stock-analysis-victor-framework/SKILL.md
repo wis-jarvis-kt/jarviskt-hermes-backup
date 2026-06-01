@@ -41,9 +41,15 @@ This skill provides a structured approach to analyze selected stocks for potenti
        *   **Strong entry:** Both conditions met. **Potential entry:** Either condition met.
     d. **If yfinance is insufficient:** Fall back to `browser_navigate("https://finance.yahoo.com/quote/{SYM}/statistics")` → snapshot → scroll → parse "Valuation Measures" section for Trailing P/E and PEG Ratio.
 
+## Computing 5Y Avg P/E — Worked Example (NVDA)
+
 > **Note on shares outstanding:** Required to convert total net income to per-share EPS for historical P/E calculation. Yahoo Finance `info.sharesOutstanding` provides this. Do not skip — without it, historical P/E cannot be computed.
 
-## Computing 5Y Avg P/E — Worked Example (NVDA)
+**Preferred approach: use `scripts/stock_radar_pe.py`** — it handles the year-end close indexing and scalar conversion correctly. Run it via:
+```bash
+python3 ~/.hermes/skills/openclaw/stock-analysis-victor-framework/scripts/stock_radar_pe.py [SYMBOL ...]
+```
+Defaults to AAPL, NVDA, META, GOOGL, MSFT, TSLA.
 
 ```python
 t = yf.Ticker('NVDA')
@@ -115,11 +121,11 @@ Pass = IV > 40% AND S&P >1% down on that day. Only then is CSP entry justified.
 
 Record in report: `"Fear & Greed: unavailable — VIX [N] = [label]"` so reader knows the gap.
 
-### Top CSP Candidates (May 21, 2026 screen — SOXQ leads)
-1. SOXQ — IV 51.7%, premium $6.90, ROI 7.3%/mo
-2. FNDX — IV 50.0%, premium $1.20, ROI 4.3%/mo
-3. AIQ — IV 43.2%, ROI 3.1%/mo
-4. XLG — IV 43.7%, ROI 1.6%/mo
+### Top CSP Candidates (as of 2026-06-02 — refresh monthly)
+1. SOXQ — consistently highest IV among semiconductors; re-check before each run
+2. FNDX, AIQ, XLG — check IV > 40% threshold on RED days only
+
+**Do NOT use stale data.** The CSP candidates above reflect May 21 conditions and may be outdated. Always run the Volume Screen (Stage 1) and IV Check (Stage 2) fresh before each CSP analysis.
 
 ### Key Lessons
 - VIX below 20 = low IV everywhere, most ETFs fail Stage 2
@@ -146,4 +152,17 @@ Avoids rate-limiting issues with web search — more reliable for batch queries.
 *   **Incomplete Historical Data:** Yahoo Finance may not always provide 5 full years (20 quarters) of quarterly data directly on the statistics page. Approximate averages from available data and clearly state if data is inconclusive (e.g., N/A if less than 3 quarters are available or if data is entirely missing).
 *   **Dynamic Page Content:** Yahoo Finance pages are dynamic. Multiple `browser_scroll` and `browser_snapshot` calls may be needed to ensure all data is captured, especially within the "Statistics" section which can be quite long. Target specific sections by looking for headings like "Valuation Measures".
 *   **Batch news with RSS:** Google News RSS is faster than browser for multi-company scans but returns only titles + snippets. Use it for headlines, not deep research.
-*   **Shares outstanding required for historical P/E:** Without `info['sharesOutstanding']`, net income cannot be converted to per-share EPS and historical P/E computation fails. Always pull shares first.
+*   **Shares outstanding required for historical P/E:** Without `info['sharesOutstanding']`, net income cannot be converted to per-share EPS for historical P/E computation fails. Always pull shares first.
+*   **Year-end close Series/indexing bug:** When computing annual P/Es from `hist.resample('YE').last()['Close']`, the result is a Series indexed by datetime. Accessing via string year (`closes_df[year_str]`) can return a Series rather than a scalar if the index doesn't match exactly. **Fix:** After `resample('YE').last()`, iterate with positional `.iloc[i]` or build a dict with `{idx.year: float(val)}` loop — never assume `df[str(year)]` returns a scalar. Test with `isinstance(val, (int, float))` before using.
+*   **Scalar conversion for numpy/pandas types:** When comparing P/E values (trailing_pe, avg_pe), ensure they are plain Python floats before arithmetic — use `float(x)` explicitly on each value. Comparing pandas scalars directly (e.g. `trailing_pe < avg_pe * 0.90`) raises `ValueError: The truth value of a Series is ambiguous`. Cast every extracted value to `float()` before arithmetic or boolean comparison.
+*   **Delivering reports to WhatsApp groups via bridge:** The Hermes `send_message` tool fails for WhatsApp groups with error `Cannot destructure property 'user' of 'jidDecode(...)' as it is undefined` — a gateway adapter bug when routing group JIDs. **Workaround:** Use `terminal` with Python/curl to call the bridge directly:
+    ```python
+    import urllib.request, json
+    url = "http://127.0.0.1:3000/send"
+    payload = {"chatId": "120363423080731840@g.us", "message": "..."}
+    req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"),
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        print(r.read().decode())
+    ```
+    Bridge must be running (`curl http://127.0.0.1:3000/health` → `{"status":"connected"}`). Group JID format = `120363423080731840@g.us` (not the `whatsapp:` prefix format used by Hermes send CLI). Verified working 2026-06-01.

@@ -15,13 +15,19 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
    - Ukraine/Russia: `https://www.bbc.com/news/world/europe`
    - Middle East: `https://www.bbc.com/news/world/middle_east`
    - South China Sea/Taiwan: `https://www.bbc.com/news/world/asia`
-3. **Accept cookie consent** if dialog appears (click "Accept" or "Reject" as offered).
-4. **Scan headlines** for conflict-relevant stories — use `browser_snapshot(full=false)` on each section page.
-5. **Click through** to 2–3 relevant articles for detail. Verify title after each navigation.
-6. **If BBC sections lack fresh conflict coverage**, supplement with:
-   - Google News search: `https://news.google.com/search?q=ukraine+russia+war&hl=en-US&gl=US&ceid=US:en`
-   - Google News search: `https://news.google.com/search?q=israel+gaza+iran&hl=en-US&gl=US&ceid=US:en`
-7. **Write findings** to `~/.hermes/memories/war-news-YYYY-MM-DD.md` with this format:
+3. **Accept cookie consent** if dialog appears (click "Accept" or "Reject" as offered, or press Escape to dismiss).
+4. **Scan headlines** for conflict-relevant stories using `browser_snapshot(full=false)`.
+5. **Get article URLs** via `browser_console` — the interactive click refs often fail. Run:
+   ```javascript
+   Array.from(document.querySelectorAll('a[href*="/news/articles/"]'))
+     .map(a => a.href).filter((v,i,a) => a.indexOf(v) === i)
+   ```
+   Deduplicate the results, then open relevant articles directly via `browser_navigate(url)` using the `https://www.bbc.com/news/articles/<id>` URLs. Do NOT rely on clickable refs from the snapshot — they frequently error with "Could not compute box model."
+6. **Read article content** via `browser_snapshot(full=false)` on each article page. The body text is in the `article` element's static text children; use `browser_console` to inspect if needed.
+7. **For Taiwan/South China Sea**, supplement BBC Asia with a Google News search:
+   `https://news.google.com/search?q=south+china+sea+taiwan+strait+2026&hl=en-US&gl=US&ceid=US:en`
+   Extract URLs from Google News results using the same JS snippet above, then navigate directly to source articles (SCMP, Taipei Times, Reuters, Al Jazeera, etc.).
+8. **Write findings** to `~/.hermes/memories/war-news-YYYY-MM-DD.md` with this format:
 
 ```markdown
 # War News Summary — YYYY-MM-DD
@@ -55,11 +61,17 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 | BBC Asia | `https://www.bbc.com/news/world/asia` | South China Sea, Taiwan |
 | Google News | `https://news.google.com/search?q=...` | Fallback supplement |
 
-## Anti-Bot Notes
+## Anti-Bot / Technical Notes
 
 - BBC RSS feeds work but provide only `<title>` + `<description>` — insufficient for detail. Use browser navigation for full articles.
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use browser nav instead.
-- Reuters via Google News is a *confirmed hard block* — navigate directly to Reuters or find alternative outlet.
+- Reuters via Google News is a *confirmed hard block* — navigate directly to Reuters or use an alternative outlet.
+- **Cookie dialog**: After navigating to BBC, an "Online Quality Survey" alertdialog appears. Press `Escape` once or twice to dismiss it, then proceed.
+- **Click failures**: Interactive element refs from `browser_snapshot` (e.g. `@e88`) often error with "Could not compute box model." **Do NOT use `browser_click` on article links from a listing page.** Instead:
+  1. Run the JS snippet (step 5 above) to extract `https://www.bbc.com/news/articles/<id>` URLs.
+  2. Navigate directly with `browser_navigate(url)` to each article.
+- **Google News article extraction**: Same pattern — don't try clicking results. Use `browser_console` JS to grab URLs, then navigate directly to source sites.
+- **BBC article text**: After navigating to an article, body content is in the `article` element's static text children of `main`. Use `browser_snapshot(full=false)` for the full article text; `browser_console` can be used for targeted DOM inspection.
 
 ## Related Skills
 

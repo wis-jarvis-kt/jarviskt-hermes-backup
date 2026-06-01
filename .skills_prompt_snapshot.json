@@ -246,8 +246,8 @@
       3836
     ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
-      1779889743287207244,
-      9220
+      1780322372071414747,
+      11433
     ],
     "openclaw/victor-study/SKILL.md": [
       1780049277979301743,
@@ -318,12 +318,16 @@
       103375
     ],
     "research/research-scout/SKILL.md": [
-      1780236360086603618,
-      6076
+      1780264998545434019,
+      5978
+    ],
+    "research/war-news/SKILL.md": [
+      1780311808678074555,
+      4287
     ],
     "research/web-research-limitations/SKILL.md": [
-      1780225518102418941,
-      12677
+      1780272872701787383,
+      12904
     ],
     "smart-home/openhue/SKILL.md": [
       1779156650669181257,
@@ -1800,6 +1804,19 @@
       "category": "research",
       "frontmatter_name": "research-scout",
       "description": "Recurring evening AI/tech research scout: find 3 notable ...",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "war-news",
+      "category": "research",
+      "frontmatter_name": "war-news",
+      "description": "Daily geopolitical conflict news summary: Ukraine, Middle...",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],

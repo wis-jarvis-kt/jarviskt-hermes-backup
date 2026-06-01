@@ -24,6 +24,12 @@
 - Skill format: `SKILL.md` + YAML frontmatter
 - Stuck gaps: document in `~/.hermes/memories/YYYY-MM-DD.md` under `## 🔧 Stuck & Learned`
 
+## Skill Locations (non-obvious)
+- `openclaw/victor-study` → `~/.hermes/skills/openclaw/victor-study/SKILL.md`
+- `openclaw/stock-analysis-victor-framework` → `~/.hermes/skills/openclaw/stock-analysis-victor-framework/`
+- Active openclaw skills live in `~/.hermes/skills/openclaw/<skill-name>/` subdirectories
+- gbrain MCP server skills (3) are aspirational — disconnected since OpenClaw migration
+
 ## Active Cron Workflows
 - **research-scout:** Nightly AI/tech/news scout → `research-YYYY-MM-DD.md`
 - **stock-radar:** Daily stock analysis via Victor framework → `stock-radar-YYYY-MM-DD.md`
