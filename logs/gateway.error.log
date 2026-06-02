@@ -995,3 +995,29 @@ WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth to
 WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
 WARNING agent.tool_executor: Tool skill_manage returned error (0.04s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 128| 4. XLG — IV 43.7%, ROI 1.6%/mo\n 129| \n 130| ### Key Lessons\n 131| - VIX 
 WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool skill_manage returned error (0.05s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  59| - **Silent interception on AI News heading clicks** — the click is consumed
+WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool skill_manage returned error (0.05s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  59| - **Silent interception on AI News heading clicks** — the click is consumed
+WARNING agent.tool_executor: Tool terminal returned error (0.07s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "curl -s \"https://api.alternative.me/fng/\" | python3 -c \"import sys,json; d=json.load
+WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+WARNING agent.tool_executor: Tool execute_code returned error (4.43s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/var/folders/hj/2zz8m54d41bbkykhxlvfwkxm0000gn/T/hermes_sandbox_g_0ppvvh/script.py\", line 8, in <module>\
+WARNING agent.tool_executor: Tool execute_code returned error (5.31s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/var/folders/hj/2zz8m54d41bbkykhxlvfwkxm0000gn/T/hermes_sandbox_1jwhbb5r/script.py\", line 21, in <module>
+WARNING agent.tool_executor: Tool terminal returned error (0.08s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "imsg send --to \"56702359580792@lid\" --text \"Master KT — ETF CSP Daily Brief\n\n🔴 MAR
+WARNING agent.tool_executor: Tool terminal returned error (60.65s): {"output": "[Command timed out after 60s]", "exit_code": 124, "error": null}
+
+[Tool loop warning: same_tool_failure_warning; count=3; terminal has failed 3 times this turn. This looks like a loop. Do 
+WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 22:04:28.
+WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:55:28.
+WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth token` is a classic PAT (ghp_*). Classic Personal Access Tokens (ghp_*) are not supported by the Copilot API. Use one of:
+  → `copilot login` or `hermes model` to authenticate via OAuth
+  → A fine-grained PAT (github_pat_*) with Copilot Requests permission
+  → `gh auth login` with the default device code flow (produces gho_* tokens)
+WARNING agent.tool_executor: Tool browser_click returned error (0.36s): {"success": false, "error": "Unknown ref: e39"}
+WARNING agent.tool_executor: Tool skill_manage returned error (0.04s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 166| ---\n 167| \n 168| ### 1. [Headline]\n 169| \n 170| **Source:** ... — YYYY-
+WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool read_file returned error (1.02s): {"content": "", "total_lines": 0, "file_size": 0, "truncated": false, "is_binary": false, "is_image": false, "error": "File not found: /Users/ktoclaw/.hermes/memories/.gitignore"}
+WARNING agent.tool_executor: Tool terminal returned error (0.44s): {"output": "28,29c28\n< - `openclaw/victor-study` → `~/.hermes/skills/openclaw/victor-study/SKILL.md`\n< - `openclaw/stock-analysis-victor-framework` → `~/.hermes/skills/openclaw/stock-analysis-victor
+WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}

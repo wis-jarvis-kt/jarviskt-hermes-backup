@@ -15,7 +15,7 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
    - Ukraine/Russia: `https://www.bbc.com/news/world/europe`
    - Middle East: `https://www.bbc.com/news/world/middle_east`
    - South China Sea/Taiwan: `https://www.bbc.com/news/world/asia`
-3. **Accept cookie consent** if dialog appears (click "Accept" or "Reject" as offered, or press Escape to dismiss).
+3. **Dismiss the "Online Quality Survey" alertdialog** if it appears (it contains an iframe). Press `Escape` once or twice — do NOT try to click inside the iframe. Then proceed to scrape headlines.
 4. **Scan headlines** for conflict-relevant stories using `browser_snapshot(full=false)`.
 5. **Get article URLs** via `browser_console` — the interactive click refs often fail. Run:
    ```javascript

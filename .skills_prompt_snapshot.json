@@ -242,16 +242,12 @@
       2919
     ],
     "openclaw/openclaw-imports/SKILL.md": [
-      1779991382473369843,
-      3836
+      1780396677175990757,
+      4476
     ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
-      1780322372071414747,
-      11433
-    ],
-    "openclaw/victor-study/SKILL.md": [
-      1780049277979301743,
-      3819
+      1780396580916135281,
+      15344
     ],
     "productivity/airtable/SKILL.md": [
       1779156650649372102,
@@ -317,17 +313,13 @@
       1779156650660651553,
       103375
     ],
-    "research/research-scout/SKILL.md": [
-      1780264998545434019,
-      5978
-    ],
     "research/war-news/SKILL.md": [
-      1780311808678074555,
-      4287
+      1780398217281158286,
+      4371
     ],
     "research/web-research-limitations/SKILL.md": [
-      1780272872701787383,
-      12904
+      1780396622394638778,
+      15738
     ],
     "smart-home/openhue/SKILL.md": [
       1779156650669181257,
@@ -1519,19 +1511,6 @@
       }
     },
     {
-      "skill_name": "victor-study",
-      "category": "openclaw",
-      "frontmatter_name": "victor-study",
-      "description": "Weekly sector deep-dive for Victor's 5 watchlist sectors:...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
       "skill_name": "airtable",
       "category": "productivity",
       "frontmatter_name": "airtable",
@@ -1795,19 +1774,6 @@
           "terminal",
           "files"
         ],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "research-scout",
-      "category": "research",
-      "frontmatter_name": "research-scout",
-      "description": "Recurring evening AI/tech research scout: find 3 notable ...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
         "fallback_for_tools": [],
         "requires_tools": []
       }

@@ -22,7 +22,15 @@ server not yet reconnected in Hermes.
 | Skill | Status | Notes |
 |-------|--------|-------|
 | `openclaw-imports` | active | This umbrella — index of all migrated skills |
-| `stock-analysis-victor-framework` | active | Victor's P/E vs 5Y avg + Fear & Greed investing framework; supersedes archived `stock-ai-agent` |
+| `stock-analysis-victor-framework` | active | Victor's P/E vs 5Y avg + Fear & Greed investing framework; now includes the weekly Victor Study workflow as "Weekly Victor Study" section |
+
+## Absorbed Skills
+
+These skills have been absorbed into `stock-analysis-victor-framework`:
+
+| Skill | Absorbed Into | Reason |
+|-------|---------------|--------|
+| `victor-study` | `stock-analysis-victor-framework` | Weekly sector deep-dive merged as "Weekly Victor Study" section; same 5-sector watchlist, same output format. Archived skill remains at `openclaw/.archive/victor-study/SKILL.md` |
 
 ## Archived Skills (in .archive/openclaw-imports/)
 
@@ -42,7 +50,7 @@ These skills were consolidated here — their content lives under this umbrella.
 | `book-downloader` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
 | `consolidate-memory` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
 | `instagram-extractor` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
-| `research-scout` | `research/research-scout` | Active skill — archived duplicate; canonical is `research/research-scout` |
+| `research-scout` | `research/web-research-limitations` | Active skill absorbed — canonical is now `research/web-research-limitations` (evening AI/tech scout workflow absorbed as "Research Scout" section); content from `research-scout/references/anti-bot-patterns-session-log.md` moved to `web-research-limitations/references/research-scout-anti-bot.md` |
 
 ## Key Gap: gbrain MCP Server
 

@@ -25,8 +25,7 @@
 - Stuck gaps: document in `~/.hermes/memories/YYYY-MM-DD.md` under `## 🔧 Stuck & Learned`
 
 ## Skill Locations (non-obvious)
-- `openclaw/victor-study` → `~/.hermes/skills/openclaw/victor-study/SKILL.md`
-- `openclaw/stock-analysis-victor-framework` → `~/.hermes/skills/openclaw/stock-analysis-victor-framework/`
+- `openclaw/stock-analysis-victor-framework` → `~/.hermes/skills/openclaw/stock-analysis-victor-framework/` (includes Weekly Victor Study section)
 - Active openclaw skills live in `~/.hermes/skills/openclaw/<skill-name>/` subdirectories
 - gbrain MCP server skills (3) are aspirational — disconnected since OpenClaw migration
 
@@ -35,6 +34,8 @@
 - **stock-radar:** Daily stock analysis via Victor framework → `stock-radar-YYYY-MM-DD.md`
 - **victor-study:** Weekly sector deep-dives → `victor-study-YYYY-MM-DD.md`
 - **war-news:** Daily conflict news → `war-news-YYYY-MM-DD.md`
+- **hermes-self-improve-2am:** Auto-review of SOUL.md, config.yaml, skills for outdated info
+- **hermes-backup-daily:** Daily backup of memories and config
 
 ## Victor Framework (Stock Investing)
 - **Entry signal:** Current P/E < 90% of 5Y Avg P/E — OR — Current PEG < 90% of 5Y Avg PEG
