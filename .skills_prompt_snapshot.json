@@ -14,8 +14,8 @@
       3709
     ],
     "apple/imessage/SKILL.md": [
-      1779156650595519715,
-      2442
+      1780494559796863446,
+      3618
     ],
     "apple/macos-computer-use/SKILL.md": [
       1779156650595679259,
@@ -242,8 +242,12 @@
       2919
     ],
     "openclaw/openclaw-imports/SKILL.md": [
-      1780396677175990757,
-      4476
+      1780510000089238299,
+      4633
+    ],
+    "openclaw/openclaw-stock-analysis-victor-framework/SKILL.md": [
+      1780494616203263839,
+      3795
     ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
       1780396580916135281,
@@ -314,8 +318,8 @@
       103375
     ],
     "research/war-news/SKILL.md": [
-      1780398217281158286,
-      4371
+      1780509984695214590,
+      5691
     ],
     "research/web-research-limitations/SKILL.md": [
       1780396622394638778,
@@ -1490,6 +1494,22 @@
       "frontmatter_name": "openclaw-imports",
       "description": "Skills migrated from OpenClaw on 2026-05-20. Several refe...",
       "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "openclaw-stock-analysis-victor-framework",
+      "category": "openclaw",
+      "frontmatter_name": "openclaw-stock-analysis-victor-framework",
+      "description": "Victor framework for CSP (Cash Secured Put) and CC (Cover...",
+      "platforms": [
+        "macos",
+        "linux"
+      ],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],

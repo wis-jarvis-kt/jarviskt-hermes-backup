@@ -50,7 +50,7 @@ These skills were consolidated here — their content lives under this umbrella.
 | `book-downloader` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
 | `consolidate-memory` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
 | `instagram-extractor` | `openclaw-imports` | Standalone utility — archived as narrow-but-valid |
-| `research-scout` | `research/web-research-limitations` | Active skill absorbed — canonical is now `research/web-research-limitations` (evening AI/tech scout workflow absorbed as "Research Scout" section); content from `research-scout/references/anti-bot-patterns-session-log.md` moved to `web-research-limitations/references/research-scout-anti-bot.md` |
+|| `research-scout` | inline (cron job) | Active skill archived; no canonical skill file — two cron jobs run inline prompts: `hermes-research-scout-6am` (06:00) and `hermes-research-scout-10pm` (22:00). Content was split: anti-bot patterns moved to `research/web-research-limitations/references/research-scout-anti-bot.md`; war news pattern moved to `research/war-news/SKILL.md`. Cron jobs use `skill: null` with inline prompts — not broken, just unlinked from any skill file. |
 
 ## Key Gap: gbrain MCP Server
 

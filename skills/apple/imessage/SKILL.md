@@ -80,12 +80,30 @@ imsg watch --chat-id 1 --attachments
 - `--service sms` — Force SMS (green bubble)
 - `--service auto` — Let Messages.app decide (default)
 
+## Pitfalls
+
+### Cron Jobs / Headless Context
+`imsg` reads from `~/Library/Messages/chat.db` and **requires Full Disk Access**. Running in a cron job, LaunchAgent, or headless context (no GUI session) will fail with `permissionDenied` even if the tool is installed. Workarounds:
+- Use a macOS GUI session that's been authorized
+- Use a platform gateway (Telegram, Discord, etc.) as the delivery channel instead of iMessage
+- If iMessage delivery is required, deliver the text to a file and have a GUI-side script pick it up
+
+### Wrong Send Flag
+`imsg send -c <id>` is **wrong** — `-c` is not a valid flag for `send`. Use one of:
+- `--chat-guid <guid>` — the full chat identifier string (e.g. `iMessage;+;chat...`)
+- `--chat-id <rowid>` — the numeric database rowid (from `imsg chats --json`)
+- `--to <phone>` — send to a phone number
+
+### Confusing Chat-ID vs Chat-Guid
+`imsg chats --json` returns both `id` (rowid) and `guid`/`chatIdentifier` fields. `--chat-id` takes the numeric rowid; `--chat-guid` takes the string identifier. Mixing them up produces `Unknown chat` errors.
+
 ## Rules
 
 1. **Always confirm recipient and message content** before sending
 2. **Never send to unknown numbers** without explicit user approval
 3. **Verify file paths** exist before attaching
 4. **Don't spam** — rate-limit yourself
+5. **Test `imsg chats` first** to verify database access before a mission-critical send
 
 ## Example Workflow
 

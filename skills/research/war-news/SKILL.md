@@ -56,7 +56,7 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 
 | Source | URL | Notes |
 |--------|-----|-------|
-| BBC World Europe | `https://www.bbci.co.uk/news/world/europe` | Ukraine/Russia — reliable, no anti-bot |
+| BBC World Europe | `https://www.bbc.com/news/world/europe` | Ukraine/Russia — reliable, no anti-bot |
 | BBC Middle East | `https://www.bbc.com/news/world/middle_east` | Israel, Iran, Gaza |
 | BBC Asia | `https://www.bbc.com/news/world/asia` | South China Sea, Taiwan |
 | Google News | `https://news.google.com/search?q=...` | Fallback supplement |
@@ -65,15 +65,23 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 
 - BBC RSS feeds work but provide only `<title>` + `<description>` — insufficient for detail. Use browser navigation for full articles.
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use browser nav instead.
-- Reuters via Google News is a *confirmed hard block* — navigate directly to Reuters or use an alternative outlet.
+- **Hard-blocked outlets** — do not attempt to browser_navigate directly to these; use Google News or BBC as intermediary:
+  - **Reuters** — DataDome device-check iframe blocks all direct navigations
+  - **SCMP** — returns 404 on many article URLs; use Taipei Times or other outlets instead
+  - **Google News JS href extraction unreliable** — the ` WYjbwe` class-based JS approach does not reliably yield article links; URLs from Google News search results must be inferred from the visible text links or from page structure using broader selectors
 - **Cookie dialog**: After navigating to BBC, an "Online Quality Survey" alertdialog appears. Press `Escape` once or twice to dismiss it, then proceed.
 - **Click failures**: Interactive element refs from `browser_snapshot` (e.g. `@e88`) often error with "Could not compute box model." **Do NOT use `browser_click` on article links from a listing page.** Instead:
   1. Run the JS snippet (step 5 above) to extract `https://www.bbc.com/news/articles/<id>` URLs.
   2. Navigate directly with `browser_navigate(url)` to each article.
-- **Google News article extraction**: Same pattern — don't try clicking results. Use `browser_console` JS to grab URLs, then navigate directly to source sites.
+- **Google News article extraction**: Same pattern — don't try clicking results. Use `browser_console` JS to grab URLs, then navigate directly to source sites. If URL extraction fails, navigate to Google News and use the visible headline text to search the topic on a known-working outlet (Taipei Times, Al Jazeera).
 - **BBC article text**: After navigating to an article, body content is in the `article` element's static text children of `main`. Use `browser_snapshot(full=false)` for the full article text; `browser_console` can be used for targeted DOM inspection.
+- **Article count and batching**: A full six-article read (3 Europe + 3 Middle East) is safe for a cron job with no time pressure. If running in a time-constrained session, prioritize 2–3 most recent/relevant per region. Group browser_navigate calls by region to reduce session overhead.
+- **URL typos in BBC section links**: Double-check URLs before navigating — a truncated URL (e.g. `/middle_ea`) silently yields a 404. Always spell-check: the Middle East section is `bbc.com/news/world/middle_east` (not `/middle_ea`).
 
 ## Related Skills
 
 - `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
 - `research-scout` — AI/tech research (separate from conflict news)
+
+## Support Files
+- `references/outlet-notes.md` — outlet accessibility matrix, hard-blocked sites (Reuters DataDome, SCMP 404s), Google News search URLs, and BBC Asia coverage gaps for Taiwan/SCS
