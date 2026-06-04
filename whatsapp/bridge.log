@@ -2390,3 +2390,153 @@ Closing session: SessionEntry {
 ⚠️  Connection closed (reason: 428). Reconnecting in 3s...
 ✅ WhatsApp connected!
 {"level":40,"time":1780511779426,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780520095539,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780523037601,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":50,"time":1780525222163,"pid":87216,"hostname":"Mac-mini-2.local","fullErrorNode":{"tag":"stream:error","attrs":{"code":"503"}},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 503). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780525246672,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":50,"time":1780527445292,"pid":87216,"hostname":"Mac-mini-2.local","fullErrorNode":{"tag":"stream:error","attrs":{"code":"503"}},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 503). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780527469871,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"level":50,"time":1780528361651,"pid":87216,"hostname":"Mac-mini-2.local","fullErrorNode":{"tag":"stream:error","attrs":{"code":"503"}},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 503). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780528386212,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780533370009,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"203521437778053@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"203521437778053@lid"}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"60125226892-1567175357@g.us","senderId":"203521437778053@lid"}
+{"level":50,"time":1780541645077,"pid":87216,"hostname":"Mac-mini-2.local","fullErrorNode":{"tag":"stream:error","attrs":{"code":"503"}},"msg":"stream errored out"}
+⚠️  Connection closed (reason: 503). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780541669701,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780562214928,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+Closing session: SessionEntry {
+  _chains: {
+    BV0TmbtTNo940Cj1FoLkvabBDPheWS7R69KWhx8b1pVo: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 5d 13 99 bb 53 36 8f 78 d0 28 f5 16 82 e4 bd a6 c1 0c f8 5e 59 2e d1 eb d2 96 87 1f 1b d6 95 68>,
+      privKey: <Buffer 98 f1 7d 36 e0 08 f1 28 3a 3d fe a7 d6 de a9 31 4b 1b 0e 28 87 63 f7 cd 9a 78 69 a3 56 68 d6 5c>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 4a 9a e1 cb 09 82 72 ef ac d5 b5 2c 4c 24 80 43 b5 8e c7 74 6f 87 9f d8 88 6d 37 11 3e e5 4a 62>,
+    previousCounter: 0,
+    rootKey: <Buffer 78 e1 08 5c 61 85 26 47 f8 92 e3 7c 24 e5 20 92 c0 d6 71 f8 e5 28 f9 ed fd 20 8e 0a 37 be d3 33>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 46 31 79 9f 84 c4 96 ac d0 9b 3a 5b 17 af 42 fa a8 a7 62 06 e8 42 57 68 6f 2c 13 b2 0c a6 ab 0a>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1780494301696,
+    created: 1780494301696,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  },
+  pendingPreKey: {
+    signedKeyId: 11851722,
+    baseKey: <Buffer 05 46 31 79 9f 84 c4 96 ac d0 9b 3a 5b 17 af 42 fa a8 a7 62 06 e8 42 57 68 6f 2c 13 b2 0c a6 ab 0a>,
+    preKeyId: 12914
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    Be8ThGykyYc732WrZ6L3h0jQw1sTVS4Viq3BTSCuiWwN: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 ef 13 84 6c a4 c9 87 3b df 65 ab 67 a2 f7 87 48 d0 c3 5b 13 55 2e 15 8a ad c1 4d 20 ae 89 6c 0d>,
+      privKey: <Buffer e8 12 b3 55 79 81 75 4a b2 b7 91 8b d6 75 90 be ae a2 ce c9 e1 fb 85 ab a6 cc 35 18 79 8c 78 59>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 05 aa bf 87 4d 6b 14 85 de 22 ae 5e a2 00 1c e4 91 2d c6 54 48 a6 9c e3 60 5f 42 9a de e8 a4 6b>,
+    previousCounter: 0,
+    rootKey: <Buffer d8 71 d1 46 e3 87 45 95 56 1a 99 c2 5d 0d e0 f8 7d 34 86 2d 33 02 99 4f f2 0c ce 43 36 6d c5 d8>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 ea 4c 42 f4 ca 66 66 39 85 7c 56 24 50 0d 14 52 d7 84 96 ba 0e f0 44 4c 2d d5 d7 7c 17 b5 ba 00>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1780494301706,
+    created: 1780494301706,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757561,
+    baseKey: <Buffer 05 ea 4c 42 f4 ca 66 66 39 85 7c 56 24 50 0d 14 52 d7 84 96 ba 0e f0 44 4c 2d d5 d7 7c 17 b5 ba 00>,
+    preKeyId: 12799101
+  }
+}
+{"event":"ignored","reason":"allowlist_mismatch","chatId":"25693282910230@lid","senderId":"25693282910230@lid"}
+Closing session: SessionEntry {
+  _chains: {
+    'BdvlV5k0IO/1rbcD6lIzVygrdANvlsnnDPBzt+NdlUEZ': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 964615210,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 db e5 57 99 34 20 ef f5 ad b7 03 ea 52 33 57 28 2b 74 03 6f 96 c9 e7 0c f0 73 b7 e3 5d 95 41 19>,
+      privKey: <Buffer 28 7d d5 6e 90 b2 11 a0 3a e5 ca bb 07 b5 41 d6 d1 d8 af b0 a3 7a ae ce 6f 31 dc eb 33 05 93 6b>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 4a 9a e1 cb 09 82 72 ef ac d5 b5 2c 4c 24 80 43 b5 8e c7 74 6f 87 9f d8 88 6d 37 11 3e e5 4a 62>,
+    previousCounter: 0,
+    rootKey: <Buffer 07 f5 68 43 7c 53 24 37 8a 30 62 fa f2 18 88 e7 95 9a 03 a7 8f 2b 15 fc 23 b1 97 4f 8f 0d d7 99>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 4a 81 0a 29 2d b8 ba 21 51 a0 42 2b 6c bb 49 94 ed 20 3a e9 e2 05 f9 0d 45 d4 dc ea 83 37 cd 6d>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1780567201920,
+    created: 1780567201920,
+    remoteIdentityKey: <Buffer 05 fe 47 cf 1f 55 8d 8f f8 be d8 26 a8 79 33 df 4b e1 a6 55 a1 32 72 49 79 02 d0 b9 aa 31 bc 16 45>
+  },
+  pendingPreKey: {
+    signedKeyId: 11851722,
+    baseKey: <Buffer 05 4a 81 0a 29 2d b8 ba 21 51 a0 42 2b 6c bb 49 94 ed 20 3a e9 e2 05 f9 0d 45 d4 dc ea 83 37 cd 6d>,
+    preKeyId: 12695
+  }
+}
+Closing session: SessionEntry {
+  _chains: {
+    'BTMt18oOP/AV2zFsq926im+HXIVrfez9TSdR5Vyuvh8N': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 569403322,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 33 2d d7 ca 0e 3f f0 15 db 31 6c ab dd ba 8a 6f 87 5c 85 6b 7d ec fd 4d 27 51 e5 5c ae be 1f 0d>,
+      privKey: <Buffer 08 07 90 b6 36 8f fa 2a a5 26 52 78 e8 17 19 92 af 6b 26 c9 24 d3 3a 4f 18 69 56 65 91 65 e1 77>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 05 aa bf 87 4d 6b 14 85 de 22 ae 5e a2 00 1c e4 91 2d c6 54 48 a6 9c e3 60 5f 42 9a de e8 a4 6b>,
+    previousCounter: 0,
+    rootKey: <Buffer 79 35 3a 84 e0 57 6a 20 21 79 22 ad 32 6d e7 c3 ee 8c c0 94 ba a6 ad a5 55 7f f2 02 e2 ef d5 ef>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 55 79 c5 5a a8 d9 8a e7 d5 da 06 16 c1 4a ff 77 c6 63 05 76 ff 73 81 fb 26 19 51 2c 91 bd 9a 70>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1780567201925,
+    created: 1780567201925,
+    remoteIdentityKey: <Buffer 05 80 f0 71 26 1a b2 e7 9a 91 38 3b cf b5 de 25 fe 0f 36 33 09 32 17 30 7e c3 f2 72 c9 1a 60 c6 1d>
+  },
+  pendingPreKey: {
+    signedKeyId: 757561,
+    baseKey: <Buffer 05 55 79 c5 5a a8 d9 8a e7 d5 da 06 16 c1 4a ff 77 c6 63 05 76 ff 73 81 fb 26 19 51 2c 91 bd 9a 70>,
+    preKeyId: 12799068
+  }
+}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780591938199,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}
+⚠️  Connection closed (reason: 428). Reconnecting in 3s...
+✅ WhatsApp connected!
+{"level":40,"time":1780599087966,"pid":87216,"hostname":"Mac-mini-2.local","msg":"Timeout in AwaitingInitialSync, forcing state to Online and flushing buffer"}

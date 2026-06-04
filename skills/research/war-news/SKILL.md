@@ -78,7 +78,12 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 - **Article count and batching**: A full six-article read (3 Europe + 3 Middle East) is safe for a cron job with no time pressure. If running in a time-constrained session, prioritize 2–3 most recent/relevant per region. Group browser_navigate calls by region to reduce session overhead.
 - **URL typos in BBC section links**: Double-check URLs before navigating — a truncated URL (e.g. `/middle_ea`) silently yields a 404. Always spell-check: the Middle East section is `bbc.com/news/world/middle_east` (not `/middle_ea`).
 
-## Related Skills
+## Session Observations (2026-06-04)
+
+- Google News JS href extraction (the `WYjbwe` class) remains unreliable — verified still broken
+- Reuters DataDome block confirmed still active
+- SCMP 404s confirmed still active
+- **Taipei Times URL form**: Article IDs appear in Google News preview snippets as full URLs. Extract from there rather than inferring. The pattern is `https://www.taipeitimes.com/News/taiwan/archives/YYYY/MM/DD/NumericID`. DO NOT use `/news/detail/<code>` form — these are section index pages, not article pages.
 
 - `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
 - `research-scout` — AI/tech research (separate from conflict news)

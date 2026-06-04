@@ -1,13 +1,25 @@
 ---
 name: openclaw-stock-analysis-victor-framework
-description: Victor framework for CSP (Cash Secured Put) and CC (Covered Call) analysis on ETFs. Fetches market data, applies Victor's rules, and formats reports.
+description: |
+  [ARCHIVED - Absorbed into `stock-analysis-victor-framework`]
+  This skill was a CSP/CC-only wrapper that has been superseded by the full
+  `stock-analysis-victor-framework` skill at:
+  `~/.hermes/skills/openclaw/stock-analysis-victor-framework/SKILL.md`
+
+  The canonical skill includes: Victor Entry Signals (P/E + PEG vs 5Y avg),
+  Stock Radar (daily), Weekly Victor Study, CSP screening, and news scanning.
+  All CSP-specific content is preserved inline in the canonical skill.
+
+  Do NOT use this skill for new work — reference `stock-analysis-victor-framework` instead.
 version: 1.0.0
+status: archived
 author: Hermes Agent
 license: MIT
 platforms: [macos, linux]
 metadata:
   hermes:
     tags: [stock, trading, options, CSP, covered-call, ETF, Victor-framework, market-analysis]
+    absorbed_into: openclaw/stock-analysis-victor-framework
 prerequisites:
   commands: [python3, curl]
 ---
@@ -32,7 +44,7 @@ RED day = ideal PUT sell entry. GREEN day = CC opportunity. VIX above 20 + Extre
    - VIX: `https://query2.finance.yahoo.com/v8/finance/chart/%5EVIX?interval=1d&range=1d`
    - ETF prices: `https://query2.finance.yahoo.com/v8/finance/chart/{TICKER}?interval=1d&range=1d`
 
-2. Write Python script to `/Users/ktoclaw/.hermes/tmp/etf_analysis.py` first, then run it.
+2. Write Python script to `~/.hermes/etf_csp_analysis.py` first, then run it via `python3`. Do NOT pipe curl to python (blocked by security scan).
 
 3. Add `User-Agent` header to avoid Yahoo Finance 429s:
    ```python
@@ -72,8 +84,21 @@ Today's data → verdict → waitlist of top 4 ETF candidates → entry triggers
 ### Yahoo Finance Rate Limiting (429)
 Yahoo Finance aggressively rate-limits without a proper User-Agent. Always include a realistic UA header. If you get a 429, wait and retry withUA. Never pipe curl to python — use Python file + subprocess or Python's urllib directly.
 
-### SPX Previous Close Key
-For S&P 500 and VIX, the previous close is stored as `chartPreviousClose`, NOT `previousClose`. The latter may be absent on index data.
+### SPX/VIX Previous Close — Use Indicators Array, Not Meta Keys
+For S&P 500 and VIX, both `previousClose` AND `chartPreviousClose` may be absent from `meta`. The reliable approach:
+1. Parse `indicators.quote[0].close` — it's an array with possible None values
+2. Filter to valid closes: `[c for c in closes if c is not None]`
+3. Current price = `regularMarketPrice` (always valid)
+4. Previous close = `valid_closes[-2]` (second-to-last valid value)
+
+```python
+def get_prev_close(data):
+    closes = data["chart"]["result"][0]["indicators"]["quote"][0]["close"]
+    valid_closes = [c for c in closes if c is not None]
+    return valid_closes[-2]  # previous close
+```
+
+Meta keys `previousClose` and `chartPreviousClose` are unreliable for indices — the indicators array approach is the robust default.
 
 ### Cron Job Delivery
 iMessage (imsg) requires Full Disk Access to ~/Library/Messages/chat.db and a GUI session. Cron jobs run headless and will fail with `permissionDenied`. Use platform messaging (Telegram, WhatsApp, Discord) for automated delivery from cron jobs.

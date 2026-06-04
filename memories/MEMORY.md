@@ -7,7 +7,7 @@
 - **Platforms:** CLI (primary), WhatsApp (2 groups), likely Telegram
 - **Style:** outcome-only — no steps, no tool output, no process. Just the result. If uncertain, state plainly and ask.
 - **Group chats:** stay silent unless @mentioned or name "Wis" is used
-- **WhatsApp groups:** 120363423080731840 (stocks), 120363145668140275 (unknown) — both free_response mode
+- **WhatsApp groups:** 120363423080731840 (stocks), 120363145668140275 (unknown), 120363408633392803 (unknown) — all free_response mode
 - **Short factual questions:** answer directly, no explanation of how
 
 ## Environment
@@ -36,6 +36,12 @@
 - **war-news:** Daily conflict news → `war-news-YYYY-MM-DD.md`
 - **hermes-self-improve-2am:** Auto-review of SOUL.md, config.yaml, skills for outdated info
 - **hermes-backup-daily:** Daily backup of memories and config
+
+## Recent Key Events
+- **AVGO Q2 FY2026 earnings June 3:** Stock +11.1% June 2 on AI data center/edge network platform announcements. Analysts focused on custom ASIC (XPU) demand from hyperscalers. PT range $1,100–$1,800.
+- **PANW Q1 FY2026 earnings June 2:** NATO partnership announced; BTIG Bullish initiation PT $216; GlobalProtect VPN CVE-2026-0257 auth bypass under active exploit (patched).
+- **MSFT Build 2026 (June 2):** 7 major AI announcements — first advanced reasoning AI model, Project Solara (OS for AI agents), Execution Containers (security layer for AI agents on Windows).
+- **GOOGL:** Gemini Spark (agentic AI assistant) launching; Gemini 3 intensifying compute race; Apple/Samsung partnership rumored for Gemini powering Siri/iPhone AI.
 
 ## Victor Framework (Stock Investing)
 - **Entry signal:** Current P/E < 90% of 5Y Avg P/E — OR — Current PEG < 90% of 5Y Avg PEG

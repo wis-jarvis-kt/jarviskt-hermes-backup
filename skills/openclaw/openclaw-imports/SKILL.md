@@ -22,7 +22,7 @@ server not yet reconnected in Hermes.
 | Skill | Status | Notes |
 |-------|--------|-------|
 | `openclaw-imports` | active | This umbrella — index of all migrated skills |
-| `stock-analysis-victor-framework` | active | Victor's P/E vs 5Y avg + Fear & Greed investing framework; now includes the weekly Victor Study workflow as "Weekly Victor Study" section |
+| `openclaw-stock-analysis-victor-framework` | archived | CSP/CC-only wrapper; absorbed into `stock-analysis-victor-framework` (full Victor framework + Stock Radar + Weekly Victor Study). Backup: `SKILL.md.bak-20260602_020222`. |
 
 ## Absorbed Skills
 
