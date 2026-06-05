@@ -1,0 +1,152 @@
+# Stock Radar — 2026-06-05
+
+## Market Sentiment
+| Index | Value | Interpretation |
+|-------|-------|----------------|
+| **CNN Fear & Greed** | **12** | **Extreme Fear** 🟥 |
+
+> Extreme Fear (0-25) historically correlates with buying opportunities.
+
+---
+
+## Stock Analysis — Victor's Framework
+
+### Signal Legend
+- ✅ **P/E Entry:** Current P/E ≥ 10% below 5Y avg P/E
+- ✅ **PEG Entry:** Current PEG ≥ 10% below 5Y avg PEG, or PEG < 1.0 (Peter Lynch zone)
+- 🟢 **Strong Entry:** Both P/E + PEG signals
+- 🟡 **Potential Entry:** Either P/E or PEG signal alone
+
+---
+
+### AAPL — Apple
+| Metric | Value |
+|--------|-------|
+| Price | $313.56 |
+| Trailing P/E | 38.0 |
+| Forward P/E | 32.6 |
+| PEG | 2.53 |
+| 5Y Avg P/E | 30.6 |
+| P/E vs 5Y Avg | 38.0 vs 30.6 → above avg |
+| Annual P/Es | 2022: 18.8, 2023: 28.8, 2024: 39.0, 2025: 35.6 |
+
+**Verdict: No Entry** ❌
+- P/E signal: ❌ (38.0 > 27.5 threshold)
+- PEG signal: ❌ (2.53 >> 1.0, not in bargain zone)
+- Rich by historical standards; wait for P/E compression
+
+---
+
+### NVDA — Nvidia ⭐
+| Metric | Value |
+|--------|-------|
+| Price | $213.34 |
+| Trailing P/E | 32.6 |
+| Forward P/E | 16.8 |
+| PEG | 0.66 |
+| 5Y Avg P/E | 122.0 |
+| P/E vs 5Y Avg | 32.6 vs 122.0 → well below avg |
+| Annual P/Es | 2023: 274.1, 2024: 109.1, 2025: 61.9, 2026: 43.0 |
+
+**Verdict: Strong Entry** 🟢
+- P/E signal: ✅ (32.6 < 109.8 threshold — 73% below 5Y avg)
+- PEG signal: ✅ (0.66 < 1.0 — Peter Lynch bargain zone)
+- Both conditions met simultaneously. Extreme Fear market pricing NVDA at a fraction of its 2022-2023 multiples.
+
+---
+
+### META — Meta Platforms
+| Metric | Value |
+|--------|-------|
+| Price | $623.30 |
+| Trailing P/E | 22.7 |
+| Forward P/E | 17.2 |
+| PEG | 0.86 |
+| 5Y Avg P/E | 18.9 |
+| P/E vs 5Y Avg | 22.7 vs 18.9 → slightly elevated |
+| Annual P/Es | 2022: 11.3, 2023: 19.7, 2024: 20.5, 2025: 24.0 |
+
+**Verdict: Potential Entry** 🟡
+- P/E signal: ❌ (22.7 > 17.0 threshold)
+- PEG signal: ✅ (0.86 < 1.0 — Peter Lynch bargain zone)
+- PEG below 1.0 is a standalone strong signal per Victor's framework, even though P/E is above the 5Y avg threshold.
+
+---
+
+### GOOGL — Alphabet (Google)
+| Metric | Value |
+|--------|-------|
+| Price | $370.83 |
+| Trailing P/E | 28.3 |
+| Forward P/E | 25.6 |
+| PEG | 1.42 |
+| 5Y Avg P/E | 11.1 |
+| P/E vs 5Y Avg | 28.3 vs 11.1 → significantly elevated |
+| Annual P/Es | 2022: 8.5, 2023: 11.0, 2024: 11.0, 2025: 13.8 |
+
+**Verdict: No Entry** ❌
+- P/E signal: ❌ (28.3 > 10.0 threshold — not even close)
+- PEG signal: ❌ (1.42 > 1.0, no bargain)
+- GOOGL has re-rated significantly higher since 2022; current multiples not compelling vs historical.
+
+---
+
+### MSFT — Microsoft
+| Metric | Value |
+|--------|-------|
+| Price | $426.14 |
+| Trailing P/E | 25.4 |
+| Forward P/E | 22.0 |
+| PEG | 1.32 |
+| 5Y Avg P/E | 33.0 |
+| P/E vs 5Y Avg | 25.4 vs 33.0 → below avg |
+| Annual P/Es | 2022: 23.8, 2023: 37.9, 2024: 35.1, 2025: 35.1 |
+
+**Verdict: Potential Entry** 🟡
+- P/E signal: ✅ (25.4 < 29.7 threshold — ~23% discount to 5Y avg)
+- PEG signal: ❌ (1.32 > 1.0, not in bargain zone)
+- P/E entry alone triggered; reasonable valuation at current prices.
+
+---
+
+### TSLA — Tesla
+| Metric | Value |
+|--------|-------|
+| Price | $413.90 |
+| Trailing P/E | 379.7 |
+| Forward P/E | 165.2 |
+| PEG | 5.83 |
+| 5Y Avg P/E | 189.2 |
+| P/E vs 5Y Avg | 379.7 vs 189.2 → elevated |
+| Annual P/Es | 2022: 36.8, 2023: 62.2, 2024: 212.7, 2025: 445.2 |
+
+**Verdict: No Entry** ❌
+- P/E signal: ❌ (379.7 > 170.3 threshold)
+- PEG signal: ❌ (5.83 >> 1.0, nowhere near bargain)
+- Trailing P/E of 379.7 is extreme; even forward P/E of 165 is very high. No entry signal.
+
+---
+
+## Summary Table
+
+| Ticker | Price | P/E | PEG | 5Y Avg P/E | Verdict |
+|--------|-------|-----|-----|------------|---------|
+| AAPL | $313.56 | 38.0 | 2.53 | 30.6 | No Entry |
+| NVDA | $213.34 | 32.6 | 0.66 | 122.0 | **Strong Entry** 🟢 |
+| META | $623.30 | 22.7 | 0.86 | 18.9 | **Potential Entry** 🟡 |
+| GOOGL | $370.83 | 28.3 | 1.42 | 11.1 | No Entry |
+| MSFT | $426.14 | 25.4 | 1.32 | 33.0 | **Potential Entry** 🟡 |
+| TSLA | $413.90 | 379.7 | 5.83 | 189.2 | No Entry |
+
+---
+
+## Key Takeaways
+
+1. **NVDA is the standout** — both P/E and PEG well below 5Y averages; PEG < 1.0 places it firmly in Peter Lynch bargain territory. Extreme Fear sentiment is creating a compelling entry window.
+2. **META and MSFT are interesting** — META's PEG < 1.0 and MSFT's P/E ~23% below its 5Y average are worth watching. Neither is a "strong" signal alone, but in an Extreme Fear environment, partial signals have merit.
+3. **TSLA is stretched** — trailing P/E of 379.7 and PEG of 5.83 remain prohibitive regardless of sentiment.
+4. **GOOGL has re-rated** — current P/E of 28.3 vs 5Y avg of 11.1 reflects the market's re-rating of AI/cloud growth. Not cheap by historical standards.
+5. **AAPL is neutral** — not cheap enough for P/E entry, not growthy enough for PEG entry.
+
+---
+*Generated by Hermes cron — stock-radar-2026-06-05.md*

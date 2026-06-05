@@ -147,13 +147,13 @@
     "created_at": "2026-05-19T13:49:11.701638+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-06-01T13:59:32.074319+00:00",
-    "last_used_at": "2026-06-04T13:45:35.683090+00:00",
-    "last_viewed_at": "2026-06-04T13:45:35.681897+00:00",
+    "last_used_at": "2026-06-05T18:00:47.986652+00:00",
+    "last_viewed_at": "2026-06-05T18:00:47.985956+00:00",
     "patch_count": 16,
     "pinned": false,
     "state": "active",
-    "use_count": 51,
-    "view_count": 51
+    "use_count": 54,
+    "view_count": 54
   },
   "tmate-remote-support": {
     "archived_at": null,
@@ -185,14 +185,14 @@
     "archived_at": null,
     "created_at": "2026-06-01T11:00:47.496162+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-04T11:08:50.681566+00:00",
-    "last_used_at": "2026-06-04T11:08:32.225376+00:00",
-    "last_viewed_at": "2026-06-04T11:08:32.224335+00:00",
-    "patch_count": 7,
+    "last_patched_at": "2026-06-05T11:06:35.947450+00:00",
+    "last_used_at": "2026-06-05T11:06:39.500109+00:00",
+    "last_viewed_at": "2026-06-05T11:06:39.499487+00:00",
+    "patch_count": 12,
     "pinned": false,
     "state": "active",
-    "use_count": 11,
-    "view_count": 11
+    "use_count": 17,
+    "view_count": 17
   },
   "web-research-limitations": {
     "archived_at": null,

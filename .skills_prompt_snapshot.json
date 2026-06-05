@@ -242,12 +242,12 @@
       2919
     ],
     "openclaw/openclaw-imports/SKILL.md": [
-      1780510000089238299,
-      4633
+      1780596165428172247,
+      4676
     ],
     "openclaw/openclaw-stock-analysis-victor-framework/SKILL.md": [
-      1780581092068710272,
-      4496
+      1780596150647736023,
+      5002
     ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
       1780396580916135281,
@@ -318,8 +318,8 @@
       103375
     ],
     "research/war-news/SKILL.md": [
-      1780571330677406597,
-      6209
+      1780657595944904952,
+      7326
     ],
     "research/web-research-limitations/SKILL.md": [
       1780396622394638778,
@@ -1505,7 +1505,7 @@
       "skill_name": "openclaw-stock-analysis-victor-framework",
       "category": "openclaw",
       "frontmatter_name": "openclaw-stock-analysis-victor-framework",
-      "description": "Victor framework for CSP (Cash Secured Put) and CC (Cover...",
+      "description": "[ARCHIVED - Absorbed into `stock-analysis-victor-framewor...",
       "platforms": [
         "macos",
         "linux"

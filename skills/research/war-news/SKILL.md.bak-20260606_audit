@@ -96,7 +96,7 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 - Reuters DataDome confirmed distinct block mechanism from Cloudflare; distinguish in anti-bot notes.
 
 - `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
-- `web-research-limitations` — AI/tech research workflow (absorbed from archived `research-scout`; see `references/research-scout-anti-bot.md`)
+- `research-scout` — AI/tech research (separate from conflict news)
 
 ## Support Files
 - `references/outlet-notes.md` — outlet accessibility matrix, blocking mechanism reference (DataDome vs Cloudflare vs protocol error), Google News search URLs, ISW as go-to China/Taiwan fallback

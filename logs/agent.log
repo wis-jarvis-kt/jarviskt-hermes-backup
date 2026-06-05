@@ -19099,3 +19099,681 @@ Both skills share the same 5-sector watchlist (AI/M…
 2026-06-05 03:01:44,525 INFO [cron_72fa7cab90b2_20260605_030056] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=18406 out=119 total=18525 latency=4.1s cache=14114/18406 (77%)
 2026-06-05 03:01:44,814 INFO [cron_72fa7cab90b2_20260605_030056] agent.tool_executor: tool terminal completed (0.29s, 819 chars)
 2026-06-05 03:01:47,983 INFO [cron_72fa7cab90b2_20260605_030056] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=18708 out=91 total=18799 latency=3.2s cache=14114/18708 (75%)
+2026-06-05 03:01:51,491 INFO [cron_72fa7cab90b2_20260605_030056] agent.tool_executor: tool terminal completed (3.51s, 50745 chars)
+2026-06-05 03:01:55,476 INFO [cron_72fa7cab90b2_20260605_030056] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=33659 out=73 total=33732 latency=4.0s cache=14114/33659 (42%)
+2026-06-05 03:02:13,659 INFO [cron_72fa7cab90b2_20260605_030056] agent.tool_executor: tool terminal completed (18.18s, 464 chars)
+2026-06-05 03:02:19,851 INFO [cron_72fa7cab90b2_20260605_030056] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=33861 out=190 total=34051 latency=6.2s cache=14114/33861 (42%)
+2026-06-05 03:02:19,883 INFO [cron_72fa7cab90b2_20260605_030056] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=6/90 budget=6/90 tool_turns=5 last_msg_role=assistant response_len=532 session=cron_72fa7cab90b2_20260605_030056
+2026-06-05 03:02:19,883 INFO cron.scheduler: Job 'hermes-backup-daily' completed successfully
+2026-06-05 03:02:41,199 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(9, 5, 5) threads=16 uptime=1311539s
+2026-06-05 03:07:41,318 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(274, 5, 5) threads=16 uptime=1311839s
+2026-06-05 03:07:54,794 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-05 03:12:41,510 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(333, 5, 5) threads=16 uptime=1312139s
+2026-06-05 03:17:41,646 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(397, 5, 5) threads=16 uptime=1312439s
+2026-06-05 03:22:41,798 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(22, 6, 5) threads=16 uptime=1312740s
+2026-06-05 03:27:41,956 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(286, 6, 5) threads=16 uptime=1313040s
+2026-06-05 03:30:23,873 INFO cron.scheduler: Running job 'hermes-memory-consolidate' (ID: c5eefc0f6d98)
+2026-06-05 03:30:23,873 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-05 03:30:23,903 INFO cron.scheduler: Job 'c5eefc0f6d98': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-05 03:30:24,937 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: conversation turn: session=cron_c5eefc0f6d98_20260605_033023 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-05 03:30:31,890 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14098 out=117 total=14215 latency=6.9s
+2026-06-05 03:30:33,918 INFO [cron_c5eefc0f6d98_20260605_033023] tools.file_tools: Creating new local environment for task default...
+2026-06-05 03:30:34,272 INFO [cron_c5eefc0f6d98_20260605_033023] tools.environments.base: Session snapshot created (session=38c441b8a55b, cwd=/Users/ktoclaw)
+2026-06-05 03:30:34,273 INFO [cron_c5eefc0f6d98_20260605_033023] tools.file_tools: local environment ready for task default
+2026-06-05 03:30:35,567 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool search_files completed (1.65s, 1494 chars)
+2026-06-05 03:30:37,052 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.35s, 45 chars)
+2026-06-05 03:30:51,602 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=14834 out=190 total=15024 latency=14.5s cache=14095/14834 (95%)
+2026-06-05 03:30:53,589 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (1.98s, 961 chars)
+2026-06-05 03:30:56,450 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool read_file completed (1.71s, 4050 chars)
+2026-06-05 03:30:58,985 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool search_files completed (1.41s, 18 chars)
+2026-06-05 03:31:03,968 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=16624 out=141 total=16765 latency=5.0s cache=14831/16624 (89%)
+2026-06-05 03:31:04,279 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.31s, 847 chars)
+2026-06-05 03:31:07,205 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool read_file completed (1.79s, 2990 chars)
+2026-06-05 03:31:12,313 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=17914 out=114 total=18028 latency=5.1s cache=16621/17914 (93%)
+2026-06-05 03:31:14,086 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool read_file completed (1.77s, 16625 chars)
+2026-06-05 03:31:15,278 WARNING [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: Tool terminal returned error (0.05s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "find ~/.hermes/sessions -name \"*.json\" -mtime +7 -delete && echo \"Deleted old sessio
+2026-06-05 03:31:20,924 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=24153 out=94 total=24247 latency=5.6s cache=17911/24153 (74%)
+2026-06-05 03:31:20,970 WARNING [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: Tool terminal returned error (0.04s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "find ~/.hermes/sessions -name \"*.json\" -mtime +7 -print0 | xargs -0 rm -f && echo \"D
+2026-06-05 03:31:24,479 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=24333 out=109 total=24442 latency=3.5s cache=24150/24333 (99%)
+2026-06-05 03:31:24,789 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.31s, 47 chars)
+2026-06-05 03:31:26,241 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.31s, 48 chars)
+2026-06-05 03:31:31,864 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #7: model=MiniMax-M2.7 provider=minimax-oauth in=24467 out=275 total=24742 latency=5.6s cache=24330/24467 (99%)
+2026-06-05 03:31:33,512 INFO agent.tool_executor: tool read_file completed (1.64s, 7789 chars)
+2026-06-05 03:31:33,558 INFO agent.tool_executor: tool read_file completed (1.69s, 2991 chars)
+2026-06-05 03:31:33,705 INFO agent.tool_executor: tool read_file completed (1.84s, 870 chars)
+2026-06-05 03:31:38,425 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #8: model=MiniMax-M2.7 provider=minimax-oauth in=28456 out=145 total=28601 latency=4.7s cache=24464/28456 (86%)
+2026-06-05 03:31:38,744 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.32s, 1643 chars)
+2026-06-05 03:31:44,357 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #9: model=MiniMax-M2.7 provider=minimax-oauth in=29160 out=244 total=29404 latency=5.6s cache=28453/29160 (98%)
+2026-06-05 03:31:47,768 WARNING [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: Tool execute_code returned error (3.41s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/var/folders/hj/2zz8m54d41bbkykhxlvfwkxm0000gn/T/hermes_sandbox_fkl69gc2/script.py\", line 4, in <module>\
+2026-06-05 03:31:51,025 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #10: model=MiniMax-M2.7 provider=minimax-oauth in=29815 out=151 total=29966 latency=3.2s cache=29157/29815 (98%)
+2026-06-05 03:31:54,532 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool execute_code completed (3.51s, 138 chars)
+2026-06-05 03:31:57,795 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #11: model=MiniMax-M2.7 provider=minimax-oauth in=30000 out=130 total=30130 latency=3.2s cache=29812/30000 (99%)
+2026-06-05 03:31:58,107 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.31s, 45 chars)
+2026-06-05 03:32:01,667 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #12: model=MiniMax-M2.7 provider=minimax-oauth in=30089 out=136 total=30225 latency=3.5s cache=29997/30089 (100%)
+2026-06-05 03:32:01,972 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.30s, 626 chars)
+2026-06-05 03:32:07,556 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #13: model=MiniMax-M2.7 provider=minimax-oauth in=30417 out=301 total=30718 latency=5.6s cache=30086/30417 (99%)
+2026-06-05 03:32:08,200 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.64s, 847 chars)
+2026-06-05 03:32:09,668 INFO [cron_c5eefc0f6d98_20260605_033023] agent.tool_executor: tool terminal completed (0.32s, 122 chars)
+2026-06-05 03:32:15,631 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: API call #14: model=MiniMax-M2.7 provider=minimax-oauth in=30865 out=398 total=31263 latency=5.9s cache=30414/30865 (99%)
+2026-06-05 03:32:15,698 INFO [cron_c5eefc0f6d98_20260605_033023] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=14/90 budget=12/90 tool_turns=13 last_msg_role=assistant response_len=940 session=cron_c5eefc0f6d98_20260605_033023
+2026-06-05 03:32:15,699 INFO cron.scheduler: Job 'hermes-memory-consolidate' completed successfully
+2026-06-05 03:32:42,076 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(44, 9, 7) threads=16 uptime=1313340s
+2026-06-05 03:37:18,856 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-05 03:37:42,218 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(109, 9, 7) threads=16 uptime=1313640s
+2026-06-05 03:42:42,384 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(174, 9, 7) threads=16 uptime=1313940s
+2026-06-05 03:47:42,524 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(432, 9, 7) threads=16 uptime=1314240s
+2026-06-05 03:52:42,666 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(497, 9, 7) threads=16 uptime=1314540s
+2026-06-05 03:57:42,829 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(100, 10, 7) threads=16 uptime=1314841s
+2026-06-05 03:59:19,618 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 03:59:19,620 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 04:01:40,806 INFO gateway.run: Session expiry: 1 sessions to finalize (whatsapp:1)
+2026-06-05 04:01:40,810 INFO gateway.run: Session expiry done: 1 finalized
+2026-06-05 04:02:42,982 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(250, 10, 7) threads=16 uptime=1315141s
+2026-06-05 04:07:43,110 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(514, 10, 7) threads=16 uptime=1315441s
+2026-06-05 04:12:43,249 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(580, 10, 7) threads=16 uptime=1315741s
+2026-06-05 04:17:43,408 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(92, 11, 7) threads=16 uptime=1316041s
+2026-06-05 04:22:43,517 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(158, 11, 7) threads=16 uptime=1316341s
+2026-06-05 04:27:43,655 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(422, 11, 7) threads=16 uptime=1316641s
+2026-06-05 04:32:43,802 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(487, 11, 7) threads=16 uptime=1316941s
+2026-06-05 04:37:43,943 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(92, 0, 8) threads=16 uptime=1317242s
+2026-06-05 04:42:44,034 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(163, 0, 8) threads=16 uptime=1317542s
+2026-06-05 04:47:44,178 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(421, 0, 8) threads=16 uptime=1317842s
+2026-06-05 04:52:44,318 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(482, 0, 8) threads=16 uptime=1318142s
+2026-06-05 04:57:44,463 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(87, 1, 8) threads=16 uptime=1318442s
+2026-06-05 04:59:27,709 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 04:59:27,711 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 05:02:44,622 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(209, 1, 8) threads=16 uptime=1318742s
+2026-06-05 05:07:44,741 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(475, 1, 8) threads=16 uptime=1319042s
+2026-06-05 05:12:44,901 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(540, 1, 8) threads=16 uptime=1319343s
+2026-06-05 05:17:45,058 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(69, 2, 8) threads=16 uptime=1319643s
+2026-06-05 05:22:45,211 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(134, 2, 8) threads=16 uptime=1319943s
+2026-06-05 05:27:45,368 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(398, 2, 8) threads=16 uptime=1320243s
+2026-06-05 05:32:45,527 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(463, 2, 8) threads=16 uptime=1320543s
+2026-06-05 05:37:45,646 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(64, 3, 8) threads=16 uptime=1320843s
+2026-06-05 05:42:45,805 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(338, 3, 8) threads=16 uptime=1321143s
+2026-06-05 05:47:45,958 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(394, 3, 8) threads=16 uptime=1321444s
+2026-06-05 05:52:46,065 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(457, 3, 8) threads=16 uptime=1321744s
+2026-06-05 05:57:46,224 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(60, 4, 8) threads=16 uptime=1322044s
+2026-06-05 05:59:35,980 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 05:59:35,983 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 06:00:36,151 INFO cron.scheduler: Running job 'hermes-research-scout-6am' (ID: 6daa10f78eda)
+2026-06-05 06:00:36,152 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-05 06:00:36,181 INFO cron.scheduler: Job '6daa10f78eda': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-05 06:00:37,568 INFO [cron_6daa10f78eda_20260605_060036] agent.conversation_loop: conversation turn: session=cron_6daa10f78eda_20260605_060036 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-05 06:00:43,214 INFO [cron_6daa10f78eda_20260605_060036] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14137 out=104 total=14241 latency=5.6s
+2026-06-05 06:00:45,340 INFO [cron_6daa10f78eda_20260605_060036] tools.terminal_tool: Creating new local environment for task default...
+2026-06-05 06:00:45,577 INFO [cron_6daa10f78eda_20260605_060036] tools.environments.base: Session snapshot created (session=da6a9f2b585b, cwd=/Users/ktoclaw)
+2026-06-05 06:00:45,578 INFO [cron_6daa10f78eda_20260605_060036] tools.terminal_tool: local environment ready for task default
+2026-06-05 06:00:46,278 INFO [cron_6daa10f78eda_20260605_060036] agent.tool_executor: tool terminal completed (0.94s, 50516 chars)
+2026-06-05 06:01:06,811 INFO [cron_6daa10f78eda_20260605_060036] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=38487 out=803 total=39290 latency=20.5s cache=14277/38487 (37%)
+2026-06-05 06:01:07,818 INFO [cron_6daa10f78eda_20260605_060036] agent.tool_executor: tool write_file completed (1.00s, 114 chars)
+2026-06-05 06:01:13,591 INFO [cron_6daa10f78eda_20260605_060036] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=39006 out=157 total=39163 latency=5.8s cache=14018/39006 (36%)
+2026-06-05 06:01:13,636 INFO [cron_6daa10f78eda_20260605_060036] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=3/90 budget=3/90 tool_turns=2 last_msg_role=assistant response_len=595 session=cron_6daa10f78eda_20260605_060036
+2026-06-05 06:01:13,636 INFO cron.scheduler: Job 'hermes-research-scout-6am' completed successfully
+2026-06-05 06:02:46,355 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(62, 6, 13) threads=16 uptime=1322344s
+2026-06-05 06:06:34,751 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-05 06:07:46,515 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(260, 6, 13) threads=16 uptime=1322644s
+2026-06-05 06:12:46,612 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(324, 6, 13) threads=16 uptime=1322944s
+2026-06-05 06:17:46,769 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(389, 6, 13) threads=16 uptime=1323244s
+2026-06-05 06:22:46,930 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(61, 7, 13) threads=16 uptime=1323544s
+2026-06-05 06:27:47,001 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(264, 7, 13) threads=16 uptime=1323844s
+2026-06-05 06:32:47,146 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(328, 7, 13) threads=16 uptime=1324145s
+2026-06-05 06:37:47,197 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(393, 7, 13) threads=16 uptime=1324445s
+2026-06-05 06:42:47,328 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(61, 8, 13) threads=16 uptime=1324745s
+2026-06-05 06:47:47,401 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(263, 8, 13) threads=16 uptime=1325045s
+2026-06-05 06:52:47,546 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(326, 8, 13) threads=16 uptime=1325345s
+2026-06-05 06:57:47,607 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(390, 8, 13) threads=16 uptime=1325645s
+2026-06-05 07:00:21,756 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 07:00:21,758 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 07:02:47,742 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(106, 9, 13) threads=16 uptime=1325945s
+2026-06-05 07:07:47,897 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(263, 9, 13) threads=16 uptime=1326245s
+2026-06-05 07:12:48,034 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(326, 9, 13) threads=16 uptime=1326546s
+2026-06-05 07:17:48,189 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(390, 9, 13) threads=16 uptime=1326846s
+2026-06-05 07:22:48,295 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(59, 10, 13) threads=16 uptime=1327146s
+2026-06-05 07:27:48,440 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(229, 10, 13) threads=16 uptime=1327446s
+2026-06-05 07:32:48,633 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(293, 10, 13) threads=16 uptime=1327746s
+2026-06-05 07:37:48,710 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(356, 10, 13) threads=16 uptime=1328046s
+2026-06-05 07:42:48,858 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(9, 11, 13) threads=16 uptime=1328346s
+2026-06-05 07:47:48,919 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(217, 11, 13) threads=16 uptime=1328646s
+2026-06-05 07:52:49,071 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(281, 11, 13) threads=16 uptime=1328947s
+2026-06-05 07:57:49,219 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(346, 11, 13) threads=16 uptime=1329247s
+2026-06-05 08:00:30,060 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 08:00:30,062 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 08:02:49,426 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(103, 0, 14) threads=16 uptime=1329547s
+2026-06-05 08:07:49,564 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(223, 0, 14) threads=16 uptime=1329847s
+2026-06-05 08:12:49,701 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(287, 0, 14) threads=16 uptime=1330147s
+2026-06-05 08:17:49,850 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(351, 0, 14) threads=16 uptime=1330447s
+2026-06-05 08:22:49,987 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(8, 1, 14) threads=16 uptime=1330747s
+2026-06-05 08:27:50,105 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(218, 1, 14) threads=16 uptime=1331047s
+2026-06-05 08:32:50,272 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(282, 1, 14) threads=16 uptime=1331348s
+2026-06-05 08:37:50,432 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(346, 1, 14) threads=16 uptime=1331648s
+2026-06-05 08:42:50,583 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(6, 2, 14) threads=16 uptime=1331948s
+2026-06-05 08:47:50,668 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(206, 2, 14) threads=16 uptime=1332248s
+2026-06-05 08:52:50,708 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(270, 2, 14) threads=16 uptime=1332548s
+2026-06-05 08:57:50,829 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(334, 2, 14) threads=16 uptime=1332848s
+2026-06-05 09:00:39,009 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 09:00:39,010 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 09:02:50,973 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(99, 3, 14) threads=16 uptime=1333148s
+2026-06-05 09:07:51,103 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(209, 3, 14) threads=16 uptime=1333448s
+2026-06-05 09:12:51,254 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(273, 3, 14) threads=16 uptime=1333749s
+2026-06-05 09:17:51,380 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(337, 3, 14) threads=16 uptime=1334049s
+2026-06-05 09:22:51,534 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(4, 4, 14) threads=16 uptime=1334349s
+2026-06-05 09:27:51,687 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(210, 4, 14) threads=16 uptime=1334649s
+2026-06-05 09:32:51,782 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(272, 4, 14) threads=16 uptime=1334949s
+2026-06-05 09:37:51,939 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(336, 4, 14) threads=16 uptime=1335249s
+2026-06-05 09:42:52,064 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(2, 5, 14) threads=16 uptime=1335549s
+2026-06-05 09:47:52,218 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(196, 5, 14) threads=16 uptime=1335849s
+2026-06-05 09:52:52,352 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(262, 5, 14) threads=16 uptime=1336150s
+2026-06-05 09:57:52,509 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(325, 5, 14) threads=16 uptime=1336450s
+2026-06-05 10:00:47,399 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 10:00:47,402 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 10:02:52,644 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(97, 6, 14) threads=16 uptime=1336750s
+2026-06-05 10:07:52,788 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(202, 6, 14) threads=16 uptime=1337050s
+2026-06-05 10:12:52,946 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(264, 6, 14) threads=16 uptime=1337350s
+2026-06-05 10:17:53,027 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(329, 6, 14) threads=16 uptime=1337650s
+2026-06-05 10:20:50,399 INFO cron.scheduler: Job 'b962e32a351a': delivered to whatsapp:56702359580792@lid via live adapter
+2026-06-05 10:22:53,150 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(93, 11, 14) threads=16 uptime=1337950s
+2026-06-05 10:27:53,297 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(176, 11, 14) threads=16 uptime=1338251s
+2026-06-05 10:32:53,445 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(240, 11, 14) threads=16 uptime=1338551s
+2026-06-05 10:37:53,568 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(504, 11, 14) threads=16 uptime=1338851s
+2026-06-05 10:42:53,720 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(567, 11, 14) threads=16 uptime=1339151s
+2026-06-05 10:43:53,640 INFO gateway.run: Image cache cleanup: removed 1 stale file(s)
+2026-06-05 10:47:53,863 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(161, 0, 15) threads=16 uptime=1339451s
+2026-06-05 10:52:54,061 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(225, 0, 15) threads=16 uptime=1339751s
+2026-06-05 10:57:54,199 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(490, 0, 15) threads=16 uptime=1340051s
+2026-06-05 11:00:56,102 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 11:00:56,105 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 11:02:54,325 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(90, 1, 15) threads=16 uptime=1340352s
+2026-06-05 11:07:54,470 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(166, 1, 15) threads=16 uptime=1340652s
+2026-06-05 11:12:54,606 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(230, 1, 15) threads=16 uptime=1340952s
+2026-06-05 11:17:54,742 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(498, 1, 15) threads=16 uptime=1341252s
+2026-06-05 11:22:54,895 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(559, 1, 15) threads=16 uptime=1341552s
+2026-06-05 11:27:55,001 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(165, 2, 15) threads=16 uptime=1341852s
+2026-06-05 11:32:55,146 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(229, 2, 15) threads=16 uptime=1342152s
+2026-06-05 11:37:55,331 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(493, 2, 15) threads=16 uptime=1342452s
+2026-06-05 11:42:55,482 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(557, 2, 15) threads=16 uptime=1342753s
+2026-06-05 11:47:55,618 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(152, 3, 15) threads=16 uptime=1343053s
+2026-06-05 11:52:55,677 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(216, 3, 15) threads=16 uptime=1343353s
+2026-06-05 11:57:55,812 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(480, 3, 15) threads=16 uptime=1343653s
+2026-06-05 12:01:04,347 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 12:01:04,349 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 12:02:55,931 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(87, 4, 15) threads=16 uptime=1343953s
+2026-06-05 12:07:56,095 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(151, 4, 15) threads=16 uptime=1344253s
+2026-06-05 12:12:56,238 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(215, 4, 15) threads=16 uptime=1344553s
+2026-06-05 12:17:56,394 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(480, 4, 15) threads=16 uptime=1344853s
+2026-06-05 12:22:56,489 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(544, 4, 15) threads=16 uptime=1345154s
+2026-06-05 12:27:56,642 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(129, 5, 15) threads=16 uptime=1345454s
+2026-06-05 12:32:56,791 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(193, 5, 15) threads=16 uptime=1345754s
+2026-06-05 12:37:56,924 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(458, 5, 15) threads=16 uptime=1346054s
+2026-06-05 12:42:57,077 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(521, 5, 15) threads=16 uptime=1346354s
+2026-06-05 12:47:57,225 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(125, 6, 15) threads=16 uptime=1346654s
+2026-06-05 12:52:57,380 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(189, 6, 15) threads=16 uptime=1346954s
+2026-06-05 12:57:57,521 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(454, 6, 15) threads=16 uptime=1347255s
+2026-06-05 13:01:12,411 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 13:01:12,413 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 13:02:57,658 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(84, 7, 15) threads=16 uptime=1347555s
+2026-06-05 13:07:57,772 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(146, 7, 15) threads=16 uptime=1347855s
+2026-06-05 13:12:57,915 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(212, 7, 15) threads=16 uptime=1348155s
+2026-06-05 13:17:58,062 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(476, 7, 15) threads=16 uptime=1348455s
+2026-06-05 13:22:58,172 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(540, 7, 15) threads=16 uptime=1348755s
+2026-06-05 13:27:58,306 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(119, 8, 15) threads=16 uptime=1349055s
+2026-06-05 13:32:58,396 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(183, 8, 15) threads=16 uptime=1349355s
+2026-06-05 13:37:58,467 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(449, 8, 15) threads=16 uptime=1349655s
+2026-06-05 13:42:58,596 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(512, 8, 15) threads=16 uptime=1349956s
+2026-06-05 13:47:58,753 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(115, 9, 15) threads=16 uptime=1350256s
+2026-06-05 13:52:58,880 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(180, 9, 15) threads=16 uptime=1350556s
+2026-06-05 13:57:59,029 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(444, 9, 15) threads=16 uptime=1350856s
+2026-06-05 14:01:20,362 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 14:01:20,364 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 14:02:59,156 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(79, 10, 15) threads=16 uptime=1351156s
+2026-06-05 14:07:57,019 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(144, 10, 15) threads=16 uptime=1351456s
+2026-06-05 14:12:57,156 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(208, 10, 15) threads=16 uptime=1351756s
+2026-06-05 14:17:57,296 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(474, 10, 15) threads=16 uptime=1352057s
+2026-06-05 14:22:57,440 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(537, 10, 15) threads=16 uptime=1352357s
+2026-06-05 14:27:57,589 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(94, 11, 15) threads=16 uptime=1352657s
+2026-06-05 14:32:57,786 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(159, 11, 15) threads=16 uptime=1352957s
+2026-06-05 14:37:57,929 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(422, 11, 15) threads=16 uptime=1353257s
+2026-06-05 14:42:58,021 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(486, 11, 15) threads=16 uptime=1353557s
+2026-06-05 14:47:58,168 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(90, 0, 16) threads=16 uptime=1353857s
+2026-06-05 14:52:58,321 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(154, 0, 16) threads=16 uptime=1354157s
+2026-06-05 14:57:58,457 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(418, 0, 16) threads=16 uptime=1354458s
+2026-06-05 15:01:25,992 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 15:01:25,995 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 15:02:58,600 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(542, 0, 16) threads=16 uptime=1354758s
+2026-06-05 15:07:58,759 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(86, 1, 16) threads=16 uptime=1355058s
+2026-06-05 15:12:58,916 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(150, 1, 16) threads=16 uptime=1355358s
+2026-06-05 15:17:59,072 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(415, 1, 16) threads=16 uptime=1355658s
+2026-06-05 15:22:59,230 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(479, 1, 16) threads=16 uptime=1355958s
+2026-06-05 15:27:57,292 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(83, 2, 16) threads=16 uptime=1356259s
+2026-06-05 15:32:57,450 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(147, 2, 16) threads=16 uptime=1356559s
+2026-06-05 15:37:57,607 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(413, 2, 16) threads=16 uptime=1356859s
+2026-06-05 15:42:57,748 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(477, 2, 16) threads=16 uptime=1357159s
+2026-06-05 15:47:57,855 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(81, 3, 16) threads=16 uptime=1357459s
+2026-06-05 15:52:58,008 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(331, 3, 16) threads=16 uptime=1357759s
+2026-06-05 15:57:58,164 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(395, 3, 16) threads=16 uptime=1358059s
+2026-06-05 16:01:32,454 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 16:01:32,456 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 16:02:58,306 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(518, 3, 16) threads=16 uptime=1358359s
+2026-06-05 16:07:58,397 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(63, 4, 16) threads=16 uptime=1358660s
+2026-06-05 16:12:58,562 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(328, 4, 16) threads=16 uptime=1358960s
+2026-06-05 16:17:58,677 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(391, 4, 16) threads=16 uptime=1359260s
+2026-06-05 16:22:58,815 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(455, 4, 16) threads=16 uptime=1359560s
+2026-06-05 16:27:59,006 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(60, 5, 16) threads=16 uptime=1359860s
+2026-06-05 16:32:59,158 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(325, 5, 16) threads=16 uptime=1360160s
+2026-06-05 16:37:59,302 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(390, 5, 16) threads=16 uptime=1360460s
+2026-06-05 16:42:59,444 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(453, 5, 16) threads=16 uptime=1360761s
+2026-06-05 16:47:59,593 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(53, 6, 16) threads=16 uptime=1361061s
+2026-06-05 16:52:59,751 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(318, 6, 16) threads=16 uptime=1361361s
+2026-06-05 16:57:59,909 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(382, 6, 16) threads=16 uptime=1361661s
+2026-06-05 17:01:41,002 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 17:01:41,003 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 17:03:00,068 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(506, 6, 16) threads=16 uptime=1361961s
+2026-06-05 17:08:00,224 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(50, 7, 16) threads=16 uptime=1362261s
+2026-06-05 17:13:00,302 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(314, 7, 16) threads=16 uptime=1362561s
+2026-06-05 17:18:00,460 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(378, 7, 16) threads=16 uptime=1362861s
+2026-06-05 17:23:00,587 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(442, 7, 16) threads=16 uptime=1363162s
+2026-06-05 17:28:00,724 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(47, 8, 16) threads=16 uptime=1363462s
+2026-06-05 17:33:00,863 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(313, 8, 16) threads=16 uptime=1363762s
+2026-06-05 17:38:01,024 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(376, 8, 16) threads=16 uptime=1364062s
+2026-06-05 17:43:01,185 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(440, 8, 16) threads=16 uptime=1364362s
+2026-06-05 17:48:05,641 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(44, 9, 16) threads=16 uptime=1364662s
+2026-06-05 17:53:05,785 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(309, 9, 16) threads=16 uptime=1364962s
+2026-06-05 17:58:05,875 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(373, 9, 16) threads=16 uptime=1365262s
+2026-06-05 18:00:53,457 INFO cron.scheduler: Running job 'hermes-victor-6pm' (ID: 4eee4adab1e8)
+2026-06-05 18:00:53,458 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-05 18:00:53,490 INFO cron.scheduler: Job '4eee4adab1e8': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-05 18:00:55,016 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: conversation turn: session=cron_4eee4adab1e8_20260605_180053 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-05 18:01:03,369 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14150 out=271 total=14421 latency=8.3s
+2026-06-05 18:01:05,391 INFO tools.file_tools: Creating new local environment for task default...
+2026-06-05 18:01:05,754 INFO tools.environments.base: Session snapshot created (session=b48430f294de, cwd=/Users/ktoclaw)
+2026-06-05 18:01:05,756 INFO tools.file_tools: local environment ready for task default
+2026-06-05 18:01:11,977 INFO agent.tool_executor: tool search_files completed (6.59s, 18 chars)
+2026-06-05 18:01:11,978 INFO agent.tool_executor: tool search_files completed (6.59s, 18 chars)
+2026-06-05 18:01:12,084 INFO agent.tool_executor: tool search_files completed (6.69s, 18 chars)
+2026-06-05 18:01:12,084 INFO agent.tool_executor: tool search_files completed (6.69s, 18 chars)
+2026-06-05 18:01:17,878 INFO agent.tool_executor: tool search_files completed (12.49s, 18 chars)
+2026-06-05 18:01:23,051 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=14447 out=82 total=14529 latency=5.2s cache=14114/14447 (98%)
+2026-06-05 18:01:23,067 INFO [cron_4eee4adab1e8_20260605_180053] tools.browser_tool: Created local browser session h_8430de866b for task 377deaa3-9899-45d2-93cf-9efc85da1d94
+2026-06-05 18:01:27,536 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (4.48s, 967 chars)
+2026-06-05 18:01:31,263 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=14894 out=83 total=14977 latency=3.7s cache=14114/14894 (95%)
+2026-06-05 18:01:32,520 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (1.26s, 925 chars)
+2026-06-05 18:01:35,194 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=15210 out=38 total=15248 latency=2.7s cache=14114/15210 (93%)
+2026-06-05 18:02:03,665 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_snapshot completed (28.47s, 1548 chars)
+2026-06-05 18:02:12,090 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=15625 out=227 total=15852 latency=8.4s cache=14114/15625 (90%)
+2026-06-05 18:02:12,184 WARNING [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "curl -s \"https://query1.finance.yahoo.com/v1/finance/search?q=NVDA+AMD+MSFT+GOOGL+AMZN
+2026-06-05 18:02:19,638 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=16213 out=274 total=16487 latency=7.4s cache=14114/16213 (87%)
+2026-06-05 18:02:19,698 WARNING [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: Tool terminal returned error (0.06s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "curl -sL \"https://news.google.com/rss/search?q=NVDA%20OR%20AMD%20OR%20Microsoft%20OR%2
+2026-06-05 18:02:23,086 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #7: model=MiniMax-M2.7 provider=minimax-oauth in=17015 out=61 total=17076 latency=3.4s cache=14114/17015 (83%)
+2026-06-05 18:02:26,115 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (3.03s, 8662 chars)
+2026-06-05 18:02:30,730 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #8: model=MiniMax-M2.7 provider=minimax-oauth in=19355 out=91 total=19446 latency=4.6s cache=14114/19355 (73%)
+2026-06-05 18:02:33,004 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (2.27s, 8645 chars)
+2026-06-05 18:02:39,979 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #9: model=MiniMax-M2.7 provider=minimax-oauth in=21625 out=225 total=21850 latency=7.0s cache=14114/21625 (65%)
+2026-06-05 18:02:42,835 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (2.85s, 8547 chars)
+2026-06-05 18:02:47,518 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #10: model=MiniMax-M2.7 provider=minimax-oauth in=23874 out=79 total=23953 latency=4.7s cache=14114/23874 (59%)
+2026-06-05 18:02:50,198 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (2.68s, 8629 chars)
+2026-06-05 18:02:55,582 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #11: model=MiniMax-M2.7 provider=minimax-oauth in=26117 out=97 total=26214 latency=5.4s cache=14114/26117 (54%)
+2026-06-05 18:02:58,085 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (2.50s, 8661 chars)
+2026-06-05 18:03:01,800 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #12: model=MiniMax-M2.7 provider=minimax-oauth in=28414 out=59 total=28473 latency=3.7s cache=21775/28414 (77%)
+2026-06-05 18:03:04,276 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool browser_navigate completed (2.47s, 8657 chars)
+2026-06-05 18:03:05,967 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(617, 9, 3) threads=19 uptime=1365563s
+2026-06-05 18:03:34,233 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #13: model=MiniMax-M2.7 provider=minimax-oauth in=30723 out=1053 total=31776 latency=30.0s cache=14114/30723 (46%)
+2026-06-05 18:03:35,127 INFO [cron_4eee4adab1e8_20260605_180053] agent.tool_executor: tool write_file completed (0.89s, 114 chars)
+2026-06-05 18:03:42,035 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: API call #14: model=MiniMax-M2.7 provider=minimax-oauth in=31555 out=239 total=31794 latency=6.9s cache=26157/31555 (83%)
+2026-06-05 18:03:42,885 INFO [cron_4eee4adab1e8_20260605_180053] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=14/90 budget=14/90 tool_turns=13 last_msg_role=assistant response_len=697 session=cron_4eee4adab1e8_20260605_180053
+2026-06-05 18:03:42,886 INFO cron.scheduler: Job 'hermes-victor-6pm' completed successfully
+2026-06-05 18:03:43,486 INFO cron.scheduler: Job '4eee4adab1e8': delivered to whatsapp:120363423080731840@g.us via live adapter
+2026-06-05 18:04:43,678 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 18:04:43,680 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 18:08:06,125 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(58, 3, 4) threads=16 uptime=1365863s
+2026-06-05 18:08:42,439 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-05 18:13:06,284 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(319, 3, 4) threads=16 uptime=1366163s
+2026-06-05 18:18:06,430 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(386, 3, 4) threads=16 uptime=1366463s
+2026-06-05 18:23:06,589 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(456, 3, 4) threads=16 uptime=1366763s
+2026-06-05 18:28:06,740 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(40, 4, 4) threads=16 uptime=1367063s
+2026-06-05 18:33:06,844 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(304, 4, 4) threads=16 uptime=1367363s
+2026-06-05 18:38:06,855 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(370, 4, 4) threads=16 uptime=1367663s
+2026-06-05 18:43:07,003 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(432, 4, 4) threads=16 uptime=1367964s
+2026-06-05 18:48:07,083 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(47, 5, 4) threads=16 uptime=1368264s
+2026-06-05 18:53:07,241 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(305, 5, 4) threads=16 uptime=1368564s
+2026-06-05 18:58:07,364 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(368, 5, 4) threads=16 uptime=1368864s
+2026-06-05 19:00:51,192 INFO cron.scheduler: Running job 'hermes-war-news-7pm' (ID: f85403acb8ee)
+2026-06-05 19:00:51,192 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-05 19:00:51,225 INFO cron.scheduler: Job 'f85403acb8ee': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-05 19:00:52,224 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: conversation turn: session=cron_f85403acb8ee_20260605_190051 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-05 19:00:57,156 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14134 out=61 total=14195 latency=4.9s
+2026-06-05 19:00:59,210 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_view completed (0.06s, 7103 chars)
+2026-06-05 19:01:06,010 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=15985 out=90 total=16075 latency=6.8s cache=14274/15985 (89%)
+2026-06-05 19:01:06,012 INFO [cron_f85403acb8ee_20260605_190051] tools.terminal_tool: Creating new local environment for task default...
+2026-06-05 19:01:06,362 INFO [cron_f85403acb8ee_20260605_190051] tools.environments.base: Session snapshot created (session=82718afee139, cwd=/Users/ktoclaw)
+2026-06-05 19:01:06,363 INFO [cron_f85403acb8ee_20260605_190051] tools.terminal_tool: local environment ready for task default
+2026-06-05 19:01:06,708 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool terminal completed (0.70s, 55 chars)
+2026-06-05 19:01:07,798 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_view completed (0.03s, 2418 chars)
+2026-06-05 19:01:10,841 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=16741 out=72 total=16813 latency=3.0s cache=14114/16741 (84%)
+2026-06-05 19:01:10,852 INFO [cron_f85403acb8ee_20260605_190051] tools.browser_tool: Created local browser session h_d117a7d67d for task 7e45afa2-215b-4659-9429-e8d4f3c0bba0
+2026-06-05 19:01:14,932 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (4.09s, 8622 chars)
+2026-06-05 19:01:18,073 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=18962 out=53 total=19015 latency=3.1s cache=14114/18962 (74%)
+2026-06-05 19:01:18,443 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_press completed (0.37s, 38 chars)
+2026-06-05 19:01:21,445 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=19013 out=87 total=19100 latency=3.0s cache=14114/19013 (74%)
+2026-06-05 19:01:21,851 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_console completed (0.40s, 902 chars)
+2026-06-05 19:01:27,765 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=19423 out=206 total=19629 latency=5.9s cache=14114/19423 (73%)
+2026-06-05 19:01:29,835 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (2.07s, 8431 chars)
+2026-06-05 19:01:38,650 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #7: model=MiniMax-M2.7 provider=minimax-oauth in=21528 out=80 total=21608 latency=8.8s cache=14114/21528 (66%)
+2026-06-05 19:01:40,477 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (1.82s, 8450 chars)
+2026-06-05 19:01:44,710 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #8: model=MiniMax-M2.7 provider=minimax-oauth in=23646 out=48 total=23694 latency=4.2s cache=14114/23646 (60%)
+2026-06-05 19:01:46,213 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (1.50s, 8358 chars)
+2026-06-05 19:01:52,895 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #9: model=MiniMax-M2.7 provider=minimax-oauth in=25822 out=125 total=25947 latency=6.7s cache=14114/25822 (55%)
+2026-06-05 19:01:53,173 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_press completed (0.28s, 38 chars)
+2026-06-05 19:01:56,012 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #10: model=MiniMax-M2.7 provider=minimax-oauth in=25873 out=76 total=25949 latency=2.8s cache=14114/25873 (55%)
+2026-06-05 19:01:56,420 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_console completed (0.41s, 852 chars)
+2026-06-05 19:02:01,908 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #11: model=MiniMax-M2.7 provider=minimax-oauth in=26254 out=161 total=26415 latency=5.5s cache=14114/26254 (54%)
+2026-06-05 19:02:03,606 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (1.70s, 8448 chars)
+2026-06-05 19:02:07,796 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #12: model=MiniMax-M2.7 provider=minimax-oauth in=28322 out=61 total=28383 latency=4.2s cache=14114/28322 (50%)
+2026-06-05 19:02:09,395 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (1.60s, 8377 chars)
+2026-06-05 19:02:13,977 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #13: model=MiniMax-M2.7 provider=minimax-oauth in=30472 out=65 total=30537 latency=4.6s cache=14114/30472 (46%)
+2026-06-05 19:02:15,455 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (1.48s, 8329 chars)
+2026-06-05 19:02:19,966 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #14: model=MiniMax-M2.7 provider=minimax-oauth in=32599 out=75 total=32674 latency=4.5s cache=14114/32599 (43%)
+2026-06-05 19:02:21,054 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (1.09s, 8409 chars)
+2026-06-05 19:02:25,690 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #15: model=MiniMax-M2.7 provider=minimax-oauth in=34773 out=69 total=34842 latency=4.6s cache=14114/34773 (41%)
+2026-06-05 19:02:26,174 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_press completed (0.48s, 38 chars)
+2026-06-05 19:02:29,730 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #16: model=MiniMax-M2.7 provider=minimax-oauth in=34824 out=99 total=34923 latency=3.5s cache=14114/34824 (41%)
+2026-06-05 19:02:31,675 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (1.94s, 8485 chars)
+2026-06-05 19:02:35,451 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #17: model=MiniMax-M2.7 provider=minimax-oauth in=36913 out=84 total=36997 latency=3.8s cache=14114/36913 (38%)
+2026-06-05 19:02:37,512 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (2.06s, 8294 chars)
+2026-06-05 19:02:43,451 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #18: model=MiniMax-M2.7 provider=minimax-oauth in=39035 out=153 total=39188 latency=5.9s cache=14114/39035 (36%)
+2026-06-05 19:02:44,014 WARNING [cron_f85403acb8ee_20260605_190051] agent.tool_executor: Tool browser_navigate returned error (0.56s): {"success": false, "error": "Navigation failed: net::ERR_HTTP2_PROTOCOL_ERROR"}
+2026-06-05 19:02:47,253 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #19: model=MiniMax-M2.7 provider=minimax-oauth in=39131 out=73 total=39204 latency=3.2s cache=14114/39131 (36%)
+2026-06-05 19:02:48,194 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (0.94s, 1174 chars)
+2026-06-05 19:02:51,378 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #20: model=MiniMax-M2.7 provider=minimax-oauth in=39521 out=72 total=39593 latency=3.2s cache=14114/39521 (36%)
+2026-06-05 19:02:54,024 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool browser_navigate completed (2.64s, 7679 chars)
+2026-06-05 19:03:07,523 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(321, 3, 7) threads=19 uptime=1369164s
+2026-06-05 19:03:34,477 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #21: model=MiniMax-M2.7 provider=minimax-oauth in=41373 out=1623 total=42996 latency=40.4s cache=14114/41373 (34%)
+2026-06-05 19:03:35,377 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool write_file completed (0.90s, 114 chars)
+2026-06-05 19:03:39,213 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #22: model=MiniMax-M2.7 provider=minimax-oauth in=42972 out=75 total=43047 latency=3.8s cache=13944/42972 (32%)
+2026-06-05 19:03:40,671 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool read_file completed (1.46s, 462 chars)
+2026-06-05 19:03:53,810 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #23: model=MiniMax-M2.7 provider=minimax-oauth in=43201 out=421 total=43622 latency=13.1s cache=14114/43201 (33%)
+2026-06-05 19:03:54,669 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=23/90 budget=23/90 tool_turns=22 last_msg_role=assistant response_len=1825 session=cron_f85403acb8ee_20260605_190051
+2026-06-05 19:03:54,670 INFO cron.scheduler: Job 'hermes-war-news-7pm' completed successfully
+2026-06-05 19:03:56,081 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: conversation turn: session=cron_f85403acb8ee_20260605_190051 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=47 msg='Review the conversation above and update the skill library. Be ACTIVE — most ses...'
+2026-06-05 19:04:20,362 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=47611 out=680 total=48291 latency=24.3s
+2026-06-05 19:04:20,365 WARNING [cron_f85403acb8ee_20260605_190051] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-05 19:04:24,133 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=47889 out=65 total=47954 latency=3.8s cache=45981/47889 (96%)
+2026-06-05 19:04:24,185 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_view completed (0.05s, 2418 chars)
+2026-06-05 19:04:37,091 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=48586 out=670 total=49256 latency=12.9s cache=16849/48586 (35%)
+2026-06-05 19:04:37,166 WARNING [cron_f85403acb8ee_20260605_190051] agent.tool_executor: Tool skill_manage returned error (0.07s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  79| - **URL typos in BBC section links**: Double-check URLs before navigating —
+2026-06-05 19:04:45,795 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=50337 out=210 total=50547 latency=8.6s cache=16849/50337 (33%)
+2026-06-05 19:04:45,827 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_view completed (0.03s, 7103 chars)
+2026-06-05 19:04:54,390 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=52188 out=241 total=52429 latency=8.6s cache=16849/52188 (32%)
+2026-06-05 19:04:54,424 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_view completed (0.03s, 3788 chars)
+2026-06-05 19:04:54,901 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 19:04:54,908 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 19:05:19,551 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=53357 out=1075 total=54432 latency=25.1s cache=16849/53357 (32%)
+2026-06-05 19:05:19,635 WARNING [cron_f85403acb8ee_20260605_190051] agent.tool_executor: Tool skill_manage returned error (0.08s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  79| - **URL typos in BBC section links**: Double-check URLs before navigating —
+2026-06-05 19:05:33,424 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #7: model=MiniMax-M2.7 provider=minimax-oauth in=55988 out=594 total=56582 latency=13.8s cache=46564/55988 (83%)
+2026-06-05 19:05:33,435 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_manage completed (0.01s, 85 chars)
+2026-06-05 19:05:41,239 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #8: model=MiniMax-M2.7 provider=minimax-oauth in=56396 out=402 total=56798 latency=7.8s cache=53391/56396 (95%)
+2026-06-05 19:05:41,248 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_manage completed (0.01s, 85 chars)
+2026-06-05 19:05:51,140 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #9: model=MiniMax-M2.7 provider=minimax-oauth in=56815 out=478 total=57293 latency=9.9s cache=56022/56815 (99%)
+2026-06-05 19:05:51,148 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_manage completed (0.01s, 85 chars)
+2026-06-05 19:06:11,738 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #10: model=MiniMax-M2.7 provider=minimax-oauth in=57312 out=1017 total=58329 latency=20.6s cache=56428/57312 (98%)
+2026-06-05 19:06:13,809 WARNING [cron_f85403acb8ee_20260605_190051] agent.tool_executor: Tool skill_manage returned error (0.00s): {"error": "file_content is required for 'write_file'.", "success": false}
+2026-06-05 19:06:28,865 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #11: model=MiniMax-M2.7 provider=minimax-oauth in=58208 out=863 total=59071 latency=15.0s cache=56840/58208 (98%)
+2026-06-05 19:06:28,875 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_manage completed (0.01s, 180 chars)
+2026-06-05 19:06:35,939 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #12: model=MiniMax-M2.7 provider=minimax-oauth in=59124 out=195 total=59319 latency=7.0s cache=16849/59124 (28%)
+2026-06-05 19:06:35,949 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_manage completed (0.01s, 85 chars)
+2026-06-05 19:06:39,467 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #13: model=MiniMax-M2.7 provider=minimax-oauth in=59331 out=51 total=59382 latency=3.5s cache=57346/59331 (97%)
+2026-06-05 19:06:39,500 INFO [cron_f85403acb8ee_20260605_190051] agent.tool_executor: tool skill_view completed (0.03s, 8218 chars)
+2026-06-05 19:06:52,377 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: API call #14: model=MiniMax-M2.7 provider=minimax-oauth in=61447 out=306 total=61753 latency=12.9s cache=59355/61447 (97%)
+2026-06-05 19:06:52,395 INFO [cron_f85403acb8ee_20260605_190051] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=14/16 budget=14/16 tool_turns=35 last_msg_role=assistant response_len=1012 session=cron_f85403acb8ee_20260605_190051
+2026-06-05 19:08:07,600 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(15, 8, 13) threads=16 uptime=1369464s
+2026-06-05 19:09:38,450 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-05 19:13:07,756 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(275, 8, 13) threads=16 uptime=1369764s
+2026-06-05 19:18:07,846 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(339, 8, 13) threads=16 uptime=1370064s
+2026-06-05 19:23:08,002 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(403, 8, 13) threads=16 uptime=1370365s
+2026-06-05 19:28:08,128 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(12, 9, 13) threads=16 uptime=1370665s
+2026-06-05 19:33:08,286 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(277, 9, 13) threads=16 uptime=1370965s
+2026-06-05 19:38:08,436 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(340, 9, 13) threads=16 uptime=1371265s
+2026-06-05 19:43:08,569 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(404, 9, 13) threads=16 uptime=1371565s
+2026-06-05 19:48:08,691 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(8, 10, 13) threads=16 uptime=1371865s
+2026-06-05 19:53:08,800 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(272, 10, 13) threads=16 uptime=1372165s
+2026-06-05 19:58:08,945 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(336, 10, 13) threads=16 uptime=1372465s
+2026-06-05 20:03:09,068 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(401, 10, 13) threads=16 uptime=1372766s
+2026-06-05 20:05:03,295 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 20:05:03,297 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 20:08:09,206 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(5, 11, 13) threads=16 uptime=1373066s
+2026-06-05 20:13:09,364 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(270, 11, 13) threads=16 uptime=1373366s
+2026-06-05 20:18:09,477 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(335, 11, 13) threads=16 uptime=1373666s
+2026-06-05 20:23:09,627 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(398, 11, 13) threads=16 uptime=1373966s
+2026-06-05 20:28:09,760 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 0, 14) threads=16 uptime=1374266s
+2026-06-05 20:33:09,901 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(265, 0, 14) threads=16 uptime=1374566s
+2026-06-05 20:38:10,046 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(329, 0, 14) threads=16 uptime=1374866s
+2026-06-05 20:43:10,143 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(393, 0, 14) threads=16 uptime=1375167s
+2026-06-05 20:48:10,299 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 1, 14) threads=16 uptime=1375467s
+2026-06-05 20:53:10,454 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(261, 1, 14) threads=16 uptime=1375767s
+2026-06-05 20:58:10,601 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(325, 1, 14) threads=16 uptime=1376067s
+2026-06-05 21:03:10,756 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(386, 1, 14) threads=16 uptime=1376367s
+2026-06-05 21:05:11,177 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 21:05:11,180 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 21:08:10,871 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(168, 2, 14) threads=16 uptime=1376667s
+2026-06-05 21:13:10,988 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(256, 2, 14) threads=16 uptime=1376967s
+2026-06-05 21:18:11,142 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(320, 2, 14) threads=16 uptime=1377268s
+2026-06-05 21:23:11,291 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(384, 2, 14) threads=16 uptime=1377568s
+2026-06-05 21:28:11,417 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(649, 2, 14) threads=16 uptime=1377868s
+2026-06-05 21:33:11,514 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(253, 3, 14) threads=16 uptime=1378168s
+2026-06-05 21:38:11,672 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(317, 3, 14) threads=16 uptime=1378468s
+2026-06-05 21:43:11,827 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(381, 3, 14) threads=16 uptime=1378768s
+2026-06-05 21:45:16,497 INFO cron.scheduler: Running job 'ETF Sell Put Analysis' (ID: 72adc671928a)
+2026-06-05 21:45:16,497 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-05 21:45:16,498 INFO cron.scheduler: Running job 'hermes-stock-radar-945pm' (ID: 505bb59fcf82)
+2026-06-05 21:45:16,498 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-05 21:45:16,534 INFO cron.scheduler: Job '72adc671928a': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-05 21:45:16,553 INFO cron.scheduler: Job '505bb59fcf82': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-05 21:45:18,208 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: conversation turn: session=cron_72adc671928a_20260605_214516 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-05 21:45:18,235 INFO [cron_505bb59fcf82_20260605_214516] agent.conversation_loop: conversation turn: session=cron_505bb59fcf82_20260605_214516 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-05 21:45:28,472 INFO [cron_505bb59fcf82_20260605_214516] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14139 out=292 total=14431 latency=10.2s
+2026-06-05 21:45:29,345 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14407 out=449 total=14856 latency=11.0s cache=13312/14407 (92%)
+2026-06-05 21:45:30,615 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool skill_view completed (0.03s, 16439 chars)
+2026-06-05 21:45:31,372 WARNING [cron_72adc671928a_20260605_214516] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+2026-06-05 21:45:32,799 INFO [20260605_214531_1ef547] agent.conversation_loop: conversation turn: session=20260605_214531_1ef547 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='Search for current stock prices and key metrics for: AAPL, NVDA, META, GOOGL, MS...'
+2026-06-05 21:45:38,728 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=14899 out=442 total=15341 latency=7.3s cache=13639/14899 (92%)
+2026-06-05 21:45:38,731 INFO [cron_72adc671928a_20260605_214516] tools.file_tools: Creating new local environment for task default...
+2026-06-05 21:45:39,084 INFO [cron_72adc671928a_20260605_214516] tools.environments.base: Session snapshot created (session=b80e8c438836, cwd=/Users/ktoclaw)
+2026-06-05 21:45:39,085 INFO [cron_72adc671928a_20260605_214516] tools.file_tools: local environment ready for task default
+2026-06-05 21:45:40,521 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool write_file completed (1.79s, 85 chars)
+2026-06-05 21:45:43,900 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=15357 out=53 total=15410 latency=3.4s cache=14112/15357 (92%)
+2026-06-05 21:45:44,735 INFO [20260605_214531_1ef547] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=555 out=321 total=876 latency=11.9s cache=128/555 (23%)
+2026-06-05 21:45:44,783 INFO [20260605_214531_1ef547] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=1/50 budget=1/50 tool_turns=0 last_msg_role=assistant response_len=1038 session=20260605_214531_1ef547
+2026-06-05 21:45:44,784 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool delegate_task completed (13.02s, 1349 chars)
+2026-06-05 21:45:46,979 INFO [20260605_214545_a6c443] agent.conversation_loop: conversation turn: session=20260605_214545_a6c443 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='Search for the current CNN Fear & Greed Index value. Get the current reading (nu...'
+2026-06-05 21:45:51,862 INFO [20260605_214545_a6c443] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=516 out=83 total=599 latency=4.9s
+2026-06-05 21:45:51,868 INFO [20260605_214545_a6c443] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=1/50 budget=1/50 tool_turns=0 last_msg_role=assistant response_len=160 session=20260605_214545_a6c443
+2026-06-05 21:45:51,869 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool delegate_task completed (6.06s, 429 chars)
+2026-06-05 21:45:52,016 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool terminal completed (8.11s, 946 chars)
+2026-06-05 21:46:00,400 INFO [cron_505bb59fcf82_20260605_214516] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=19484 out=192 total=19676 latency=8.5s
+2026-06-05 21:46:00,844 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=15700 out=204 total=15904 latency=8.8s cache=13247/15700 (84%)
+2026-06-05 21:46:01,299 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool terminal completed (0.90s, 323 chars)
+2026-06-05 21:46:02,458 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool skill_view completed (0.03s, 5255 chars)
+2026-06-05 21:46:03,268 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool terminal completed (2.42s, 89 chars)
+2026-06-05 21:46:08,233 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool terminal completed (4.71s, 3555 chars)
+2026-06-05 21:46:12,303 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=15889 out=235 total=16124 latency=9.0s cache=14886/15889 (94%)
+2026-06-05 21:46:12,378 WARNING [cron_72adc671928a_20260605_214516] agent.tool_executor: Tool terminal returned error (0.07s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "curl -s \"https://query2.finance.yahoo.com/v8/finance/chart/%5EGSPC?interval=1d&range=1
+2026-06-05 21:46:25,367 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=16318 out=473 total=16791 latency=13.0s cache=15040/16318 (92%)
+2026-06-05 21:46:26,791 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool write_file completed (1.42s, 85 chars)
+2026-06-05 21:46:30,973 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #7: model=MiniMax-M2.7 provider=minimax-oauth in=16808 out=57 total=16865 latency=4.2s cache=15448/16808 (92%)
+2026-06-05 21:46:46,799 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool terminal completed (15.82s, 190 chars)
+2026-06-05 21:46:52,722 INFO [cron_505bb59fcf82_20260605_214516] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=22863 out=2007 total=24870 latency=44.5s cache=18313/22863 (80%)
+2026-06-05 21:46:53,713 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool write_file completed (0.99s, 114 chars)
+2026-06-05 21:46:57,618 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #8: model=MiniMax-M2.7 provider=minimax-oauth in=16969 out=469 total=17438 latency=10.8s cache=15936/16969 (94%)
+2026-06-05 21:46:58,376 INFO [cron_505bb59fcf82_20260605_214516] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=24813 out=79 total=24892 latency=4.6s cache=21591/24813 (87%)
+2026-06-05 21:46:58,926 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool write_file completed (1.31s, 85 chars)
+2026-06-05 21:46:59,687 INFO [cron_505bb59fcf82_20260605_214516] agent.tool_executor: tool read_file completed (1.31s, 348 chars)
+2026-06-05 21:47:02,396 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #9: model=MiniMax-M2.7 provider=minimax-oauth in=17356 out=53 total=17409 latency=3.5s cache=16076/17356 (93%)
+2026-06-05 21:47:05,011 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool terminal completed (2.61s, 113 chars)
+2026-06-05 21:47:11,258 INFO [cron_505bb59fcf82_20260605_214516] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=25000 out=525 total=25525 latency=11.6s cache=23534/25000 (94%)
+2026-06-05 21:47:11,299 INFO [cron_505bb59fcf82_20260605_214516] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=5/90 budget=5/90 tool_turns=4 last_msg_role=assistant response_len=1427 session=cron_505bb59fcf82_20260605_214516
+2026-06-05 21:47:11,300 INFO cron.scheduler: Job 'hermes-stock-radar-945pm' completed successfully
+2026-06-05 21:47:19,152 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #10: model=MiniMax-M2.7 provider=minimax-oauth in=17455 out=451 total=17906 latency=14.1s cache=16455/17455 (94%)
+2026-06-05 21:47:19,182 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool skill_view completed (0.03s, 15285 chars)
+2026-06-05 21:47:25,974 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #11: model=MiniMax-M2.7 provider=minimax-oauth in=21877 out=193 total=22070 latency=6.8s cache=16330/21877 (75%)
+2026-06-05 21:47:26,001 INFO [cron_72adc671928a_20260605_214516] agent.tool_executor: tool skill_view completed (0.03s, 4426 chars)
+2026-06-05 21:47:53,642 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: API call #12: model=MiniMax-M2.7 provider=minimax-oauth in=23151 out=947 total=24098 latency=27.6s cache=20698/23151 (89%)
+2026-06-05 21:47:53,698 INFO [cron_72adc671928a_20260605_214516] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=12/90 budget=12/90 tool_turns=11 last_msg_role=assistant response_len=1531 session=cron_72adc671928a_20260605_214516
+2026-06-05 21:47:53,698 INFO cron.scheduler: Job 'ETF Sell Put Analysis' completed successfully
+2026-06-05 21:47:54,243 INFO cron.scheduler: Job '72adc671928a': delivered to whatsapp:120363423080731840@g.us via live adapter
+2026-06-05 21:48:11,974 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(9, 9, 7) threads=16 uptime=1379068s
+2026-06-05 21:53:07,189 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-05 21:53:12,126 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(252, 9, 7) threads=16 uptime=1379368s
+2026-06-05 21:58:12,275 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(316, 9, 7) threads=16 uptime=1379669s
+2026-06-05 22:00:56,207 INFO cron.scheduler: Running job 'hermes-research-scout-10pm' (ID: fb0266ab47a8)
+2026-06-05 22:00:56,208 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-05 22:00:56,238 INFO cron.scheduler: Job 'fb0266ab47a8': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-05 22:00:57,311 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: conversation turn: session=cron_fb0266ab47a8_20260605_220056 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-05 22:01:03,191 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14118 out=121 total=14239 latency=5.9s
+2026-06-05 22:01:05,295 INFO [cron_fb0266ab47a8_20260605_220056] tools.file_tools: Creating new local environment for task default...
+2026-06-05 22:01:05,656 INFO [cron_fb0266ab47a8_20260605_220056] tools.environments.base: Session snapshot created (session=c5fb4d24788a, cwd=/Users/ktoclaw)
+2026-06-05 22:01:05,657 INFO [cron_fb0266ab47a8_20260605_220056] tools.file_tools: local environment ready for task default
+2026-06-05 22:01:06,651 INFO [cron_fb0266ab47a8_20260605_220056] agent.tool_executor: tool search_files completed (1.36s, 733 chars)
+2026-06-05 22:01:11,205 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=13660 out=290 total=13950 latency=4.5s
+2026-06-05 22:01:12,274 INFO [20260605_220111_459559] agent.conversation_loop: conversation turn: session=20260605_220111_459559 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='Search for 3 notable AI/tech developments from today (June 5, 2026). Find recent...'
+2026-06-05 22:01:15,380 INFO [20260605_220111_459559] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=534 out=163 total=697 latency=3.1s cache=128/534 (24%)
+2026-06-05 22:01:15,387 INFO [20260605_220111_459559] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=1/50 budget=1/50 tool_turns=0 last_msg_role=assistant response_len=358 session=20260605_220111_459559
+2026-06-05 22:01:15,389 INFO [cron_fb0266ab47a8_20260605_220056] agent.tool_executor: tool delegate_task completed (4.18s, 649 chars)
+2026-06-05 22:01:17,035 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=13979 out=83 total=14062 latency=1.6s cache=13632/13979 (98%)
+2026-06-05 22:01:17,700 INFO [cron_fb0266ab47a8_20260605_220056] agent.tool_executor: tool search_files completed (0.66s, 2007 chars)
+2026-06-05 22:01:19,454 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=14670 out=93 total=14763 latency=1.7s cache=13952/14670 (95%)
+2026-06-05 22:01:22,182 INFO [cron_fb0266ab47a8_20260605_220056] agent.tool_executor: tool search_files completed (2.73s, 18 chars)
+2026-06-05 22:01:24,727 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=14741 out=131 total=14872 latency=2.5s cache=14656/14741 (99%)
+2026-06-05 22:01:25,796 INFO [cron_fb0266ab47a8_20260605_220056] agent.tool_executor: tool terminal completed (1.07s, 317 chars)
+2026-06-05 22:01:27,421 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=14964 out=77 total=15041 latency=1.6s cache=14720/14964 (98%)
+2026-06-05 22:01:28,465 INFO [cron_fb0266ab47a8_20260605_220056] agent.tool_executor: tool terminal completed (1.04s, 50506 chars)
+2026-06-05 22:01:35,116 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #7: model=MiniMax-M2.7 provider=minimax-oauth in=40252 out=514 total=40766 latency=6.6s cache=14944/40252 (37%)
+2026-06-05 22:01:36,167 INFO [cron_fb0266ab47a8_20260605_220056] agent.tool_executor: tool write_file completed (1.05s, 359 chars)
+2026-06-05 22:01:41,627 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: API call #8: model=MiniMax-M2.7 provider=minimax-oauth in=40753 out=194 total=40947 latency=5.4s cache=40224/40753 (99%)
+2026-06-05 22:01:41,735 INFO [cron_fb0266ab47a8_20260605_220056] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=8/90 budget=8/90 tool_turns=7 last_msg_role=assistant response_len=371 session=cron_fb0266ab47a8_20260605_220056
+2026-06-05 22:01:41,735 INFO cron.scheduler: Job 'hermes-research-scout-10pm' completed successfully
+2026-06-05 22:03:12,427 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(50, 10, 9) threads=16 uptime=1379969s
+2026-06-05 22:05:42,284 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 22:05:42,285 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 22:06:38,626 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-05 22:08:12,588 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(372, 10, 9) threads=16 uptime=1380269s
+2026-06-05 22:13:12,689 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(437, 10, 9) threads=16 uptime=1380569s
+2026-06-05 22:18:12,804 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(503, 10, 9) threads=16 uptime=1380869s
+2026-06-05 22:23:12,937 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(47, 11, 9) threads=16 uptime=1381169s
+2026-06-05 22:28:13,074 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(312, 11, 9) threads=16 uptime=1381469s
+2026-06-05 22:33:13,222 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(376, 11, 9) threads=16 uptime=1381770s
+2026-06-05 22:38:13,378 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(440, 11, 9) threads=16 uptime=1382070s
+2026-06-05 22:43:13,476 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(44, 0, 10) threads=16 uptime=1382370s
+2026-06-05 22:48:13,632 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(310, 0, 10) threads=16 uptime=1382670s
+2026-06-05 22:53:13,701 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(373, 0, 10) threads=16 uptime=1382970s
+2026-06-05 22:58:13,854 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(436, 0, 10) threads=16 uptime=1383270s
+2026-06-05 23:03:13,996 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(40, 1, 10) threads=16 uptime=1383570s
+2026-06-05 23:05:50,290 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-05 23:05:50,292 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-05 23:08:14,149 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(365, 1, 10) threads=16 uptime=1383870s
+2026-06-05 23:13:14,282 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(430, 1, 10) threads=16 uptime=1384171s
+2026-06-05 23:18:14,416 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(493, 1, 10) threads=16 uptime=1384471s
+2026-06-05 23:23:14,545 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(38, 2, 10) threads=16 uptime=1384771s
+2026-06-05 23:28:14,764 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(303, 2, 10) threads=16 uptime=1385071s
+2026-06-05 23:33:14,912 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(367, 2, 10) threads=16 uptime=1385371s
+2026-06-05 23:38:15,067 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(431, 2, 10) threads=16 uptime=1385671s
+2026-06-05 23:43:15,223 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(35, 3, 10) threads=16 uptime=1385971s
+2026-06-05 23:48:15,351 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(300, 3, 10) threads=16 uptime=1386272s
+2026-06-05 23:53:15,459 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(365, 3, 10) threads=16 uptime=1386572s
+2026-06-05 23:58:15,575 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(428, 3, 10) threads=16 uptime=1386872s
+2026-06-06 00:03:15,725 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(31, 4, 10) threads=16 uptime=1387172s
+2026-06-06 00:05:58,043 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-06 00:05:58,045 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-06 00:08:15,873 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(355, 4, 10) threads=16 uptime=1387472s
+2026-06-06 00:13:16,051 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(419, 4, 10) threads=16 uptime=1387772s
+2026-06-06 00:18:16,163 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(483, 4, 10) threads=16 uptime=1388072s
+2026-06-06 00:23:16,272 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(27, 5, 10) threads=16 uptime=1388372s
+2026-06-06 00:28:16,419 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(292, 5, 10) threads=16 uptime=1388673s
+2026-06-06 00:33:16,554 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(357, 5, 10) threads=16 uptime=1388973s
+2026-06-06 00:38:16,631 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(419, 5, 10) threads=16 uptime=1389273s
+2026-06-06 00:43:16,794 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(9, 6, 10) threads=16 uptime=1389573s
+2026-06-06 00:48:16,926 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(274, 6, 10) threads=16 uptime=1389873s
+2026-06-06 00:53:17,050 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(338, 6, 10) threads=16 uptime=1390173s
+2026-06-06 00:58:17,189 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(402, 6, 10) threads=16 uptime=1390473s
+2026-06-06 01:03:17,300 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(8, 7, 10) threads=16 uptime=1390773s
+2026-06-06 01:06:06,445 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-06 01:06:06,447 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-06 01:08:17,460 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(332, 7, 10) threads=16 uptime=1391074s
+2026-06-06 01:13:17,586 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(397, 7, 10) threads=16 uptime=1391374s
+2026-06-06 01:18:17,704 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(460, 7, 10) threads=16 uptime=1391674s
+2026-06-06 01:23:17,857 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(1, 8, 10) threads=16 uptime=1391974s
+2026-06-06 01:28:18,003 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(265, 8, 10) threads=16 uptime=1392274s
+2026-06-06 01:33:18,151 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(329, 8, 10) threads=16 uptime=1392574s
+2026-06-06 01:38:18,309 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(393, 8, 10) threads=16 uptime=1392874s
+2026-06-06 01:43:18,455 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(50, 9, 10) threads=16 uptime=1393174s
+2026-06-06 01:48:18,573 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(263, 9, 10) threads=16 uptime=1393475s
+2026-06-06 01:53:18,713 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(327, 9, 10) threads=16 uptime=1393775s
+2026-06-06 01:58:18,878 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(390, 9, 10) threads=16 uptime=1394075s
+2026-06-06 02:00:13,781 INFO cron.scheduler: Running job 'hermes-self-improve-2am' (ID: cc617d7fd4df)
+2026-06-06 02:00:13,782 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-06 02:00:13,814 INFO cron.scheduler: Job 'cc617d7fd4df': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-06 02:00:15,267 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: conversation turn: session=cron_cc617d7fd4df_20260606_020013 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-06 02:00:21,867 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14108 out=87 total=14195 latency=6.6s
+2026-06-06 02:00:23,948 INFO tools.file_tools: Creating new local environment for task default...
+2026-06-06 02:00:24,312 INFO tools.environments.base: Session snapshot created (session=9058e8c507f2, cwd=/Users/ktoclaw)
+2026-06-06 02:00:24,313 INFO tools.file_tools: local environment ready for task default
+2026-06-06 02:00:25,574 INFO agent.tool_executor: tool read_file completed (1.63s, 2990 chars)
+2026-06-06 02:00:25,698 INFO agent.tool_executor: tool read_file completed (1.75s, 16625 chars)
+2026-06-06 02:00:32,637 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=21078 out=114 total=21192 latency=6.9s cache=12962/21078 (61%)
+2026-06-06 02:00:33,655 INFO agent.tool_executor: tool search_files completed (1.01s, 4619 chars)
+2026-06-06 02:00:33,883 INFO agent.tool_executor: tool read_file completed (1.24s, 2384 chars)
+2026-06-06 02:00:40,087 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=23488 out=141 total=23629 latency=6.2s cache=19818/23488 (84%)
+2026-06-06 02:00:40,129 INFO agent.tool_executor: tool skill_view completed (0.04s, 51163 chars)
+2026-06-06 02:00:41,379 INFO agent.tool_executor: tool read_file completed (1.29s, 14033 chars)
+2026-06-06 02:00:41,421 INFO agent.tool_executor: tool read_file completed (1.33s, 5377 chars)
+2026-06-06 02:00:47,952 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=42505 out=152 total=42657 latency=6.5s cache=21235/42505 (50%)
+2026-06-06 02:00:47,987 INFO agent.tool_executor: tool skill_view completed (0.03s, 16439 chars)
+2026-06-06 02:00:48,680 INFO agent.tool_executor: tool search_files completed (0.73s, 1570 chars)
+2026-06-06 02:00:57,790 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #5: model=MiniMax-M2.7 provider=minimax-oauth in=47849 out=194 total=48043 latency=9.1s cache=40040/47849 (84%)
+2026-06-06 02:00:57,834 INFO agent.tool_executor: tool skill_view completed (0.04s, 3962 chars)
+2026-06-06 02:00:58,958 INFO agent.tool_executor: tool read_file completed (1.17s, 6250 chars)
+2026-06-06 02:00:59,068 INFO agent.tool_executor: tool read_file completed (1.28s, 1440 chars)
+2026-06-06 02:01:05,246 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #6: model=MiniMax-M2.7 provider=minimax-oauth in=52090 out=228 total=52318 latency=6.2s cache=45140/52090 (87%)
+2026-06-06 02:01:05,882 INFO agent.tool_executor: tool search_files completed (0.63s, 1668 chars)
+2026-06-06 02:01:06,588 INFO agent.tool_executor: tool read_file completed (1.34s, 8224 chars)
+2026-06-06 02:01:11,580 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #7: model=MiniMax-M2.7 provider=minimax-oauth in=55191 out=94 total=55285 latency=5.0s cache=49208/55191 (89%)
+2026-06-06 02:01:12,763 INFO agent.tool_executor: tool read_file completed (1.18s, 4050 chars)
+2026-06-06 02:01:12,879 INFO agent.tool_executor: tool read_file completed (1.30s, 870 chars)
+2026-06-06 02:01:39,491 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #8: model=MiniMax-M2.7 provider=minimax-oauth in=56819 out=979 total=57798 latency=26.6s cache=52263/56819 (92%)
+2026-06-06 02:01:40,212 INFO agent.tool_executor: tool search_files completed (0.72s, 237 chars)
+2026-06-06 02:01:40,698 INFO agent.tool_executor: tool read_file completed (1.20s, 17399 chars)
+2026-06-06 02:01:40,783 INFO agent.tool_executor: tool read_file completed (1.29s, 3732 chars)
+2026-06-06 02:02:01,273 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #9: model=MiniMax-M2.7 provider=minimax-oauth in=62794 out=683 total=63477 latency=20.5s cache=53564/62794 (85%)
+2026-06-06 02:02:01,682 INFO [cron_cc617d7fd4df_20260606_020013] agent.tool_executor: tool terminal completed (0.41s, 45 chars)
+2026-06-06 02:02:09,990 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #10: model=MiniMax-M2.7 provider=minimax-oauth in=62928 out=293 total=63221 latency=8.3s cache=59574/62928 (95%)
+2026-06-06 02:02:11,735 INFO [cron_cc617d7fd4df_20260606_020013] agent.tool_executor: tool patch completed (1.74s, 990 chars)
+2026-06-06 02:02:35,570 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: API call #11: model=MiniMax-M2.7 provider=minimax-oauth in=63321 out=847 total=64168 latency=23.8s cache=59682/63321 (94%)
+2026-06-06 02:02:35,716 INFO [cron_cc617d7fd4df_20260606_020013] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=MiniMax-M2.7 api_calls=11/90 budget=11/90 tool_turns=10 last_msg_role=assistant response_len=3324 session=cron_cc617d7fd4df_20260606_020013
+2026-06-06 02:02:35,717 INFO cron.scheduler: Job 'hermes-self-improve-2am' completed successfully
+2026-06-06 02:03:19,039 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(77, 7, 16) threads=16 uptime=1394375s
+2026-06-06 02:06:36,207 INFO cron.scheduler: Job '99ed63eabd51' (no_agent): empty stdout — silent run
+2026-06-06 02:06:36,231 INFO cron.scheduler: Job '99ed63eabd51': agent returned [SILENT] — skipping delivery
+2026-06-06 02:07:36,733 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-06 02:08:19,095 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(316, 7, 16) threads=16 uptime=1394675s
+2026-06-06 02:13:19,246 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(377, 7, 16) threads=16 uptime=1394975s
+2026-06-06 02:18:19,400 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(441, 7, 16) threads=16 uptime=1395275s
+2026-06-06 02:23:19,525 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(86, 8, 16) threads=16 uptime=1395575s
+2026-06-06 02:28:19,622 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(255, 8, 16) threads=16 uptime=1395876s
+2026-06-06 02:33:19,744 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(316, 8, 16) threads=16 uptime=1396176s
+2026-06-06 02:38:19,900 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(382, 8, 16) threads=16 uptime=1396476s
+2026-06-06 02:43:20,057 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(71, 9, 16) threads=16 uptime=1396776s
+2026-06-06 02:48:20,215 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(253, 9, 16) threads=16 uptime=1397076s
+2026-06-06 02:53:20,357 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(315, 9, 16) threads=16 uptime=1397376s
+2026-06-06 02:58:20,494 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(389, 9, 16) threads=16 uptime=1397676s
+2026-06-06 03:00:43,635 INFO cron.scheduler: Running job 'hermes-backup-daily' (ID: 72fa7cab90b2)
+2026-06-06 03:00:43,637 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-06 03:00:43,666 INFO cron.scheduler: Job '72fa7cab90b2': loaded credential pool for provider minimax-oauth with 1 entries
+2026-06-06 03:00:45,144 INFO [cron_72fa7cab90b2_20260606_030043] agent.conversation_loop: conversation turn: session=cron_72fa7cab90b2_20260606_030043 model=MiniMax-M2.7 provider=minimax-oauth platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-06 03:00:59,077 INFO [cron_72fa7cab90b2_20260606_030043] agent.conversation_loop: API call #1: model=MiniMax-M2.7 provider=minimax-oauth in=14120 out=73 total=14193 latency=13.9s
+2026-06-06 03:01:01,107 INFO [cron_72fa7cab90b2_20260606_030043] tools.file_tools: Creating new local environment for task default...
+2026-06-06 03:01:01,468 INFO [cron_72fa7cab90b2_20260606_030043] tools.environments.base: Session snapshot created (session=92429fc133dd, cwd=/Users/ktoclaw)
+2026-06-06 03:01:01,469 INFO [cron_72fa7cab90b2_20260606_030043] tools.file_tools: local environment ready for task default
+2026-06-06 03:01:02,834 INFO [cron_72fa7cab90b2_20260606_030043] agent.tool_executor: tool read_file completed (1.73s, 6782 chars)
+2026-06-06 03:01:05,815 INFO [cron_72fa7cab90b2_20260606_030043] agent.conversation_loop: API call #2: model=MiniMax-M2.7 provider=minimax-oauth in=18261 out=65 total=18326 latency=3.0s cache=4/18261 (0%)
+2026-06-06 03:01:35,262 INFO [cron_72fa7cab90b2_20260606_030043] agent.tool_executor: tool terminal completed (29.44s, 254 chars)
+2026-06-06 03:01:40,883 INFO [cron_72fa7cab90b2_20260606_030043] agent.conversation_loop: API call #3: model=MiniMax-M2.7 provider=minimax-oauth in=18399 out=82 total=18481 latency=5.6s cache=18258/18399 (99%)
+2026-06-06 03:01:41,208 INFO [cron_72fa7cab90b2_20260606_030043] agent.tool_executor: tool terminal completed (0.32s, 5017 chars)
+2026-06-06 03:01:45,108 INFO [cron_72fa7cab90b2_20260606_030043] agent.conversation_loop: API call #4: model=MiniMax-M2.7 provider=minimax-oauth in=20472 out=81 total=20553 latency=3.9s cache=18396/20472 (90%)
