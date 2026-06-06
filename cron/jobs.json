@@ -20,15 +20,15 @@
       "schedule_display": "0 2 * * *",
       "repeat": {
         "times": null,
-        "completed": 18
+        "completed": 19
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:00.115730+08:00",
-      "next_run_at": "2026-06-07T02:00:00+08:00",
-      "last_run_at": "2026-06-06T02:02:35.722568+08:00",
+      "next_run_at": "2026-06-08T02:00:00+08:00",
+      "last_run_at": "2026-06-07T02:07:36.226508+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -58,15 +58,15 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 17
+        "completed": 18
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:09.310321+08:00",
-      "next_run_at": "2026-06-07T03:00:00+08:00",
-      "last_run_at": "2026-06-05T03:02:19.888521+08:00",
+      "next_run_at": "2026-06-08T03:00:00+08:00",
+      "last_run_at": "2026-06-06T03:02:12.097912+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -96,15 +96,15 @@
       "schedule_display": "0 22 * * *",
       "repeat": {
         "times": null,
-        "completed": 18
+        "completed": 19
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:39.768780+08:00",
-      "next_run_at": "2026-06-06T22:00:00+08:00",
-      "last_run_at": "2026-06-05T22:01:41.758197+08:00",
+      "next_run_at": "2026-06-07T22:00:00+08:00",
+      "last_run_at": "2026-06-06T22:01:53.463562+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -134,15 +134,15 @@
       "schedule_display": "0 19 * * *",
       "repeat": {
         "times": null,
-        "completed": 18
+        "completed": 19
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:59.384016+08:00",
-      "next_run_at": "2026-06-06T19:00:00+08:00",
-      "last_run_at": "2026-06-05T19:03:54.689293+08:00",
+      "next_run_at": "2026-06-07T19:00:00+08:00",
+      "last_run_at": "2026-06-06T19:05:09.570456+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -172,15 +172,15 @@
       "schedule_display": "30 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 17
+        "completed": 18
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:21.652816+08:00",
-      "next_run_at": "2026-06-06T03:30:00+08:00",
-      "last_run_at": "2026-06-05T03:32:15.703853+08:00",
+      "next_run_at": "2026-06-07T03:30:00+08:00",
+      "last_run_at": "2026-06-06T03:31:37.482317+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -210,15 +210,15 @@
       "schedule_display": "0 6 * * *",
       "repeat": {
         "times": null,
-        "completed": 17
+        "completed": 18
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:32.910302+08:00",
-      "next_run_at": "2026-06-06T06:00:00+08:00",
-      "last_run_at": "2026-06-05T06:01:13.651242+08:00",
+      "next_run_at": "2026-06-07T06:00:00+08:00",
+      "last_run_at": "2026-06-06T06:03:12.483745+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -324,15 +324,15 @@
       "schedule_display": "every 60m",
       "repeat": {
         "times": null,
-        "completed": 378
+        "completed": 402
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-21T06:15:46.885828+08:00",
-      "next_run_at": "2026-06-06T03:06:36.231988+08:00",
-      "last_run_at": "2026-06-06T02:06:36.231988+08:00",
+      "next_run_at": "2026-06-07T03:11:36.494500+08:00",
+      "last_run_at": "2026-06-07T02:11:36.494500+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -563,49 +563,6 @@
       "profile": null
     },
     {
-      "id": "c2887db59509",
-      "name": "Meeting with Chee Khoon reminder",
-      "prompt": "Reminder: Meeting with Chee Khoon starts in 10 minutes at 9am.",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
-      "base_url": null,
-      "script": "echo \"Reminder: Meeting with Chee Khoon starts in 10 minutes at 9am.\"",
-      "no_agent": true,
-      "context_from": null,
-      "schedule": {
-        "kind": "once",
-        "run_at": "2026-06-06T08:50:00+08:00",
-        "display": "once at 2026-06-06 08:50"
-      },
-      "schedule_display": "once at 2026-06-06 08:50",
-      "repeat": {
-        "times": 1,
-        "completed": 0
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-06-03T14:42:21.561177+08:00",
-      "next_run_at": "2026-06-06T08:50:00+08:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "origin": {
-        "platform": "whatsapp",
-        "chat_id": "56702359580792@lid",
-        "chat_name": "Goo Kah Thart",
-        "thread_id": null
-      },
-      "enabled_toolsets": null,
-      "workdir": null,
-      "profile": null
-    },
-    {
       "id": "d4c9f34c6249",
       "name": "Lunch with Andrew in KL reminder",
       "prompt": "Reminder: Lunch with Andrew in KL starts in 10 minutes at 12:30pm.",
@@ -735,5 +692,5 @@
       "profile": null
     }
   ],
-  "updated_at": "2026-06-06T03:00:43.623682+08:00"
+  "updated_at": "2026-06-07T03:00:42.594212+08:00"
 }

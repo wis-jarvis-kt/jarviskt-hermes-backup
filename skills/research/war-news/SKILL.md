@@ -60,9 +60,11 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 | BBC Middle East | `https://www.bbc.com/news/world/middle_east` | Israel, Iran, Gaza |
 | BBC Asia | `https://www.bbc.com/news/world/asia` | South China Sea, Taiwan (supplement with Google News) |
 | Google News | `https://news.google.com/search?q=...` | Taiwan/SCS supplement — extract headline + byline, navigate to source directly |
-| Institute for the Study of War | `https://understandingwar.org` | **Go-to for China/Taiwan** when other outlets blocked; no bot detection |
+| Institute for the Study of War | `https://understandingwar.org` | **Go-to for China/Taiwan**; no bot detection. See ISW URL Navigation note below. |
 
 ## Anti-Bot / Technical Notes
+
+> **ISW URL navigation (2026-06-06):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text.
 
 - BBC RSS feeds work but provide only `<title>` + `<description>` — insufficient for detail. Use browser navigation for full articles.
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use browser nav instead.
@@ -94,6 +96,13 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 - The Diplomat: Cloudflare challenge page confirmed active (bot detection, not DataDome). Different mitigation path — use Google News signposting.
 - U.S. News direct nav: `net::ERR_HTTP2_PROTOCOL_ERROR` — different failure from DataDome/Cloudflare. Google News headline + byline extraction works fine.
 - Reuters DataDome confirmed distinct block mechanism from Cloudflare; distinguish in anti-bot notes.
+
+## Session Observations (2026-06-06)
+
+- ISW homepage China/Taiwan headline click lands on `backgrounder/` summary URL, not the full `research/` report. Full report at `research/china-taiwan/china-taiwan-update-june-5-2026` — updated outlet-notes.md with this finding.
+- Google News JS href extraction remains unreliable (confirmed again); manual URL inference still required.
+- Reuters DataDome, SCMP 404s, The Diplomat Cloudflare all confirmed active.
+- All other anti-bot and navigation patterns from prior sessions hold.
 
 - `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
 - `web-research-limitations` — AI/tech research workflow (absorbed from archived `research-scout`; see `references/research-scout-anti-bot.md`)

@@ -99,6 +99,21 @@ NVIDIA Newsroom direct:    https://blogs.nvidia.com/blog/{slug}/
 Hawaii Tribune-Herald:     https://www.hawaiitribune-herald.com/YYYY/MM/DD/{slug}/
 ```
 
+### New Observations — 2026-06-06
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|--------|-----------|
+| Navigate directly to TechCrunch article URL (from listing) | `techcrunch.com/2026/06/06/google-will-pay-spacex-920m-per-month-for-compute/` | 404 page | TechCrunch article URLs are unstable — many return 404 even hours after publication and even when the listing page link is correct |
+| Click TechCrunch heading from TechCrunch AI listing page | `ref=e59` on "Google will pay SpaceX $920M per month for compute" | 404 page | Same pattern: listing page shows the headline but article URL is dead |
+| Navigate directly to The Verge AI section | `theverge.com/ai-artificial-intelligence` | Full article listing loaded cleanly, click-through to articles works | **The Verge is the most reliable primary source for AI news in cron jobs** — clean loads, stable URLs, working article click-through |
+| Navigate to Google News RSS endpoint via browser_navigate | `news.google.com/rss/search?q=AI+technology+June+6+2026` | RSS returned with `lastBuildDate: Fri, 05 Jun 2026` — all items from prior day | **RSS endpoint is NOT a same-day scan** — server-side filters to previous day. Use the search page, not the RSS feed. |
+| delegate_task with `web` toolset for AI news research | Subagent with web_search | Minimal output — subagent didn't fetch actual article content | delegate_task web searches are not a reliable substitute for direct browser reading |
+
+**Key finding — The Verge replaces TechCrunch as primary AI news source:**
+- TechCrunch listing pages are fine for headlines, but article URLs frequently 404
+- The Verge AI section (`theverge.com/ai-artificial-intelligence`) loads cleanly with stable URLs and working article click-through
+- For the research-scout workflow, use The Verge as primary and TechCrunch as secondary (with 404 caveat)
+
 ### Quick Diagnosis Flow
 
 ```

@@ -25,9 +25,9 @@
 - Stuck gaps: document in `~/.hermes/memories/YYYY-MM-DD.md` under `## 🔧 Stuck & Learned`
 
 ## Skill Locations (non-obvious)
-- `openclaw/stock-analysis-victor-framework` → `~/.hermes/skills/openclaw/stock-analysis-victor-framework/` (includes Weekly Victor Study section)
+- `openclaw/openclaw-stock-analysis-victor-framework` is ARCHIVED — its content was absorbed into `openclaw/stock-analysis-victor-framework` (canonical: Victor Entry Signals + Stock Radar + Weekly Victor Study)
 - Active openclaw skills live in `~/.hermes/skills/openclaw/<skill-name>/` subdirectories
-- gbrain MCP server skills (3) are aspirational — disconnected since OpenClaw migration
+- gbrain MCP server (3 skills: gbrain-brain-ops, gbrain-enrich, gbrain-signal-detector) — disconnected since OpenClaw migration. See `openclaw/openclaw-imports/references/gbrain-mcp-setup.md` for reconnection steps.
 
 ## Active Cron Workflows
 - **research-scout:** Nightly AI/tech/news scout → `research-YYYY-MM-DD.md`
@@ -38,6 +38,7 @@
 - **hermes-backup-daily:** Daily backup of memories and config
 
 ## Recent Key Events
+- **2026-06-06:** Memory consolidation run — pruned sessions and memories older than 7 days. USER.md restored after accidental deletion.
 - **AVGO Q2 FY2026 earnings June 3:** Stock +11.1% June 2 on AI data center/edge network platform announcements. Analysts focused on custom ASIC (XPU) demand from hyperscalers. PT range $1,100–$1,800.
 - **PANW Q1 FY2026 earnings June 2:** NATO partnership announced; BTIG Bullish initiation PT $216; GlobalProtect VPN CVE-2026-0257 auth bypass under active exploit (patched).
 - **MSFT Build 2026 (June 2):** 7 major AI announcements — first advanced reasoning AI model, Project Solara (OS for AI agents), Execution Containers (security layer for AI agents on Windows).

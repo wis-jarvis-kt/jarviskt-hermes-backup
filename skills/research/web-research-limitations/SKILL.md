@@ -150,13 +150,13 @@ A specific recurring task: run an evening scan of AI/tech developments and save 
 
 ### Workflow
 
-1. **Navigate** to `https://www.artificialintelligence-news.com/` — loads reliably in cron jobs (no anti-bot blocking observed).
-2. **Accept cookie consent** if dialog appears: `browser_click(ref=e3)` on "Accept".
-3. **Scan headlines** for 3 notable AI/tech developments. Prioritise articles with today's date. **Click the article heading link** — heading-click anti-bot is intermittent (~67% success rate), so proceed to the next article if it fails; use direct URL as rescue only.
-4. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use Google News search as fallback.
-5. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
-6. **If fewer than 3 articles with today's date appear on the homepage**, scroll down the "LATEST" section. If still insufficient, use Google News search (`https://news.google.com/search?q=AI+technology&hl=en-US&gl=US&ceid=US:en`) to find supplementary stories — **click through to the original source publication's native domain** (TechCrunch, blog.google, Reuters, etc.), not the aggregator link. Prioritise developments that are genuinely new (not dated several days prior) even if the primary source is not the AI News homepage.
-7. **Write findings** to `~/.hermes/memories/research-YYYY-MM-DD.md` with frontmatter header:
+1. **Primary: The Verge AI section** — Navigate to `https://www.theverge.com/ai-artificial-intelligence`. This loads cleanly in cron jobs, has high article density, and click-through to individual stories works reliably. Read the snapshot, click article links for detail. This is the most productive primary source for AI/tech news in 2026.
+2. **Secondary: TechCrunch AI section** — Navigate to `https://techcrunch.com/category/artificial-intelligence/`. **Caveat:** TechCrunch article URLs are frequently 404 when navigated directly (even when the listing page link is correct). If a heading click or direct nav to an article URL returns 404, skip it and use The Verge or another source instead. Do not waste time on URL rescue patterns with TechCrunch.
+3. **Fallback: Google News search** — Navigate to `https://news.google.com/search?q=AI+technology+YYYY-MM-DD&hl=en-US&gl=US&ceid=US:en`. Note: the RSS endpoint (`/rss/search?q=...`) via browser_navigate returns items with a `lastBuildDate` of the previous day — it is NOT a true same-day scan. Use the search page, not the RSS feed.
+4. **If fewer than 3 articles with today's date appear**, scroll down the listing page's "LATEST" or "IN BRIEF" sections. For genuinely breaking stories, use Google News search for the day.
+5. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use The Verge or another source instead.
+6. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
+7. **Write findings** directly to `~/.hermes/memories/research-YYYY-MM-DD.md`. Keep it concise — 3 items max, each with headline, 2-sentence summary, source name, and URL.
 
 ```markdown
 # AI/Tech Research Scout — YYYY-MM-DD
@@ -188,10 +188,26 @@ Use this exact header format so future agents can parse it:
 ```
 # AI/Tech Research Scout — {date}
 
-## Evening Scan: 3 Notable Developments
+## 1. [Headline]
+- **Source:** Source Name (Date)
+- **Summary:** 2-sentence summary
+- **URL:** url
+
+## 2. [Headline]
+- **Source:** Source Name (Date)
+- **Summary:** 2-sentence summary
+- **URL:** url
+
+## 3. [Headline]
+- **Source:** Source Name (Date)
+- **Summary:** 2-sentence summary
+- **URL:** url
+
+---
+*Scout run: {date} morning/evening*
 ```
 
-Each entry must include: source + date, category, summary, key points, and "why it matters."
+Keep entries concise — the goal is signal, not summaries. Each entry should be immediately useful to someone scanning for what's new.
 
 ### Support Files
 - `references/research-scout-anti-bot.md` — session-tested anti-bot patterns, URL workarounds, and rescue flow for the research-scout workflow. Updated after each scout run that encounters blocking.

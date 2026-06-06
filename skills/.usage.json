@@ -121,13 +121,13 @@
     "created_at": "2026-06-04T11:07:26.029121+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-06-04T11:07:26.029984+00:00",
-    "last_viewed_at": "2026-06-04T11:07:26.029144+00:00",
+    "last_used_at": "2026-06-06T11:05:55.840592+00:00",
+    "last_viewed_at": "2026-06-06T11:05:55.839953+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "stock-ai-agent": {
     "archived_at": null,
@@ -185,26 +185,26 @@
     "archived_at": null,
     "created_at": "2026-06-01T11:00:47.496162+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-05T11:06:35.947450+00:00",
-    "last_used_at": "2026-06-05T11:06:39.500109+00:00",
-    "last_viewed_at": "2026-06-05T11:06:39.499487+00:00",
-    "patch_count": 12,
+    "last_patched_at": "2026-06-06T11:08:37.058881+00:00",
+    "last_used_at": "2026-06-06T11:08:21.516751+00:00",
+    "last_viewed_at": "2026-06-06T11:08:21.515785+00:00",
+    "patch_count": 15,
     "pinned": false,
     "state": "active",
-    "use_count": 17,
-    "view_count": 17
+    "use_count": 21,
+    "view_count": 21
   },
   "web-research-limitations": {
     "archived_at": null,
     "created_at": "2026-05-19T10:02:28.904709+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-06-02T14:05:05.520312+00:00",
-    "last_used_at": "2026-06-02T14:03:50.090378+00:00",
-    "last_viewed_at": "2026-06-02T14:03:50.089810+00:00",
-    "patch_count": 20,
+    "last_patched_at": "2026-06-05T22:05:11.374657+00:00",
+    "last_used_at": "2026-06-05T22:04:25.398753+00:00",
+    "last_viewed_at": "2026-06-05T22:04:25.398008+00:00",
+    "patch_count": 23,
     "pinned": false,
     "state": "active",
-    "use_count": 28,
-    "view_count": 28
+    "use_count": 30,
+    "view_count": 30
   }
 }

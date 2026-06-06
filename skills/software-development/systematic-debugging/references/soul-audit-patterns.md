@@ -48,3 +48,36 @@ Skills referencing a disconnected MCP server are fine if they document the gap c
 - **Actual:** `research-scout` is an active skill at `research/research-scout/` running 2x/day
 - **Fix:** Updated entry → `research/research-scout` (active skill — archived duplicate; canonical is `research/research-scout`)
 - **Backup:** `SKILL.md.bak-20260529`
+
+## Audit findings (2026-06-07)
+
+### MEMORY.md — "Skill Locations" section
+
+Two stale entries found and fixed:
+
+1. **`openclaw/stock-analysis-victor-framework` reference was ambiguous**
+   - Both the archived wrapper and canonical skill share the `openclaw/` path prefix — naming only the skill name is ambiguous without the full sub-directory path
+   - Fix: clarified as `openclaw/openclaw-stock-analysis-victor-framework` (archived) absorbed into `openclaw/stock-analysis-victor-framework` (canonical: Victor Entry Signals + Stock Radar + Weekly Victor Study)
+   - **Lesson:** Always use the full sub-directory path in references when two skills share a path prefix.
+
+2. **gbrain MCP note was vague**
+   - Previous: "gbrain MCP server skills (3) are aspirational — disconnected since OpenClaw migration"
+   - Fix: Named all 3 skills explicitly (gbrain-brain-ops, gbrain-enrich, gbrain-signal-detector) and pointed to `openclaw/openclaw-imports/references/gbrain-mcp-setup.md` for reconnection steps
+   - **Lesson:** "N skills are aspirational" without naming them and linking to setup doc leaves future agents unable to identify what to fix.
+
+### SOUL.md and config.yaml
+
+- **SOUL.md:** All paths correct — `~/.hermes/memories/` fix was already applied in a prior session.
+- **config.yaml:** No stale references found. `model_catalog` URL, `honcho`, `onboarding` flags all current.
+
+### war-news and web-research-limitations skills
+
+Both fully current with anti-bot patterns verified through 2026-06-06 session. No updates needed.
+
+### Audit pattern confirmed
+
+The audit procedure in this reference file correctly identifies stale entries. Key checks:
+- MEMORY.md "Skill Locations" → verify skill paths resolve to actual files
+- MEMORY.md "Active Cron Workflows" → verify skill name matches what exists
+- Umbrella skill archived tables → verify "absorbed_into" targets exist
+- gbrain skills → check they document the MCP gap clearly (not just "aspirational")

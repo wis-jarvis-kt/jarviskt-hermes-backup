@@ -1,4 +1,4 @@
-# Conflict News — Source Outlet Notes (Updated 2026-06-05)
+# Conflict News — Source Outlet Notes (Updated 2026-06-06)
 
 ## Outlet Accessibility Matrix
 
@@ -40,9 +40,16 @@ When BBC Asia is thin on Taiwan/SCS coverage (which is frequent):
 
 BBC Asia section page rarely carries Taiwan Strait or South China Sea breaking news. It covers: China, India, Japan, Korea, Southeast Asia broadly. Taiwan and SCS stories appear on BBC World Europe or World pages only when US/Western policy is involved. Always supplement with Google News search for Taiwan/SCS.
 
-## Blocking Mechanism Reference
+## ISW URL Navigation (Updated 2026-06-06)
 
-Three distinct mechanisms observed:
+ISW uses two distinct URL patterns for its reports:
+
+- **Summary page** (from homepage listing click): `https://understandingwar.org/backgrounder/china-taiwan/update-june-5-2026`
+- **Full report** (direct nav): `https://www.understandingwar.org/research/china-taiwan/china-taiwan-update-june-5-2026`
+
+When you land on a `backgrounder/` URL from a homepage click, you have a summary card — not the full analysis. Navigate to the `research/` path for the complete report text. This applies to China/Taiwan, Russia/Ukraine, and Middle East ISW reports.
+
+## Blocking Mechanism Reference
 
 | Mechanism | Outlets | Symptom |
 |-----------|---------|---------|
