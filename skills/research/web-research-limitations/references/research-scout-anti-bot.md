@@ -130,3 +130,37 @@ Step 5: Navigate directly to the original source domain
     ↓
 browser_snapshot(full=false) → verify title → read
 ```
+
+### New Observations — 2026-06-07
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|--------|-----------|
+| Navigate to TechCrunch AI listing page | `techcrunch.com/category/artificial-intelligence/` | Full article listing loaded cleanly with 10+ headlines | TechCrunch listing page loads reliably in cron jobs |
+| Click TechCrunch article heading from listing page | `ref=e57` on "OpenAI unveils Lockdown Mode..." | **Article loaded correctly with full content** | Click-through from TechCrunch listing page WORKS — ref IDs point to the article |
+| Click TechCrunch article heading from listing page (WWDC) | `ref=e59` on "What to expect from WWDC 2026..." | **Article loaded correctly with full content** | Second confirmed success via listing click-through |
+| Click TechCrunch article heading from listing page (Trump/OpenAI) | `ref=e61` on "Trump administration might take equity stake..." | **Article loaded correctly with full content** | Third confirmed success — click-through from listing is the reliable path |
+| HN Algolia API via curl | `hn.algolia.com/api/v1/search?query=AI+OR+artificial+intelligence&hitsPerPage=8` | 400 error: "Unknown parameter: rows" | Parameter is `hitsPerPage`, not `rows` — API parameter name is different from standard |
+| HN Algolia API — correct parameter | `hn.algolia.com/api/v1/search?query=AI+OR+artificial+intelligence&tags=story&hitsPerPage=8` | Returned results but with old/irrelevant HN posts (Ask HN, older stories) | HN Algolia API search quality is poor for current AI news — better as a secondary check than primary source |
+| Google News search page via browser_navigate | `news.google.com/search?q=AI+artificial+intelligence` | Lead stories were 2–5 days old (IMDb, Guardian, AP) — not same-day AI news | Google News search page lead section is not a same-day AI news scan; use the AI-tech section pages (The Verge, TechCrunch) instead |
+| TechCrunch AI listing page — "IN BRIEF" section | Top 4 articles (17h ago, 20h ago, 20h ago, 22h ago) | All recency-stamped within 22 hours | TechCrunch AI listing page lead items are recent enough for "evening scout" even when not strictly same-day |
+
+**Key clarification — TechCrunch URL stability:**
+- Prior session (2026-06-06) noted "TechCrunch article URLs are unstable — many return 404." This session clarifies: direct navigation to TechCrunch article URLs is unreliable, but **click-through from the TechCrunch AI listing page works reliably** for article reading.
+- The 404 issue appears to affect direct URL navigation specifically, not the click path from the listing page.
+- Best practice: navigate to the TechCrunch AI listing page → click article headings from the snapshot → read directly from the resulting article page. Do NOT copy the URL from the address bar and re-navigate to it directly.
+
+**HN Algolia API notes:**
+- Correct parameter is `hitsPerPage` (not `rows`)
+- Returns older posts (Ask HN, archived discussions) for broad queries like "AI OR artificial intelligence"
+- Not a reliable primary source for current AI news in cron jobs
+- Still useful as a secondary signal for what's trending in developer community
+
+**Updated TechCrunch workflow (confirmed 2026-06-07):**
+```
+1. Navigate to techcrunch.com/category/artificial-intelligence/
+2. Read snapshot — identify top 3 articles by recency stamp
+3. browser_click on article heading ref from listing
+4. browser_snapshot(full=false) — verify title, read article
+5. Repeat for each article
+6. Write findings to research-YYYY-MM-DD.md
+```

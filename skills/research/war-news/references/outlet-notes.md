@@ -40,13 +40,18 @@ When BBC Asia is thin on Taiwan/SCS coverage (which is frequent):
 
 BBC Asia section page rarely carries Taiwan Strait or South China Sea breaking news. It covers: China, India, Japan, Korea, Southeast Asia broadly. Taiwan and SCS stories appear on BBC World Europe or World pages only when US/Western policy is involved. Always supplement with Google News search for Taiwan/SCS.
 
-## ISW URL Navigation (Updated 2026-06-06)
+## ISW URL Navigation (Updated 2026-06-07)
 
 ISW uses two distinct URL patterns for its reports:
 
 - **Summary page** (from homepage listing click): `https://understandingwar.org/backgrounder/china-taiwan/update-june-5-2026`
-- **Full report** (direct nav): `https://www.understandingwar.org/research/china-taiwan/china-taiwan-update-june-5-2026`
+- **Full report** (direct nav): `https://understandingwar.org/research/china-taiwan/china-taiwan-update-june-5-2026`
 
+**Important:** Do NOT use `www.` prefix. The correct bare domain is `https://understandingwar.org` — adding `www.` produces a broken page.
+
+When you land on a `backgrounder/` URL from a homepage click, you have a summary card — not the full analysis. Navigate to the `research/` path for the complete report text. This applies to China/Taiwan, Russia/Ukraine, and Middle East ISW reports.
+
+**ISW page structure:** On the full report page, the "Toplines" section is the most important quick-read section — it summarizes the 3–5 most critical developments. Jump to it first via the combobox dropdown if available, or scroll to the top of the article body.
 When you land on a `backgrounder/` URL from a homepage click, you have a summary card — not the full analysis. Navigate to the `research/` path for the complete report text. This applies to China/Taiwan, Russia/Ukraine, and Middle East ISW reports.
 
 ## Blocking Mechanism Reference

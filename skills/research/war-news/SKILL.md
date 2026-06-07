@@ -79,6 +79,7 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
   1. Run the JS snippet (step 5 above) to extract `https://www.bbc.com/news/articles/<id>` URLs.
   2. Navigate directly with `browser_navigate(url)` to each article.
 - **Google News article extraction**: Same pattern — don't try clicking results. Use `browser_console` JS to grab URLs, then navigate directly to source sites. If URL extraction fails, navigate to Google News and use the visible headline text to search the topic on a known-working outlet (Taipei Times, Al Jazeera).
+- **Diplomatic exception — Iran World Cup (2026-06-07):** The US granted visas to Iran's football team for their World Cup match in Los Angeles on June 15, despite active reciprocal strikes between the US and Iran. This is the first time a host nation has received a team from a country it is at war with. If covering the Iran conflict, note this precedent — it signals selective humanitarian/diplomatic exemptions even during active hostilities.
 - **BBC article text**: After navigating to an article, body content is in the `article` element's static text children of `main`. Use `browser_snapshot(full=false)` for the full article text; `browser_console` can be used for targeted DOM inspection.
 - **Article count and batching**: A full six-article read (3 Europe + 3 Middle East) is safe for a cron job with no time pressure. If running in a time-constrained session, prioritize 2–3 most recent/relevant per region. Group browser_navigate calls by region to reduce session overhead.
 - **URL typos in BBC section links**: Double-check URLs before navigating — a truncated URL (e.g. `/middle_ea`) silently yields a 404. Always spell-check: the Middle East section is `bbc.com/news/world/middle_east` (not `/middle_ea`).
@@ -88,7 +89,6 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 - Google News JS href extraction (the `WYjbwe` class) remains unreliable — verified still broken
 - Reuters DataDome block confirmed still active
 - SCMP 404s confirmed still active
-- **Taipei Times URL form**: Article IDs appear in Google News preview snippets as full URLs. Extract from there rather than inferring. The pattern is `https://www.taipeitimes.com/News/taiwan/archives/YYYY/MM/DD/NumericID`. DO NOT use `/news/detail/<code>` form — these are section index pages, not article pages.
 
 ## Session Observations (2026-06-05)
 
@@ -97,11 +97,13 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 - U.S. News direct nav: `net::ERR_HTTP2_PROTOCOL_ERROR` — different failure from DataDome/Cloudflare. Google News headline + byline extraction works fine.
 - Reuters DataDome confirmed distinct block mechanism from Cloudflare; distinguish in anti-bot notes.
 
-## Session Observations (2026-06-06)
+## Session Observations (2026-06-07)
 
-- ISW homepage China/Taiwan headline click lands on `backgrounder/` summary URL, not the full `research/` report. Full report at `research/china-taiwan/china-taiwan-update-june-5-2026` — updated outlet-notes.md with this finding.
-- Google News JS href extraction remains unreliable (confirmed again); manual URL inference still required.
-- Reuters DataDome, SCMP 404s, The Diplomat Cloudflare all confirmed active.
+- ISW URL `www.` prefix confirmed broken; bare `understandingwar.org` is correct.
+- ISW "Toplines" section is the primary quick-read section on full report pages — jump to it first.
+- Iran ceasefire stall confirmed: US requested changes to terms; Iran said US keeps "changing its views and putting forward new or contradictory demands." Article captured both sides' positions.
+- New diplomatic exception: US granted visas to Iran's World Cup football team (Los Angeles, June 15) despite active strikes — first such host-nation exception.
+- Taipei Times URL inference still risky; correct IDs must be extracted from Google News snippets. Inferred URL `…/2000106928` returned 404 on 2026-06-07.
 - All other anti-bot and navigation patterns from prior sessions hold.
 
 - `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
