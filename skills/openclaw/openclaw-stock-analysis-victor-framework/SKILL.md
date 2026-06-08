@@ -6,6 +6,8 @@ description: |
   `stock-analysis-victor-framework` skill at:
   `~/.hermes/skills/openclaw/stock-analysis-victor-framework/SKILL.md`
 
+  Note: The canonical skill is at `openclaw/stock-analysis-victor-framework/` (NOT `openclaw/openclaw-stock-analysis-victor-framework/`).
+
   The canonical skill includes: Victor Entry Signals (P/E + PEG vs 5Y avg),
   Stock Radar (daily), Weekly Victor Study, CSP screening, and news scanning.
   All CSP-specific content is preserved inline in the canonical skill.
@@ -19,7 +21,7 @@ platforms: [macos, linux]
 metadata:
   hermes:
     tags: [stock, trading, options, CSP, covered-call, ETF, Victor-framework, market-analysis]
-    absorbed_into: openclaw/stock-analysis-victor-framework
+    absorbed_into: stock-analysis-victor-framework
 prerequisites:
   commands: [python3, curl]
 ---

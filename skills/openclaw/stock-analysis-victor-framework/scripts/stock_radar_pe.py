@@ -1,116 +1,81 @@
 #!/usr/bin/env python3
-"""
-stock_radar_pe.py — Compute 5Y avg P/E and Victor framework entry signals for a list of stocks.
-Usage: python3 stock_radar_pe.py [SYMBOL ...]
-Defaults to: AAPL NVDA META GOOGL MSFT TSLA
-"""
+"""Stock Radar - Victor's Framework Analysis (fixed)"""
 import yfinance as yf
 import json
-import sys
+from datetime import date
 
-DEFAULT_STOCKS = ['AAPL', 'NVDA', 'META', 'GOOGL', 'MSFT', 'TSLA']
+SYMBS = ['AAPL', 'NVDA', 'META', 'GOOGL', 'MSFT', 'TSLA']
 
-def compute_annual_pes(ticker_sym):
-    """Compute annual P/E ratios from 5Y history. Returns (annual_pes_dict, avg_5y_pe)."""
-    t = yf.Ticker(ticker_sym)
-    info = t.info
-    shares = info.get('sharesOutstanding', 0)
-    
-    if not shares or shares == 0:
-        return {}, None
-    
-    # Year-end closes: resample to year-end, get last close of each year
-    hist = t.history(period='5y')
-    yearly_closes = hist.resample('YE').last()['Close']
-    
-    # Build {year: close_price} dict from the Series
-    close_dict = {}
-    yearly_closes_list = yearly_closes.sort_index()  # oldest first
-    for i, (idx, val) in enumerate(yearly_closes_list.items()):
-        close_dict[idx.year] = float(val)
-    
-    # Annual net income
-    financials = t.financials
-    net_income = financials.loc['Net Income'] if 'Net Income' in financials.index else None
-    
-    annual_pes = {}
-    if net_income is not None:
-        ni_series = net_income.sort_index()  # oldest first
-        for date_idx in ni_series.index:
-            year = date_idx.year
-            if year in close_dict:
-                year_close = close_dict[year]
-                year_ni = float(ni_series[date_idx])
-                annual_eps = year_ni / shares
-                if annual_eps > 0:
-                    pe = year_close / annual_eps
-                    annual_pes[year] = round(pe, 1)
-    
-    if len(annual_pes) >= 1:
-        avg_pe = round(float(sum(annual_pes.values()) / len(annual_pes)), 1)
-    else:
-        avg_pe = None
-    
-    return annual_pes, avg_pe
+# Fear & Greed
+try:
+    import urllib.request
+    req = urllib.request.Request('https://api.alternative.me/fng/', headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req, timeout=10) as r:
+        fg = json.loads(r.read())
+    fng_val = fg['data'][0]['value']
+    fng_class = fg['data'][0]['value_classification']
+    print(f"FEAR_GREED:{fng_val}|{fng_class}")
+except Exception as e:
+    print(f"FEAR_GREED:error:{e}")
 
-def analyze_stock(ticker_sym):
-    """Full Victor framework analysis for one stock."""
-    t = yf.Ticker(ticker_sym)
-    info = t.info
-    
-    price = info.get('regularMarketPrice') or info.get('currentPrice')
-    trailing_pe_raw = info.get('trailingPE')
-    forward_pe_raw = info.get('forwardPE')
-    peg_ratio_raw = info.get('pegRatio')
-    shares = info.get('sharesOutstanding', 0)
-    
-    # Cast to plain Python floats to avoid pandas scalar ambiguity in arithmetic
-    trailing_pe = float(trailing_pe_raw) if trailing_pe_raw is not None else None
-    forward_pe = float(forward_pe_raw) if forward_pe_raw is not None else None
-    peg_ratio = float(peg_ratio_raw) if peg_ratio_raw is not None else None
-    
-    annual_pes, avg_pe = compute_annual_pes(ticker_sym)
-    
-    pe_threshold = round(avg_pe * 0.90, 1) if avg_pe else None
-    pe_signal = bool(trailing_pe < avg_pe * 0.90) if (avg_pe and trailing_pe) else False
-    peg_signal = bool(peg_ratio < 1.0) if peg_ratio is not None else False
-    
-    verdict = "No Entry"
-    if pe_signal and peg_signal:
-        verdict = "Strong Entry"
-    elif pe_signal or peg_signal:
-        verdict = "Potential Entry"
-    
-    return {
-        'price': price,
-        'trailing_pe': round(trailing_pe, 1) if trailing_pe else None,
-        'forward_pe': round(forward_pe, 1) if forward_pe else None,
-        'peg_ratio': round(peg_ratio, 2) if peg_ratio else None,
-        'annual_pes': annual_pes,
-        'avg_5y_pe': avg_pe,
-        'pe_threshold_90': pe_threshold,
-        'pe_entry_signal': pe_signal,
-        'peg_entry_signal': peg_signal,
-        'verdict': verdict,
-    }
+today = date.today().strftime('%Y-%m-%d')
+print(f"DATE:{today}")
 
-def main():
-    stocks = sys.argv[1:] if len(sys.argv) > 1 else DEFAULT_STOCKS
-    
-    results = {}
-    for sym in stocks:
-        try:
-            results[sym] = analyze_stock(sym)
-            d = results[sym]
-            print(f"\n{sym}: price=${d['price']}, PE={d['trailing_pe']}, PEG={d['peg_ratio']}")
-            print(f"  annual_pes={d['annual_pes']}, 5Y_avg_PE={d['avg_5y_pe']}")
-            print(f"  P/E signal={d['pe_entry_signal']}, PEG signal={d['peg_entry_signal']} → {d['verdict']}")
-        except Exception as e:
-            results[sym] = {'error': str(e)}
-            print(f"\n{sym}: ERROR {e}")
-    
-    print("\n\n=== JSON ===")
-    print(json.dumps(results, indent=2))
+for sym in SYMBS:
+    try:
+        t = yf.Ticker(sym)
+        info = t.info
+        price = info.get('regularMarketPrice') or info.get('currentPrice')
+        trailing_pe = info.get('trailingPE')
+        peg = info.get('pegRatio')
+        shares = info.get('sharesOutstanding', 0)
 
-if __name__ == '__main__':
-    main()
+        # Historical year-end closes
+        hist = t.history(period='5y')
+        ye = hist.resample('YE').last()['Close']
+        # Build dict: {year: close}
+        close_by_year = {}
+        for dt, v in ye.items():
+            close_by_year[int(dt.year)] = float(v)
+
+        # Net income by year — align by column order (most recent first)
+        financials = t.financials
+        if not financials.empty and 'Net Income' in financials.index:
+            ni_row = financials.loc['Net Income']
+            cols = list(ni_row.index)  # columns are dates, most recent last
+            # Map col years to NI values (most recent 5)
+            ni_by_year = {}
+            for col in reversed(cols[-5:]):
+                yr = int(col.year)
+                ni_by_year[yr] = float(ni_row[col])
+        else:
+            ni_by_year = {}
+
+        # Compute annual P/E where both exist
+        years = sorted(set(list(close_by_year.keys()) + list(ni_by_year.keys())))
+        pe_list = []
+        for yr in years:
+            if yr in close_by_year and yr in ni_by_year and shares > 0:
+                eps = ni_by_year[yr] / float(shares)
+                if eps > 0:
+                    pe_list.append((yr, close_by_year[yr], eps, close_by_year[yr] / eps))
+
+        avg_pe = sum(p[3] for p in pe_list) / len(pe_list) if len(pe_list) >= 2 else None
+
+        pe_signal = False
+        if trailing_pe and avg_pe:
+            pe_signal = float(trailing_pe) < float(avg_pe) * 0.90
+
+        peg_signal = peg is not None and float(peg) < 1.0
+
+        pe_str = f"{trailing_pe:.2f}" if trailing_pe else "N/A"
+        peg_str = f"{peg:.2f}" if peg else "N/A"
+        avg_str = f"{avg_pe:.2f}" if avg_pe else "N/A"
+        pe_sig_str = "YES" if pe_signal else "no"
+        peg_sig_str = "YES" if peg_signal else "no"
+
+        print(f"{sym}:price={price:.2f}|trailing_pe={pe_str}|peg={peg_str}|5y_avg_pe={avg_str}|pe_entry={pe_sig_str}|peg_entry={peg_sig_str}|years={len(pe_list)}")
+    except Exception as e:
+        import traceback
+        print(f"{sym}:error:{e}")
+        traceback.print_exc()

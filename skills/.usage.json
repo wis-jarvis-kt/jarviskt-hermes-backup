@@ -30,13 +30,13 @@
     "created_at": "2026-05-20T18:06:41.246197+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-05-24T18:04:58.787501+00:00",
-    "last_used_at": "2026-06-02T18:05:56.438211+00:00",
-    "last_viewed_at": "2026-06-02T18:05:56.437348+00:00",
+    "last_used_at": "2026-06-08T18:00:28.657669+00:00",
+    "last_viewed_at": "2026-06-08T18:00:28.656269+00:00",
     "patch_count": 3,
     "pinned": false,
     "state": "active",
-    "use_count": 12,
-    "view_count": 12
+    "use_count": 13,
+    "view_count": 13
   },
   "openclaw-imports:remind": {
     "archived_at": null,
@@ -69,13 +69,13 @@
     "created_at": "2026-06-03T13:49:49.417699+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-06-04T13:51:32.071088+00:00",
-    "last_used_at": "2026-06-03T13:50:21.415453+00:00",
-    "last_viewed_at": "2026-06-03T13:50:21.414709+00:00",
+    "last_used_at": "2026-06-08T18:00:28.656977+00:00",
+    "last_viewed_at": "2026-06-08T18:00:28.654895+00:00",
     "patch_count": 5,
     "pinned": false,
     "state": "active",
-    "use_count": 1,
-    "view_count": 1
+    "use_count": 2,
+    "view_count": 2
   },
   "openclaw/stock-analysis-victor-framework": {
     "archived_at": null,
@@ -147,13 +147,13 @@
     "created_at": "2026-05-19T13:49:11.701638+00:00",
     "created_by": "agent",
     "last_patched_at": "2026-06-01T13:59:32.074319+00:00",
-    "last_used_at": "2026-06-05T18:00:47.986652+00:00",
-    "last_viewed_at": "2026-06-05T18:00:47.985956+00:00",
+    "last_used_at": "2026-06-08T13:45:47.771595+00:00",
+    "last_viewed_at": "2026-06-08T13:45:47.770736+00:00",
     "patch_count": 16,
     "pinned": false,
     "state": "active",
-    "use_count": 54,
-    "view_count": 54
+    "use_count": 55,
+    "view_count": 55
   },
   "tmate-remote-support": {
     "archived_at": null,
@@ -185,14 +185,14 @@
     "archived_at": null,
     "created_at": "2026-06-01T11:00:47.496162+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-07T11:04:59.193581+00:00",
-    "last_used_at": "2026-06-07T11:04:41.874552+00:00",
-    "last_viewed_at": "2026-06-07T11:04:41.873707+00:00",
-    "patch_count": 20,
+    "last_patched_at": "2026-06-08T11:02:29.229831+00:00",
+    "last_used_at": "2026-06-08T11:00:24.592121+00:00",
+    "last_viewed_at": "2026-06-08T11:00:24.591313+00:00",
+    "patch_count": 21,
     "pinned": false,
     "state": "active",
-    "use_count": 25,
-    "view_count": 25
+    "use_count": 26,
+    "view_count": 26
   },
   "web-research-limitations": {
     "archived_at": null,

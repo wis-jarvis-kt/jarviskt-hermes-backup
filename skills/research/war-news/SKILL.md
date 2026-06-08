@@ -106,6 +106,11 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 - Taipei Times URL inference still risky; correct IDs must be extracted from Google News snippets. Inferred URL `…/2000106928` returned 404 on 2026-06-07.
 - All other anti-bot and navigation patterns from prior sessions hold.
 
+## Session Observations (2026-06-08)
+
+- Google News JS URL extraction: `Array.from(document.querySelectorAll('a[href*="/news/articles/"]')).map(a => a.href).filter((v,i,a) => a.indexOf(v) === i)` is the reliable pattern for both BBC section pages and Google News search results. Deduplicates with `indexOf` trick. Confirmed working on both.
+- ISW China/Taiwan full report URL format: `understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/` — the "Toplines" section at the top is the quick-read; full text follows below.
+
 - `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
 - `web-research-limitations` — AI/tech research workflow (absorbed from archived `research-scout`; see `references/research-scout-anti-bot.md`)
 
