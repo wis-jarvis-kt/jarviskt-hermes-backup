@@ -5,3 +5,4 @@ whatsapp/
 *.lock
 hermes-agent/
 .DS_Store
+state.db
