@@ -57,6 +57,26 @@ Primary ETFs tracked for CSP (Cash Secured Put) analysis:
 Secondary/niche ETFs (may fail Stage 1 volume screen):
 `FNDX`, `FDVV`, `TDIV`, `IETC`, `USMC`, `SNPE`, `TMFC`, `FLQL`, `WTV`
 
+### Live IV Snapshot (2026-06-09)
+For CSP Stage 2 — only valid on RED day trigger (S&P >1% down OR VIX > 25):
+
+| Symbol | Price | Vol | IV | CSP Pass? |
+|--------|-------|-----|----|-----------|
+| SOXQ | $100.26 | 1.7M | 56.4% | ✅ Stage 1+2 |
+| XLG | $61.87 | 2.6M | 54.6% | ✅ Stage 1+2 |
+| CGGR | $45.79 | 3.0M | 47.6% | ✅ Stage 1+2 |
+| AIQ | $63.84 | 2.0M | 36.0% | ❌ IV too low |
+| SPHQ | $85.54 | 1.5M | 23.1% | ❌ IV too low |
+| SCHG | $33.63 | 15.2M | 22.3% | ❌ IV too low |
+| SPYM | $86.88 | 14.4M | 15.5% | ❌ IV too low |
+| PSI | $153.27 | 0.3M | 64.9% | ❌ Stage 1 fail (low vol) |
+| DYNF | $66.05 | 4.3M | N/A | ❌ No options chain |
+| TMFC | $75.35 | 0.1M | N/A | ❌ Stage 1 fail |
+| USMC | $72.60 | 0.1M | N/A | ❌ Stage 1 fail |
+| SNPE | $67.73 | 0.4M | N/A | ❌ Stage 1 fail |
+
+> **Do NOT use stale IV data.** Re-run the Volume Screen + IV Check fresh before each CSP analysis. Snapshot above is from 2026-06-09 and may be outdated by the next trading day.
+
 ## Data Fetching Patterns
 
 ### Yahoo Finance REST API (preferred for prices/VIX/S&P)

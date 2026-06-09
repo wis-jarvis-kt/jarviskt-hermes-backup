@@ -390,7 +390,7 @@ discord:
   max_attachment_bytes: 33554432
 whatsapp:
   require_mention: true
-  free_response_channels: '120363423080731840@g.us,120363145668140275@g.us,120363408633392803@g.us'
+  free_response_channels: 120363423080731840@g.us,120363145668140275@g.us,120363408633392803@g.us
 telegram:
   reactions: false
   channel_prompts: {}
@@ -411,10 +411,11 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: false
 command_allowlist:
-- script execution via -e/-c flag
-- recursive delete
-- sudo with combined-flag privilege escalation
 - script execution via heredoc
+- shell command via -c/-lc flag
+- recursive delete
+- script execution via -e/-c flag
+- sudo with combined-flag privilege escalation
 quick_commands: {}
 hooks: {}
 hooks_auto_accept: false

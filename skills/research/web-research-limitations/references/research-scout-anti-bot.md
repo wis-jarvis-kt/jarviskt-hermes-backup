@@ -164,3 +164,46 @@ browser_snapshot(full=false) → verify title → read
 5. Repeat for each article
 6. Write findings to research-YYYY-MM-DD.md
 ```
+
+### New Observations — 2026-06-09 (Evening Scout)
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|--------|-----------|
+| Navigate to TechCrunch homepage | `techcrunch.com/` | Rich snapshot with AI headlines (OpenAI IPO, Apple WWDC, Microsoft hack, Pentagon/BYD) — lead stories 15–17h old | TechCrunch homepage is a viable primary source — snapshot captures headline text directly without click-through |
+| Click TechCrunch article heading from homepage (OpenAI IPO) | `ref=e178` in homepage snapshot | Snapshot stayed on homepage — click registered but content unchanged | Homepage heading click does NOT navigate; use the AI category listing page instead |
+| Navigate directly to TechCrunch OpenAI IPO article | `techcrunch.com/2026/06/09/openai-files-confidentially-for-ipo-following-anthropic/` | 404 page | Direct article URLs on TechCrunch are unstable — confirmed again |
+| Navigate directly to TechCrunch Microsoft hack article | `techcrunch.com/microsoft-open-source-tools-hacked-ai-developers` | 404 page | Same 404 pattern for direct article URLs |
+| Navigate to TechCrunch AI category listing page | `techcrunch.com/category/artificial-intelligence/` | Full article listing loaded cleanly, click-through from listing works | Listing page is the reliable entry point (not homepage); confirmed 2026-06-07 pattern still holds |
+| Navigate to Business Insider article URL | Direct `businessinsider.com/what-smart-people-in-tech-are-saying-about-apples-ai-announcements-2026` | 404 page | Business Insider article URLs are unstable — treat as 404-prone |
+| Navigate to The Verge article URL | Direct `theverge.com/ai-models/2026/6/9/apple-siri-wwdc-ai` | 404 page | The Verge article URLs also 404 on direct navigation |
+| Navigate to The Verge AI section | `theverge.com/ai` | Timed out / no response | The Verge AI section is unreliable in this session — possibly load-dependent |
+| Navigate to CNET search page | `cnet.com/search/?q=AI+technology+news+2026+June+9` | Empty search results page — no article content | CNET search returns no results in cron context — do not rely on it |
+| Navigate to artificialintelligence.news | `artificialintelligence.news` | 404 page | AINS is offline or restructured — not a reliable source in current session |
+| Navigate to Yahoo search | `search.yahoo.com/search?p=Apple+Siri+WWDC+2026+AI` | Temporary search error page | Yahoo search is unreliable in cron context |
+| Navigate to Guardian article URL | `theguardian.com/technology/2026/jun/09/ai-boom-charts` | 404 page | Guardian article URLs 404 on direct navigation |
+| Navigate to Google News search page | `news.google.com/search?q=AI+technology+2026&hl=en-US&gl=US&ceid=US:en` | Loaded cleanly with headlines (Forbes AI 50, HR Tech 2026, CrowdStrike, Apple Siri WWDC, IBM agentic AI study) | Google News search page remains a reliable fallback listing source |
+| browser_console to check URL after homepage click | `window.location.href` | Confirmed still on `techcrunch.com/` | Homepage heading click was consumed but navigation did not occur — ref IDs on homepage do not link to articles |
+
+**Key finding — TechCrunch homepage snapshot IS the article:** The TechCrunch homepage snapshot contained full headline text (e.g., "OpenAI files confidentially for IPO, following Anthropic" by Rebecca Bellan, 17 hours ago). For the evening research scout, reading the TechCrunch homepage snapshot was sufficient to extract 3 article summaries without clicking through. This is a more efficient pattern than navigating to the category listing page — just read the homepage snapshot and extract the AI section's top headlines directly.
+
+**Updated TechCrunch research-scout workflow (2026-06-09 confirmed):**
+```
+1. Navigate to techcrunch.com/ (homepage)
+2. Read the snapshot — AI section headlines appear in the top portion with author, recency, and summary text
+3. Extract 3 top headlines directly from the snapshot (no click-through needed)
+4. If detail is needed beyond what the snapshot shows, navigate to techcrunch.com/category/artificial-intelligence/ and click through from the listing
+5. Do NOT copy address bar URL after clicking — use the listing page click-through, not direct navigation
+6. Write findings to research-YYYY-MM-DD.md
+```
+
+**Sites that 404 on direct article URL navigation (confirmed this session):**
+- TechCrunch (`/YYYY/MM/DD/{slug}/` pattern)
+- Business Insider
+- The Verge
+- Guardian
+
+**Sites confirmed blocked in cron context (do not rely on):**
+- artificialintelligence.news (404/offline)
+- CNET search (empty results)
+- Yahoo search (error page)
+- Reuters/DataDome sites (hard block)

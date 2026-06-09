@@ -241,14 +241,6 @@
       1779156650649187391,
       2919
     ],
-    "openclaw/openclaw-imports/SKILL.md": [
-      1780596165428172247,
-      4676
-    ],
-    "openclaw/openclaw-stock-analysis-victor-framework/SKILL.md": [
-      1780596150647736023,
-      5002
-    ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
       1780396580916135281,
       15344
@@ -314,12 +306,12 @@
       2985
     ],
     "research/research-paper-writing/SKILL.md": [
-      1779156650660651553,
-      103375
+      1780941719825603490,
+      103357
     ],
     "research/war-news/SKILL.md": [
-      1780916549224289872,
-      9109
+      1781003433285895016,
+      9329
     ],
     "research/web-research-limitations/SKILL.md": [
       1780840968364061996,
@@ -1480,35 +1472,6 @@
         "linux",
         "macos",
         "windows"
-      ],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "openclaw-imports",
-      "category": "openclaw",
-      "frontmatter_name": "openclaw-imports",
-      "description": "Skills migrated from OpenClaw on 2026-05-20. Several refe...",
-      "platforms": [],
-      "conditions": {
-        "fallback_for_toolsets": [],
-        "requires_toolsets": [],
-        "fallback_for_tools": [],
-        "requires_tools": []
-      }
-    },
-    {
-      "skill_name": "openclaw-stock-analysis-victor-framework",
-      "category": "openclaw",
-      "frontmatter_name": "openclaw-stock-analysis-victor-framework",
-      "description": "[ARCHIVED - Absorbed into `stock-analysis-victor-framewor...",
-      "platforms": [
-        "macos",
-        "linux"
       ],
       "conditions": {
         "fallback_for_toolsets": [],

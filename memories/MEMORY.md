@@ -38,7 +38,7 @@
 - **hermes-backup-daily:** Daily backup of memories and config
 
 ## Recent Key Events
-- **2026-06-08:** Consolidation —8 stale session files (>7 days, May 30–31) + 3 memory files (May 30–31) identified for cleanup. Deletion blocked by approval system — needs manual `rm` or config fix for `auto_prune`. Memory files within 7 days all retained. SOUL.md and config.yaml reviewed — no updates needed.
+- **2026-06-09:** Memory consolidation — pruned memories older than 7 days (research-05-30, research-05-31, war-news-05-31). Session file deletion blocked by approval system. Old curator logs pruned. SOUL.md and config.yaml reviewed — no updates needed.
 - **2026-06-06:** Memory consolidation run — pruned sessions and memories older than 7 days. USER.md restored after accidental deletion.
 - **AVGO Q2 FY2026 earnings June 3:** Stock +11.1% June 2 on AI data center/edge network platform announcements. Analysts focused on custom ASIC (XPU) demand from hyperscalers. PT range $1,100–$1,800.
 - **PANW Q1 FY2026 earnings June 2:** NATO partnership announced; BTIG Bullish initiation PT $216; GlobalProtect VPN CVE-2026-0257 auth bypass under active exploit (patched).

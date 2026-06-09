@@ -64,7 +64,7 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 
 ## Anti-Bot / Technical Notes
 
-> **ISW URL navigation (2026-06-06):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text.
+> **ISW URL navigation (2026-06-09):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text. The homepage now also has an "ISW TEAMS" section with clickable region cards (China & Taiwan, Russia & Ukraine, Middle East) — clicking these lands on a listing page; extract `research/` URLs via JS before navigating.
 
 - BBC RSS feeds work but provide only `<title>` + `<description>` — insufficient for detail. Use browser navigation for full articles.
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use browser nav instead.

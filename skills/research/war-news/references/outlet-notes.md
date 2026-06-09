@@ -1,4 +1,4 @@
-# Conflict News — Source Outlet Notes (Updated 2026-06-06)
+# Conflict News — Source Outlet Notes (Updated 2026-06-09)
 
 ## Outlet Accessibility Matrix
 
@@ -40,7 +40,7 @@ When BBC Asia is thin on Taiwan/SCS coverage (which is frequent):
 
 BBC Asia section page rarely carries Taiwan Strait or South China Sea breaking news. It covers: China, India, Japan, Korea, Southeast Asia broadly. Taiwan and SCS stories appear on BBC World Europe or World pages only when US/Western policy is involved. Always supplement with Google News search for Taiwan/SCS.
 
-## ISW URL Navigation (Updated 2026-06-07)
+## ISW URL Navigation (Updated 2026-06-09)
 
 ISW uses two distinct URL patterns for its reports:
 
@@ -52,7 +52,16 @@ ISW uses two distinct URL patterns for its reports:
 When you land on a `backgrounder/` URL from a homepage click, you have a summary card — not the full analysis. Navigate to the `research/` path for the complete report text. This applies to China/Taiwan, Russia/Ukraine, and Middle East ISW reports.
 
 **ISW page structure:** On the full report page, the "Toplines" section is the most important quick-read section — it summarizes the 3–5 most critical developments. Jump to it first via the combobox dropdown if available, or scroll to the top of the article body.
-When you land on a `backgrounder/` URL from a homepage click, you have a summary card — not the full analysis. Navigate to the `research/` path for the complete report text. This applies to China/Taiwan, Russia/Ukraine, and Middle East ISW reports.
+
+**ISW homepage navigation (2026-06-09):** The ISW homepage now has an "ISW TEAMS" section with clickable region cards (e.g. "RUSSIA & UKRAINE", "MIDDLE EAST", "CHINA & TAIWAN"). Clicking the China/Taiwan card lands on a listing page — not a full report. Use JS to extract `research/china-taiwan/` URLs from that page, then navigate directly to the full report:
+
+```javascript
+Array.from(document.querySelectorAll('a[href]'))
+  .map(a => a.href)
+  .filter(h => h.includes('understandingwar.org/research/china'))
+```
+
+The full report URL pattern is: `https://understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/`
 
 ## Blocking Mechanism Reference
 

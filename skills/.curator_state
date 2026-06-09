@@ -1,9 +1,9 @@
 {
-  "last_report_path": "/Users/ktoclaw/.hermes/logs/curator/20260602-103358",
-  "last_run_at": "2026-06-02T10:33:58.396716+00:00",
-  "last_run_duration_seconds": 246.446165,
-  "last_run_summary": "auto: no changes; llm: The consolidation pass is complete. Here's what was done:\n\n**Clusters identified and processed:**\n\n**Cluster 1 — `victor-*` (2 members: `stock-analysis-victor-framework`, `victor-study`)**\nBoth skills share the same 5-sector watchlist (AI/M…",
+  "last_report_path": "/Users/ktoclaw/.hermes/logs/curator/20260609-111043",
+  "last_run_at": "2026-06-09T11:10:43.671666+00:00",
+  "last_run_duration_seconds": 96.502459,
+  "last_run_summary": "auto: no changes; llm: ## Human Summary\n\n**Cluster 1 — Stock Analysis (Victor Framework):** `stock-analysis-victor-framework` is already a proper class-level umbrella — it covers Victor's PEG/P/E entry rules, CSP screening, 5-sector watchlists, Weekly Victor Stud…\narchived 2 skill(s):\n  • openclaw-stock-analysis-victor-framework → stock-analysis-victor-framework\n  • openclaw-imports — pruned (stale)\nfull report: hermes curator status\nkeep an umbrella stable: hermes curator pin stock-analysis-victor-framework",
   "last_run_summary_shown_at": null,
   "paused": false,
-  "run_count": 2
+  "run_count": 3
 }

@@ -6599,3 +6599,1085 @@ Both skills share the same 5-sector watchlist (AI/M…
 2026-06-08 02:49:35,236 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(366, 11, 13) threads=16 uptime=1569946s
 2026-06-08 02:54:35,395 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(431, 11, 13) threads=16 uptime=1570246s
 2026-06-08 02:59:35,542 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(34, 0, 14) threads=16 uptime=1570546s
+2026-06-08 03:04:35,729 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(174, 4, 15) threads=16 uptime=1570846s
+2026-06-08 03:09:35,886 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(235, 4, 15) threads=16 uptime=1571146s
+2026-06-08 03:14:35,998 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(300, 4, 15) threads=16 uptime=1571446s
+2026-06-08 03:19:36,174 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(59, 5, 15) threads=16 uptime=1571747s
+2026-06-08 03:24:36,333 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(324, 5, 15) threads=16 uptime=1572047s
+2026-06-08 03:29:36,459 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(387, 5, 15) threads=16 uptime=1572347s
+2026-06-08 03:34:36,589 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(103, 10, 1) threads=16 uptime=1572647s
+2026-06-08 03:39:36,733 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(156, 10, 1) threads=16 uptime=1572947s
+2026-06-08 03:44:36,891 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(424, 10, 1) threads=16 uptime=1573247s
+2026-06-08 03:49:37,066 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(492, 10, 1) threads=16 uptime=1573547s
+2026-06-08 03:54:37,199 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(90, 11, 1) threads=16 uptime=1573847s
+2026-06-08 03:59:37,353 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(154, 11, 1) threads=16 uptime=1574148s
+2026-06-08 04:04:37,490 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(420, 11, 1) threads=16 uptime=1574448s
+2026-06-08 04:09:37,633 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(482, 11, 1) threads=16 uptime=1574748s
+2026-06-08 04:14:37,786 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(89, 0, 2) threads=16 uptime=1575048s
+2026-06-08 04:19:37,873 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(211, 0, 2) threads=16 uptime=1575348s
+2026-06-08 04:24:37,964 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(479, 0, 2) threads=16 uptime=1575648s
+2026-06-08 04:29:38,108 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(540, 0, 2) threads=16 uptime=1575948s
+2026-06-08 04:34:38,250 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(93, 1, 2) threads=16 uptime=1576249s
+2026-06-08 04:39:38,334 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(149, 1, 2) threads=16 uptime=1576549s
+2026-06-08 04:44:38,475 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(413, 1, 2) threads=16 uptime=1576849s
+2026-06-08 04:49:38,625 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(476, 1, 2) threads=16 uptime=1577149s
+2026-06-08 04:54:38,744 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(81, 2, 2) threads=16 uptime=1577449s
+2026-06-08 04:59:38,884 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(345, 2, 2) threads=16 uptime=1577749s
+2026-06-08 05:04:39,016 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(409, 2, 2) threads=16 uptime=1578049s
+2026-06-08 05:09:39,144 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(473, 2, 2) threads=16 uptime=1578349s
+2026-06-08 05:14:39,295 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(78, 3, 2) threads=16 uptime=1578649s
+2026-06-08 05:19:39,453 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(403, 3, 2) threads=16 uptime=1578950s
+2026-06-08 05:24:39,559 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(467, 3, 2) threads=16 uptime=1579250s
+2026-06-08 05:29:39,706 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(532, 3, 2) threads=16 uptime=1579550s
+2026-06-08 05:34:39,816 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(82, 4, 2) threads=16 uptime=1579850s
+2026-06-08 05:39:39,976 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(339, 4, 2) threads=16 uptime=1580150s
+2026-06-08 05:44:40,056 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(402, 4, 2) threads=16 uptime=1580450s
+2026-06-08 05:49:40,200 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(466, 4, 2) threads=16 uptime=1580750s
+2026-06-08 05:54:40,345 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(70, 5, 2) threads=16 uptime=1581050s
+2026-06-08 05:59:40,404 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(335, 5, 2) threads=16 uptime=1581350s
+2026-06-08 06:04:40,548 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(128, 0, 8) threads=16 uptime=1581650s
+2026-06-08 06:09:40,704 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(187, 0, 8) threads=16 uptime=1581951s
+2026-06-08 06:14:40,857 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(251, 0, 8) threads=16 uptime=1582251s
+2026-06-08 06:19:41,006 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(517, 0, 8) threads=16 uptime=1582551s
+2026-06-08 06:24:41,177 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(247, 1, 8) threads=16 uptime=1582851s
+2026-06-08 06:29:41,280 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(311, 1, 8) threads=16 uptime=1583151s
+2026-06-08 06:34:41,407 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(375, 1, 8) threads=16 uptime=1583451s
+2026-06-08 06:39:41,555 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(640, 1, 8) threads=16 uptime=1583751s
+2026-06-08 06:44:41,714 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(244, 2, 8) threads=16 uptime=1584052s
+2026-06-08 06:49:41,814 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(307, 2, 8) threads=16 uptime=1584352s
+2026-06-08 06:54:42,026 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(371, 2, 8) threads=16 uptime=1584652s
+2026-06-08 06:59:42,110 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(636, 2, 8) threads=16 uptime=1584952s
+2026-06-08 07:04:42,214 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(241, 3, 8) threads=16 uptime=1585252s
+2026-06-08 07:09:42,349 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(304, 3, 8) threads=16 uptime=1585552s
+2026-06-08 07:14:42,504 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(368, 3, 8) threads=16 uptime=1585852s
+2026-06-08 07:19:42,522 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(633, 3, 8) threads=16 uptime=1586152s
+2026-06-08 07:24:42,654 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(237, 4, 8) threads=16 uptime=1586452s
+2026-06-08 07:29:42,691 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(301, 4, 8) threads=16 uptime=1586752s
+2026-06-08 07:34:42,808 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(366, 4, 8) threads=16 uptime=1587053s
+2026-06-08 07:39:42,962 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(629, 4, 8) threads=16 uptime=1587353s
+2026-06-08 07:44:43,120 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(232, 5, 8) threads=16 uptime=1587653s
+2026-06-08 07:49:43,161 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(296, 5, 8) threads=16 uptime=1587953s
+2026-06-08 07:54:43,304 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(359, 5, 8) threads=16 uptime=1588253s
+2026-06-08 07:59:43,562 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(625, 5, 8) threads=16 uptime=1588553s
+2026-06-08 08:04:43,708 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(232, 6, 8) threads=16 uptime=1588853s
+2026-06-08 08:09:43,736 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(296, 6, 8) threads=16 uptime=1589153s
+2026-06-08 08:14:43,874 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(360, 6, 8) threads=16 uptime=1589453s
+2026-06-08 08:19:44,027 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(625, 6, 8) threads=16 uptime=1589753s
+2026-06-08 08:24:44,105 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(232, 7, 8) threads=16 uptime=1590054s
+2026-06-08 08:29:44,147 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(296, 7, 8) threads=16 uptime=1590354s
+2026-06-08 08:34:44,297 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(358, 7, 8) threads=16 uptime=1590654s
+2026-06-08 08:39:44,319 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(625, 7, 8) threads=16 uptime=1590954s
+2026-06-08 08:44:44,487 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(229, 8, 8) threads=16 uptime=1591254s
+2026-06-08 08:49:44,636 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(293, 8, 8) threads=16 uptime=1591554s
+2026-06-08 08:54:44,774 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(342, 8, 8) threads=16 uptime=1591854s
+2026-06-08 08:59:44,925 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(607, 8, 8) threads=16 uptime=1592154s
+2026-06-08 09:04:45,075 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(213, 9, 8) threads=16 uptime=1592454s
+2026-06-08 09:09:45,206 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(277, 9, 8) threads=16 uptime=1592755s
+2026-06-08 09:14:45,414 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(341, 9, 8) threads=16 uptime=1593055s
+2026-06-08 09:19:45,565 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(606, 9, 8) threads=16 uptime=1593355s
+2026-06-08 09:24:45,711 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(212, 10, 8) threads=16 uptime=1593655s
+2026-06-08 09:29:45,867 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(276, 10, 8) threads=16 uptime=1593955s
+2026-06-08 09:34:46,021 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(340, 10, 8) threads=16 uptime=1594255s
+2026-06-08 09:39:46,161 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(604, 10, 8) threads=16 uptime=1594555s
+2026-06-08 09:44:46,303 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(211, 11, 8) threads=16 uptime=1594855s
+2026-06-08 09:49:46,401 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(276, 11, 8) threads=16 uptime=1595156s
+2026-06-08 09:54:46,538 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(339, 11, 8) threads=16 uptime=1595456s
+2026-06-08 09:59:46,638 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(605, 11, 8) threads=16 uptime=1595756s
+2026-06-08 10:04:46,787 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(211, 0, 9) threads=16 uptime=1596056s
+2026-06-08 10:09:46,935 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(275, 0, 9) threads=16 uptime=1596356s
+2026-06-08 10:14:47,000 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(540, 0, 9) threads=16 uptime=1596656s
+2026-06-08 10:19:47,134 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(604, 0, 9) threads=16 uptime=1596956s
+2026-06-08 10:24:47,271 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(176, 1, 9) threads=16 uptime=1597256s
+2026-06-08 10:29:47,430 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(239, 1, 9) threads=16 uptime=1597557s
+2026-06-08 10:34:47,598 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(504, 1, 9) threads=16 uptime=1597857s
+2026-06-08 10:39:47,757 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(568, 1, 9) threads=16 uptime=1598157s
+2026-06-08 10:44:47,897 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(172, 2, 9) threads=16 uptime=1598457s
+2026-06-08 10:49:47,948 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(236, 2, 9) threads=16 uptime=1598757s
+2026-06-08 10:54:47,972 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(502, 2, 9) threads=16 uptime=1599057s
+2026-06-08 10:59:48,126 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(565, 2, 9) threads=16 uptime=1599357s
+2026-06-08 11:04:48,242 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(169, 3, 9) threads=16 uptime=1599657s
+2026-06-08 11:09:48,296 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(233, 3, 9) threads=16 uptime=1599957s
+2026-06-08 11:14:48,429 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(498, 3, 9) threads=16 uptime=1600257s
+2026-06-08 11:19:48,548 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(563, 3, 9) threads=16 uptime=1600558s
+2026-06-08 11:24:48,708 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(166, 4, 9) threads=16 uptime=1600858s
+2026-06-08 11:29:48,846 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(264, 4, 9) threads=16 uptime=1601158s
+2026-06-08 11:34:49,093 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(495, 4, 9) threads=16 uptime=1601458s
+2026-06-08 11:39:49,232 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(558, 4, 9) threads=16 uptime=1601758s
+2026-06-08 11:44:49,358 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(141, 5, 9) threads=16 uptime=1602058s
+2026-06-08 11:49:49,643 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(207, 5, 9) threads=16 uptime=1602358s
+2026-06-08 11:54:49,772 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(470, 5, 9) threads=16 uptime=1602658s
+2026-06-08 11:59:49,908 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(535, 5, 9) threads=16 uptime=1602959s
+2026-06-08 12:04:50,080 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(138, 6, 9) threads=16 uptime=1603259s
+2026-06-08 12:09:50,152 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(237, 6, 9) threads=16 uptime=1603559s
+2026-06-08 12:14:50,239 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(467, 6, 9) threads=16 uptime=1603859s
+2026-06-08 12:19:50,401 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(530, 6, 9) threads=16 uptime=1604159s
+2026-06-08 12:24:50,563 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(136, 0, 10) threads=16 uptime=1604459s
+2026-06-08 12:29:50,720 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(200, 0, 10) threads=16 uptime=1604759s
+2026-06-08 12:34:50,879 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(466, 0, 10) threads=16 uptime=1605059s
+2026-06-08 12:39:51,006 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(526, 0, 10) threads=16 uptime=1605359s
+2026-06-08 12:44:51,149 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(129, 1, 10) threads=16 uptime=1605660s
+2026-06-08 12:49:51,275 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(194, 1, 10) threads=16 uptime=1605960s
+2026-06-08 12:54:51,426 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(458, 1, 10) threads=16 uptime=1606260s
+2026-06-08 12:59:51,565 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(523, 1, 10) threads=16 uptime=1606560s
+2026-06-08 13:04:51,777 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(100, 2, 10) threads=16 uptime=1606860s
+2026-06-08 13:09:51,923 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(164, 2, 10) threads=16 uptime=1607160s
+2026-06-08 13:14:52,036 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(429, 2, 10) threads=16 uptime=1607460s
+2026-06-08 13:19:52,193 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(493, 2, 10) threads=16 uptime=1607760s
+2026-06-08 13:24:52,332 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(123, 3, 10) threads=16 uptime=1608061s
+2026-06-08 13:29:52,485 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(187, 3, 10) threads=16 uptime=1608361s
+2026-06-08 13:34:52,607 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(453, 3, 10) threads=16 uptime=1608661s
+2026-06-08 13:39:52,774 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(517, 3, 10) threads=16 uptime=1608961s
+2026-06-08 13:44:52,885 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(579, 3, 10) threads=16 uptime=1609261s
+2026-06-08 13:49:52,988 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(10, 4, 10) threads=16 uptime=1609561s
+2026-06-08 13:54:53,165 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(275, 4, 10) threads=16 uptime=1609861s
+2026-06-08 13:59:53,304 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(339, 4, 10) threads=16 uptime=1610161s
+2026-06-08 14:04:53,438 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(403, 4, 10) threads=16 uptime=1610462s
+2026-06-08 14:09:53,605 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(6, 5, 10) threads=16 uptime=1610762s
+2026-06-08 14:14:53,750 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(272, 5, 10) threads=16 uptime=1611062s
+2026-06-08 14:19:53,905 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(336, 5, 10) threads=16 uptime=1611362s
+2026-06-08 14:24:54,076 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(460, 5, 10) threads=16 uptime=1611662s
+2026-06-08 14:29:54,190 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(4, 6, 10) threads=16 uptime=1611962s
+2026-06-08 14:34:54,329 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(269, 6, 10) threads=16 uptime=1612262s
+2026-06-08 14:39:54,489 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(333, 6, 10) threads=16 uptime=1612562s
+2026-06-08 14:44:54,646 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(396, 6, 10) threads=16 uptime=1612863s
+2026-06-08 14:49:54,788 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 7, 10) threads=16 uptime=1613163s
+2026-06-08 14:54:54,969 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(266, 7, 10) threads=16 uptime=1613463s
+2026-06-08 14:59:55,124 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(330, 7, 10) threads=16 uptime=1613763s
+2026-06-08 15:04:55,274 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(393, 7, 10) threads=16 uptime=1614063s
+2026-06-08 15:09:55,366 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(36, 8, 10) threads=16 uptime=1614363s
+2026-06-08 15:14:55,503 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(261, 8, 10) threads=16 uptime=1614663s
+2026-06-08 15:19:55,651 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(325, 8, 10) threads=16 uptime=1614963s
+2026-06-08 15:24:55,867 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(450, 8, 10) threads=16 uptime=1615264s
+2026-06-08 15:29:56,008 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(59, 9, 10) threads=16 uptime=1615564s
+2026-06-08 15:34:56,039 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(259, 9, 10) threads=16 uptime=1615864s
+2026-06-08 15:39:56,218 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(322, 9, 10) threads=16 uptime=1616164s
+2026-06-08 15:44:56,331 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(386, 9, 10) threads=16 uptime=1616464s
+2026-06-08 15:49:56,481 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(650, 9, 10) threads=16 uptime=1616764s
+2026-06-08 15:54:56,563 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(57, 10, 10) threads=16 uptime=1617064s
+2026-06-08 15:59:56,716 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(190, 10, 10) threads=16 uptime=1617364s
+2026-06-08 16:04:56,872 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(253, 10, 10) threads=16 uptime=1617665s
+2026-06-08 16:09:57,078 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(518, 10, 10) threads=16 uptime=1617965s
+2026-06-08 16:14:57,214 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(582, 10, 10) threads=16 uptime=1618265s
+2026-06-08 16:19:57,375 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(188, 11, 10) threads=16 uptime=1618565s
+2026-06-08 16:24:57,500 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(311, 11, 10) threads=16 uptime=1618865s
+2026-06-08 16:29:57,659 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(577, 11, 10) threads=16 uptime=1619165s
+2026-06-08 16:34:57,811 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(641, 11, 10) threads=16 uptime=1619465s
+2026-06-08 16:39:57,938 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(189, 0, 11) threads=16 uptime=1619766s
+2026-06-08 16:44:58,095 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(253, 0, 11) threads=16 uptime=1620066s
+2026-06-08 16:49:58,247 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(517, 0, 11) threads=16 uptime=1620366s
+2026-06-08 16:54:58,363 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(580, 0, 11) threads=16 uptime=1620666s
+2026-06-08 16:59:58,505 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(186, 1, 11) threads=16 uptime=1620966s
+2026-06-08 17:04:58,663 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(250, 1, 11) threads=16 uptime=1621266s
+2026-06-08 17:09:58,815 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(515, 1, 11) threads=16 uptime=1621566s
+2026-06-08 17:14:58,948 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(580, 1, 11) threads=16 uptime=1621866s
+2026-06-08 17:19:59,107 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(187, 2, 11) threads=16 uptime=1622167s
+2026-06-08 17:24:59,341 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(310, 2, 11) threads=16 uptime=1622467s
+2026-06-08 17:29:59,486 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(575, 2, 11) threads=16 uptime=1622767s
+2026-06-08 17:34:59,634 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(1, 3, 11) threads=16 uptime=1623067s
+2026-06-08 17:39:59,794 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(146, 3, 11) threads=16 uptime=1623367s
+2026-06-08 17:44:59,954 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(210, 3, 11) threads=16 uptime=1623667s
+2026-06-08 17:50:00,120 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(475, 3, 11) threads=16 uptime=1623968s
+2026-06-08 17:55:00,334 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(539, 3, 11) threads=16 uptime=1624268s
+2026-06-08 18:00:00,481 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(151, 4, 11) threads=16 uptime=1624568s
+2026-06-08 18:05:00,643 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(54, 9, 18) threads=19 uptime=1624868s
+2026-06-08 18:10:00,731 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(206, 3, 0) threads=16 uptime=1625168s
+2026-06-08 18:10:33,481 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=120363423080731840@g.us msg='@145892120211599'
+2026-06-08 18:10:46,826 INFO gateway.run: response ready: platform=whatsapp chat=120363423080731840@g.us time=13.3s api_calls=1 response=138 chars
+2026-06-08 18:10:46,838 INFO gateway.platforms.base: [Whatsapp] Sending response (138 chars) to 120363423080731840@g.us
+2026-06-08 18:11:22,628 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=120363423080731840@g.us msg='The greed and  fear index consistently drop. What might be causing it? Can you r'
+2026-06-08 18:13:59,942 INFO gateway.run: response ready: platform=whatsapp chat=120363423080731840@g.us time=157.3s api_calls=11 response=1571 chars
+2026-06-08 18:13:59,948 INFO gateway.platforms.base: [Whatsapp] Sending response (1571 chars) to 120363423080731840@g.us
+2026-06-08 18:15:00,856 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(31, 6, 4) threads=16 uptime=1625468s
+2026-06-08 18:20:01,007 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(293, 6, 4) threads=16 uptime=1625768s
+2026-06-08 18:25:01,153 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(420, 6, 4) threads=16 uptime=1626068s
+2026-06-08 18:30:01,307 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(485, 6, 4) threads=16 uptime=1626369s
+2026-06-08 18:35:01,460 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(110, 7, 4) threads=16 uptime=1626669s
+2026-06-08 18:40:01,655 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(375, 7, 4) threads=16 uptime=1626969s
+2026-06-08 18:45:01,814 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(440, 7, 4) threads=16 uptime=1627269s
+2026-06-08 18:50:01,967 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(503, 7, 4) threads=16 uptime=1627569s
+2026-06-08 18:55:02,110 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(103, 8, 4) threads=16 uptime=1627869s
+2026-06-08 19:00:02,150 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(369, 8, 4) threads=16 uptime=1628169s
+2026-06-08 19:05:02,267 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(121, 10, 11) threads=16 uptime=1628469s
+2026-06-08 19:10:02,426 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(180, 10, 11) threads=16 uptime=1628770s
+2026-06-08 19:15:02,530 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(244, 10, 11) threads=16 uptime=1629070s
+2026-06-08 19:15:16,494 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:group:120363423080731840@g.us:60125226892 (idle=3677s)
+2026-06-08 19:15:16,495 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-06-08 19:20:02,685 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(510, 10, 11) threads=16 uptime=1629370s
+2026-06-08 19:25:02,834 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(92, 11, 11) threads=16 uptime=1629670s
+2026-06-08 19:30:02,998 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(155, 11, 11) threads=16 uptime=1629970s
+2026-06-08 19:35:03,151 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(219, 11, 11) threads=16 uptime=1630270s
+2026-06-08 19:40:03,301 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(484, 11, 11) threads=16 uptime=1630570s
+2026-06-08 19:45:03,399 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(547, 11, 11) threads=16 uptime=1630871s
+2026-06-08 19:50:03,523 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(131, 0, 12) threads=16 uptime=1631171s
+2026-06-08 19:55:03,668 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(195, 0, 12) threads=16 uptime=1631471s
+2026-06-08 20:00:03,852 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(461, 0, 12) threads=16 uptime=1631771s
+2026-06-08 20:05:03,940 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(524, 0, 12) threads=16 uptime=1632071s
+2026-06-08 20:10:04,080 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(128, 1, 12) threads=16 uptime=1632371s
+2026-06-08 20:15:04,227 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(192, 1, 12) threads=16 uptime=1632671s
+2026-06-08 20:20:04,382 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(457, 1, 12) threads=16 uptime=1632971s
+2026-06-08 20:25:04,530 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(87, 2, 12) threads=16 uptime=1633272s
+2026-06-08 20:30:04,688 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(152, 2, 12) threads=16 uptime=1633572s
+2026-06-08 20:35:04,808 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(215, 2, 12) threads=16 uptime=1633872s
+2026-06-08 20:40:04,967 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(480, 2, 12) threads=16 uptime=1634172s
+2026-06-08 20:45:05,125 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(543, 2, 12) threads=16 uptime=1634472s
+2026-06-08 20:50:05,280 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(121, 3, 12) threads=16 uptime=1634772s
+2026-06-08 20:55:05,408 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(185, 3, 12) threads=16 uptime=1635072s
+2026-06-08 21:00:05,568 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(450, 3, 12) threads=16 uptime=1635373s
+2026-06-08 21:05:05,679 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(514, 3, 12) threads=16 uptime=1635673s
+2026-06-08 21:10:05,724 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(119, 4, 12) threads=16 uptime=1635973s
+2026-06-08 21:15:05,871 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(183, 4, 12) threads=16 uptime=1636273s
+2026-06-08 21:20:06,002 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(449, 4, 12) threads=16 uptime=1636573s
+2026-06-08 21:25:06,154 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(84, 5, 12) threads=16 uptime=1636873s
+2026-06-08 21:30:06,254 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(148, 5, 12) threads=16 uptime=1637173s
+2026-06-08 21:35:06,415 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(212, 5, 12) threads=16 uptime=1637473s
+2026-06-08 21:40:06,500 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(477, 5, 12) threads=16 uptime=1637773s
+2026-06-08 21:45:06,643 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(525, 5, 12) threads=16 uptime=1638073s
+2026-06-08 21:50:06,791 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(125, 1, 8) threads=16 uptime=1638374s
+2026-06-08 21:55:06,948 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(186, 1, 8) threads=16 uptime=1638674s
+2026-06-08 22:00:07,097 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(453, 1, 8) threads=16 uptime=1638974s
+2026-06-08 22:05:07,251 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(152, 7, 9) threads=16 uptime=1639274s
+2026-06-08 22:10:07,380 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(208, 7, 9) threads=16 uptime=1639574s
+2026-06-08 22:15:07,537 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(274, 7, 9) threads=16 uptime=1639874s
+2026-06-08 22:20:07,685 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(538, 7, 9) threads=16 uptime=1640174s
+2026-06-08 22:25:07,844 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(57, 8, 9) threads=16 uptime=1640475s
+2026-06-08 22:30:08,009 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(118, 8, 9) threads=16 uptime=1640775s
+2026-06-08 22:35:08,163 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(181, 8, 9) threads=16 uptime=1641075s
+2026-06-08 22:40:08,319 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(446, 8, 9) threads=16 uptime=1641375s
+2026-06-08 22:45:08,343 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(509, 8, 9) threads=16 uptime=1641675s
+2026-06-08 22:50:08,355 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(80, 9, 9) threads=16 uptime=1641975s
+2026-06-08 22:55:08,512 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(134, 9, 9) threads=16 uptime=1642275s
+2026-06-08 23:00:08,657 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(401, 9, 9) threads=16 uptime=1642575s
+2026-06-08 23:05:08,800 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(464, 9, 9) threads=16 uptime=1642876s
+2026-06-08 23:10:08,945 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(68, 10, 9) threads=16 uptime=1643176s
+2026-06-08 23:15:09,105 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(132, 10, 9) threads=16 uptime=1643476s
+2026-06-08 23:20:09,205 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(397, 10, 9) threads=16 uptime=1643776s
+2026-06-08 23:25:09,269 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(520, 10, 9) threads=16 uptime=1644076s
+2026-06-08 23:30:09,307 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(63, 11, 9) threads=16 uptime=1644376s
+2026-06-08 23:35:09,443 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(328, 11, 9) threads=16 uptime=1644676s
+2026-06-08 23:40:09,537 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(392, 11, 9) threads=16 uptime=1644976s
+2026-06-08 23:45:09,662 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(458, 11, 9) threads=16 uptime=1645276s
+2026-06-08 23:50:09,849 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(70, 0, 10) threads=16 uptime=1645577s
+2026-06-08 23:55:10,004 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(326, 0, 10) threads=16 uptime=1645877s
+2026-06-09 00:00:10,128 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(390, 0, 10) threads=16 uptime=1646177s
+2026-06-09 00:05:10,301 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(453, 0, 10) threads=16 uptime=1646477s
+2026-06-09 00:10:10,444 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(56, 1, 10) threads=16 uptime=1646777s
+2026-06-09 00:15:10,603 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(321, 1, 10) threads=16 uptime=1647077s
+2026-06-09 00:20:10,718 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(385, 1, 10) threads=16 uptime=1647377s
+2026-06-09 00:25:10,864 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(510, 1, 10) threads=16 uptime=1647677s
+2026-06-09 00:30:11,013 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(56, 2, 10) threads=16 uptime=1647978s
+2026-06-09 00:35:11,178 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(320, 2, 10) threads=16 uptime=1648278s
+2026-06-09 00:40:11,272 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(383, 2, 10) threads=16 uptime=1648578s
+2026-06-09 00:45:11,431 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(448, 2, 10) threads=16 uptime=1648878s
+2026-06-09 00:50:11,599 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(55, 3, 10) threads=16 uptime=1649178s
+2026-06-09 00:55:11,754 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(312, 3, 10) threads=16 uptime=1649478s
+2026-06-09 01:00:11,907 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(377, 3, 10) threads=16 uptime=1649778s
+2026-06-09 01:05:12,086 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(440, 3, 10) threads=16 uptime=1650079s
+2026-06-09 01:10:12,246 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(46, 4, 10) threads=16 uptime=1650379s
+2026-06-09 01:15:12,365 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(310, 4, 10) threads=16 uptime=1650679s
+2026-06-09 01:20:12,496 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(375, 4, 10) threads=16 uptime=1650979s
+2026-06-09 01:25:12,641 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(498, 4, 10) threads=16 uptime=1651279s
+2026-06-09 01:30:12,776 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(42, 5, 10) threads=16 uptime=1651579s
+2026-06-09 01:35:12,948 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(307, 5, 10) threads=16 uptime=1651879s
+2026-06-09 01:40:13,073 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(371, 5, 10) threads=16 uptime=1652179s
+2026-06-09 01:45:13,234 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(436, 5, 10) threads=16 uptime=1652480s
+2026-06-09 01:50:13,378 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(38, 6, 10) threads=16 uptime=1652780s
+2026-06-09 01:55:13,508 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(303, 6, 10) threads=16 uptime=1653080s
+2026-06-09 02:00:13,669 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(366, 6, 10) threads=16 uptime=1653380s
+2026-06-09 02:05:13,837 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(104, 0, 18) threads=16 uptime=1653680s
+2026-06-09 02:10:13,941 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(163, 0, 18) threads=16 uptime=1653980s
+2026-06-09 02:15:14,040 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(428, 0, 18) threads=16 uptime=1654280s
+2026-06-09 02:20:14,199 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(492, 0, 18) threads=16 uptime=1654580s
+2026-06-09 02:25:14,342 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(41, 1, 18) threads=16 uptime=1654881s
+2026-06-09 02:30:14,475 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(105, 1, 18) threads=16 uptime=1655181s
+2026-06-09 02:35:14,635 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(371, 1, 18) threads=16 uptime=1655481s
+2026-06-09 02:40:14,794 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(435, 1, 18) threads=16 uptime=1655781s
+2026-06-09 02:45:14,839 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(498, 1, 18) threads=16 uptime=1656081s
+2026-06-09 02:50:14,942 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(13, 2, 18) threads=16 uptime=1656381s
+2026-06-09 02:55:15,098 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(278, 2, 18) threads=16 uptime=1656681s
+2026-06-09 03:00:15,249 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(343, 2, 18) threads=16 uptime=1656981s
+2026-06-09 03:05:15,341 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(143, 7, 3) threads=16 uptime=1657282s
+2026-06-09 03:10:15,398 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(206, 7, 3) threads=16 uptime=1657582s
+2026-06-09 03:15:15,426 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(474, 7, 3) threads=16 uptime=1657882s
+2026-06-09 03:20:15,568 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(540, 7, 3) threads=16 uptime=1658182s
+2026-06-09 03:25:15,721 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(202, 8, 3) threads=16 uptime=1658482s
+2026-06-09 03:30:15,848 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(265, 8, 3) threads=16 uptime=1658782s
+2026-06-09 03:35:15,993 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(152, 6, 5) threads=16 uptime=1659082s
+2026-06-09 03:40:16,095 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(212, 6, 5) threads=16 uptime=1659382s
+2026-06-09 03:45:16,245 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(274, 6, 5) threads=16 uptime=1659682s
+2026-06-09 03:50:16,266 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(338, 6, 5) threads=16 uptime=1659982s
+2026-06-09 03:55:16,442 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(615, 6, 5) threads=16 uptime=1660283s
+2026-06-09 04:00:16,514 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(154, 7, 5) threads=16 uptime=1660583s
+2026-06-09 04:01:07,953 INFO gateway.run: Session expiry: 1 sessions to finalize (whatsapp:1)
+2026-06-09 04:01:07,958 INFO gateway.run: Session expiry done: 1 finalized
+2026-06-09 04:05:16,600 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(249, 7, 5) threads=16 uptime=1660883s
+2026-06-09 04:10:16,744 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(313, 7, 5) threads=16 uptime=1661183s
+2026-06-09 04:15:16,874 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(579, 7, 5) threads=16 uptime=1661483s
+2026-06-09 04:20:17,012 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(147, 8, 5) threads=16 uptime=1661783s
+2026-06-09 04:25:17,205 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(272, 8, 5) threads=16 uptime=1662083s
+2026-06-09 04:30:17,364 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(537, 8, 5) threads=16 uptime=1662383s
+2026-06-09 04:35:17,451 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(602, 8, 5) threads=16 uptime=1662683s
+2026-06-09 04:40:17,643 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(146, 9, 5) threads=16 uptime=1662984s
+2026-06-09 04:45:17,791 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(207, 9, 5) threads=16 uptime=1663284s
+2026-06-09 04:50:17,950 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(474, 9, 5) threads=16 uptime=1663584s
+2026-06-09 04:55:18,136 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(544, 9, 5) threads=16 uptime=1663884s
+2026-06-09 05:00:18,287 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(142, 10, 5) threads=16 uptime=1664184s
+2026-06-09 05:05:18,378 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(205, 10, 5) threads=16 uptime=1664484s
+2026-06-09 05:10:18,559 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(470, 10, 5) threads=16 uptime=1664784s
+2026-06-09 05:15:18,647 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(534, 10, 5) threads=16 uptime=1665085s
+2026-06-09 05:20:18,806 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(139, 11, 5) threads=16 uptime=1665385s
+2026-06-09 05:25:18,968 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(263, 11, 5) threads=16 uptime=1665685s
+2026-06-09 05:30:19,105 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(527, 11, 5) threads=16 uptime=1665985s
+2026-06-09 05:35:19,263 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(593, 11, 5) threads=16 uptime=1666285s
+2026-06-09 05:40:19,404 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(135, 0, 6) threads=16 uptime=1666585s
+2026-06-09 05:45:19,544 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(202, 0, 6) threads=16 uptime=1666885s
+2026-06-09 05:50:19,704 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(464, 0, 6) threads=16 uptime=1667185s
+2026-06-09 05:55:19,835 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(536, 0, 6) threads=16 uptime=1667486s
+2026-06-09 06:00:19,980 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(175, 2, 11) threads=18 uptime=1667786s
+2026-06-09 06:05:20,134 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(59, 5, 11) threads=16 uptime=1668086s
+2026-06-09 06:10:20,239 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(319, 5, 11) threads=16 uptime=1668386s
+2026-06-09 06:15:20,403 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(383, 5, 11) threads=16 uptime=1668686s
+2026-06-09 06:20:20,557 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(447, 5, 11) threads=16 uptime=1668986s
+2026-06-09 06:25:20,626 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(45, 6, 11) threads=16 uptime=1669286s
+2026-06-09 06:30:20,786 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(370, 6, 11) threads=16 uptime=1669586s
+2026-06-09 06:35:20,912 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(435, 6, 11) threads=16 uptime=1669887s
+2026-06-09 06:40:20,971 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(498, 6, 11) threads=16 uptime=1670187s
+2026-06-09 06:45:21,092 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(42, 7, 11) threads=16 uptime=1670487s
+2026-06-09 06:50:21,135 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(307, 7, 11) threads=16 uptime=1670787s
+2026-06-09 06:55:21,288 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(370, 7, 11) threads=16 uptime=1671087s
+2026-06-09 07:00:21,361 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(434, 7, 11) threads=16 uptime=1671387s
+2026-06-09 07:05:21,488 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(38, 8, 11) threads=16 uptime=1671687s
+2026-06-09 07:10:21,613 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(303, 8, 11) threads=16 uptime=1671987s
+2026-06-09 07:15:21,770 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(367, 8, 11) threads=16 uptime=1672287s
+2026-06-09 07:20:21,927 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(431, 8, 11) threads=16 uptime=1672588s
+2026-06-09 07:25:22,066 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(34, 9, 11) threads=16 uptime=1672888s
+2026-06-09 07:30:22,284 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(360, 9, 11) threads=16 uptime=1673188s
+2026-06-09 07:35:22,393 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(423, 9, 11) threads=16 uptime=1673488s
+2026-06-09 07:40:22,459 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(487, 9, 11) threads=16 uptime=1673788s
+2026-06-09 07:45:22,645 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(31, 10, 11) threads=16 uptime=1674088s
+2026-06-09 07:50:22,765 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(296, 10, 11) threads=16 uptime=1674388s
+2026-06-09 07:55:22,925 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(359, 10, 11) threads=16 uptime=1674688s
+2026-06-09 08:00:23,121 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(423, 10, 11) threads=16 uptime=1674989s
+2026-06-09 08:05:23,217 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(28, 11, 11) threads=16 uptime=1675289s
+2026-06-09 08:10:23,344 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(292, 11, 11) threads=16 uptime=1675589s
+2026-06-09 08:15:23,513 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(356, 11, 11) threads=16 uptime=1675889s
+2026-06-09 08:20:23,661 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(420, 11, 11) threads=16 uptime=1676189s
+2026-06-09 08:25:23,788 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(24, 0, 12) threads=16 uptime=1676489s
+2026-06-09 08:30:23,925 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(350, 0, 12) threads=16 uptime=1676789s
+2026-06-09 08:35:24,060 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(413, 0, 12) threads=16 uptime=1677089s
+2026-06-09 08:40:24,210 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(477, 0, 12) threads=16 uptime=1677390s
+2026-06-09 08:45:24,350 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(22, 1, 12) threads=16 uptime=1677690s
+2026-06-09 08:50:24,489 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(286, 1, 12) threads=16 uptime=1677990s
+2026-06-09 08:55:24,644 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(350, 1, 12) threads=16 uptime=1678290s
+2026-06-09 09:00:24,850 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(414, 1, 12) threads=16 uptime=1678590s
+2026-06-09 09:05:25,009 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(2, 2, 12) threads=16 uptime=1678890s
+2026-06-09 09:10:25,132 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(267, 2, 12) threads=16 uptime=1679190s
+2026-06-09 09:15:25,278 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(331, 2, 12) threads=16 uptime=1679491s
+2026-06-09 09:20:25,374 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(396, 2, 12) threads=16 uptime=1679791s
+2026-06-09 09:25:25,532 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(2, 3, 12) threads=16 uptime=1680091s
+2026-06-09 09:30:25,703 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(322, 3, 12) threads=16 uptime=1680391s
+2026-06-09 09:35:25,856 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(387, 3, 12) threads=16 uptime=1680691s
+2026-06-09 09:40:25,979 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(448, 3, 12) threads=16 uptime=1680991s
+2026-06-09 09:45:26,074 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(91, 4, 12) threads=16 uptime=1681291s
+2026-06-09 09:50:26,225 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(257, 4, 12) threads=16 uptime=1681591s
+2026-06-09 09:55:26,371 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(321, 4, 12) threads=16 uptime=1681892s
+2026-06-09 10:00:26,526 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(386, 4, 12) threads=16 uptime=1682192s
+2026-06-09 10:05:26,667 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 5, 12) threads=16 uptime=1682492s
+2026-06-09 10:10:26,810 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(254, 5, 12) threads=16 uptime=1682792s
+2026-06-09 10:15:26,972 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(317, 5, 12) threads=16 uptime=1683092s
+2026-06-09 10:20:27,135 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(381, 5, 12) threads=16 uptime=1683392s
+2026-06-09 10:25:27,240 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 6, 12) threads=16 uptime=1683692s
+2026-06-09 10:30:27,268 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(310, 6, 12) threads=16 uptime=1683992s
+2026-06-09 10:35:27,429 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(374, 6, 12) threads=16 uptime=1684293s
+2026-06-09 10:40:27,589 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(439, 6, 12) threads=16 uptime=1684593s
+2026-06-09 10:45:27,733 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(44, 7, 12) threads=16 uptime=1684893s
+2026-06-09 10:50:27,853 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(249, 7, 12) threads=16 uptime=1685193s
+2026-06-09 10:55:28,001 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(313, 7, 12) threads=16 uptime=1685493s
+2026-06-09 11:00:28,073 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(362, 7, 12) threads=16 uptime=1685793s
+2026-06-09 11:05:28,260 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(626, 7, 12) threads=16 uptime=1686093s
+2026-06-09 11:10:28,410 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(230, 8, 12) threads=16 uptime=1686393s
+2026-06-09 11:15:28,564 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(293, 8, 12) threads=16 uptime=1686694s
+2026-06-09 11:20:28,713 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(357, 8, 12) threads=16 uptime=1686994s
+2026-06-09 11:25:28,793 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(653, 8, 12) threads=16 uptime=1687294s
+2026-06-09 11:30:28,942 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(285, 9, 12) threads=16 uptime=1687594s
+2026-06-09 11:35:29,043 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(349, 9, 12) threads=16 uptime=1687894s
+2026-06-09 11:40:29,174 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(413, 9, 12) threads=16 uptime=1688194s
+2026-06-09 11:45:29,311 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(68, 10, 12) threads=16 uptime=1688494s
+2026-06-09 11:50:29,516 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(226, 10, 12) threads=16 uptime=1688794s
+2026-06-09 11:55:29,648 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(289, 10, 12) threads=16 uptime=1689095s
+2026-06-09 12:00:29,780 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(353, 10, 12) threads=16 uptime=1689395s
+2026-06-09 12:05:29,891 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(619, 10, 12) threads=16 uptime=1689695s
+2026-06-09 12:10:30,047 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(225, 11, 12) threads=16 uptime=1689995s
+2026-06-09 12:15:30,206 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(289, 11, 12) threads=16 uptime=1690295s
+2026-06-09 12:20:30,382 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(354, 11, 12) threads=16 uptime=1690595s
+2026-06-09 12:25:30,535 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(617, 11, 12) threads=16 uptime=1690895s
+2026-06-09 12:30:30,693 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(275, 0, 13) threads=16 uptime=1691195s
+2026-06-09 12:35:30,891 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(339, 0, 13) threads=16 uptime=1691496s
+2026-06-09 12:40:30,996 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(403, 0, 13) threads=16 uptime=1691796s
+2026-06-09 12:45:31,147 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(25, 1, 13) threads=16 uptime=1692096s
+2026-06-09 12:50:31,298 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(222, 1, 13) threads=16 uptime=1692396s
+2026-06-09 12:55:31,420 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(286, 1, 13) threads=16 uptime=1692696s
+2026-06-09 13:00:31,568 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(350, 1, 13) threads=16 uptime=1692996s
+2026-06-09 13:05:31,635 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(615, 1, 13) threads=16 uptime=1693296s
+2026-06-09 13:10:31,764 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(221, 2, 13) threads=16 uptime=1693596s
+2026-06-09 13:15:31,879 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(285, 2, 13) threads=16 uptime=1693897s
+2026-06-09 13:20:32,049 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(350, 2, 13) threads=16 uptime=1694197s
+2026-06-09 13:25:32,197 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(614, 2, 13) threads=16 uptime=1694497s
+2026-06-09 13:30:32,318 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(251, 3, 13) threads=16 uptime=1694797s
+2026-06-09 13:35:32,347 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(314, 3, 13) threads=16 uptime=1695097s
+2026-06-09 13:40:32,499 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(378, 3, 13) threads=16 uptime=1695397s
+2026-06-09 13:45:32,640 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(16, 4, 13) threads=16 uptime=1695697s
+2026-06-09 13:50:32,757 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(188, 4, 13) threads=16 uptime=1695997s
+2026-06-09 13:55:32,901 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(251, 4, 13) threads=16 uptime=1696298s
+2026-06-09 14:00:32,988 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(316, 4, 13) threads=16 uptime=1696598s
+2026-06-09 14:05:33,212 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(581, 4, 13) threads=16 uptime=1696898s
+2026-06-09 14:10:33,371 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(184, 5, 13) threads=16 uptime=1697198s
+2026-06-09 14:15:33,495 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(249, 5, 13) threads=16 uptime=1697498s
+2026-06-09 14:20:33,686 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(312, 5, 13) threads=16 uptime=1697798s
+2026-06-09 14:25:33,845 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(577, 5, 13) threads=16 uptime=1698098s
+2026-06-09 14:30:34,004 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(179, 6, 13) threads=16 uptime=1698398s
+2026-06-09 14:35:34,157 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(243, 6, 13) threads=16 uptime=1698699s
+2026-06-09 14:40:34,311 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(507, 6, 13) threads=16 uptime=1698999s
+2026-06-09 14:45:34,392 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(572, 6, 13) threads=16 uptime=1699299s
+2026-06-09 14:50:34,502 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(175, 7, 13) threads=16 uptime=1699599s
+2026-06-09 14:55:34,635 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(239, 7, 13) threads=16 uptime=1699899s
+2026-06-09 15:00:34,793 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(504, 7, 13) threads=16 uptime=1700199s
+2026-06-09 15:05:34,833 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(568, 7, 13) threads=16 uptime=1700499s
+2026-06-09 15:10:34,974 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(172, 8, 13) threads=16 uptime=1700799s
+2026-06-09 15:15:35,081 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(236, 8, 13) threads=16 uptime=1701099s
+2026-06-09 15:20:35,207 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(501, 8, 13) threads=16 uptime=1701400s
+2026-06-09 15:25:35,335 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(566, 8, 13) threads=16 uptime=1701700s
+2026-06-09 15:30:35,358 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(167, 9, 13) threads=16 uptime=1702000s
+2026-06-09 15:35:35,465 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(231, 9, 13) threads=16 uptime=1702300s
+2026-06-09 15:40:35,602 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(496, 9, 13) threads=16 uptime=1702600s
+2026-06-09 15:45:35,731 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(560, 9, 13) threads=16 uptime=1702900s
+2026-06-09 15:50:35,845 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(165, 10, 13) threads=16 uptime=1703200s
+2026-06-09 15:55:35,949 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(228, 10, 13) threads=16 uptime=1703500s
+2026-06-09 16:00:36,077 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(493, 10, 13) threads=16 uptime=1703800s
+2026-06-09 16:05:36,316 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(557, 10, 13) threads=16 uptime=1704100s
+2026-06-09 16:10:36,442 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(159, 11, 13) threads=16 uptime=1704401s
+2026-06-09 16:15:36,588 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(223, 11, 13) threads=16 uptime=1704701s
+2026-06-09 16:20:36,707 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(489, 11, 13) threads=16 uptime=1705001s
+2026-06-09 16:25:36,814 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(552, 11, 13) threads=16 uptime=1705301s
+2026-06-09 16:30:36,950 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(157, 0, 14) threads=16 uptime=1705601s
+2026-06-09 16:35:37,069 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(219, 0, 14) threads=16 uptime=1705901s
+2026-06-09 16:40:37,232 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(484, 0, 14) threads=16 uptime=1706201s
+2026-06-09 16:45:37,374 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(548, 0, 14) threads=16 uptime=1706501s
+2026-06-09 16:50:37,532 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(153, 1, 14) threads=16 uptime=1706802s
+2026-06-09 16:55:37,653 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(218, 1, 14) threads=16 uptime=1707102s
+2026-06-09 17:00:37,748 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(483, 1, 14) threads=16 uptime=1707402s
+2026-06-09 17:05:37,902 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(546, 1, 14) threads=16 uptime=1707702s
+2026-06-09 17:10:38,108 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(128, 2, 14) threads=16 uptime=1708002s
+2026-06-09 17:15:38,261 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(192, 2, 14) threads=16 uptime=1708302s
+2026-06-09 17:20:38,420 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(457, 2, 14) threads=16 uptime=1708602s
+2026-06-09 17:25:38,594 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(521, 2, 14) threads=16 uptime=1708902s
+2026-06-09 17:30:38,749 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(126, 3, 14) threads=16 uptime=1709203s
+2026-06-09 17:35:38,892 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(189, 3, 14) threads=16 uptime=1709503s
+2026-06-09 17:40:38,991 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(454, 3, 14) threads=16 uptime=1709803s
+2026-06-09 17:45:39,113 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(518, 3, 14) threads=16 uptime=1710103s
+2026-06-09 17:50:39,243 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(99, 4, 14) threads=16 uptime=1710403s
+2026-06-09 17:55:39,425 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(163, 4, 14) threads=16 uptime=1710703s
+2026-06-09 18:00:39,570 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(105, 6, 1) threads=18 uptime=1711003s
+2026-06-09 18:05:39,678 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(25, 1, 5) threads=16 uptime=1711303s
+2026-06-09 18:10:39,771 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(93, 1, 5) threads=16 uptime=1711604s
+2026-06-09 18:15:39,923 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(156, 1, 5) threads=16 uptime=1711904s
+2026-06-09 18:20:40,034 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(421, 1, 5) threads=16 uptime=1712204s
+2026-06-09 18:25:40,286 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(487, 1, 5) threads=16 uptime=1712504s
+2026-06-09 18:30:40,427 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(92, 2, 5) threads=16 uptime=1712804s
+2026-06-09 18:35:40,568 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(155, 2, 5) threads=16 uptime=1713104s
+2026-06-09 18:40:40,769 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(420, 2, 5) threads=16 uptime=1713404s
+2026-06-09 18:45:40,918 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(484, 2, 5) threads=16 uptime=1713705s
+2026-06-09 18:50:41,059 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(87, 3, 5) threads=16 uptime=1714005s
+2026-06-09 18:55:41,223 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(151, 3, 5) threads=16 uptime=1714305s
+2026-06-09 19:00:41,356 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(61, 7, 6) threads=18 uptime=1714605s
+2026-06-09 19:05:41,382 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(450, 3, 8) threads=18 uptime=1714905s
+2026-06-09 19:10:41,511 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(427, 2, 14) threads=18 uptime=1715205s
+2026-06-09 19:10:44,035 INFO gateway.run: curator: curator: snapshot created (2026-06-09T11-10-43Z)
+2026-06-09 19:12:20,184 INFO [20260609_191044_e8f177] gateway.run: curator: curator: auto: no changes; llm: ## Human Summary
+
+**Cluster 1 — Stock Analysis (Victor Framework):** `stock-analysis-victor-framework` is already a proper class-level umbrella — it covers Victor's PEG/P/E entry rules, CSP screening, 5-sector watchlists, Weekly Victor Stud…
+archived 2 skill(s):
+  • openclaw-stock-analysis-victor-framework → stock-analysis-victor-framework
+  • openclaw-imports — pruned (stale)
+full report: hermes curator status
+keep an umbrella stable: hermes curator pin stock-analysis-victor-framework
+2026-06-09 19:15:41,550 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(0, 2, 17) threads=16 uptime=1715505s
+2026-06-09 19:20:41,705 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(293, 2, 17) threads=16 uptime=1715805s
+2026-06-09 19:25:41,746 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(356, 2, 17) threads=16 uptime=1716105s
+2026-06-09 19:30:41,842 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(80, 3, 17) threads=16 uptime=1716405s
+2026-06-09 19:35:41,860 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(345, 3, 17) threads=16 uptime=1716705s
+2026-06-09 19:40:42,012 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(410, 3, 17) threads=16 uptime=1717005s
+2026-06-09 19:45:42,153 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(473, 3, 17) threads=16 uptime=1717306s
+2026-06-09 19:50:42,273 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(77, 4, 17) threads=16 uptime=1717606s
+2026-06-09 19:55:42,425 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(343, 4, 17) threads=16 uptime=1717906s
+2026-06-09 20:00:42,590 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(406, 4, 17) threads=16 uptime=1718206s
+2026-06-09 20:05:42,704 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(470, 4, 17) threads=16 uptime=1718506s
+2026-06-09 20:10:42,859 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(73, 5, 17) threads=16 uptime=1718806s
+2026-06-09 20:15:43,003 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(337, 5, 17) threads=16 uptime=1719106s
+2026-06-09 20:20:43,136 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(402, 5, 17) threads=16 uptime=1719406s
+2026-06-09 20:25:43,286 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(465, 5, 17) threads=16 uptime=1719707s
+2026-06-09 20:30:43,454 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(70, 6, 17) threads=16 uptime=1720007s
+2026-06-09 20:35:43,604 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(336, 6, 17) threads=16 uptime=1720307s
+2026-06-09 20:40:43,761 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(400, 6, 17) threads=16 uptime=1720607s
+2026-06-09 20:45:43,912 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(463, 6, 17) threads=16 uptime=1720907s
+2026-06-09 20:50:44,025 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(51, 7, 17) threads=16 uptime=1721207s
+2026-06-09 20:55:44,184 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(316, 7, 17) threads=16 uptime=1721507s
+2026-06-09 21:00:44,361 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(380, 7, 17) threads=16 uptime=1721808s
+2026-06-09 21:05:44,490 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(445, 7, 17) threads=16 uptime=1722108s
+2026-06-09 21:10:44,523 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(49, 8, 17) threads=16 uptime=1722408s
+2026-06-09 21:15:44,704 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(315, 8, 17) threads=16 uptime=1722708s
+2026-06-09 21:20:44,859 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(377, 8, 17) threads=16 uptime=1723008s
+2026-06-09 21:25:45,010 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(441, 8, 17) threads=16 uptime=1723308s
+2026-06-09 21:30:45,082 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(44, 9, 17) threads=16 uptime=1723608s
+2026-06-09 21:35:45,227 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(309, 9, 17) threads=16 uptime=1723908s
+2026-06-09 21:40:45,361 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(373, 9, 17) threads=16 uptime=1724208s
+2026-06-09 21:45:45,545 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(3, 1, 7) threads=22 uptime=1724509s
+2026-06-09 21:50:45,684 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(65, 3, 8) threads=16 uptime=1724809s
+2026-06-09 21:55:45,822 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(323, 3, 8) threads=16 uptime=1725109s
+2026-06-09 22:00:45,967 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(389, 3, 8) threads=16 uptime=1725409s
+2026-06-09 22:05:46,105 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(131, 10, 11) threads=18 uptime=1725709s
+2026-06-09 22:10:46,259 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(36, 9, 12) threads=16 uptime=1726009s
+2026-06-09 22:15:46,393 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(298, 9, 12) threads=16 uptime=1726309s
+2026-06-09 22:20:46,524 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(361, 9, 12) threads=16 uptime=1726609s
+2026-06-09 22:25:46,675 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(425, 9, 12) threads=16 uptime=1726910s
+2026-06-09 22:30:46,802 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(35, 10, 12) threads=16 uptime=1727210s
+2026-06-09 22:35:46,982 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(298, 10, 12) threads=16 uptime=1727510s
+2026-06-09 22:40:47,118 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(364, 10, 12) threads=16 uptime=1727810s
+2026-06-09 22:45:47,264 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(427, 10, 12) threads=16 uptime=1728110s
+2026-06-09 22:50:47,338 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(29, 11, 12) threads=16 uptime=1728410s
+2026-06-09 22:55:47,489 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(293, 11, 12) threads=16 uptime=1728710s
+2026-06-09 23:00:47,626 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(357, 11, 12) threads=16 uptime=1729010s
+2026-06-09 23:05:47,806 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(422, 11, 12) threads=16 uptime=1729311s
+2026-06-09 23:07:45,108 INFO gateway.run: inbound message: platform=whatsapp user=Goo Kah Thart chat=120363423080731840@g.us msg='check the iv of all the etf in my listing'
+2026-06-09 23:09:40,372 INFO gateway.run: User approved 1 dangerous command(s) via /approve (always)
+2026-06-09 23:10:44,283 INFO gateway.run: response ready: platform=whatsapp chat=120363423080731840@g.us time=179.2s api_calls=23 response=919 chars
+2026-06-09 23:10:44,302 INFO gateway.platforms.base: [Whatsapp] Sending response (919 chars) to 120363423080731840@g.us
+2026-06-09 23:10:47,946 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(281, 5, 4) threads=18 uptime=1729611s
+2026-06-09 23:15:48,098 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(37, 11, 4) threads=16 uptime=1729911s
+2026-06-09 23:20:48,202 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(301, 11, 4) threads=16 uptime=1730211s
+2026-06-09 23:25:48,341 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(365, 11, 4) threads=16 uptime=1730511s
+2026-06-09 23:30:48,478 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(495, 11, 4) threads=16 uptime=1730811s
+2026-06-09 23:35:48,603 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(73, 0, 5) threads=16 uptime=1731111s
+2026-06-09 23:40:48,754 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(262, 0, 5) threads=16 uptime=1731411s
+2026-06-09 23:45:48,901 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(326, 0, 5) threads=16 uptime=1731712s
+2026-06-09 23:50:49,066 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(391, 0, 5) threads=16 uptime=1732012s
+2026-06-09 23:55:49,222 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(16, 1, 5) threads=16 uptime=1732312s
+2026-06-10 00:00:49,381 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(262, 1, 5) threads=16 uptime=1732612s
+2026-06-10 00:05:49,537 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(306, 1, 5) threads=16 uptime=1732912s
+2026-06-10 00:10:49,698 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(370, 1, 5) threads=16 uptime=1733212s
+2026-06-10 00:13:07,233 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:group:120363423080731840@g.us:60125226892 (idle=3743s)
+2026-06-10 00:13:07,235 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-06-10 00:15:49,855 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(1, 2, 5) threads=16 uptime=1733512s
+2026-06-10 00:20:50,016 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(241, 2, 5) threads=16 uptime=1733813s
+2026-06-10 00:25:50,145 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(305, 2, 5) threads=16 uptime=1734113s
+2026-06-10 00:30:50,285 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(428, 2, 5) threads=16 uptime=1734413s
+2026-06-10 00:35:50,451 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(45, 3, 5) threads=16 uptime=1734713s
+2026-06-10 00:40:50,598 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(234, 3, 5) threads=16 uptime=1735013s
+2026-06-10 00:45:50,759 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(298, 3, 5) threads=16 uptime=1735313s
+2026-06-10 00:50:50,899 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(362, 3, 5) threads=16 uptime=1735613s
+2026-06-10 00:55:51,044 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(628, 3, 5) threads=16 uptime=1735914s
+2026-06-10 01:00:51,178 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(231, 4, 5) threads=16 uptime=1736214s
+2026-06-10 01:03:54,510 WARNING gateway.channel_directory: Channel directory: failed to write: [Errno 28] No space left on device: '/Users/ktoclaw/.hermes/.channel_directory_dlhxphvg.tmp'
+2026-06-10 01:05:51,297 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(489, 4, 5) threads=16 uptime=1736514s
+2026-06-10 01:09:21,008 WARNING gateway.run: kanban notifier tick failed: disk I/O error
+2026-06-10 01:09:56,961 ERROR [20260608_181033_fd6c77f6] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:10:51,442 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(137, 5, 5) threads=16 uptime=1736814s
+2026-06-10 01:10:57,090 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:11:47,918 ERROR gateway.platforms.whatsapp: [Whatsapp] WhatsApp bridge process exited unexpectedly (code 1).
+2026-06-10 01:11:47,921 WARNING gateway.platforms.base: Failed to write runtime status (fatal) for whatsapp: [Errno 28] No space left on device: '/Users/ktoclaw/.hermes/.gateway_state_qx5co2e0.tmp' (further failures at debug level)
+2026-06-10 01:11:47,922 ERROR gateway.run: Fatal whatsapp adapter error (whatsapp_bridge_exited): WhatsApp bridge process exited unexpectedly (code 1).
+2026-06-10 01:11:48,932 INFO gateway.run: whatsapp queued for background reconnection
+2026-06-10 01:11:48,933 WARNING gateway.run: No connected messaging platforms remain, but 1 platform(s) queued for reconnection — gateway staying alive, watcher will retry in background.
+2026-06-10 01:11:57,199 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:12:24,208 INFO gateway.run: Reconnecting whatsapp (attempt 1)...
+2026-06-10 01:12:24,350 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-06-10 01:12:24,351 WARNING gateway.platforms.whatsapp: [Whatsapp] Could not acquire session lock (non-fatal): [Errno 28] No space left on device: '/Users/ktoclaw/.local/state/hermes/gateway-locks/whatsapp-session-cfa5279560155c27.lock'
+2026-06-10 01:12:28,447 INFO gateway.run: Reconnect whatsapp failed, next retry in 30s
+2026-06-10 01:12:57,411 ERROR [20260609_230745_a5a4b729] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:12:58,502 INFO gateway.run: Reconnecting whatsapp (attempt 2)...
+2026-06-10 01:12:58,563 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-06-10 01:12:58,563 WARNING gateway.platforms.whatsapp: [Whatsapp] Could not acquire session lock (non-fatal): [Errno 28] No space left on device: '/Users/ktoclaw/.local/state/hermes/gateway-locks/whatsapp-session-cfa5279560155c27.lock'
+2026-06-10 01:13:01,621 INFO gateway.run: Reconnect whatsapp failed, next retry in 60s
+2026-06-10 01:13:57,526 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:14:01,720 INFO gateway.run: Reconnecting whatsapp (attempt 3)...
+2026-06-10 01:14:01,785 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-06-10 01:14:01,786 WARNING gateway.platforms.whatsapp: [Whatsapp] Could not acquire session lock (non-fatal): [Errno 28] No space left on device: '/Users/ktoclaw/.local/state/hermes/gateway-locks/whatsapp-session-cfa5279560155c27.lock'
+2026-06-10 01:14:04,840 INFO gateway.run: Reconnect whatsapp failed, next retry in 120s
+2026-06-10 01:14:57,725 ERROR [20260609_230745_a5a4b729] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:15:51,573 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(27, 6, 5) threads=16 uptime=1737114s
+2026-06-10 01:15:57,856 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:16:05,058 INFO gateway.run: Reconnecting whatsapp (attempt 4)...
+2026-06-10 01:16:05,123 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-06-10 01:16:05,124 WARNING gateway.platforms.whatsapp: [Whatsapp] Could not acquire session lock (non-fatal): [Errno 28] No space left on device: '/Users/ktoclaw/.local/state/hermes/gateway-locks/whatsapp-session-cfa5279560155c27.lock'
+2026-06-10 01:16:08,184 INFO gateway.run: Reconnect whatsapp failed, next retry in 240s
+2026-06-10 01:16:57,984 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:17:58,098 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:18:58,226 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:19:58,351 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:20:08,673 INFO gateway.run: Reconnecting whatsapp (attempt 5)...
+2026-06-10 01:20:08,744 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-06-10 01:20:08,744 WARNING gateway.platforms.whatsapp: [Whatsapp] Could not acquire session lock (non-fatal): [Errno 28] No space left on device: '/Users/ktoclaw/.local/state/hermes/gateway-locks/whatsapp-session-cfa5279560155c27.lock'
+2026-06-10 01:20:11,809 INFO gateway.run: Reconnect whatsapp failed, next retry in 300s
+2026-06-10 01:20:51,730 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(302, 6, 5) threads=16 uptime=1737414s
+2026-06-10 01:20:58,502 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:21:58,620 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:22:58,757 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:23:58,879 ERROR [20260608_181033_fd6c77f6] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:24:59,010 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:25:12,400 INFO gateway.run: Reconnecting whatsapp (attempt 6)...
+2026-06-10 01:25:12,467 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-06-10 01:25:12,468 WARNING gateway.platforms.whatsapp: [Whatsapp] Could not acquire session lock (non-fatal): [Errno 28] No space left on device: '/Users/ktoclaw/.local/state/hermes/gateway-locks/whatsapp-session-cfa5279560155c27.lock'
+2026-06-10 01:25:15,541 INFO gateway.run: Reconnect whatsapp failed, next retry in 300s
+2026-06-10 01:25:51,776 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(458, 6, 5) threads=16 uptime=1737714s
+2026-06-10 01:25:59,133 ERROR [20260608_181033_fd6c77f6] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:26:59,274 ERROR [20260609_230745_a5a4b729] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:27:59,410 ERROR [20260608_181033_fd6c77f6] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:28:59,549 ERROR [20260609_230745_a5a4b729] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:29:59,685 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:30:16,131 INFO gateway.run: Reconnecting whatsapp (attempt 7)...
+2026-06-10 01:30:16,208 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /Users/ktoclaw/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-06-10 01:30:16,209 WARNING gateway.platforms.whatsapp: [Whatsapp] Could not acquire session lock (non-fatal): [Errno 28] No space left on device: '/Users/ktoclaw/.local/state/hermes/gateway-locks/whatsapp-session-cfa5279560155c27.lock'
+2026-06-10 01:30:19,288 INFO gateway.run: Reconnect whatsapp failed, next retry in 300s
+2026-06-10 01:30:51,932 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(595, 6, 5) threads=16 uptime=1738014s
+2026-06-10 01:30:59,826 ERROR [20260609_230745_a5a4b729] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:31:59,956 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:33:00,080 ERROR [20260609_230745_a5a4b729] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 01:34:00,218 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 02:40:53,865 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(141, 4, 13) threads=16 uptime=1742216s
+2026-06-10 02:45:53,872 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(170, 4, 13) threads=16 uptime=1742516s
+2026-06-10 02:50:54,040 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(204, 4, 13) threads=16 uptime=1742816s
+2026-06-10 02:55:54,186 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(439, 4, 13) threads=16 uptime=1743117s
+2026-06-10 03:00:54,339 INFO gateway.memory_monitor: [MEMORY] rss=233MB gc=(65, 8, 14) threads=19 uptime=1743417s
+2026-06-10 03:02:11,471 ERROR [20260608_181033_fd6c77f6] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
+2026-06-10 03:03:11,608 ERROR [20260606_071326_dee3f83c] gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 152, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ktoclaw/.hermes/hermes-agent/gateway/run.py", line 5162, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_cli/kanban_db.py", line 997, in connect
+    apply_wal_with_fallback(conn, db_label=f"kanban.db ({path.name})")
+  File "/Users/ktoclaw/.hermes/hermes-agent/hermes_state.py", line 160, in apply_wal_with_fallback
+    conn.execute("PRAGMA journal_mode=DELETE")
+sqlite3.OperationalError: disk I/O error
