@@ -64,7 +64,14 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 
 ## Anti-Bot / Technical Notes
 
-> **ISW URL navigation (2026-06-09):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text. The homepage now also has an "ISW TEAMS" section with clickable region cards (China & Taiwan, Russia & Ukraine, Middle East) — clicking these lands on a listing page; extract `research/` URLs via JS before navigating.
+> **ISW URL navigation (2026-06-10):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text. The homepage now also has an "ISW TEAMS" section with clickable region cards (China & Taiwan, Russia & Ukraine, Middle East) — clicking these lands on a listing page; extract `research/` URLs via JS before navigating.
+
+> **ISW Middle East reports (2026-06-10):** ISW publishes `iran-update-special-report-YYYY-MM-DD` at `understandingwar.org/research/middle-east/`. Go-to for in-depth Hormuz/Iran military-strategic coverage; supplement to BBC for the Iran strikes story.
+
+> **ISW report URL patterns (2026-06-10):**
+> - China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/`
+> - Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<date>/`
+> - Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<date>/`
 
 - BBC RSS feeds work but provide only `<title>` + `<description>` — insufficient for detail. Use browser navigation for full articles.
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use browser nav instead.
@@ -110,6 +117,14 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 
 - Google News JS URL extraction: `Array.from(document.querySelectorAll('a[href*="/news/articles/"]')).map(a => a.href).filter((v,i,a) => a.indexOf(v) === i)` is the reliable pattern for both BBC section pages and Google News search results. Deduplicates with `indexOf` trick. Confirmed working on both.
 - ISW China/Taiwan full report URL format: `understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/` — the "Toplines" section at the top is the quick-read; full text follows below.
+
+## Session Observations (2026-06-10)
+
+- **ISW homepage navigation confirmed:** The ISW TEAMS section with region cards (CHINA & TAIWAN, RUSSIA & UKRAINE, MIDDLE EAST) is now the primary homepage entry point. From any listing page, extract `research/` URLs via JS (`Array.from(document.querySelectorAll('a[href*="/research/"]')).map(a => a.href).filter(...)`), then navigate directly to the full report. The homepage click lands on a listing page, not the full report.
+- **ISW Middle East supplement:** ISW publishes same-day `iran-update-special-report-YYYY-MM-DD` reports under `understandingwar.org/research/middle-east/` that cover the Hormuz conflict in depth. These are a valuable supplement to BBC for the Iran strikes story — use when BBC article is thin or you want the military/strategic context.
+- **Google News result display:** Each result now shows source name + relative time (e.g. "ISW — 4 days ago", "Reuters — 5 days ago") directly inline, above the headline. No need to click "More" for source/recency. Headlines and bylines are fully visible without expansion.
+- **BBC article URL slug vs. heading mismatch:** The article URL slug does not always match the visible headline. The JS URL extraction is still the correct method — don't try to infer URLs from headline text. The content is what matters.
+- All prior anti-bot patterns (Reuters/DataDome, SCMP/404, The Diplomat/Cloudflare, U.S. News/protocol error) remain confirmed active.
 
 - `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
 - `web-research-limitations` — AI/tech research workflow (absorbed from archived `research-scout`; see `references/research-scout-anti-bot.md`)

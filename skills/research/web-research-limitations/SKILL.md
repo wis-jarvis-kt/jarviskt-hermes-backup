@@ -69,11 +69,17 @@ For a "war news summary" covering Ukraine + Middle East + South China Sea/Taiwan
 
 **RSS feed endpoint — FAILS in cron jobs:** The Google News RSS endpoint (`https://news.google.com/rss/search?q=...`) returns only the RSS channel metadata (title, generator, copyright header) with zero `<item>` elements in a cron job context. This appears to be server-side filtering based on user-agent or lack of session cookies. Do not rely on RSS parsing as a lightweight news fetch in cron jobs — use browser_navigate to the Google News search page instead.
 
-**Wikipedia navigation — unreliable for live news (2026-05-27 observation):**
-- Wikipedia article pages (e.g. `en.wikipedia.org/wiki/Russo-Ukrainian_war`) are very long (15,000+ line snapshots) and often time out or produce truncated snapshots.
-- The article map/caption showed territorial control as of April 2026 — useful for context, not current events.
-- **Do not use Wikipedia as a live news feed** for war news; use it for background/background context only.
-- Wikipedia was tested on 2026-05-27 as an alternative to blocked search engines and returned only static background content.
+**Wikipedia for company/sector research (2026-06-10):**
+- Wikipedia sector pages (e.g. `en.wikipedia.org/wiki/Semiconductor_industry`) load cleanly and are useful for **identifying top companies by sector** — the "Largest companies" subsection gives ranked lists with market context.
+- Wikipedia article pages for individual companies (e.g. `en.wikipedia.org/wiki/NVIDIA`) are **404-prone on direct navigation** and often produce enormous snapshots (3,000+ elements) that are impractical for live research.
+- **Best use:** Navigate to the sector overview page → find the company list → use that as a checklist to compile notes from existing knowledge or follow up with targeted searches. Do not attempt to read full company articles via browser_snapshot.
+- Wikipedia was tested 2026-06-10 for semiconductor industry research — sector overview page loaded; individual company articles not attempted due to known 404/size issues.
+
+**delegate_task subagents with `web` toolset — returns minimal output (2026-06-10):**
+- When subagents using the `web` toolset complete successfully, the summary field often contains only the tool call description (e.g. `"[TOOL_CALL]\n{tool => \"web_search\"...`]) with no actual research content.
+- This means delegate_task with `web` is **not a reliable substitute for research output** — the subagent executes the calls but the aggregated result is empty.
+- Workaround: Use delegate_task only for **batch navigation/fetch tasks** where the parent agent will directly process the results (e.g. reading a known URL), not for open-ended research queries. Or follow up subagent completion with direct browser reads using the URLs the subagent was supposed to find.
+- Confirmed 2026-06-10: 5 subagent tasks (AI/ML, Semiconductors, Cloud, E-commerce, Cybersecurity) all completed with status=completed but returned tool-call traces instead of research summaries.
 
 ---
 

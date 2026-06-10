@@ -679,6 +679,8 @@ See `references/cron-delivery-auto-delivery.md` for the full decision table.
 
 User docs: https://hermes-agent.nousresearch.com/docs/user-guide/features/cron
 
+> 📁 **Related reference:** `references/disk-space-watchdog.md` — macOS `df -g` column parsing gotcha, cleanup target inventory, watchdog script pattern, and cron job config.
+
 ### Curator (skill lifecycle)
 
 Background maintenance for agent-created skills. Tracks usage, marks

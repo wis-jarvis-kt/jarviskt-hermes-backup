@@ -56,13 +56,13 @@
     "created_at": "2026-05-27T13:46:01.673867+00:00",
     "created_by": null,
     "last_patched_at": null,
-    "last_used_at": "2026-06-09T15:11:02.372561+00:00",
-    "last_viewed_at": "2026-06-09T15:11:02.371727+00:00",
+    "last_used_at": "2026-06-09T23:55:24.503814+00:00",
+    "last_viewed_at": "2026-06-09T23:55:24.503261+00:00",
     "patch_count": 0,
     "pinned": false,
     "state": "active",
-    "use_count": 4,
-    "view_count": 4
+    "use_count": 5,
+    "view_count": 5
   },
   "remind": {
     "archived_at": null,
@@ -120,14 +120,14 @@
     "archived_at": null,
     "created_at": "2026-05-19T13:49:11.701638+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-06-09T15:11:19.674387+00:00",
-    "last_used_at": "2026-06-09T15:10:11.047863+00:00",
-    "last_viewed_at": "2026-06-09T15:10:11.047106+00:00",
-    "patch_count": 17,
+    "last_patched_at": "2026-06-10T13:59:54.949899+00:00",
+    "last_used_at": "2026-06-10T13:58:04.081363+00:00",
+    "last_viewed_at": "2026-06-10T13:58:04.080702+00:00",
+    "patch_count": 21,
     "pinned": false,
     "state": "active",
-    "use_count": 60,
-    "view_count": 60
+    "use_count": 66,
+    "view_count": 66
   },
   "tmate-remote-support": {
     "archived_at": null,
@@ -159,26 +159,26 @@
     "archived_at": null,
     "created_at": "2026-06-01T11:00:47.496162+00:00",
     "created_by": null,
-    "last_patched_at": "2026-06-09T11:10:33.288913+00:00",
-    "last_used_at": "2026-06-09T11:09:29.197366+00:00",
-    "last_viewed_at": "2026-06-09T11:09:29.196704+00:00",
-    "patch_count": 23,
+    "last_patched_at": "2026-06-10T11:07:11.984494+00:00",
+    "last_used_at": "2026-06-10T11:04:30.684623+00:00",
+    "last_viewed_at": "2026-06-10T11:04:30.684060+00:00",
+    "patch_count": 27,
     "pinned": false,
     "state": "active",
-    "use_count": 29,
-    "view_count": 29
+    "use_count": 33,
+    "view_count": 33
   },
   "web-research-limitations": {
     "archived_at": null,
     "created_at": "2026-05-19T10:02:28.904709+00:00",
     "created_by": "agent",
-    "last_patched_at": "2026-06-09T14:07:50.516290+00:00",
-    "last_used_at": "2026-06-09T14:06:27.538606+00:00",
-    "last_viewed_at": "2026-06-09T14:06:27.537983+00:00",
-    "patch_count": 26,
+    "last_patched_at": "2026-06-10T10:03:41.695111+00:00",
+    "last_used_at": "2026-06-10T14:10:15.959427+00:00",
+    "last_viewed_at": "2026-06-10T14:10:15.958580+00:00",
+    "patch_count": 27,
     "pinned": false,
     "state": "active",
-    "use_count": 36,
-    "view_count": 36
+    "use_count": 42,
+    "view_count": 42
   }
 }

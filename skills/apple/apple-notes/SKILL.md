@@ -1,7 +1,7 @@
 ---
 name: apple-notes
-description: "Manage Apple Notes via memo CLI: create, search, edit."
-version: 1.0.0
+description: "Manage Apple Notes via native Notes.app scripting: create, search, edit. (memo CLI is deprecated — do not use)"
+version: 2.0.0
 author: Hermes Agent
 license: MIT
 platforms: [macos]
@@ -10,81 +10,62 @@ metadata:
     tags: [Notes, Apple, macOS, note-taking]
     related_skills: [obsidian]
 prerequisites:
-  commands: [memo]
+  commands: [osascript]
 ---
 
 # Apple Notes
 
-Use `memo` to manage Apple Notes directly from the terminal. Notes sync across all Apple devices via iCloud.
+Use native macOS Notes.app scripting via `osascript` to manage Apple Notes. Notes sync across all Apple devices via iCloud.
 
-## Prerequisites
+## IMPORTANT — memo CLI is DEPRECATED
 
-- **macOS** with Notes.app
-- Install: `brew tap antoniorodr/memo && brew install antoniorodr/memo/memo`
-- Grant Automation access to Notes.app when prompted (System Settings → Privacy → Automation)
+The `memo` Homebrew package (antoniorodr/memo) was **deprecated and disabled on 2025-07-27** — it is no longer maintained upstream and is not installed on this system. **Do not attempt to use `memo`** in any workflow. All `memo` references in skills and documentation should be updated to use `osascript` with Notes.app instead.
+
+## How to Use Notes.app via osascript
+
+### View Notes
+
+```bash
+osascript -e 'tell application "Notes" to name of every folder'
+osascript -e 'tell application "Notes" to name of every note'
+```
+
+### Create a Note
+
+```bash
+osascript -e 'tell application "Notes" to tell account "iCloud" to make new note at folder "Notes" with properties {name:"Title", body:"Content"}'
+```
+
+### Search Notes
+
+```bash
+osascript -e 'tell application "Notes" to id of every note whose body contains "query"'
+```
+
+### Edit/Delete Notes
+
+Use Notes.app UI automation via System Events or direct Notes.app scripting. For interactive editing, bring Notes to front:
+```bash
+osascript -e 'tell application "Notes" to activate'
+```
 
 ## When to Use
 
 - User asks to create, view, or search Apple Notes
 - Saving information to Notes.app for cross-device access
 - Organizing notes into folders
-- Exporting notes to Markdown/HTML
+- Exporting notes to text/markdown
 
 ## When NOT to Use
 
 - Obsidian vault management → use the `obsidian` skill
 - Bear Notes → separate app (not supported here)
 - Quick agent-only notes → use the `memory` tool instead
-
-## Quick Reference
-
-### View Notes
-
-```bash
-memo notes                        # List all notes
-memo notes -f "Folder Name"       # Filter by folder
-memo notes -s "query"             # Search notes (fuzzy)
-```
-
-### Create Notes
-
-```bash
-memo notes -a                     # Interactive editor
-memo notes -a "Note Title"        # Quick add with title
-```
-
-### Edit Notes
-
-```bash
-memo notes -e                     # Interactive selection to edit
-```
-
-### Delete Notes
-
-```bash
-memo notes -d                     # Interactive selection to delete
-```
-
-### Move Notes
-
-```bash
-memo notes -m                     # Move note to folder (interactive)
-```
-
-### Export Notes
-
-```bash
-memo notes -ex                    # Export to HTML/Markdown
-```
+- Complex note editing or formatting → Notes.app is limited; consider Obsidian for rich Markdown
 
 ## Limitations
 
-- Cannot edit notes containing images or attachments
-- Interactive prompts require terminal access (use pty=true if needed)
-- macOS only — requires Apple Notes.app
-
-## Rules
-
-1. Prefer Apple Notes when user wants cross-device sync (iPhone/iPad/Mac)
-2. Use the `memory` tool for agent-internal notes that don't need to sync
-3. Use the `obsidian` skill for Markdown-native knowledge management
+- Cannot edit notes containing images or attachments reliably
+- No native export command — use clipboard or third-party tools for full export
+- macOS only — requires Apple Notes.app with iCloud sync
+- Notes.app scripting is basic; for advanced operations consider AppleScriptGUI or Keyboard Maestro

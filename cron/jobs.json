@@ -20,15 +20,15 @@
       "schedule_display": "0 2 * * *",
       "repeat": {
         "times": null,
-        "completed": 21
+        "completed": 22
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:00.115730+08:00",
-      "next_run_at": "2026-06-11T02:00:00+08:00",
-      "last_run_at": "2026-06-09T02:02:17.336324+08:00",
+      "next_run_at": "2026-06-12T02:00:00+08:00",
+      "last_run_at": "2026-06-11T02:09:00.942082+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -58,15 +58,15 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 21
+        "completed": 22
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:09.310321+08:00",
-      "next_run_at": "2026-06-11T03:00:00+08:00",
-      "last_run_at": "2026-06-09T03:01:37.752838+08:00",
+      "next_run_at": "2026-06-12T03:00:00+08:00",
+      "last_run_at": "2026-06-10T03:09:10.000121+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -96,15 +96,15 @@
       "schedule_display": "0 22 * * *",
       "repeat": {
         "times": null,
-        "completed": 22
+        "completed": 23
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:39.768780+08:00",
-      "next_run_at": "2026-06-10T22:00:00+08:00",
-      "last_run_at": "2026-06-09T22:05:30.849959+08:00",
+      "next_run_at": "2026-06-11T22:00:00+08:00",
+      "last_run_at": "2026-06-10T22:05:35.796041+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -134,15 +134,15 @@
       "schedule_display": "0 19 * * *",
       "repeat": {
         "times": null,
-        "completed": 22
+        "completed": 23
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T16:57:59.384016+08:00",
-      "next_run_at": "2026-06-10T19:00:00+08:00",
-      "last_run_at": "2026-06-09T19:08:43.475223+08:00",
+      "next_run_at": "2026-06-11T19:00:00+08:00",
+      "last_run_at": "2026-06-10T19:03:45.982201+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -172,15 +172,15 @@
       "schedule_display": "30 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 21
+        "completed": 22
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:21.652816+08:00",
-      "next_run_at": "2026-06-10T03:30:00+08:00",
-      "last_run_at": "2026-06-09T03:31:49.589016+08:00",
+      "next_run_at": "2026-06-11T03:30:00+08:00",
+      "last_run_at": "2026-06-10T03:31:15.522871+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -217,7 +217,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:32.910302+08:00",
-      "next_run_at": "2026-06-10T06:00:00+08:00",
+      "next_run_at": "2026-06-11T06:00:00+08:00",
       "last_run_at": "2026-06-09T06:00:57.874499+08:00",
       "last_status": "ok",
       "last_error": null,
@@ -248,15 +248,15 @@
       "schedule_display": "0 18 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 16
+        "completed": 17
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:39.961046+08:00",
-      "next_run_at": "2026-06-10T18:00:00+08:00",
-      "last_run_at": "2026-06-09T18:05:04.647867+08:00",
+      "next_run_at": "2026-06-11T18:00:00+08:00",
+      "last_run_at": "2026-06-10T18:02:59.971964+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -286,15 +286,15 @@
       "schedule_display": "45 21 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 16
+        "completed": 17
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-19T17:01:51.540889+08:00",
-      "next_run_at": "2026-06-10T21:45:00+08:00",
-      "last_run_at": "2026-06-09T21:45:48.430191+08:00",
+      "next_run_at": "2026-06-11T21:45:00+08:00",
+      "last_run_at": "2026-06-10T21:49:13.916285+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -318,21 +318,21 @@
       "context_from": null,
       "schedule": {
         "kind": "interval",
-        "minutes": 60,
-        "display": "every 60m"
+        "minutes": 1440,
+        "display": "every 1440m"
       },
-      "schedule_display": "every 60m",
+      "schedule_display": "every 1440m",
       "repeat": {
         "times": null,
-        "completed": 472
+        "completed": 475
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-21T06:15:46.885828+08:00",
-      "next_run_at": "2026-06-10T03:34:06.399401+08:00",
-      "last_run_at": "2026-06-10T00:29:49.872442+08:00",
+      "next_run_at": "2026-06-11T08:26:17.929124+08:00",
+      "last_run_at": "2026-06-10T07:30:45.378828+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -496,15 +496,15 @@
       "schedule_display": "45 21 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 13
+        "completed": 14
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-05-21T21:54:02.337143+08:00",
-      "next_run_at": "2026-06-10T21:45:00+08:00",
-      "last_run_at": "2026-06-09T21:47:57.686113+08:00",
+      "next_run_at": "2026-06-11T21:45:00+08:00",
+      "last_run_at": "2026-06-10T21:57:26.936054+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -647,7 +647,179 @@
       "enabled_toolsets": null,
       "workdir": null,
       "profile": null
+    },
+    {
+      "id": "b71ded2f17a3",
+      "name": "Insurance follow-up reminder",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "echo \"\ud83d\udd14 Reminder: Follow up on insurance.\"",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-06-12T12:00:00+08:00",
+        "display": "once at 2026-06-12 12:00"
+      },
+      "schedule_display": "once at 2026-06-12 12:00",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-10T12:13:43.818253+08:00",
+      "next_run_at": "2026-06-12T12:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "whatsapp",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "56702359580792@lid",
+        "chat_name": "Goo Kah Thart",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "5ef0474fcf0c",
+      "name": "Insurance follow-up calendar reminder",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "echo \"\ud83d\udd14 Follow up Estee in 10 minutes (12:00 PM).\"",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-06-12T11:50:00+08:00",
+        "display": "once at 2026-06-12 11:50"
+      },
+      "schedule_display": "once at 2026-06-12 11:50",
+      "repeat": {
+        "times": 1,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-10T12:14:34.205415+08:00",
+      "next_run_at": "2026-06-12T11:50:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "whatsapp",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "56702359580792@lid",
+        "chat_name": "Goo Kah Thart",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "1fc1b1837234",
+      "name": "Hong Leong Bank login reminder",
+      "prompt": "Send me a message at 8pm reminding me to try logging into HONG LEONG BANK. Just say: \"\u23f0 Reminder: Try logging into Hong Leong Bank now!\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "display": "0 20 * * *"
+      },
+      "schedule_display": "0 20 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-10T18:34:04.277899+08:00",
+      "next_run_at": "2026-06-11T20:00:00+08:00",
+      "last_run_at": "2026-06-10T20:01:16.799080+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "56702359580792@lid",
+        "chat_name": "Goo Kah Thart",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
+    },
+    {
+      "id": "cecbd28c3d92",
+      "name": "\u23f0 Reminder: Try logging into Hong Leong Bank now!",
+      "prompt": "\u23f0 Reminder: Try logging into Hong Leong Bank now!",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "display": "0 20 * * *"
+      },
+      "schedule_display": "0 20 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-10T20:01:14.082426+08:00",
+      "next_run_at": "2026-06-11T20:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "120363423080731840@g.us",
+        "chat_name": "120363423080731840",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "profile": null
     }
   ],
-  "updated_at": "2026-06-10T03:00:27.959532+08:00"
+  "updated_at": "2026-06-11T03:00:07.529784+08:00"
 }

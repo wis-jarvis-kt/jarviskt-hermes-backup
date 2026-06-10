@@ -82,6 +82,16 @@ imsg watch --chat-id 1 --attachments
 
 ## Pitfalls
 
+### Attachments Folder Permission Error (NSCocoaErrorDomain Code 513)
+When sending files with `--file`, `imsg` attempts to copy the attachment to `~/Library/Messages/Attachments/`. If that directory is not writable (e.g., permission denied), the send fails with:
+```
+Error Domain=NSCocoaErrorDomain Code=513 "You don't have permission to save the file 'imsg' in the folder 'Attachments'."
+```
+**Workarounds (in order):**
+1. Copy the file to `/tmp/` first — avoid `~/Library/Messages/Attachments/` by using a temp path
+2. If that still fails, the macOS Messages app itself is blocking the attachment path — fall back to Hermes `send_message` for text-only, or use `open` to open the file so the user can send manually
+3. osascript fallback (`tell application "Messages" to send ...`) is unreliable on some setups — it times out. Do not use as primary path.
+
 ### Cron Jobs / Headless Context
 `imsg` reads from `~/Library/Messages/chat.db` and **requires Full Disk Access**. Running in a cron job, LaunchAgent, or headless context (no GUI session) will fail with `permissionDenied` even if the tool is installed. Workarounds:
 - Use a macOS GUI session that's been authorized

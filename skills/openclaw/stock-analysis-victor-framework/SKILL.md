@@ -110,9 +110,10 @@ roi = (atm['lastPrice'] / (atm['strike'] * 100)) * 100
 Pass = IV > 40% AND S&P >1% down on that day. Only then is CSP entry justified.
 
 ### CSP RED Day Trigger — VIX Proxy
-- S&P drop >1% in a day (today's -0.22% is MARGINAL/FLAT, NOT RED)
-- VIX spike above 20 (low VIX = thin premiums)
+- S&P drop >1% in a day (today's -0.07% is FLAT, NOT RED — need -1%+ for true RED day)
+- VIX spike above 20 (VIX 21 = elevated but below 40 IV threshold)
 - Fear & Greed <25 (extreme fear zone)
+- **All 3 must align** — Extreme Fear alone is not enough; need market down + IV spike for premium CSP entry
 
 **When Fear & Greed is unavailable (CNN blocking):** Use VIX as proxy.
 - VIX < 15 → Extreme Greed / Neutral (no CSP)
@@ -252,9 +253,16 @@ Each subagent prompt should:
 Validated: 2026-05-29 session ran 3 waves (3+3+3 tasks) for Victor Study with no anti-bot failures.
 
 ## Pitfalls
+*   **Yahoo Finance API requires User-Agent header:** Bare `urllib.request.urlopen(url)` returns HTTP 429. Always wrap:
+    ```python
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    data = json.loads(urllib.request.urlopen(req).read())
+    ```
+    This applies to all Yahoo Finance endpoints. The meta block uses `chartPreviousClose` instead of `previousClose`.
 *   **execute_code sandbox lacks yfinance AND has urllib quirks:** Always use `terminal` with Python scripts for market data fetching. `execute_code` does not have yfinance installed. Also avoid `hermes send` heredoc syntax via `<<` in terminal foreground mode — it triggers the background-process guard. Write the message to a file first, then use `hermes send --file /path/to/file`.
 *   **S&P previousClose may be N/A in Yahoo Finance chart meta:** When `meta.regularMarketPrice` exists but `previousClose` is N/A, fetch the 5-day price series to calculate the actual % change. Use: `url = "...?interval=1d&range=5d"` → parse `indicators.quote[0].close` timestamps with `datetime.fromtimestamp(t)`.
-*   **hermes send WhatsApp target format:** Must be `whatsapp:56702359580792@lid` — prefix `whatsapp:` is required, and the @lid suffix identifies the specific contact. Use `hermes send --list` to enumerate all available targets first.
+*   **imsg timeouts on macOS:** If `imsg send` hangs >15s, try `--json` flag first to get diagnostic output. If still hanging, fall back to `osascript -e 'tell application "WhatsApp" to activate'` to bring WhatsApp to front, then use clipboard-paste approach or direct WhatsApp scripting. Do NOT retry the same imsg command more than 2 times — it's a transport issue, not a content issue.
+*   **Cron job report delivery:** For scheduled cron jobs, the agent's final response is automatically delivered to the configured destination — do NOT use `send_message` or `imsg` to deliver the report. Just produce the report as the final response. `send_message` / `imsg` is only for ad-hoc interactive sessions where the user is waiting.
 *   **CNN Fear & Greed blocks curl/grep:** Do not attempt to scrape `money.cnn.com` with curl. The page returns empty grep results. Use `https://api.alternative.me/fng/` which returns JSON directly — reliable, no browser needed.
 *   **web_search unavailability:** If `web_search` is not available as a tool, use `browser_navigate` for initial information gathering (e.g., for CNN Fear & Greed Index) instead of a direct search API.
 *   **Incomplete Historical Data:** Yahoo Finance may not always provide 5 full years (20 quarters) of quarterly data directly on the statistics page. Approximate averages from available data and clearly state if data is inconclusive (e.g., N/A if less than 3 quarters are available or if data is entirely missing).

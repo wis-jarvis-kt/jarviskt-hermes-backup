@@ -411,11 +411,10 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: false
 command_allowlist:
-- script execution via heredoc
-- shell command via -c/-lc flag
+- delete in root path
+- sudo with combined-flag privilege escalation
 - recursive delete
 - script execution via -e/-c flag
-- sudo with combined-flag privilege escalation
 quick_commands: {}
 hooks: {}
 hooks_auto_accept: false

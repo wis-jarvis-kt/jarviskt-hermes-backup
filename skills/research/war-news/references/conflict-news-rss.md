@@ -1,4 +1,4 @@
-# Conflict News RSS Sources — Verified 2026-05-27, updated 2026-05-30
+# Conflict News RSS Sources — Verified 2026-05-27, updated 2026-06-10
 
 ## BBC World News Feeds
 | Section | URL |
@@ -25,9 +25,10 @@ for feed in world/europe world/middle_east world/asia; do
 done
 ```
 
-## BBC Section Pages via Browser Navigation (no RSS)
+## Browser Navigation Over RSS (Preferred — 2026-06-10)
 
-When RSS is unavailable or you need visual confirmation of article grouping:
+BBC RSS provides only top-level `<title>` + `<description>` per item — no article body. Sufficient for a news radar, but full detail requires browser navigation. Use browser section pages as the primary method:
+
 ```
 https://www.bbc.com/news/world/europe       → Ukraine/Russia headlines
 https://www.bbc.com/news/world/middle_east  → Israel, Iran, Gaza
@@ -35,9 +36,19 @@ https://www.bbc.com/news/world/asia         → South China Sea, Taiwan (less fr
 https://www.bbc.com/news/us-canada          → US policy, Iran strikes
 ```
 
-**Workflow:** Navigate directly to section URL → snapshot gives lead headlines → click through to articles only if detail is needed. Article click-through from listings sometimes stalls (snapshot stays on same page); direct URL navigation is more reliable than link-clicking from a listing page.
+**Workflow:** Navigate directly to section URL → snapshot gives lead headlines → extract article URLs via JS → navigate directly to articles. This is more reliable than clicking refs from a listing page (refs often fail with "Could not compute box model").
 
-**Tested:** 2026-05-30 — all four section URLs loaded cleanly with no anti-bot blocking.
+**Tested:** 2026-05-30 and 2026-06-10 — all section URLs loaded cleanly with no anti-bot blocking.
+
+## ISW as Primary Supplement for Middle East (2026-06-10)
+
+ISW's `iran-update-special-report-YYYY-MM-DD` at `understandingwar.org/research/middle-east/` provides in-depth military-strategic coverage of the Hormuz conflict that BBC lacks. ISW is fully accessible with no bot detection. Use it to supplement BBC when covering:
+- US-Iran military exchanges and base strikes
+- IRGC operational details and capabilities
+- Ceasefire monitoring and violations
+- Regional axis-of-resistance activity (Hezbollah, Yemen Houthi, Iraqi militias)
+
+**ISW report URL pattern:** `https://understandingwar.org/research/middle-east/iran-update-special-report-<date>/`
 
 ## CNBC Feeds
 | Feed | URL |
@@ -69,6 +80,6 @@ grep -iE "strike|attack|war|ceasefire|missile|drone|invasion|troop"
 - BBC RSS provides only top-level `<title>` + `<description>` per item — no article body. Sufficient for a news radar/summary. Full article detail requires browser navigation.
 - BBC section pages via browser_navigate give the same top-level summary without needing RSS — use when RSS feels heavyweight or is unavailable.
 - CNBC RSS includes wire-service stories with more context on US policy dimensions (Iran strikes, Hormuz closures, tech/sanctions).
-- BBC RSS and BBC section pages via browser both returned 200 OK with zero anti-bot challenges in cron job context (2026-05-27 and 2026-05-30).
+- BBC RSS and BBC section pages via browser both returned 200 OK with zero anti-bot challenges in cron job context (2026-05-27, 2026-05-30, 2026-06-10).
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use BBC/Google News browser nav instead.
 - Wikipedia article feeds are not useful for live conflict news.

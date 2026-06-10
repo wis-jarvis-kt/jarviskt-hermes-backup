@@ -294,6 +294,31 @@ If you catch yourself thinking:
 
 **If 3+ fixes failed:** Question the architecture (Phase 4 step 5).
 
+## Disk-Space Emergencies: When the Watchdog Itself Is Blind
+
+A watchdog cron can exist and still fail catastrophically. Here's why:
+
+**Watchdog symptom:** Gateway fails with `[Errno 28] No space left on device`. WhatsApp bridge silently fails. Kanban DB fails with `disk I/O error`. Tasks stall silently — no crash, no alert, just starvation.
+
+**The failure mode:** The watchdog runs hourly and checks disk space. But when space hits ~0, EVERY operation fails — including the watchdog's own cleanup attempt, the gateway's ability to log, and any cron job that tries to run a cleanup script. The system dies before it can save itself.
+
+**The blind spot:** A 50GB threshold watchdog that only alerts is insufficient. When disk space is at 1GB, even a successful alert message can't be delivered because the send operation itself requires free space.
+
+**The lesson:** Proactive disk management > reactive alerting. The right behavior is:
+1. **Keep 50GB minimum free at all times** — not just an alert threshold, but a cleanup target that fires while there's still room to act
+2. **Backup retention must auto-prune** — manual cleanup fails because you forget or the session dies mid-cleanup. Script-level retention (e.g. `WIS_BACKUP_RETENTION=2`) is the right pattern.
+3. **When disk is below 5GB, stop all non-essential operations** — don't let backup scripts run that could fail mid-way and consume more space
+4. **Clean BEFORE hitting the alert threshold** — if your threshold is 50GB free, clean when you hit 60GB to leave buffer room
+
+**Verification:**
+```bash
+df -h /
+# Act if avail < 50GB
+# Emergency clean if avail < 5GB: delete largest dirs first
+```
+
+## Common Rationalizations
+
 ## Common Rationalizations
 
 | Excuse | Reality |

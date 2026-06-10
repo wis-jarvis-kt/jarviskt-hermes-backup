@@ -12,7 +12,7 @@ BACKUP_ROOT = WORKSPACE / 'wis-backups'
 EXPORT_ROOT = BACKUP_ROOT / 'exports'
 MANIFEST_NAME = 'manifest.json'
 README_NAME = 'RESTORE_README.md'
-RETENTION_DAYS = int(os.environ.get('WIS_BACKUP_RETENTION', 7))
+RETENTION_DAYS = int(os.environ.get('WIS_BACKUP_RETENTION', 2))
 
 INCLUDE_PATHS = [
     WORKSPACE / 'AGENTS.md',
