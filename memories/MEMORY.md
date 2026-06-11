@@ -38,7 +38,7 @@
 - **hermes-backup-daily:** Daily backup of memories and config
 
 ## Recent Key Events
-- **2026-06-10:** Memory consolidation — pruned daily logs from June 1–3. Disk Space Watchdog now auto-cleans (every 24h, threshold 50GB).
+- **2026-06-11:** Memory consolidation — purged 43 session files from June 2–4. Daily memory logs already within 7-day window (no pruning needed). Cron output dirs clean.
 
 ## Victor Framework (Stock Investing)
 - **Entry signal:** Current P/E < 90% of 5Y Avg P/E — OR — Current PEG < 90% of 5Y Avg PEG

@@ -2,8 +2,8 @@
   "version": 1,
   "manifest": {
     "apple/apple-notes/SKILL.md": [
-      1779156650595175419,
-      2169
+      1781114871922085965,
+      2374
     ],
     "apple/apple-reminders/SKILL.md": [
       1779156650595290129,
@@ -242,8 +242,8 @@
       2919
     ],
     "openclaw/stock-analysis-victor-framework/SKILL.md": [
-      1781099994946239443,
-      16389
+      1781185848185600486,
+      18115
     ],
     "productivity/airtable/SKILL.md": [
       1779156650649372102,
@@ -310,12 +310,12 @@
       103357
     ],
     "research/war-news/SKILL.md": [
-      1781089547785134229,
-      11396
+      1781176087680238618,
+      8508
     ],
     "research/web-research-limitations/SKILL.md": [
-      1781085821689088938,
-      17865
+      1781179803670099944,
+      18147
     ],
     "smart-home/openhue/SKILL.md": [
       1779156650669181257,
@@ -483,7 +483,7 @@
       "skill_name": "apple-notes",
       "category": "apple",
       "frontmatter_name": "apple-notes",
-      "description": "Manage Apple Notes via memo CLI: create, search, edit.",
+      "description": "Manage Apple Notes via native Notes.app scripting: create...",
       "platforms": [
         "macos"
       ],

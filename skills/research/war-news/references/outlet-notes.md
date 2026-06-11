@@ -1,4 +1,4 @@
-# Conflict News — Source Outlet Notes (Updated 2026-06-10)
+# Conflict News — Source Outlet Notes (Updated 2026-06-11)
 
 ## Outlet Accessibility Matrix
 
@@ -8,7 +8,7 @@
 | Al Jazeera | ✅ | ✅ | Good for Middle East; accessible directly |
 | Institute for the Study of War | ✅ | N/A | **Go-to for China/Taiwan and Middle East**; no bot detection, substantive analysis across all three conflict theaters |
 | The Diplomat | ⚠️ Cloudflare | ⚠️ Cloudflare | Cloudflare challenge page blocks direct nav; Google News headline extraction works |
-| US Naval Institute | ✅ | N/A | Defence/strategy; useful for Taiwan Strait analysis |
+| US Naval Institute | ✅ | N/A | Defence/strategy; useful for Taiwan Strait naval activity; confirmed accessible via direct nav (2026-06-11) |
 | Taipei Times | ✅ | ✅ | Taiwan and South China Sea; reliable |
 | Reuters | ❌ DataDome | ⚠️ sometimes works | DataDome device-check iframe (different block from Cloudflare); use Google News signposting |
 | SCMP | ⚠️ 404s common | ⚠️ mixed | Many article URLs return 404; don't rely on SCMP for breaking news |
@@ -54,7 +54,7 @@ When you land on a `backgrounder/` URL from a homepage click, you have a summary
 
 **ISW page structure:** On the full report page, the "Toplines" section is the most important quick-read section — it summarizes the 3–5 most critical developments. Jump to it first via the combobox dropdown if available, or scroll to the top of the article body.
 
-**ISW homepage navigation (2026-06-10 confirmed):** The ISW homepage has an "ISW TEAMS" section with clickable region cards (e.g. "RUSSIA & UKRAINE", "MIDDLE EAST", "CHINA & TAIWAN"). Clicking a region card lands on a listing page — not a full report. Extract `research/` URLs via JS before navigating:
+**ISW homepage navigation (2026-06-11 confirmed):** The ISW homepage has an "ISW TEAMS" section with clickable region cards (e.g. "RUSSIA & UKRAINE", "MIDDLE EAST", "CHINA & TAIWAN"). Clicking a region card lands on a listing page — not a full report. Extract `research/` URLs via JS before navigating:
 
 ```javascript
 Array.from(document.querySelectorAll('a[href*="/research/"]'))

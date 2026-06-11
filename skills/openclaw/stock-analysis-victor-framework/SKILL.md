@@ -8,6 +8,7 @@ description: Analyze stocks using Victor's framework (PEG vs 5Y avg, P/E vs 5Y a
 This skill provides a structured approach to analyze selected stocks for potential entry points using Victor's framework, which compares current P/E and PEG ratios against their 5-year averages. It also incorporates the CNN Fear & Greed Index to gauge overall market sentiment.
 
 > **Reference:** See `references/stock-radar.md` for the watchlist, data source URLs, and quick-reference ratios.
+> **ETF CSP run:** See `references/etf-csp-analysis.md` for the reusable script pattern, latest ETF prices, and WhatsApp delivery format.
 
 ## Steps
 1.  **Get Current Date:** Obtain the current date in YYYY-MM-DD format using `terminal("date +%Y-%m-%d")`.
@@ -40,6 +41,23 @@ This skill provides a structured approach to analyze selected stocks for potenti
        *   **PEG Comparison:** `Current PEG < 1.0` → Peter Lynch bargain zone (standalone strong signal); `Current PEG < 5Y Avg PEG × 0.90` → PEG entry signal ✅
        *   **Strong entry:** Both conditions met. **Potential entry:** Either condition met.
     d. **If yfinance is insufficient:** Fall back to `browser_navigate("https://finance.yahoo.com/quote/{SYM}/statistics")` → snapshot → scroll → parse "Valuation Measures" section for Trailing P/E and PEG Ratio.
+
+## Running the Stock Radar Script
+
+> **IMPORTANT — Python path issue:** The script uses `python3` which resolves to the venv Python (`~/.hermes/hermes-agent/venv/bin/python3`). However, `yfinance` is installed in the **system Python** (`/usr/bin/python3` 3.9, site-packages at `/Users/ktoclaw/Library/Python/3.9/lib/python/site-packages/`). The venv Python does NOT have yfinance.
+>
+> **Always use the explicit system Python path to run the script:**
+> ```bash
+> /usr/bin/python3 /Users/ktoclaw/.hermes/skills/openclaw/stock-analysis-victor-framework/scripts/stock_radar_pe.py [SYMBOLS...]
+> ```
+>
+> Do NOT use bare `python3` or `terminal(python3 ...)` — it will fail with `ModuleNotFoundError: No module named 'yfinance'`. This is an environment setup fact, not a code bug — the script itself is fine.
+
+### Quick Diagnostic (before running)
+If you get `ModuleNotFoundError: No module named 'yfinance'`, switch to:
+```bash
+/usr/bin/python3 /path/to/stock_radar_pe.py [args]
+```
 
 ## Computing 5Y Avg P/E — Worked Example (NVDA)
 
@@ -260,9 +278,10 @@ Validated: 2026-05-29 session ran 3 waves (3+3+3 tasks) for Victor Study with no
     ```
     This applies to all Yahoo Finance endpoints. The meta block uses `chartPreviousClose` instead of `previousClose`.
 *   **execute_code sandbox lacks yfinance AND has urllib quirks:** Always use `terminal` with Python scripts for market data fetching. `execute_code` does not have yfinance installed. Also avoid `hermes send` heredoc syntax via `<<` in terminal foreground mode — it triggers the background-process guard. Write the message to a file first, then use `hermes send --file /path/to/file`.
-*   **S&P previousClose may be N/A in Yahoo Finance chart meta:** When `meta.regularMarketPrice` exists but `previousClose` is N/A, fetch the 5-day price series to calculate the actual % change. Use: `url = "...?interval=1d&range=5d"` → parse `indicators.quote[0].close` timestamps with `datetime.fromtimestamp(t)`.
+*   **S&P previousClose may be N/A in Yahoo Finance chart meta:** When `meta.regularMarketPrice` exists but `previousClose` is N/A, fetch the 5-day price series to calculate the actual % change. Use: `url = "...?interval=1d&range=5d"` → parse `indicators.quote[0].close` timestamps with `datetime.fromtimestamp(t)`. Also filter None values from close list before accessing `closes[-1]` and `closes[-2]` — partial data days exist and will raise IndexError if not handled.
 *   **imsg timeouts on macOS:** If `imsg send` hangs >15s, try `--json` flag first to get diagnostic output. If still hanging, fall back to `osascript -e 'tell application "WhatsApp" to activate'` to bring WhatsApp to front, then use clipboard-paste approach or direct WhatsApp scripting. Do NOT retry the same imsg command more than 2 times — it's a transport issue, not a content issue.
 *   **Cron job report delivery:** For scheduled cron jobs, the agent's final response is automatically delivered to the configured destination — do NOT use `send_message` or `imsg` to deliver the report. Just produce the report as the final response. `send_message` / `imsg` is only for ad-hoc interactive sessions where the user is waiting.
+*   **WhatsApp LID delivery format for cron jobs:** When using `hermes send -t "whatsapp:..."` to deliver reports to WhatsApp from a cron job, use the LID format: `whatsapp:56702359580792@lid` (not the phone-number JID). Verify available targets first with `hermes send --list whatsapp` — the DM LID is shown in brackets `[56702359580792@lid]`. The target string is everything after `whatsapp:` prefix, e.g. `-t "whatsapp:56702359580792@lid"`.
 *   **CNN Fear & Greed blocks curl/grep:** Do not attempt to scrape `money.cnn.com` with curl. The page returns empty grep results. Use `https://api.alternative.me/fng/` which returns JSON directly — reliable, no browser needed.
 *   **web_search unavailability:** If `web_search` is not available as a tool, use `browser_navigate` for initial information gathering (e.g., for CNN Fear & Greed Index) instead of a direct search API.
 *   **Incomplete Historical Data:** Yahoo Finance may not always provide 5 full years (20 quarters) of quarterly data directly on the statistics page. Approximate averages from available data and clearly state if data is inconclusive (e.g., N/A if less than 3 quarters are available or if data is entirely missing).

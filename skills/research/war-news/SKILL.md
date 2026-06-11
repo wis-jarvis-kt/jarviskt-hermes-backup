@@ -60,18 +60,23 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 | BBC Middle East | `https://www.bbc.com/news/world/middle_east` | Israel, Iran, Gaza |
 | BBC Asia | `https://www.bbc.com/news/world/asia` | South China Sea, Taiwan (supplement with Google News) |
 | Google News | `https://news.google.com/search?q=...` | Taiwan/SCS supplement — extract headline + byline, navigate to source directly |
-| Institute for the Study of War | `https://understandingwar.org` | **Go-to for China/Taiwan**; no bot detection. See ISW URL Navigation note below. |
+| Institute for the Study of War | `https://understandingwar.org` | **Go-to for China/Taiwan and Russia/Ukraine**; no bot detection. See ISW URL Navigation note below. |
+| US Naval Institute (USNI) | `https://news.usni.org` | **Go-to for Taiwan Strait naval activity**; confirmed accessible, appeared in Google News results for China/Taiwan. |
 
 ## Anti-Bot / Technical Notes
 
-> **ISW URL navigation (2026-06-10):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text. The homepage now also has an "ISW TEAMS" section with clickable region cards (China & Taiwan, Russia & Ukraine, Middle East) — clicking these lands on a listing page; extract `research/` URLs via JS before navigating.
+> **ISW URL navigation (2026-06-11):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text. The homepage also has an "ISW TEAMS" section with clickable region cards (China & Taiwan, Russia & Ukraine, Middle East) — clicking these lands on a listing page; extract `research/` URLs via JS before navigating.
 
-> **ISW Middle East reports (2026-06-10):** ISW publishes `iran-update-special-report-YYYY-MM-DD` at `understandingwar.org/research/middle-east/`. Go-to for in-depth Hormuz/Iran military-strategic coverage; supplement to BBC for the Iran strikes story.
+> **ISW Middle East reports (2026-06-11):** ISW publishes `iran-update-special-report-YYYY-MM-DD` at `understandingwar.org/research/middle-east/`. Go-to for in-depth Hormuz/Iran military-strategic coverage; supplement to BBC for the Iran strikes story.
 
-> **ISW report URL patterns (2026-06-10):**
+> **ISW Russia/Ukraine reports (2026-06-11):** ISW publishes `russian-offensive-campaign-assessment-YYYY-MM-DD` at `understandingwar.org/research/russia-ukraine/`. The "Toplines" section at the top of the full report is the quick-read; the full text follows below. Use to supplement BBC for ground-level tactical developments.
+
+> **ISW report URL patterns (2026-06-11):**
 > - China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/`
 > - Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<date>/`
 > - Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<date>/`
+>
+> On ISW report pages, use the combobox "Jump to" dropdown (Toplines, Key Takeaways, [region sections]) to navigate quickly. "Toplines" is always the first section and the most important quick-read.
 
 - BBC RSS feeds work but provide only `<title>` + `<description>` — insufficient for detail. Use browser navigation for full articles.
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use browser nav instead.
@@ -91,43 +96,10 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 - **Article count and batching**: A full six-article read (3 Europe + 3 Middle East) is safe for a cron job with no time pressure. If running in a time-constrained session, prioritize 2–3 most recent/relevant per region. Group browser_navigate calls by region to reduce session overhead.
 - **URL typos in BBC section links**: Double-check URLs before navigating — a truncated URL (e.g. `/middle_ea`) silently yields a 404. Always spell-check: the Middle East section is `bbc.com/news/world/middle_east` (not `/middle_ea`).
 
-## Session Observations (2026-06-04)
+## Session Observations
 
-- Google News JS href extraction (the `WYjbwe` class) remains unreliable — verified still broken
-- Reuters DataDome block confirmed still active
-- SCMP 404s confirmed still active
-
-## Session Observations (2026-06-05)
-
-- ISW (Institute for the Study of War) confirmed fully accessible — no bot detection, substantive China/Taiwan analysis. Elevated to go-to fallback for SCS/Taiwan.
-- The Diplomat: Cloudflare challenge page confirmed active (bot detection, not DataDome). Different mitigation path — use Google News signposting.
-- U.S. News direct nav: `net::ERR_HTTP2_PROTOCOL_ERROR` — different failure from DataDome/Cloudflare. Google News headline + byline extraction works fine.
-- Reuters DataDome confirmed distinct block mechanism from Cloudflare; distinguish in anti-bot notes.
-
-## Session Observations (2026-06-07)
-
-- ISW URL `www.` prefix confirmed broken; bare `understandingwar.org` is correct.
-- ISW "Toplines" section is the primary quick-read section on full report pages — jump to it first.
-- Iran ceasefire stall confirmed: US requested changes to terms; Iran said US keeps "changing its views and putting forward new or contradictory demands." Article captured both sides' positions.
-- New diplomatic exception: US granted visas to Iran's World Cup football team (Los Angeles, June 15) despite active strikes — first such host-nation exception.
-- Taipei Times URL inference still risky; correct IDs must be extracted from Google News snippets. Inferred URL `…/2000106928` returned 404 on 2026-06-07.
-- All other anti-bot and navigation patterns from prior sessions hold.
-
-## Session Observations (2026-06-08)
-
-- Google News JS URL extraction: `Array.from(document.querySelectorAll('a[href*="/news/articles/"]')).map(a => a.href).filter((v,i,a) => a.indexOf(v) === i)` is the reliable pattern for both BBC section pages and Google News search results. Deduplicates with `indexOf` trick. Confirmed working on both.
-- ISW China/Taiwan full report URL format: `understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/` — the "Toplines" section at the top is the quick-read; full text follows below.
-
-## Session Observations (2026-06-10)
-
-- **ISW homepage navigation confirmed:** The ISW TEAMS section with region cards (CHINA & TAIWAN, RUSSIA & UKRAINE, MIDDLE EAST) is now the primary homepage entry point. From any listing page, extract `research/` URLs via JS (`Array.from(document.querySelectorAll('a[href*="/research/"]')).map(a => a.href).filter(...)`), then navigate directly to the full report. The homepage click lands on a listing page, not the full report.
-- **ISW Middle East supplement:** ISW publishes same-day `iran-update-special-report-YYYY-MM-DD` reports under `understandingwar.org/research/middle-east/` that cover the Hormuz conflict in depth. These are a valuable supplement to BBC for the Iran strikes story — use when BBC article is thin or you want the military/strategic context.
-- **Google News result display:** Each result now shows source name + relative time (e.g. "ISW — 4 days ago", "Reuters — 5 days ago") directly inline, above the headline. No need to click "More" for source/recency. Headlines and bylines are fully visible without expansion.
-- **BBC article URL slug vs. heading mismatch:** The article URL slug does not always match the visible headline. The JS URL extraction is still the correct method — don't try to infer URLs from headline text. The content is what matters.
-- All prior anti-bot patterns (Reuters/DataDome, SCMP/404, The Diplomat/Cloudflare, U.S. News/protocol error) remain confirmed active.
-
-- `web-research-limitations/references/conflict-news-rss.md` — RSS feed URLs and keyword patterns for conflict filtering
-- `web-research-limitations` — AI/tech research workflow (absorbed from archived `research-scout`; see `references/research-scout-anti-bot.md`)
+All verified technical findings are maintained in `references/session-log.md`. This keeps the SKILL.md action-oriented and easy to read during a task run.
 
 ## Support Files
 - `references/outlet-notes.md` — outlet accessibility matrix, blocking mechanism reference (DataDome vs Cloudflare vs protocol error), Google News search URLs, ISW as go-to China/Taiwan fallback
+- `references/session-log.md` — chronological technical findings log (URL patterns, anti-bot confirmations, navigation tricks)
