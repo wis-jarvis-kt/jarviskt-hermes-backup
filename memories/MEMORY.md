@@ -25,9 +25,8 @@
 - Stuck gaps: document in `~/.hermes/memories/YYYY-MM-DD.md` under `## 🔧 Stuck & Learned`
 
 ## Skill Locations (non-obvious)
-- `openclaw/openclaw-stock-analysis-victor-framework` is ARCHIVED — its content was absorbed into `openclaw/stock-analysis-victor-framework` (canonical: Victor Entry Signals + Stock Radar + Weekly Victor Study)
 - Active openclaw skills live in `~/.hermes/skills/openclaw/<skill-name>/` subdirectories
-- gbrain MCP server (3 skills: gbrain-brain-ops, gbrain-enrich, gbrain-signal-detector) — disconnected since OpenClaw migration. See `openclaw/openclaw-imports/references/gbrain-mcp-setup.md` for reconnection steps.
+- gbrain MCP server (3 skills: gbrain-brain-ops, gbrain-enrich, gbrain-signal-detector) — disconnected since OpenClaw migration. Reconnection steps: `openclaw/openclaw-imports/references/gbrain-mcp-setup.md` (or re-setup from scratch if that file is gone)
 
 ## Active Cron Workflows
 - **research-scout:** Nightly AI/tech/news scout → `research-YYYY-MM-DD.md`
@@ -38,7 +37,8 @@
 - **hermes-backup-daily:** Daily backup of memories and config
 
 ## Recent Key Events
-- **2026-06-11:** Memory consolidation — purged 43 session files from June 2–4. Daily memory logs already within 7-day window (no pruning needed). Cron output dirs clean.
+- **2026-06-11:** Memory consolidation — purged 43 session files from June 2–4.
+- **2026-06-12:** Memory consolidation — purged 2 session files from Jun 2–3. Daily memory logs within 7-day window (no pruning needed). SOUL.md and config.yaml clean.
 
 ## Victor Framework (Stock Investing)
 - **Entry signal:** Current P/E < 90% of 5Y Avg P/E — OR — Current PEG < 90% of 5Y Avg PEG
@@ -50,5 +50,5 @@
 ## Known Fixes
 - SOUL.md path ref fixed: `memory/` → `~/.hermes/memories/` (2026-05-26)
 - User follows AI agent/voice AI content on Instagram (OpenClaw, Grok, prompt engineering)
-§
-Disk Space Watchdog (job_id: 99ed63eabd51) — auto-cleanup script at ~/.hermes/scripts/disk_space_watchdog.sh. Runs every 24h (schedule updated from 60m). Threshold: 50GB free. Cleans: old cron output dirs, old session files, old daily memory logs (research/war-news/stock-radar/victor-study), old log files, sleepimage (>1GB). All items older than 7 days. Script bugfix: df -g on macOS puts Available in column 4, not 7.
+- Disk Space Watchdog bug (2026-06-13): find command for memory logs used wrong pattern — `-name "*.log"` matched nothing inside directories, then xargs found files without the age filter. Fixed: single find with grouped `-name` patterns and `-type f` before `-mtime`.
+- bunyamin_reminder.sh is a one-shot reminder stub (not a cron script). If recurring reminders are needed, use Hermes cron jobs instead.

@@ -16,7 +16,8 @@ These issues make it unreliable to use the `browser` toolset for broad, unstruct
 
 ### Guidance
 
-- **AI News direct navigation works when link-clicking fails:** Article heading links on `artificialintelligence-news.com` listing pages frequently resolve to an empty page via browser click (anti-bot on indirect click path). However, navigating directly to the article's canonical URL (e.g., `https://www.artificialintelligence-news.com/news/{slug}/`) loads reliably. After clicking from the homepage, check the URL — if it redirected to an empty page, copy the slug from the address bar and navigate directly to the intended article URL. AI News article URLs follow the pattern `/news/{slug}/` making them predictable. See `research-scout` skill for full rescue flow. If a task requires fetching unstructured information from the open web (e.g., "recent news for X," "top companies in Y sector"), assume the `browser` tools will be unreliable in a cron job.
+- **AI News direct navigation works when link-clicking fails:** Article heading links on `www.artificialintelligence-news.com` listing pages frequently resolve to an empty page via browser click (anti-bot on indirect click path). However, navigating directly to the article's canonical URL (e.g., `https://www.artificialintelligence-news.com/news/{slug}/`) loads reliably. After clicking from the homepage, check the URL — if it redirected to an empty page, copy the slug from the address bar and navigate directly to the intended article URL. AI News article URLs follow the pattern `/news/{slug}/` making them predictable. See `research-scout` skill for full rescue flow. If a task requires fetching unstructured information from the open web (e.g., "recent news for X," "top companies in Y sector"), assume the `browser` tools will be unreliable in a cron job.
+- **Cookie consent on AINS:** Always `browser_click("Accept")` on the cookie dialog before reading content on `www.artificialintelligence-news.com`.
 - **Prefer specialized tools or APIs:** If specific data sources (e.g., arXiv, Polymarket, or a structured API) are available and can be accessed without browser interaction (e.g., via `terminal` with `curl` or a Python library), these should be prioritized.
 - **Use Google News RSS as a lightweight workaround:** For batch news scanning (earnings, price moves, headlines across multiple companies), Google News RSS works reliably in cron jobs:
   ```
@@ -37,8 +38,9 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 - `references/pubmed-eutils-api.md` — PubMed EUtils API: curl-based search and abstract fetch, query syntax, verified queries for health research fact-checking. Use when verifying medical/scientific claims from social media.
 - `references/banking-login-research.md` — Anti-bot patterns for banking website login research. Documents that major bank websites (HLB tested) use JS SPA routing that makes automated login impossible in cron job environment. Includes workaround: manual browser access required.
 
-### Verified working news sources in cron job browser context:
-- `www.artificialintelligence-news.com` — loads reliably, no anti-bot blocking observed. Good for AI/tech news. Accepts cookie consent dialog (handle with browser_click on "Accept" button before reading content).
+**Verified working news sources in cron job browser context:**
+- `www.artificialintelligence-news.com` — loads reliably, no anti-bot blocking observed. Good for AI/tech news. Accept cookie consent dialog with `browser_click("Accept")` before reading content. Direct article URLs are stable; heading click anti-bot is confirmed — use direct navigation.
+- `theverge.com/ai-artificial-intelligence` — loads reliably, no anti-bot blocking observed. Article click-through from listing works; direct article URLs404.
 - Google News search results pages (e.g., `https://news.google.com/search?q=AI+breakthrough&hl=en-US&gl=US&ceid=US:en`) — lightweight, rarely blocked.
 
 **BBC World News RSS (verified working in cron jobs — preferred for general news radar):**
@@ -76,11 +78,18 @@ For a "war news summary" covering Ukraine + Middle East + South China Sea/Taiwan
 - **Best use:** Navigate to the sector overview page → find the company list → use that as a checklist to compile notes from existing knowledge or follow up with targeted searches. Do not attempt to read full company articles via browser_snapshot.
 - Wikipedia was tested 2026-06-10 for semiconductor industry research — sector overview page loaded; individual company articles not attempted due to known 404/size issues.
 
-**delegate_task subagents with `web` toolset — returns minimal output (2026-06-10):**
-- When subagents using the `web` toolset complete successfully, the summary field often contains only the tool call description (e.g. `"[TOOL_CALL]\n{tool => \"web_search\"...`]) with no actual research content.
-- This means delegate_task with `web` is **not a reliable substitute for research output** — the subagent executes the calls but the aggregated result is empty.
-- Workaround: Use delegate_task only for **batch navigation/fetch tasks** where the parent agent will directly process the results (e.g. reading a known URL), not for open-ended research queries. Or follow up subagent completion with direct browser reads using the URLs the subagent was supposed to find.
-- Confirmed 2026-06-10: 5 subagent tasks (AI/ML, Semiconductors, Cloud, E-commerce, Cybersecurity) all completed with status=completed but returned tool-call traces instead of research summaries.
+**delegate_task subagents with `web` toolset — returns training data, not live web content (2026-06-12):**
+- When subagents using the `web` toolset complete successfully, the summary field may contain **training-data knowledge** (e.g. approximate market cap figures, general company descriptions from model knowledge) rather than live web search results.
+- Root cause: The `web_search` tool call executes successfully (returns `status: ok`) but the subagent's summary synthesis falls back to model knowledge when real-time results are unavailable or blocked.
+- **Additional failure mode (2026-06-12):** Subagents may fail with `max_iterations` exit reason — the model keeps calling web_search until iteration limit, generating a trace of tool calls but no aggregated result.
+- **Reliable pattern for multi-sector research:** Before launching subagents, read existing knowledge files (`victor-study-YYYY-MM-DD.md`, `research-YYYY-MM-DD.md`, `stock-radar-YYYY-MM-DD.md`) — they contain already-fetched data. Use subagents **only to supplement gaps**, not to re-fetch what's already there.
+- Confirmed failures (2026-06-12): AI/ML subagent returned tool-call traces; Cybersecurity subagent returned training-data summaries; Cloud subagent hit max_iterations; Semiconductors subagent returned model knowledge instead of live news.
+- **Better alternative for live company news:** Use the research-scout workflow (The Verge AI, AINS, Google News browser_navigate) for individual companies, or accept that today's knowledge files carry yesterday's news and update only what changed.
+
+**Bing.com search triggers Cloudflare CAPTCHA in cron jobs:**
+- Navigating to `https://www.bing.com/search?q=...` in a cron job context produces a Cloudflare human-verification challenge (`"Please solve the challenge below to continue"`). The challenge cannot be solved programmatically in this environment.
+- **Do NOT use `browser_navigate` to Bing for research in cron jobs.** Google News search pages (`https://news.google.com/search?q=...`) work reliably; Bing does not.
+- Confirmed 2026-06-12: `browser_navigate` to Bing search for "NVIDIA NVDA news June 2026" triggered Cloudflare challenge; Google News search pages did not.
 
 ---
 
@@ -157,13 +166,14 @@ A specific recurring task: run an evening scan of AI/tech developments and save 
 
 ### Workflow
 
-1. **Primary: The Verge AI section** — Navigate to `https://www.theverge.com/ai-artificial-intelligence`. This loads cleanly in cron jobs, has high article density, and click-through to individual stories works reliably. Read the snapshot, click article links for detail. This is the most productive primary source for AI/tech news in 2026.
-2. **Secondary: TechCrunch AI section** — Navigate to `https://techcrunch.com/category/artificial-intelligence/`. **Caveat: direct URL navigation to TechCrunch article URLs frequently404** — do NOT copy the address bar URL after clicking through. Instead, stay on the listing page and click article headings directly from the snapshot. Click-through from the listing page is reliable (confirmed 2026-06-07: 3/3 articles read successfully via listing click-through). Use The Verge as primary if TechCrunch click-through becomes inconsistent.
-3. **Fallback: Google News search** — Navigate to `https://news.google.com/search?q=AI+technology+YYYY-MM-DD&hl=en-US&gl=US&ceid=US:en`. Note: the RSS endpoint (`/rss/search?q=...`) via browser_navigate returns items with a `lastBuildDate` of the previous day — it is NOT a true same-day scan. Use the search page, not the RSS feed.
-4. **If fewer than 3 articles with today's date appear**, scroll down the listing page's "LATEST" or "IN BRIEF" sections. For genuinely breaking stories, use Google News search for the day.
-5. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use The Verge or another source instead.
-6. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
-7. **Write findings** directly to `~/.hermes/memories/research-YYYY-MM-DD.md`. Keep it concise — 3 items max, each with headline, 2-sentence summary, source name, and URL.
+1. **Primary: The Verge AI section** — Navigate to `https://www.theverge.com/ai-artificial-intelligence`. This loads cleanly in cron jobs, has high article density, and click-through to individual stories works reliably from the listing page. Read the snapshot, click article links for detail. Direct article URLs (`theverge.com/{slug}`) 404 — always use listing click-through.
+2. **Secondary: artificialintelligence-news.com (AINS)** — Navigate to `https://www.artificialintelligence-news.com`. Handle cookie consent with `browser_click("Accept")`. Direct article URLs are stable (`/news/{slug}/`); heading clicks from the homepage trigger anti-bot — navigate directly instead. This is a reliable secondary source when The Verge coverage is thin.
+3. **Tertiary: TechCrunch AI section** — Navigate to `https://techcrunch.com/category/artificial-intelligence/`. **Caveat: direct URL navigation to TechCrunch article URLs frequently404** — do NOT copy the address bar URL after clicking through. Instead, stay on the listing page and click article headings directly from the snapshot. Click-through from the listing page is reliable.
+4. **Fallback: Google News search** — Navigate to `https://news.google.com/search?q=AI+technology+YYYY-MM-DD&hl=en-US&gl=US&ceid=US:en`. Note: the RSS endpoint (`/rss/search?q=...`) via browser_navigate returns items with a `lastBuildDate` of the previous day — it is NOT a true same-day scan. Use the search page, not the RSS feed.
+5. **If fewer than 3 articles with today's date appear**, scroll down the listing page's "LATEST" or "IN BRIEF" sections. For genuinely breaking stories, use Google News search for the day.
+6. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use The Verge or another source instead.
+7. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
+8. **Write findings** directly to `~/.hermes/memories/research-YYYY-MM-DD.md`. Keep it concise — 3 items max, each with headline, 2-sentence summary, source name, and URL.
 
 ```markdown
 # AI/Tech Research Scout — YYYY-MM-DD

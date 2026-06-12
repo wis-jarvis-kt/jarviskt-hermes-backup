@@ -61,26 +61,28 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 | BBC Asia | `https://www.bbc.com/news/world/asia` | South China Sea, Taiwan (supplement with Google News) |
 | Google News | `https://news.google.com/search?q=...` | Taiwan/SCS supplement — extract headline + byline, navigate to source directly |
 | Institute for the Study of War | `https://understandingwar.org` | **Go-to for China/Taiwan and Russia/Ukraine**; no bot detection. See ISW URL Navigation note below. |
-| US Naval Institute (USNI) | `https://news.usni.org` | **Go-to for Taiwan Strait naval activity**; confirmed accessible, appeared in Google News results for China/Taiwan. |
+| US Naval Institute (USNI) | `https://news.usni.org` | **Go-to for Taiwan Strait naval activity**; Cloudflare challenge blocks direct nav (2026-06-12); use Google News headline extraction as fallback |
 
 ## Anti-Bot / Technical Notes
 
 > **ISW URL navigation (2026-06-11):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text. The homepage also has an "ISW TEAMS" section with clickable region cards (China & Taiwan, Russia & Ukraine, Middle East) — clicking these lands on a listing page; extract `research/` URLs via JS before navigating.
 
-> **ISW Middle East reports (2026-06-11):** ISW publishes `iran-update-special-report-YYYY-MM-DD` at `understandingwar.org/research/middle-east/`. Go-to for in-depth Hormuz/Iran military-strategic coverage; supplement to BBC for the Iran strikes story.
+> **ISW Middle East reports (Updated 2026-06-12):** ISW publishes `iran-update-special-report-<month-name>-<day>-<year>` at `understandingwar.org/research/middle-east/`. Go-to for in-depth Hormuz/Iran military-strategic coverage; supplement to BBC for the Iran strikes story. Use month-name format (e.g. `june-11-2026`), not YYYY-MM-DD.
 
-> **ISW Russia/Ukraine reports (2026-06-11):** ISW publishes `russian-offensive-campaign-assessment-YYYY-MM-DD` at `understandingwar.org/research/russia-ukraine/`. The "Toplines" section at the top of the full report is the quick-read; the full text follows below. Use to supplement BBC for ground-level tactical developments.
+> **ISW Russia/Ukraine reports (Updated 2026-06-12):** ISW publishes `russian-offensive-campaign-assessment-<month-name>-<day>-<year>` at `understandingwar.org/research/russia-ukraine/`. The "Toplines" section at the top of the full report is the quick-read; the full text follows below. Use to supplement BBC for ground-level tactical developments. Use month-name format.
 
-> **ISW report URL patterns (2026-06-11):**
-> - China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/`
-> - Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<date>/`
-> - Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<date>/`
+> **ISW report URL patterns (Updated 2026-06-12):**
+> - China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<month-name>-<day>-<year>/`
+>   - Example: `china-taiwan-update-june-5-2026` ✅ — month name format
+>   - Example: `china-taiwan-update-2026-06-05` ❌ — YYYY-MM-DD format 404s
+> - Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<month-name>-<day>-<year>/`
+> - Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<month-name>-<day>-<year>/`
 >
 > On ISW report pages, use the combobox "Jump to" dropdown (Toplines, Key Takeaways, [region sections]) to navigate quickly. "Toplines" is always the first section and the most important quick-read.
 
 - BBC RSS feeds work but provide only `<title>` + `<description>` — insufficient for detail. Use browser navigation for full articles.
 - Google News RSS (`news.google.com/rss/search?q=...`) returns empty `<item>` lists in cron jobs — use browser nav instead.
-- **Hard-blocked outlets** — do not attempt to browser_navigate directly to these; use Google News or BBC as intermediary:
+- **USNI News** — Cloudflare challenge confirmed (2026-06-12); "Just a moment..." + security verification page blocks direct nav. Use Google News headline extraction as fallback; navigate to source via direct URL if source is accessible (e.g. Taipei Times, Al Jazeera).
   - **Reuters** — DataDome device-check iframe (blocks all direct nav; different mechanism from Cloudflare)
   - **SCMP** — returns 404 on many article URLs; use Taipei Times or other outlets instead
   - **The Diplomat** — Cloudflare challenge (different from DataDome; Google News signposting works)

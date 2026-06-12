@@ -33,9 +33,8 @@ if [ "$AVAILABLE_GB" -lt "$THRESHOLD_GB" ]; then
   # 3. Old memory logs
   MEMORIES="$HOME/.hermes/memories"
   if [ -d "$MEMORIES" ]; then
-    DELETED_MEM=$(find "$MEMORIES" -name "research-*" -o -name "war-news-*" -o -name "stock-radar-*" -o -name "victor-study-*" -o -name "*.log" 2>/dev/null | xargs -I{} find {} -mtime +${DAYSOLD} -type f 2>/dev/null | wc -l | tr -d ' ')
-    find "$MEMORIES" \( -name "research-*" -o -name "war-news-*" -o -name "stock-radar-*" -o -name "victor-study-*" \) -type f -mtime +${DAYSOLD} -delete 2>/dev/null
-    echo "  Cleanup: old daily memory logs"
+    DELETED_MEM=$(find "$MEMORIES" \( -name "research-*" -o -name "war-news-*" -o -name "stock-radar-*" -o -name "victor-study-*" \) -type f -mtime +${DAYSOLD} -delete 2>/dev/null | wc -l | tr -d ' ')
+    echo "  Cleanup: $DELETED_MEM old daily memory logs"
   fi
 
   # 4. Hermes agent logs

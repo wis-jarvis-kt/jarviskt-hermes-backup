@@ -9,6 +9,7 @@ This skill provides a structured approach to analyze selected stocks for potenti
 
 > **Reference:** See `references/stock-radar.md` for the watchlist, data source URLs, and quick-reference ratios.
 > **ETF CSP run:** See `references/etf-csp-analysis.md` for the reusable script pattern, latest ETF prices, and WhatsApp delivery format.
+> **WAHA reminder system (removed 2026-06-12):** WAHA reminder system fully removed. Hermes handles WhatsApp natively. Reminders now handled via Hermes cron jobs.
 
 ## Steps
 1.  **Get Current Date:** Obtain the current date in YYYY-MM-DD format using `terminal("date +%Y-%m-%d")`.
@@ -177,6 +178,15 @@ Avoids rate-limiting issues with web search — more reliable for batch queries.
 ## Weekly Victor Study (Cron Job)
 
 A weekly recurring cron job that produces a structured sector deep-dive across Victor's 5 watchlist sectors, saving to `~/.hermes/memories/victor-study-YYYY-MM-DD.md`.
+
+### Delivery Target
+**Victor Study cron job (`hermes-victor-6pm`) delivers to Master KT's DM — NOT the stocks group.**
+
+- Master KT's WhatsApp LID: `56702359580792@lid`
+- Correct cron `deliver` target: `whatsapp:56702359580792@lid`
+- The stocks group (120363423080731840@g.us) is for ad-hoc stock radar alerts only — NOT for Victor Study.
+
+> ⚠️ The 2026-06-12 WAHA decommissioning revealed the cron was pointing at the stocks group. This has been corrected. Verify on any new cron creation — the deliver target must always be the LID format, not the JID format.
 
 ### Trigger Conditions
 - Run weekly (MEMORY.md: "Weekly sector deep-dives")

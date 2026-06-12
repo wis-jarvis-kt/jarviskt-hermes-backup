@@ -21,7 +21,7 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 
 - **Primary calendar:** jarvisktgoo@gmail.com (Google Calendar)
 - **"Set appt" rule:** Whenever Master KT says "set appointment" or "set appt" → create in Google Calendar (jarvisktgoo@gmail.com), no need to ask first
-- **"Lock" rule:** Whenever Master KT says "lock the interview" or equivalent ("lock it", "confirm", "book it") → automatically add a WAHA reminder 15 minutes before the appointment start time via the Remind skill
+- **"Lock" rule:** Whenever Master KT says "lock the interview" or equivalent ("lock it", "confirm", "book it") → automatically add a reminder 15 minutes before the appointment start time via the Remind skill
 - **Default duration:**
   - **Interviews & Closings:** 30 minutes
   - **All other appointments:** 1 hour
@@ -35,10 +35,6 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - **499 disconnects:** Status 499 = normal keep-alive idle restart. Connection always recovers on its own within seconds. **Do NOT alert Master KT about 499s** — they are not errors and do not require QR re-scan.
   - Only alert if Wis actually stops responding to messages (i.e. gateway fails to reconnect after >5 min)
   - Rule corrected 2026-04-02 after KT flagged excessive false alerts
-- **WAHA restart recovery (set 2026-05-05):** When WAHA Docker container is restarted, the OpenClaw gateway needs to be restarted too to re-register the WhatsApp outbound channel.
-  - Symptom: `openclaw message send --channel whatsapp` returns `Outbound not configured for channel: whatsapp`
-  - Fix: `openclaw gateway restart` — gateway will re-register the WhatsApp channel within a few seconds
-  - The WAHA WhatsApp session itself usually persists (no QR re-scan needed) — only the gateway-to-WAHA bridge needs refreshing
 
 ## GitHub (Wis)
 
@@ -92,29 +88,7 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - **If Master KT asks to email a file:** use `gog gmail send --to ktgoofp@gmail.com --subject ... --body-file ... --attach <file>`
 - **Master KT email:** `ktgoofp@gmail.com`
 
-## Reminder System — WAHA (set 2026-04-30)
-**Independent WhatsApp reminder sender - no OpenClaw, no AI, no pyautogui.**
-- WAHA Docker on port 3000 (linked to +60175972035, session "default", status WORKING)
-- Reminder DB: `~/.openclaw/reminders_db.json`
-- Sender: `~/.openclaw/send_reminder.py` (urllib > WAHA HTTP API)
-- Cron: `* * * * * /usr/bin/python3 ~/.openclaw/send_reminder.py` (every min, no daemon)
-- WAHA API key: `c838c39d3a9d4d40ac151f6a0f7372f1` (new, needs QR scan)
-- **Add reminders:** tell Wis, I write to `reminders_db.json`
-- **No pyautogui, no Chrome windows, no extra WhatsApp tabs**
-- OLD files deleted 2026-04-30: `~/.openclaw/reminders/` (reminder_keeper, wa_send_chrome.py, etc.)
 
-### Active Reminders:
-| Message | Schedule |
-|---------|----------|
-| Stock radar check - is today a buy day? | weekdays 21:45 |
-| Victor 6PM Learning Scan - top 5 stocks | weekdays 18:00 |
-
-### Commands:
-```bash
-cat ~/.openclaw/reminders_db.json   # list reminders
-tail ~/.openclaw/waha_reminder.log   # check logs
-/usr/bin/python3 ~/.openclaw/send_reminder.py  # manual test
-```
 
 ## HLA Annual Statement — Full Workflow (set 2026-04-29)
 When Master KT asks for annual statement (HLA):

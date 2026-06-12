@@ -42,16 +42,10 @@ If no improvements needed: send brief "nothing needed" report to Master KT.
 - If fewer than 7: alert KT immediately with: "⚠️ Webinar Conversion Brain integrity issue — [what's missing]"
 - If all good: no need to report (stay HEARTBEAT_OK)
 
-### 4. WAHA WhatsApp Session Health Check
-- Run: `curl -s "http://localhost:3000/api/sessions/default" -H "X-Api-Key: c838c39d3a9d4d40ac151f6a0f7372f1"`
-- Check `status` field — must be `WORKING`
-- If status is `STOPPED` or any other non-WORKING state:
-  1. Restart: `curl -s -X POST "http://localhost:3000/api/sessions/start" -H "X-Api-Key: c838c39d3a9d4d40ac151f6a0f7372f1" -H "Content-Type: application/json" -d '{"session": "default", "name": "default"}'`
-  2. Wait 10 seconds
-  3. Verify: re-check the session status
-  4. If still not WORKING after 30s: alert Master KT on WhatsApp with "⚠️ WAHA session DOWN — manual intervention needed"
-- If WORKING: no action needed (stay HEARTBEAT_OK)
-- This runs on every heartbeat (~30 min) to ensure reminders keep firing
+### 4. WhatsApp Session Health Check
+- Hermes uses its own WhatsApp bridge (node bridge.js on port 3000)
+- No external WAHA check needed — Hermes manages WhatsApp natively
+- If issues arise: check `~/.hermes/whatsapp/bridge.log` for errors
 
 ### State tracking
 - Track last checked time in memory/heartbeat-state.json

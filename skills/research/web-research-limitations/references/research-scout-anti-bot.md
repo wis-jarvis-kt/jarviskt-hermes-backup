@@ -203,7 +203,53 @@ browser_snapshot(full=false) → verify title → read
 - Guardian
 
 **Sites confirmed blocked in cron context (do not rely on):**
-- artificialintelligence.news (404/offline)
+- artificialintelligence.news (404/offline) — as of 2026-06-09
 - CNET search (empty results)
 - Yahoo search (error page)
 - Reuters/DataDome sites (hard block)
+
+### New Observations — 2026-06-12 (Evening Scout)
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|--------|-----------|
+| Navigate to The Verge AI section | `theverge.com/ai-artificial-intelligence` | Full article listing loaded cleanly with 5+ AI headlines | The Verge AI section is a reliable primary source — confirmed 2026-06-06 finding still holds |
+| Click article heading from The Verge AI listing | `ref=e66` on "Anthropic apologizes for invisible Claude Fable guardrails" | Click succeeded, article loaded | Click-through from The Verge AI listing page works reliably |
+| Navigate directly to The Verge article URL | `theverge.com/anthropic-apologizes-invisible-claude-fable-guardrails` | 404 page | **The Verge article URLs 404 on direct navigation** — confirmed again; do NOT use direct article URLs |
+| Navigate to artificialintelligence-news.com | `artificialintelligence-news.com` | Homepage loaded with cookie consent dialog, then article listings accessible | **AINS is back online** — `www.` prefix required, not `artificialintelligence.news` |
+| Accept cookie consent on AINS | `ref=e3` "Accept" button | Dialog dismissed, article listings accessible | Handle cookie consent with browser_click before reading content |
+| Click article heading from AINS homepage | `ref=e123` on "Visa ChatGPT integration enables AI agent retail purchasing" | `(empty page)` — anti-bot on heading click | Heading-click anti-bot on AINS confirmed — same silent interception pattern |
+| Navigate directly to AINS article URL | `https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/` | **Page loaded correctly with full article** | **AINS direct article URLs are stable and reliable** — use direct navigation instead of heading click |
+| Read AINS article via browser_snapshot(full=false) | After direct navigation | 138 elements, full article text readable | Compact snapshot sufficient for AI news articles |
+| Browser cookie consent dialog handling | AINS cookie dialog | `browser_click("Accept")` dismisses it cleanly | Always handle cookie consent first on AINS before reading content |
+
+**Key findings — 2026-06-12:**
+- **The Verge article URLs 404 on direct navigation** — article URLs like `theverge.com/{slug}` return 404. Click-through from the listing page is the only reliable path. Confirmed again.
+- **AINS is back online** — `www.artificialintelligence-news.com` is accessible. Earlier `artificialintelligence.news` was an invalid domain. Use the `www.` prefix.
+- **AINS article URLs are stable via direct navigation** — the full slug path works when navigated to directly. This is the AINS equivalent of the TechCrunch listing-click pattern.
+- **AINS heading click anti-bot confirmed** — clicking heading links from the AINS homepage still triggers silent interception or empty-page redirect. Use direct article URL navigation instead.
+- **Cookie consent on AINS** — the consent dialog must be dismissed with `browser_click("Accept")` before content is readable.
+
+**Updated AINS research-scout workflow (2026-06-12):**
+```
+1. Navigate to www.artificialintelligence-news.com
+2. browser_click "Accept" on cookie consent dialog
+3. Read snapshot — identify top3 articles by headline
+4. For each article: navigate directly to https://www.artificialintelligence-news.com/news/{slug}/
+5. browser_snapshot(full=false) — verify title, read article
+6. Do NOT click heading links from the AINS homepage — anti-bot intercepts them
+```
+
+**Updated The Verge research-scout workflow (2026-06-12):**
+```
+1. Navigate to theverge.com/ai-artificial-intelligence
+2. Read snapshot — identify top 3 articles by headline and recency
+3. browser_click on article heading ref from the listing (NOT from any other page)
+4. browser_snapshot(full=false) — verify title, read article
+5. Do NOT use direct article URLs (theverge.com/{slug}) — they 404
+```
+
+**Verified working sources in cron job browser context (updated 2026-06-12):**
+- `theverge.com/ai-artificial-intelligence` — reliable primary source, clean loads, working click-through
+- `www.artificialintelligence-news.com` — reliable secondary source, direct article URLs work, cookie consent required
+- Google News search page — reliable fallback listing source
+- TechCrunch AI listing — reliable via listing click-through (not direct article URLs)

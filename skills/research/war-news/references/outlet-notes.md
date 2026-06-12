@@ -8,7 +8,7 @@
 | Al Jazeera | ✅ | ✅ | Good for Middle East; accessible directly |
 | Institute for the Study of War | ✅ | N/A | **Go-to for China/Taiwan and Middle East**; no bot detection, substantive analysis across all three conflict theaters |
 | The Diplomat | ⚠️ Cloudflare | ⚠️ Cloudflare | Cloudflare challenge page blocks direct nav; Google News headline extraction works |
-| US Naval Institute | ✅ | N/A | Defence/strategy; useful for Taiwan Strait naval activity; confirmed accessible via direct nav (2026-06-11) |
+| US Naval Institute | ⚠️ Cloudflare | ⚠️ Cloudflare | Defence/strategy; useful for Taiwan Strait naval activity; confirmed blocked by Cloudflare challenge (2026-06-12); Google News extraction of headline + byline works as fallback |
 | Taipei Times | ✅ | ✅ | Taiwan and South China Sea; reliable |
 | Reuters | ❌ DataDome | ⚠️ sometimes works | DataDome device-check iframe (different block from Cloudflare); use Google News signposting |
 | SCMP | ⚠️ 404s common | ⚠️ mixed | Many article URLs return 404; don't rely on SCMP for breaking news |
@@ -64,10 +64,12 @@ Array.from(document.querySelectorAll('a[href*="/research/"]'))
 
 **ISW Middle East reports (2026-06-10):** ISW publishes `iran-update-special-report-YYYY-MM-DD` at `understandingwar.org/research/middle-east/`. These are the go-to supplement for Hormuz/Iran conflict coverage when BBC is thin on military-strategic detail. Same navigation pattern — extract `research/` URL and navigate directly.
 
-**ISW report URL patterns (2026-06-10):**
-- China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<date>/`
-- Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<date>/`
-- Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<date>/`
+**ISW report URL patterns (Updated 2026-06-12):**
+- China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<month-name>-<day>-<year>/`
+  - Example: `china-taiwan-update-june-5-2026` ✅ — month name format
+  - Example: `china-taiwan-update-2026-06-05` ❌ — YYYY-MM-DD format 404s
+- Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<month-name>-<day>-<year>/`
+- Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<month-name>-<day>-<year>/`
 
 ## Blocking Mechanism Reference
 

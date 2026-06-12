@@ -270,37 +270,17 @@ When Master KT mentions a shortcut → use the corresponding JID:
 - Credentials dir: chmod 700
 - Config backup: `~/.openclaw/openclaw.json.pre-hardening.bak`
 
-## Remind Skill — WAHA (set 2026-04-30)
-**Independent WhatsApp reminder sender — no OpenClaw, no AI, no pyautogui.**
-- Skill location: `~/.openclaw/skills/remind/SKILL.md`
-- WAHA Docker on port 3000 (linked to +60175972035, session "default", status WORKING)
-- Reminder DB: `~/.openclaw/reminders_db.json`
-- Sender: `~/.openclaw/send_reminder.py` (urllib > WAHA HTTP API)
-- Cron: `* * * * * /usr/bin/python3 ~/.openclaw/send_reminder.py` (every min, no daemon)
-- WAHA API key: `63b5195f18e94c0e86976b2dfb9f6d7c`
-- Old `~/.openclaw/reminders/` (pyautogui system) deleted 2026-04-30
-- **Voice message confirmed working (2026-05-01):** macOS `say -v Daniel` → MP3 → OpenClaw gateway → WhatsApp. ElevenLabs TTS currently returning 401 — using macOS `say` as primary until resolved.
-
-### Active Reminders:
-| Message | Schedule |
-|---------|----------|
-| Stock radar check - is today a buy day? | weekdays 21:45 |
-| Victor 6PM Learning Scan - top 5 stocks | weekdays 18:00 |
-
-### Standing Rule — Auto-Reminder on Interview Lock:
-Whenever Master KT says **"lock the interview"** or equivalent (e.g., "lock it", "confirm", "book it"), automatically add a reminder via the Remind skill:
-- **What:** Notify Master KT that the interview/closing is coming up
-- **When:** 15 minutes before the appointment start time
-- **Who:** +60125226892
-- **Kind:** `once` (auto-clears after firing)
-- Example: If interview at 9:00 AM → reminder at 8:45 AM
-
-### Commands:
-```bash
-cat ~/.openclaw/reminders_db.json   # list reminders
-tail ~/.openclaw/waha_reminder.log   # check logs
-/usr/bin/python3 ~/.openclaw/send_reminder.py  # manual test
-```
+## Reminder System (Hermes-native)
+- Hermes handles WhatsApp natively via its own bridge — no external WAHA needed
+- Reminders are set via the Remind skill which uses Hermes's built-in messaging
+- Reminder DB (deprecated): `~/.openclaw/reminders_db.json` — no longer in use
+- Standing Rule — Auto-Reminder on Interview Lock:
+  Whenever Master KT says **"lock the interview"** or equivalent (e.g., "lock it", "confirm", "book it"), automatically add a reminder via the Remind skill:
+  - **What:** Notify Master KT that the interview/closing is coming up
+  - **When:** 15 minutes before the appointment start time
+  - **Who:** +601****6892
+  - **Kind:** `once` (auto-clears after firing)
+  - Example: If interview at 9:00 AM → reminder at 8:45 AM
 
 ## Webinar Conversion Brain — Purpose & Rules (set 2026-03-24)
 - **Purpose:** This brain is a SERVICE TOOL for KT's CLIENTS (speakers, trainers, coaches like Roy Phay)

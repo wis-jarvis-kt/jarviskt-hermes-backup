@@ -161,10 +161,10 @@ _Active projects, states, and blockers._
 - Script: `~/.openclaw/reminders/wa_reminder.py`
 
 ### Noted [2026-05-01 03:32 GMT+8]
-- New: WAHA HTTP API via cron (send_reminder.py + macOS crontab)
+- Deprecated: WAHA HTTP API via cron (send_reminder.py + macOS crontab) — removed 2026-06-12. Hermes handles WhatsApp natively.
 
 ### Noted [2026-05-02 03:30 GMT+8]
-- New: WAHA HTTP API via cron (send_reminder.py + macOS crontab)
+- Deprecated: WAHA HTTP API via cron (send_reminder.py + macOS crontab) — removed 2026-06-12. Hermes handles WhatsApp natively.
 
 ### Noted [2026-05-15 03:31 GMT+8]
 - Cron job: `0 22 * * 1-5` → writes trigger file → Wis heartbeat picks up → runs analysis → sends to stock group
