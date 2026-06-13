@@ -4,6 +4,14 @@ Chronological record of verified technical findings from cron job runs. Migrated
 
 ---
 
+## 2026-06-13 (Today)
+
+- **Parallel BBC section navigation confirmed** — navigating to Europe, Middle East, and Asia BBC section pages simultaneously (3× `browser_navigate` in one call) is the correct opening move. Each page loads its own article set independently. Extract URLs from each section separately before moving to the next step. The alertdialog (Online Quality Survey) appears on every BBC page load — dismiss with `Escape` once, then run URL extraction JS.
+- **ISW China/Taiwan `june-12-2026` URL confirmed** — `understandingwar.org/research/china-taiwan/china-taiwan-update-june-12-2026/` worked exactly as the existing pattern describes. ISW report URL pattern (month-name format, no `www.` prefix, `research/` path) remains fully stable.
+- **Google News Taiwan/SCS search confirmed as primary source** — the search yielded 10+ fresh results spanning ISW/AEI, USNI News, Reuters, SCMP, The Diplomat, Taipei Times, NL Times, and capacityglobal.com simultaneously. This is not just a supplement — it is the primary discovery layer for Taiwan/SCS when BBC Asia is thin (which is frequent). Always run this search in parallel with BBC Asia.
+
+---
+
 ## 2026-06-11 (Today)
 
 - **USNI News confirmed accessible** via Google News search results. The query `south+china+sea+taiwan+strait+2026` surfaced USNI as a source for "Chinese Flotilla Surges East of Taiwan" — direct nav confirmed working.

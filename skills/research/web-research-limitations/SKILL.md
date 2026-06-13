@@ -38,10 +38,11 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 - `references/pubmed-eutils-api.md` — PubMed EUtils API: curl-based search and abstract fetch, query syntax, verified queries for health research fact-checking. Use when verifying medical/scientific claims from social media.
 - `references/banking-login-research.md` — Anti-bot patterns for banking website login research. Documents that major bank websites (HLB tested) use JS SPA routing that makes automated login impossible in cron job environment. Includes workaround: manual browser access required.
 
-**Verified working news sources in cron job browser context:**
-- `www.artificialintelligence-news.com` — loads reliably, no anti-bot blocking observed. Good for AI/tech news. Accept cookie consent dialog with `browser_click("Accept")` before reading content. Direct article URLs are stable; heading click anti-bot is confirmed — use direct navigation.
-- `theverge.com/ai-artificial-intelligence` — loads reliably, no anti-bot blocking observed. Article click-through from listing works; direct article URLs404.
-- Google News search results pages (e.g., `https://news.google.com/search?q=AI+breakthrough&hl=en-US&gl=US&ceid=US:en`) — lightweight, rarely blocked.
+**Verified working news sources in cron job browser context (updated 2026-06-13):**
+- `theverge.com/ai-artificial-intelligence` — reliable primary source for AI news; clean loads, working listing click-through. **Caveat: listing click-through can silently fail** — click consumed but snapshot stays on listing page. Verify title after click; if wrong, fall back to Google News.
+- `www.artificialintelligence-news.com` — reliable secondary source. Cookie consent required (`browser_click("Accept")`). Direct article URLs (`/news/{slug}/`) work but **slugs can redirect to wrong content** — always verify title after navigation. Heading click anti-bot confirmed — do not click, navigate directly.
+- Google News search (`news.google.com/search?q=...`) — **universal rescue path** when primary sources fail. Delivers multi-source confirmation with recency stamps without needing original article. Tested reliably for Anthropic export control and SpaceX Colossus stories (2026-06-13).
+- TechCrunch AI listing — click-through from listing page works; direct article URLs 404. Use listing page as entry point only.
 
 **BBC World News RSS (verified working in cron jobs — preferred for general news radar):**
 ```

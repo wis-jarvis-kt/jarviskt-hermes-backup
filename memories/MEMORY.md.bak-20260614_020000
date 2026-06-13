@@ -26,7 +26,7 @@
 
 ## Skill Locations (non-obvious)
 - Active openclaw skills live in `~/.hermes/skills/openclaw/<skill-name>/` subdirectories
-- gbrain MCP server (3 skills: gbrain-brain-ops, gbrain-enrich, gbrain-signal-detector) — **archived** since OpenClaw migration. Skills reside in `~/.hermes/skills/.archive/openclaw-imports/gbrain-*`. If reconnection is needed, check that archive location first.
+- gbrain MCP server (3 skills: gbrain-brain-ops, gbrain-enrich, gbrain-signal-detector) — disconnected since OpenClaw migration. Reconnection steps: `openclaw/openclaw-imports/references/gbrain-mcp-setup.md` (or re-setup from scratch if that file is gone)
 
 ## Active Cron Workflows
 - **research-scout:** Nightly AI/tech/news scout → `research-YYYY-MM-DD.md`
