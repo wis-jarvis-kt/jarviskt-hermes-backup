@@ -4,6 +4,14 @@ Chronological record of verified technical findings from cron job runs. Migrated
 
 ---
 
+## 2026-06-14 (Today)
+
+- **Workflow executed end-to-end without deviation** — all steps from the SKILL.md followed correctly: parallel BBC section nav → JS URL extraction → direct article nav → ISW reports → Google News Taiwan/SCS → write output file. No corrections, no blockers.
+- **ISW China/Taiwan `june-12-2026` remains most current** — confirmed accessible. Xi's June 8–9 visit to North Korea is the dominant story; key finding: Xi legitimized North Korea's nuclear program by omitting "denuclearization" language, aligning with Russia's position.
+- **ISW Russia/Ukraine `june-12-2026` confirmed accessible** — Oreshnik IRBM warning (24–48 hr window) and Putin's Russia Day battlefield admissions (forces not advancing "as quickly as we would like") are the dominant topline items.
+- **US-Iran deal timing split** — Trump announced signing Sunday (June 14); Iranian foreign ministry said same day it would "not be tomorrow." Credence: Pakistani mediation + Qatari delegation in Tehran suggests negotiations still live but date uncertain. Israel not part of deal and continues Lebanon strikes independently.
+- **Google News result structure confirmed** — each result shows source name + relative time inline above headline. "More" button not needed for source/recency identification. Working reliably for Taiwan/SCS discovery.
+
 ## 2026-06-13 (Today)
 
 - **Parallel BBC section navigation confirmed** — navigating to Europe, Middle East, and Asia BBC section pages simultaneously (3× `browser_navigate` in one call) is the correct opening move. Each page loads its own article set independently. Extract URLs from each section separately before moving to the next step. The alertdialog (Online Quality Survey) appears on every BBC page load — dismiss with `Escape` once, then run URL extraction JS.

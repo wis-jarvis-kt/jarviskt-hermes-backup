@@ -195,3 +195,50 @@ Primary source click-through or direct navigation
   → URL unchanged (silent failure) or wrong article (slug redirect)? → Google News search for the topic.
   → Google News delivers multi-source snapshot → sufficient for summary, no further clicking needed.
 ```
+
+### New Observations — 2026-06-14 (Evening Scout)
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|---------|-----------|
+| Google News RSS via `curl` terminal | `https://news.google.com/rss/search?q=AI+technology+OR+LLM+OR+artificial+intelligence&hl=en-US&gl=US&ceid=US:en&tbs=qdr:d` | Full RSS XML with dozens of `<item>` elements returned. Titles, pubDates, and links all present. | **RSS via terminal WORKS in cron jobs** — reliable primary fetch method. Faster than browser navigation, zero anti-bot risk. |
+| Google News RSS with `tbs=qdr:d` parameter | Same URL with `tbs=qdr:d` appended | Filters results to past 24 hours. PubDate analysis shows stories from the same day. | **`tbs=qdr:d` is the correct parameter for same-day scanning** — without it, results span multiple days. |
+| Navigate to Politico article via Google News link | Politico.com link in Google News results | Cloudflare challenge, then access denied | Politico always blocked in cron jobs. Use Google News snippets or secondary coverage. |
+| Navigate directly to Nature.com article URL | `nature.com/articles/s41586-026-00372-4` | 404 page | Nature article URLs are unpredictable; navigate via Google News or skip. |
+| Navigate to The Hacker News article via direct URL | `thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding-agents-into-running-malicious-code.html` | 404 page | THN direct article URLs frequently 404 even for recent articles. Use Google News listing to find the article and click through from there. |
+| Navigate to CyberPress article via direct URL | `cyberpress.org/new-agentjacking-attack-compromises-ai-coding-agents-for-code-execution/` | 404 page | CyberPress article URLs can 404 even when the article title appears in their own listing page. Use the listing page as entry point, not direct URL. |
+| Google News search page for "agentjacking" | `news.google.com/search?q=%22agentjacking%22+AI+coding+agents+security` | Full listing with 5 sources (THN, Infosecurity Magazine, CyberPress, etc.) | Google News is the reliable index even when direct article URLs are broken. |
+| Navigate to NDTV article via Google News link | NDTV.com link in Google News results | Access denied | NDTV blocked in cron jobs. Use alternative source. |
+
+**Key findings — 2026-06-14:**
+- **Google News RSS via terminal is a valid primary fetch** — the "RSS fails in cron jobs" note in SKILL.md was wrong. Use `curl` to get the RSS XML directly, parse titles and pubDates with grep. This is faster than browser navigation and has no anti-bot surface.
+- **Direct article URLs for THN, CyberPress, Nature, Politico, NDTV are unreliable** — always use Google News as the index; find the article there and navigate to the source link only if the source is known to work (The Verge, TechCrunch listing page, AINS).
+- **Google News search page `tbs=qdr:d` parameter limits to past 24 hours** — always include this when doing a same-day scan.
+- **Research-scout workflow (updated 2026-06-14):** (1) `curl` Google News RSS with `tbs=qdr:d` for fast same-day headline scan, (2) Google News search page for clickable links to sources, (3) verify title after any navigation, (4) skip any site that triggers Cloudflare or access denied — Google News has alternative sources for every story.
+
+### New Observations — 2026-06-14 (This Session)
+
+| Action | URL/Element | Result | Diagnosis |
+|--------|-------------|--------|-----------|
+| Navigate to TechCrunch AI category page | `techcrunch.com/category/artificial-intelligence/` | Full listing loaded: headlines, recency stamps (11h, 14h, 17h ago), author bylines | **TechCrunch listing page is reliable entry point** — all scout data available directly from snapshot without click-through |
+| Direct TechCrunch article URL | `techcrunch.com/2026/06/14/...` | 404 — same-day articles 404 on direct navigation | Confirmed: TechCrunch article URLs unstable for direct nav |
+| Click TechCrunch heading from listing | `ref=e57` on "As Anthropic suspends..." | Snapshot stayed on listing — click-through SILENTLY FAILED | **TechCrunch click-through can also silently fail** — do not rely on it |
+| Google.com, Bing.com search | Direct search engine nav | Cloudflare challenge/CAPTCHA blocked | Never attempt direct search engine navigation in cron jobs |
+| delegate_task `web` subagents for 3 TechCrunch articles | 3 parallel subagents | All returned empty/minimal — subagent web searches return no live content | **Confirmed: delegate_task `web` toolset does not fetch live article content in cron jobs** |
+| Write scout from listing page headline data alone | Snapshot: title + author + recency + category tag | Sufficient to write 3-item scout summary without article body | **Minimal viable scout:** listing data × 3 = signal-quality output. Article body is optional. |
+
+**Key additions (2026-06-14):**
+- **TechCrunch: both direct URLs AND listing click-through fail.** Use listing snapshot as primary source — extract signal from headlines, skip article body.
+- **delegate_task with `web` toolset confirmed unreliable** for live fetching in cron jobs — do not substitute for direct browser reading.
+- **Minimal viable research scout:** headline + author + recency + category tag × 3 = sufficient. No article body required.
+
+**Updated workflow (2026-06-14 final):**
+```
+1. curl Google News RSS with tbs=qdr:d  → fast same-day headline scan
+2. Navigate TechCrunch AI listing → extract top 3 by headline + recency
+3. Any article path fails? → Google News search page for the topic (universal rescue)
+4. delegate_task web subagents → NOT a substitute for direct reading
+5. Write ~/.hermes/memories/research-YYYY-MM-DD.md from listing/snapshot data
+```
+
+**Sites BLOCKED (never attempt):** Google.com, Bing.com, Politico, NDTV, Reuters/DataDome, Nature.com, THN direct URLs, CyberPress direct URLs.
+**Sites RELIABLE:** TechCrunch listing (extract-only), The Verge listing+click, AINS direct URLs, Google News (search + RSS).

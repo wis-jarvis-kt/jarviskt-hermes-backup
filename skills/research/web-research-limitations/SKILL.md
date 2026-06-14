@@ -29,7 +29,7 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 
 **Article URL gotcha:** Google News links to articles via the Google News redirect (e.g., `https://news.google.com/articles/...`). When clicking through from the Google News listing page, use the actual article link in the snapshot (ref=ex), not any Google redirect URL. Direct source links from the listing are more stable than the `?url=...` redirect pattern.
 
-**RSS feed endpoint — FAILS in cron jobs:** The Google News RSS endpoint (`https://news.google.com/rss/search?q=...`) returns only the RSS channel metadata (title, generator, copyright header) with zero `<item>` elements in a cron job context. This appears to be server-side filtering based on user-agent or lack of session cookies. Do not rely on RSS parsing as a lightweight news fetch in cron jobs — use browser_navigate to the Google News search page instead.
+**Google News RSS endpoint — WORKS in cron jobs (corrected 2026-06-14):** Confirmed: `https://news.google.com/rss/search?q=AI+artificial+intelligence&hl=en-US&gl=US&ceid=US:en` returns a full feed with dozens of `<item>` elements in cron job context. Use `curl` via terminal tool to get the raw RSS XML, then parse titles and pubDates with grep. This is faster than browser navigation and avoids anti-bot blocking. Limitation: only titles + snippets, not full articles. For full article content, navigate to the source link from each item. The earlier "FAILS in cron jobs" warning in this document was incorrect — RSS is a valid primary fetch method.
 
 - **BBC homepage + section pages via browser_navigate — WORKS in cron jobs:** Navigating to `https://www.bbc.com/news/world/europe`, `https://www.bbc.com/news/world/middle_east`, and `https://www.bbc.com/news/world/asia` produced clean snapshots with lead headlines. The homepage and section listing pages are lightweight and load reliably without anti-bot blocking. Article click-through from listings sometimes fails to load new content (the snapshot stays on the same page), but navigating directly to section URLs bypasses this. Sufficient for a news radar/summary task. Tested 2026-05-30. Limitation: no full article body via this approach — use for headlines and top-level developments only.
 
@@ -38,11 +38,17 @@ Navigate to `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en`. 
 - `references/pubmed-eutils-api.md` — PubMed EUtils API: curl-based search and abstract fetch, query syntax, verified queries for health research fact-checking. Use when verifying medical/scientific claims from social media.
 - `references/banking-login-research.md` — Anti-bot patterns for banking website login research. Documents that major bank websites (HLB tested) use JS SPA routing that makes automated login impossible in cron job environment. Includes workaround: manual browser access required.
 
-**Verified working news sources in cron job browser context (updated 2026-06-13):**
+**Verified working news sources in cron job browser context (updated 2026-06-14):**
 - `theverge.com/ai-artificial-intelligence` — reliable primary source for AI news; clean loads, working listing click-through. **Caveat: listing click-through can silently fail** — click consumed but snapshot stays on listing page. Verify title after click; if wrong, fall back to Google News.
 - `www.artificialintelligence-news.com` — reliable secondary source. Cookie consent required (`browser_click("Accept")`). Direct article URLs (`/news/{slug}/`) work but **slugs can redirect to wrong content** — always verify title after navigation. Heading click anti-bot confirmed — do not click, navigate directly.
 - Google News search (`news.google.com/search?q=...`) — **universal rescue path** when primary sources fail. Delivers multi-source confirmation with recency stamps without needing original article. Tested reliably for Anthropic export control and SpaceX Colossus stories (2026-06-13).
 - TechCrunch AI listing — click-through from listing page works; direct article URLs 404. Use listing page as entry point only.
+- **Google News RSS** — works via `curl` in terminal. Fast, no anti-bot. Returns full `<item>` list with titles, links, and pubDates. Use as primary scan before browser navigation.
+- **Politico.com** — **always blocked** by Cloudflare in cron jobs. Do not attempt to navigate directly; the Cloudflare challenge cannot be bypassed. For Politico stories, rely on Google News snippets or secondary coverage.
+- **Nature.com** — article pages frequently 404 or show cookie walls. The Nature URL structure is unpredictable; navigate via Google News link or skip to secondary source.
+- **The Hacker News** — direct article URLs (`thehackernews.com/YYYY/MM/...`) frequently 404. Use Google News search results listing to find the article and click through from there, or use CyberPress as an aggregator that reliably indexes THN content.
+- **CyberPress.org** — reliable aggregator for security/AI news; direct article URLs may 404 even when the article title appears in listings. Use listing page as entry point.
+- **NDTV.com** — access denied in cron jobs. Skip; use alternative source.
 
 **BBC World News RSS (verified working in cron jobs — preferred for general news radar):**
 ```
@@ -71,7 +77,7 @@ For a "war news summary" covering Ukraine + Middle East + South China Sea/Taiwan
 5. For Taiwan/South China Sea specifically — BBC Asia RSS had **no** direct military escalation headlines today; chip-sector news (Nvidia $150B, SK Hynix/Micron $1T market cap) dominated instead.
 6. Aggregate and write directly to `~/.hermes/memories/war-news-YYYY-MM-DD.md`.
 
-**RSS feed endpoint — FAILS in cron jobs:** The Google News RSS endpoint (`https://news.google.com/rss/search?q=...`) returns only the RSS channel metadata (title, generator, copyright header) with zero `<item>` elements in a cron job context. This appears to be server-side filtering based on user-agent or lack of session cookies. Do not rely on RSS parsing as a lightweight news fetch in cron jobs — use browser_navigate to the Google News search page instead.
+**Google News RSS endpoint — WORKS in cron jobs (corrected 2026-06-14):** Confirmed: `https://news.google.com/rss/search?q=AI+artificial+intelligence&hl=en-US&gl=US&ceid=US:en` returns a full feed with dozens of `<item>` elements in cron job context. Use `curl` via terminal tool to get the raw RSS XML, then parse titles and pubDates with grep. This is faster than browser navigation and avoids anti-bot blocking. Limitation: only titles + snippets, not full articles. For full article content, navigate to the source link from each item. The earlier "FAILS in cron jobs" warning in this document was incorrect — RSS is a valid primary fetch method.
 
 **Wikipedia for company/sector research (2026-06-10):**
 - Wikipedia sector pages (e.g. `en.wikipedia.org/wiki/Semiconductor_industry`) load cleanly and are useful for **identifying top companies by sector** — the "Largest companies" subsection gives ranked lists with market context.
@@ -165,16 +171,19 @@ A specific recurring task: run an evening scan of AI/tech developments and save 
 
 > This is one application of the general anti-bot patterns and source guidance above. For ad-hoc one-shot research, prefer `delegate_task` subagents with the `web` toolset instead of this scheduled skill.
 
-### Workflow
+### Fastest Workflow: Google News RSS + terminal
 
-1. **Primary: The Verge AI section** — Navigate to `https://www.theverge.com/ai-artificial-intelligence`. This loads cleanly in cron jobs, has high article density, and click-through to individual stories works reliably from the listing page. Read the snapshot, click article links for detail. Direct article URLs (`theverge.com/{slug}`) 404 — always use listing click-through.
-2. **Secondary: artificialintelligence-news.com (AINS)** — Navigate to `https://www.artificialintelligence-news.com`. Handle cookie consent with `browser_click("Accept")`. Direct article URLs are stable (`/news/{slug}/`); heading clicks from the homepage trigger anti-bot — navigate directly instead. This is a reliable secondary source when The Verge coverage is thin.
-3. **Tertiary: TechCrunch AI section** — Navigate to `https://techcrunch.com/category/artificial-intelligence/`. **Caveat: direct URL navigation to TechCrunch article URLs frequently404** — do NOT copy the address bar URL after clicking through. Instead, stay on the listing page and click article headings directly from the snapshot. Click-through from the listing page is reliable.
-4. **Fallback: Google News search** — Navigate to `https://news.google.com/search?q=AI+technology+YYYY-MM-DD&hl=en-US&gl=US&ceid=US:en`. Note: the RSS endpoint (`/rss/search?q=...`) via browser_navigate returns items with a `lastBuildDate` of the previous day — it is NOT a true same-day scan. Use the search page, not the RSS feed.
-5. **If fewer than 3 articles with today's date appear**, scroll down the listing page's "LATEST" or "IN BRIEF" sections. For genuinely breaking stories, use Google News search for the day.
-6. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use The Verge or another source instead.
-7. **Read each article** via `browser_snapshot(full=false)` — compact snapshot is sufficient for article reading; use full=true only if compact returns suspiciously little content. Capture title, source date, key points, and "why it matters" takeaway.
-8. **Write findings** directly to `~/.hermes/memories/research-YYYY-MM-DD.md`. Keep it concise — 3 items max, each with headline, 2-sentence summary, source name, and URL.
+1. **First: scan via RSS** — Run in terminal:
+   ```
+   curl -sL "https://news.google.com/rss/search?q=AI+technology+OR+LLM+OR+artificial+intelligence&hl=en-US&gl=US&ceid=US:en&tbs=qdr:d"
+   ```
+   The `tbs=qdr:d` parameter limits results to past 24 hours. Pipe through `grep -E '<title>|<pubDate>'` to extract headlines and dates. This is the fastest way to get a same-day headline scan with zero anti-bot risk.
+   
+2. **Cross-reference** — Navigate to `https://news.google.com/search?q=AI+artificial+intelligence&hl=en-US&gl=US&ceid=US:en&tbs=qdr:d` to see the same results in browser form with clickable links.
+
+3. **Article detail** — For top stories, navigate to the source link from the RSS item (the `link` element contains the actual article URL). If that site is blocked (Politico, NDTV, Nature), skip to a secondary source that Google News also indexed.
+
+4. **Verify page title after each navigation** — if the title doesn't match the expected article, the link may have been redirected by anti-bot protection. Use another source instead.
 
 ```markdown
 # AI/Tech Research Scout — YYYY-MM-DD

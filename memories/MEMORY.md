@@ -37,7 +37,7 @@
 - **hermes-backup-daily:** Daily backup of memories and config
 
 ## Recent Key Events
-- **2026-06-13:** Memory consolidation — purged 4 daily memory logs (Jun 4) + 23 stale session files (all pre-Jun 6).
+- **2026-06-14:** Memory consolidation — purged 4 daily memory logs (Jun 5) + 1 stale session file (Jun 6). Removed stale MEMORY.md.lock.
 
 ## Victor Framework (Stock Investing)
 - **Entry signal:** Current P/E < 90% of 5Y Avg P/E — OR — Current PEG < 90% of 5Y Avg PEG

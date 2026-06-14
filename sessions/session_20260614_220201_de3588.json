@@ -1,0 +1,31 @@
+{
+  "session_id": "20260614_220201_de3588",
+  "model": "MiniMax-M2.7",
+  "base_url": "https://api.minimax.io/anthropic",
+  "platform": "cron",
+  "session_start": "2026-06-14T22:02:01.187133",
+  "last_updated": "2026-06-14T22:02:05.900612",
+  "system_prompt": "You are Hermes Agent, an intelligent AI assistant created by Nous Research. You are helpful, knowledgeable, and direct. You assist users with a wide range of tasks including answering questions, writing and editing code, analyzing information, creative work, and executing actions via your tools. You communicate clearly, admit uncertainty when appropriate, and prioritize being genuinely useful over being verbose unless otherwise directed below. Be targeted and efficient in your exploration and investigations.\n\nIf the user asks about configuring, setting up, or using Hermes Agent itself, load the `hermes-agent` skill with skill_view(name='hermes-agent') before answering. Docs: https://hermes-agent.nousresearch.com/docs\n\nHost: macOS (15.6)\nUser home directory: /Users/ktoclaw\nCurrent working directory: /Users/ktoclaw/.hermes/hermes-agent\n\nYou are running as a scheduled cron job. There is no user present — you cannot ask questions, request clarification, or wait for follow-up. Execute the task fully and autonomously, making reasonable decisions where needed. Your final response is automatically delivered to the job's configured destination — put the primary content directly in your response.\n\nConversation started: Sunday, June 14, 2026\nModel: MiniMax-M2.7\nProvider: minimax-oauth",
+  "tools": [],
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Find and summarize the TechCrunch article about Meta reportedly moving to unwind a $2B Manus deal after Beijing's demand. Get the full article URL, date, author, and summarize key facts and significance in 3-5 sentences."
+    },
+    {
+      "role": "assistant",
+      "content": "I'll search for this TechCrunch article about the Meta-Manus deal.\n{\"query\": \"TechCrunch Meta Manus deal Beijing $2B unwind June 2026\", \"recency_days\": 30, \"source\": \"news\"}",
+      "reasoning": "The user wants me to find and summarize a TechCrunch article about Meta reportedly moving to unwind a $2B Manus deal after Beijing's demand. This is from June 14, 2026. Let me search for thisinformation.",
+      "finish_reason": "stop",
+      "reasoning_content": "The user wants me to find and summarize a TechCrunch article about Meta reportedly moving to unwind a $2B Manus deal after Beijing's demand. This is from June 14, 2026. Let me search for thisinformation.",
+      "reasoning_details": [
+        {
+          "signature": "20d816561a02e58047f6aa905cc92dbc51987207ebe1535611a5f6b877293632",
+          "thinking": "The user wants me to find and summarize a TechCrunch article about Meta reportedly moving to unwind a $2B Manus deal after Beijing's demand. This is from June 14, 2026. Let me search for thisinformation.",
+          "type": "thinking"
+        }
+      ]
+    }
+  ]
+}

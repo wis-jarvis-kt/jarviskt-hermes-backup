@@ -1949,3 +1949,20 @@ WARNING agent.tool_executor: Tool skill_manage returned error (0.03s): {"success
 WARNING agent.tool_executor: Tool terminal returned error (0.08s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "cat ~/.hermes/cron/jobs.json | python3 -c \"import json,sys; d=json.load(sys.stdin); [p
 WARNING agent.tool_executor: Tool patch returned error (0.35s): {"success": false, "error": "old_string and new_string are identical"}
 WARNING agent.tool_executor: Tool terminal returned error (0.40s): {"output": "", "exit_code": 1, "error": null}
+WARNING agent.tool_executor: Tool terminal returned error (0.05s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "# Delete memory logs older than 7 days (Jun 5 files = 9 days old)\nfind ~/.hermes/memor
+WARNING agent.tool_executor: Tool terminal returned error (0.05s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "# Delete session file older than 7 days (Jun 6 = 8 days old)\nfind ~/.hermes/sessions/ 
+WARNING agent.tool_executor: Tool terminal returned error (0.08s): {"output": "", "exit_code": -1, "error": "", "status": "pending_approval", "approval_pending": true, "command": "curl -s \"https://hn.algolia.com/api/v1/search?query=AI%20OR%20artificial%20intelligenc
+WARNING agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Found 2 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "file_preview": "---\nname: web-research-limitations\ncategory: research
+WARNING agent.tool_executor: Tool skill_manage returned error (0.09s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  80| **Google News RSS endpoint — WORKS in cron jobs (corrected 2026-06-14):** C
+WARNING agent.auxiliary_client: resolve_provider_client: unhandled auth_type oauth_minimax for minimax-oauth
+WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 06:17:29.
+WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 06:08:29.
+WARNING hermes_cli.auth: Copilot token validation failed: Token from `gh auth token` is a classic PAT (ghp_*). Classic Personal Access Tokens (ghp_*) are not supported by the Copilot API. Use one of:
+  → `copilot login` or `hermes model` to authenticate via OAuth
+  → A fine-grained PAT (github_pat_*) with Copilot Requests permission
+  → `gh auth login` with the default device code flow (produces gho_* tokens)
+WARNING agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+WARNING agent.tool_executor: Tool terminal returned error (0.27s): {"output": "", "exit_code": 1, "error": null}
