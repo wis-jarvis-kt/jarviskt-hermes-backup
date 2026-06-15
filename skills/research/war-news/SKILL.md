@@ -71,12 +71,14 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 
 > **ISW Russia/Ukraine reports (Updated 2026-06-12):** ISW publishes `russian-offensive-campaign-assessment-<month-name>-<day>-<year>` at `understandingwar.org/research/russia-ukraine/`. The "Toplines" section at the top of the full report is the quick-read; the full text follows below. Use to supplement BBC for ground-level tactical developments. Use month-name format.
 
-> **ISW report URL patterns (Updated 2026-06-12):**
-> - China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<month-name>-<day>-<year>/`
->   - Example: `china-taiwan-update-june-5-2026` ✅ — month name format
->   - Example: `china-taiwan-update-2026-06-05` ❌ — YYYY-MM-DD format 404s
-> - Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<month-name>-<day>-<year>/`
-> - Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<month-name>-<day>-<year>/`
+**ISW report URL patterns (Updated 2026-06-15):**
+- China/Taiwan: `understandingwar.org/research/china-taiwan/china-taiwan-update-<month-name>-<day>-<year>/`
+  - Example: `china-taiwan-update-june-12-2026` ✅ — month name format
+  - Example: `china-taiwan-update-2026-06-05` ❌ — YYYY-MM-DD format 404s
+  - **Publication frequency note (2026-06-15):** ISW China/Taiwan does NOT publish daily (unlike Russia/Ukraine). There are gaps. Check ISW homepage for the most recent available date. When China/Taiwan is stale/missing, fall back to Google News Taiwan/SCS search + Taipei Times + USNI as primary discovery layer.
+- Russia/Ukraine: `understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-<month-name>-<day>-<year>/`
+  - Russia/Ukraine publishes daily (Mon–Sun) without gaps as of 2026-06-15.
+- Middle East/Iran: `understandingwar.org/research/middle-east/iran-update-special-report-<month-name>-<day>-<year>/`
 >
 > On ISW report pages, use the combobox "Jump to" dropdown (Toplines, Key Takeaways, [region sections]) to navigate quickly. "Toplines" is always the first section and the most important quick-read.
 

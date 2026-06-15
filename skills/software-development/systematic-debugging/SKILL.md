@@ -312,10 +312,12 @@ A watchdog cron can exist and still fail catastrophically. Here's why:
 
 **Verification:**
 ```bash
-df -h /
+df -h /System/Volumes/Data   # macOS: check the DATA volume, NOT /
 # Act if avail < 50GB
 # Emergency clean if avail < 5GB: delete largest dirs first
 ```
+
+**macOS APFS disk investigation:** See `references/macos-disk-investigation.md` for APFS volume structure, snapshot management, and safe cleanup targets.
 
 ## Common Rationalizations
 

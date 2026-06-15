@@ -4,7 +4,15 @@ Chronological record of verified technical findings from cron job runs. Migrated
 
 ---
 
-## 2026-06-14 (Today)
+## 2026-06-15 (Today)
+
+- **ISW Russia/Ukraine `june-14-2026` URL confirmed working** — `https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-14-2026/`. ISW Russia/Ukraine publishes daily (Mon–Sun) without gaps.
+- **ISW China/Taiwan `june-14-2026` returned 404 — publication gap confirmed** — ISW China/Taiwan does NOT publish daily (unlike Russia/Ukraine). Most recent was `june-12-2026`. When ISW China/Taiwan is stale, fall back on Google News Taiwan/SCS search + Taipei Times + USNI as primary discovery.
+- **ISW Middle East `june-14-2026` available** — confirmed via ISW homepage listing: "Iran Update Special Report, June 14, 2026." Use `iran-update-special-report-june-14-2026` at `understandingwar.org/research/middle-east/`.
+- **UK-Japan £18bn deal on BBC Asia** — UK PM Starmer and Japanese PM Takaichi; infrastructure/financial services/offshore wind investment. Geopolitically notable (G7+Ireland economic dimension of Iran war) but not a conflict story — noted for war-news report context only.
+- **Workflow executed end-to-end cleanly** — no corrections, no blockers. All steps from SKILL.md followed correctly.
+
+## 2026-06-14
 
 - **Workflow executed end-to-end without deviation** — all steps from the SKILL.md followed correctly: parallel BBC section nav → JS URL extraction → direct article nav → ISW reports → Google News Taiwan/SCS → write output file. No corrections, no blockers.
 - **ISW China/Taiwan `june-12-2026` remains most current** — confirmed accessible. Xi's June 8–9 visit to North Korea is the dominant story; key finding: Xi legitimized North Korea's nuclear program by omitting "denuclearization" language, aligning with Russia's position.

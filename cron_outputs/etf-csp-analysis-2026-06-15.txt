@@ -1,0 +1,25 @@
+📊 ETF CSP ANALYSIS — 2026-06-15
+
+🔍 MARKET CONDITIONS
+• S&P 500: 7,545 (+1.53% today)
+• VIX: 16.14 (📉 normal)
+• Fear & Greed: 20 (Extreme Fear)
+
+📋 TODAY'S VERDICT: ⛔ NOT A PUT DAY — market not oversold enough
+
+🪙 KEY ETF PRICES
+• SPYM: $88.47 | SCHG: $34.08 | DYNF: $67.76
+• CGGR: $46.92 | SPHQ: $88.97 | XLG: $62.21
+• AIQ: $66.26 | SOXQ: $110.17 | PSI: $176.33
+
+🎯 CSP TRIGGERS (Victor Framework)
+• RED day (S&P -1%): ❌ NO (+1.53% green)
+• High IV (VIX 40+): ❌ NO (16.14%)
+• Extreme Fear (F&G 25): ✅ YES (20)
+
+💡 STRATEGY: Consider covered CALL strategy on GREEN days
+
+⏳ WAITLIST — ready when RED day hits:
+SPYM, SCHG, DYNF, CGGR, SPHQ, AIQ, SOXQ, PSI
+
+⚠️ DELIVERY NOTE: imsg cannot send to WhatsApp (LID addresses are WhatsApp, not iMessage). Cron job also lacks Full Disk Access for iMessage DB. Need WhatsApp gateway (e.g., yowsup, whatsapp-cli) or platform channel configured.

@@ -1,9 +1,9 @@
 {
   "agent:main:whatsapp:dm:60125226892": {
     "session_key": "agent:main:whatsapp:dm:60125226892",
-    "session_id": "20260612_180329_799da38a",
-    "created_at": "2026-06-12T18:03:29.200741",
-    "updated_at": "2026-06-12T19:17:14.577009",
+    "session_id": "20260615_093956_3b25ee51",
+    "created_at": "2026-06-15T09:39:56.928351",
+    "updated_at": "2026-06-15T13:09:58.880224",
     "display_name": "Goo Kah Thart",
     "platform": "whatsapp",
     "chat_type": "dm",
@@ -12,7 +12,7 @@
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
     "total_tokens": 0,
-    "last_prompt_tokens": 77930,
+    "last_prompt_tokens": 40139,
     "estimated_cost_usd": 0.0,
     "cost_status": "unknown",
     "expiry_finalized": true,
