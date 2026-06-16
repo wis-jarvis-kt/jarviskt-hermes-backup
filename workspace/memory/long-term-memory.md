@@ -57,25 +57,7 @@ _Distilled facts, confirmed patterns, and important context._
 
 ## new_learnings
 <!-- scout:2026-05-03T06:01:08+08:00 -->
-- [2026-05-03] Claude Code refuses requests or charges extra if your commits mention "OpenClaw" | https://twitter.com/theo/status/2049645973350363168 | via HN
-
-## new_learnings
-## new_learnings
-<!-- scout:2026-04-19T22:00:08+08:00 -->
-
-<!-- scout:2026-04-14T06:00:00+08:00 -->
-
-<!-- scout:2026-04-13T22:00:00+08:00 -->
-
-<!-- scout:2026-04-07T22:00:06+08:00 -->
-
-<!-- scout:2026-04-03T06:00:05+08:00 -->
-
-<!-- scout:2026-04-01T22:00:08+08:00 -->
-
-<!-- scout:2026-04-01T02:00:04+08:00 -->
-
-<!-- scout:2026-03-24T22:00:08+08:00 -->
+|- [2026-05-03] Claude Code refuses requests or charges extra if your commits mention "OpenClaw" | https://twitter.com/theo/status/2049645973350363168 | via HN
 
 <!-- research-scout appends here; weekly cron promotes to facts/patterns -->
 

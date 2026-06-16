@@ -167,10 +167,22 @@ Validated: 2026-05-29 session ran 3 waves (3+3+3 tasks) for Victor Study with no
 
 ## Research Scout (Evening AI/Tech) — Specific Cron Job
 
+> **Absorbed from `research-scout` (archived 2026-06-02).** The research-scout skill was merged into this umbrella on 2026-06-16. Its unique content (evening scan workflow, save format, verified working sources table) is preserved here as a labeled subsection.
+
 A specific recurring task: run an evening scan of AI/tech developments and save a brief report to `~/.hermes/memories/research-YYYY-MM-DD.md`.
 
 > This is one application of the general anti-bot patterns and source guidance above. For ad-hoc one-shot research, prefer `delegate_task` subagents with the `web` toolset instead of this scheduled skill.
 
+### Verified Working Sources (cron job context)
+
+> Absorbed from `research-scout` — table of verified working sources for the evening scan.
+
+| Source | URL | Notes |
+|---|---|---|
+| AI News | `https://www.artificialintelligence-news.com/` | Reliable, no anti-bot. Accept cookie dialog first. |
+| Google News Search | `https://news.google.com/search?q=QUERY&hl=en-US&gl=US&ceid=US:en` | Lightweight, rarely blocked. |
+
+### Fastest Workflow: Google News RSS + terminal
 ### Fastest Workflow: Google News RSS + terminal
 
 1. **First: scan via RSS** — Run in terminal:

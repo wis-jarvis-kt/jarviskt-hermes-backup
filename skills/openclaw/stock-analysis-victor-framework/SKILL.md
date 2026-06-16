@@ -175,7 +175,9 @@ Avoids rate-limiting issues with web search — more reliable for batch queries.
 
 ---
 
-## Weekly Victor Study (Cron Job)
+## Victor Study Cron Job — Weekly Sector Deep-Dive
+
+> **Absorbed from `victor-study` (archived 2026-06-02).** The victor-study skill was merged into this umbrella on 2026-06-16. Its unique content (weekly cron workflow, 5-sector structure, entry signal summary) is preserved here as a labeled subsection.
 
 A weekly recurring cron job that produces a structured sector deep-dive across Victor's 5 watchlist sectors, saving to `~/.hermes/memories/victor-study-YYYY-MM-DD.md`.
 
@@ -232,6 +234,18 @@ Use this section structure:
 Each section: 5 companies, bullet format, inline source citations pointing to stock-radar/research files.
 
 **Add a "NEW" subsection** when research-scout or subagents surfaced something genuinely new to that sector today (e.g., regulatory guidance, product announcement, analyst action not in prior day's study).
+
+### Victor Study Entry Signal Summary
+
+> Absorbed from `victor-study` — representative entry signals from recent analysis runs.
+
+| Sector | Company | Signal |
+|--------|---------|--------|
+| AI/ML | NVDA | STRONG ENTRY — PEG 0.66 + P/E below 5Y avg × 0.90 |
+| AI/ML | MSFT | Potential Entry — P/E entry signal triggered |
+| AI/ML | META | Potential Entry — PEG 0.88 (Peter Lynch zone) |
+| Cybersecurity | FTNT, ZS | Best value — below 5Y average P/E |
+| E-Commerce | BABA | Deepest value — P/E 18 vs 5Y avg 25 |
 
 **Step 5 — Verify**
 

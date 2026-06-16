@@ -68,8 +68,8 @@ If no improvements needed: send brief "nothing needed" report to Master KT.
   **Task 2 - ETF Sell PUT Analysis:** AIQ, TDIV, PSI, SOXQ, IETC, SCHG, DYNF, CGGR, SPHQ, XLG, USMC, SNPE, TMFC, FLQL, SPYM, FNDX, FDVV, WTV
     - Victor's CSP rules: RED day check → ETF price/% change → IV estimate → Volume → SELL PUT or WAIT
     - Cash reminder: USD $500/contract
-- Both results sent to: 120363423080731840@g.us via message tool
+- Both results sent to: 120363423080731840@g.us via bridge HTTP API (127.0.0.1:3000/send)
 - Delivery mode: not-requested (cron uses message tool directly)
 - Format: WhatsApp-friendly, bullet points, bold tickers, no tables
 
-### 8. Beautify photo for Master KT (BLOCKED — awaiting KT confirmation)
+### 8. ~~Beautify photo for Master KT~~ (REMOVED — stale, no longer relevant)

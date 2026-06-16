@@ -16,17 +16,26 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
    - Middle East: `https://www.bbc.com/news/world/middle_east`
    - South China Sea/Taiwan: `https://www.bbc.com/news/world/asia`
 3. **Dismiss the "Online Quality Survey" alertdialog** if it appears (it contains an iframe). Press `Escape` once or twice — do NOT try to click inside the iframe. Then proceed to scrape headlines.
-4. **Scan headlines** for conflict-relevant stories using `browser_snapshot(full=false)`.
+4. **Scan headlines for conflict-relevant stories** using `browser_snapshot(full=false)`.
+
+   **Conflict relevance criteria by region:**
+   - **Europe/Ukraine-Russia:** Include → war, Russia, Ukraine, military strikes, sanctions, shadow fleet, assassination of opposition figures in exile, NATO operations in the region. Exclude → domestic European politics, crime without geopolitical dimension, royal family, sports, migration policy without combat context, birth rates, cultural stories.
+   - **Middle East:** Include → US/Iran hostilities, Hormuz, Israel-Lebanon/Hezbollah, Gaza, ceasefire agreements, nuclear negotiations, strikes. Exclude → purely domestic Middle Eastern politics without conflict dimension.
+   - **Asia:** Include → Taiwan Strait, South China Sea military activity, China-Taiwan friction, Chinese naval activity near First Island Chain. Exclude → domestic Asian politics (India exam scandals, South Korea marketing blenders, Japanese interest rates) unless they have direct conflict/security relevance.
+
 5. **Get article URLs** via `browser_console` — the interactive click refs often fail. Run:
    ```javascript
    Array.from(document.querySelectorAll('a[href*="/news/articles/"]'))
      .map(a => a.href).filter((v,i,a) => a.indexOf(v) === i)
    ```
-   Deduplicate the results, then open relevant articles directly via `browser_navigate(url)` using the `https://www.bbc.com/news/articles/<id>` URLs. Do NOT rely on clickable refs from the snapshot — they frequently error with "Could not compute box model."
+   Deduplicate the results, then open relevant articles directly via `browser_navigate(url)` using the `https://www.bbc.com/news/articles/<id>` URL format. Do NOT rely on clickable refs from the snapshot — they frequently error with "Could not compute box model."
+
+   **Target article count per session (no time pressure cron):** 2–3 per region, prioritized by recency and conflict relevance. Do not read every article — if a headline is not about conflict, skip it.
+
 6. **Read article content** via `browser_snapshot(full=false)` on each article page. The body text is in the `article` element's static text children; use `browser_console` to inspect if needed.
 7. **For Taiwan/South China Sea**, supplement BBC Asia with a Google News search:
    `https://news.google.com/search?q=south+china+sea+taiwan+strait+2026&hl=en-US&gl=US&ceid=US:en`
-   Extract URLs from Google News results using the same JS snippet above, then navigate directly to source articles (SCMP, Taipei Times, Reuters, Al Jazeera, etc.).
+   Extract URLs from Google News results using the same JS snippet above, then navigate directly to source articles (Taipei Times, Al Jazeera, Reuters via Google News signposting, etc.). Reuters blocks direct navigation (DataDome) but is readable via Google News signposting.
 8. **Write findings** to `~/.hermes/memories/war-news-YYYY-MM-DD.md` with this format:
 
 ```markdown
@@ -67,7 +76,7 @@ Run a daily scan of geopolitical conflict news and save a brief report to `~/.he
 
 > **ISW URL navigation (2026-06-11):** ISW homepage clicks land on a `backgrounder/` summary page. Full reports are at `research/<region>/<slug>` paths. Navigate to the `research/` URL directly for complete text. The homepage also has an "ISW TEAMS" section with clickable region cards (China & Taiwan, Russia & Ukraine, Middle East) — clicking these lands on a listing page; extract `research/` URLs via JS before navigating.
 
-> **ISW Middle East reports (Updated 2026-06-12):** ISW publishes `iran-update-special-report-<month-name>-<day>-<year>` at `understandingwar.org/research/middle-east/`. Go-to for in-depth Hormuz/Iran military-strategic coverage; supplement to BBC for the Iran strikes story. Use month-name format (e.g. `june-11-2026`), not YYYY-MM-DD.
+> **ISW Middle East reports (Updated 2026-06-12, confirmed 2026-06-16):** ISW publishes `iran-update-special-report-<month-name>-<day>-<year>` at `understandingwar.org/research/middle-east/`. **Go-to for US-Iran Hormuz military-strategic coverage** — the June 16 session confirmed ISW Middle East is the authoritative source for the Hormuz/Iran strike story. Use month-name format (e.g. `june-11-2026`), not YYYY-MM-DD.
 
 > **ISW Russia/Ukraine reports (Updated 2026-06-12):** ISW publishes `russian-offensive-campaign-assessment-<month-name>-<day>-<year>` at `understandingwar.org/research/russia-ukraine/`. The "Toplines" section at the top of the full report is the quick-read; the full text follows below. Use to supplement BBC for ground-level tactical developments. Use month-name format.
 

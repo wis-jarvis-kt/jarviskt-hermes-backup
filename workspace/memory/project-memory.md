@@ -134,36 +134,13 @@ _Active projects, states, and blockers._
 - OAUTH_REFRESH_DAILY cron job (35081fea) **deleted** — was useless
 - HEARTBEAT.md Task 5 updated to show it's non-functional with strikethrough note
 
-### Noted [2026-04-18 03:32 GMT+8]
-- OAUTH_REFRESH_DAILY cron job (35081fea) **deleted** — was useless
-- HEARTBEAT.md Task 5 updated to show it's non-functional with strikethrough note
-
 ### Noted [2026-04-25 03:30 GMT+8]
 - WhatsApp notification to Master KT: **FAILED** (no HTTP API available in this cron context; WhatsApp is WebSocket-gateway only, no direct send endpoint accessible from exec context)
-
-### Noted [2026-04-25 03:33 GMT+8]
-- WhatsApp notification to Master KT: **FAILED** (no HTTP API available in this cron context; WhatsApp is WebSocket-gateway only, no direct send endpoint accessible from exec context)
-
-### Noted [2026-04-27 03:30 GMT+8]
-- No new tasks, rules, or system changes this session
-- HEARTBEAT.md task 6 (beautify photo) remains BLOCKED — awaiting Master KT's "try again"
 
 ### Noted [2026-04-29 03:30 GMT+8]
 - No stale tasks, no broken links, no gaps found
 
-### Noted [2026-04-29 03:32 GMT+8]
-- No stale tasks, no broken links, no gaps found
-
-### Noted [2026-04-30 03:30 GMT+8]
-- Script: `~/.openclaw/reminders/wa_reminder.py`
-
-### Noted [2026-04-30 03:36 GMT+8]
-- Script: `~/.openclaw/reminders/wa_reminder.py`
-
 ### Noted [2026-05-01 03:32 GMT+8]
-- Deprecated: WAHA HTTP API via cron (send_reminder.py + macOS crontab) — removed 2026-06-12. Hermes handles WhatsApp natively.
-
-### Noted [2026-05-02 03:30 GMT+8]
 - Deprecated: WAHA HTTP API via cron (send_reminder.py + macOS crontab) — removed 2026-06-12. Hermes handles WhatsApp natively.
 
 ### Noted [2026-05-15 03:31 GMT+8]

@@ -1,9 +1,9 @@
 {
-  "last_report_path": "/Users/ktoclaw/.hermes/logs/curator/20260609-111043",
-  "last_run_at": "2026-06-09T11:10:43.671666+00:00",
-  "last_run_duration_seconds": 96.502459,
-  "last_run_summary": "auto: no changes; llm: ## Human Summary\n\n**Cluster 1 — Stock Analysis (Victor Framework):** `stock-analysis-victor-framework` is already a proper class-level umbrella — it covers Victor's PEG/P/E entry rules, CSP screening, 5-sector watchlists, Weekly Victor Stud…\narchived 2 skill(s):\n  • openclaw-stock-analysis-victor-framework → stock-analysis-victor-framework\n  • openclaw-imports — pruned (stale)\nfull report: hermes curator status\nkeep an umbrella stable: hermes curator pin stock-analysis-victor-framework",
+  "last_report_path": "/Users/ktoclaw/.hermes/logs/curator/20260616-114415",
+  "last_run_at": "2026-06-16T11:44:15.712270+00:00",
+  "last_run_duration_seconds": 62.47755,
+  "last_run_summary": "auto: no changes; llm: Now write the structured summary. Both archived skills are already in `.archive/` from prior sessions — consolidation was completed by patching the active umbrellas to absorb their unique content.\n\n---\n\n## Consolidation Pass Summary\n\n**Clus…",
   "last_run_summary_shown_at": null,
   "paused": false,
-  "run_count": 3
+  "run_count": 4
 }
